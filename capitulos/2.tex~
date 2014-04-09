@@ -1,0 +1,187 @@
+%TODO rever referencias
+\chapter{Mídias Sociais}
+\label{cap:midias-sociais}
+
+A mídia social como uma tecnologia se tornou um fenômeno em crescimento com
+diversas definições para o público~\cite{davis2012}. No geral, mídia social
+se refere às mídias utilizadas para possibilitar a interação social. No contexto
+desse trabalho, tecnologias de mídias sociais (SMT - \textit{Social Media Technology})
+diz respeito a aplicações web e mobile que permitem que indivíduos e organizações
+criem e compartilhem novos conteúdos gerados pelo usuário, ou conteúdos já
+existentes em ambiente digital, através de comunicação em várias vias~\cite{davis2012}. É
+importante notar a diferença entre conteúdo gerado pelo usuário, que é uma forma
+de mídia não tradicional, desenvolvida e produzida por usuários, e conteúdo já
+existente, que em geral se refere à mídia tradicional (jornais, revistas, rádios
+e televisão) reproduzida para a web. Além destas características, as SMT também
+contêm elementos de design que criam espaços sociais virtuais que encorajam a 
+interação, ampliam o apelo da tecnologia e promovem transições nos dois sentidos
+entre a interação através da plataforma e a interação presencial~\cite{davis2012}.
+
+As aplicações de mídias sociais compartilham a habilidade natural de viabilizar
+comportamento social através do diálogo - discussões de múltiplas vias que
+fornecem a oportunidade de descobrir e compartilhar informação nova
+\cite{solis2008}.
+%
+Portanto, as SMT são um terreno vasto como software, com possibilidades de uso
+variadas, não estando limitada a redes sociais, compartilhamento de vídeo ou
+blogs. Uma definição das SMT mais abrangente seria a totalidade de produtos
+e serviços digitais, disponibilizados online; o comportamento social e troca de
+conteúdo que possuem como fonte principalmente o usuário \cite{davis2012}.
+
+\section{A Difusão das Mídias Sociais}
+
+Com a proliferação das redes sociais e outras plataformas de mídia social nos
+últimos anos, a pervasividade da internet se tornou mais evidente do que nunca~\cite{davis2012}.
+%
+Levamos aspectos de nossas vidas pessoais, nossos pensamentos políticos, nossas
+experiências profissionais, dentre outros, para a internet. Diferente de outras
+tecnologias de comunicação na internet, as SMT nos forneceram um ambiente
+virtual que nos remete a elementos de comunidade vivenciados fora da internet
+\cite{davis2012}.
+
+As SMT diminuíram o custo para se colaborar, compartilhar e produzir,
+assim fornecendo novas e revolucionárias formas de resolver problemas~\cite{shirky2010}.
+%
+Agora podemos manter e acessar comunidades online e ao mesmo tempo utilizar as SMT
+como ferramentas para transitar entre o contato online e o contato presencial
+através de amizades, atividades planejadas e eventos marcados \cite{shirky2010}.
+
+As mídias sociais tornaram-se  uma parte importante do cotidiano dos atuais jovens.
+É cada vez mais difícil separar as relação em comunidades virtuais das relações em
+comunidades ``reais''~\cite{davis2012}.
+%
+Se considerarmos a geração que não conheceu um mundo sem as
+tecnologias de mídia social, existe um intercâmbio contínuo entre o experiências
+físicas e digitais.~\cite{davis2012}.
+%
+Como um possível resultado disso, esses nativos da era digital podem experimentar um
+desenvolvimento do cérebro fundamentalmente diferente que favorece a comunicação
+constante e a multi-tarefa \cite{prensky2001} \& \cite{vorgan2009}.
+
+\section{Redes Sociais}
+
+É comum vermos a utilização do termo ``redes sociais'' para se dirigir a todos os
+tipos de mídias sociais mediadas por computador, no entanto, vale ressaltar que,
+embora muito relevante, redes sociais são apenas uma das camadas das mídias sociais.
+%
+\apudonline{boyd2007}{beer2008} definem sites de redes sociais como serviços
+web que permitem que seus usuários criem perfis, através desses perfis,
+conexões com outros usuários, busquem e cruzem informação dentro dessa lista
+de conexões.
+
+No contexto deste trabalho estamos tratando, especificamente, redes sociais como redes 
+usadas com o objetivo de promover a interação em torno das colaborações em si e
+não das pessoas, ou seja, expandindo para o conceito de redes de colaboração, o que
+se aplica ao contexto de uma rede de nicho de uma universidade. 
+%
+Por exemplo, as pessoas entram na rede para fazerem parte e acompanharem uma disciplina, um projeto
+ou um determinado grupo de trabalho da universidade.
+%
+Nesse cenário, hipoteticamente, o professor, ao divulgar um curso multidisciplinar, pode usufruir das estatísticas e
+comportamentos das pessoas na rede para chegar ao seu público alvo.
+%
+Da mesma forma, alunos podem encontrar projetos e grupos de trabalhos de seu interesse ao
+explorar a rede, com a ajuda da própria rede de colaboração.
+
+Argumentamos que esse tipo de dinâmica não é possível em redes centralizadoras e monopolistas,
+porque nelas o conteúdo, em geral, é pulverizado (e em alguns casos controlado).
+Isso, somado ao fato da característica principal da Internet ser uma ``rede de redes'',
+faz com que as redes sociais e de colaboração tendam a serem melhor utilizadas
+em um nicho específico e com autonomia para seus gestores e usuários.
+
+Não entrando no mérito do uso de redes sociais na educação, uma vez que não tratamos disto neste trabalho,
+nessa seção, apresentamos dois casos de utilização de redes sociais como rede de
+colaboração para disseminação de conhecimento, para exemplificarmos algumas possibilidades de uso.
+%
+Em ambos os casos, tais redes foram criadas através de software livres, no caso, a  plataforma para 
+redes sociais Noosfero, que apresentaremos em detalhes no capítulo~\ref{cap:noosfero} desse texto.
+
+\subsection{Stoa}
+
+Baseado nas ideias discutidas anteriormente, a Universidade de São Paulo criou o
+projeto Stoa\footnote{\url{social.stoa.usp.br}}, uma rede de colaboração e
+disseminação do conhecimento apoiada por três princípios: o compartilhamento, a
+liberdade e a horizontalidade.
+%
+A rede Stoa permite ao usuário a criação de seu espaço pessoal e a liberdade de
+publicar suas ideias, ou o conteúdo que desejar, por exemplo, na forma de
+\textit{blogs} pessoais, \textit{blogs} de disciplinas, pesquisas em andamento,
+dentre outras, além de compartilhar esse conteúdo para ser acessível
+para outros usuários da rede (e fora da rede).
+
+O Stoa foi lançado em 2007 baseado na plataforma de software livre
+Elgg\footnote{\url{elgg.org}}.
+%
+Por volta de 2010, começou-se a perceber algumas limitações das tecnologias
+utilizadas e foram feitas pesquisas para levantar alternativas que permitissem
+implantar uma rede social de colaboração com qualidade e que fosse compatível
+com conceitos da chamada \textbf{Web 2.0}.
+%
+Foi optado pelo Noosfero\footnote{\url{noosfero.org}}, uma plataforma para
+criação de rede sociais e de economia solidária, livre, desenvolvida pela
+Empresa Cooperativa Colivre\footnote{\url{colivre.coop.br}}, por este ter um
+grande potencial devido as suas funcionalidades avançadas, que permitem a criação
+e o compartilhamento de conteúdo de forma satisfatória. Outro fator considerado
+foi a posição geográfica favorável, que permite uma aproximação privilegiada do núcleo
+desenvolvedor do mesmo.
+%
+Em Dezembro de 2012, a USP lançou a nova versão da rede social do Stoa, baseado
+no Noosfero, e a chamando de rede de colaboração.
+
+O Stoa não se propõe a ser a única rede de colaboração acadêmica no Brasil. A
+proposta de seus idealizadores, com quem também interagimos durante este trabalho,
+é que a experiência na Universidade de São Paulo possa ser replicada em
+outras instituições de ensino brasileiras.
+%
+A rede do Stoa tem o objetivo de ser uma rede dentre outras redes, mas com a ideia de poder
+interagir com as demais redes, em especial, quando plataformas de rede sociais suportarem
+a denominada federação entre as redes\footnote{O termo redes sociais federadas é usado 
+para indicar uma rede social autônoma controlada por uma entidade mas que possibilita a
+interação, através de regras acordadas, com usuários ou entidades de outras redes
+federadas sem a necessidade de criar uma conta na segunda \cite{prodomou2010}}.
+%
+Por conta da pertinência da implementação de um protocolo aberto de federação no Noosfero,
+na Seção~\ref{sec:future-works} , de trabalhos futuros, apresentamos um breve relato de possíveis
+protocolos que podem ser incorporados nessa plataforma.
+
+\subsection{TecCiência}
+\label{subsec:tecciencia}
+
+Outro caso de uso de redes sociais de compartilhamento de conhecimento surgiu através do
+projeto EDUCANDOW  - Educação em Ciência e Tecnologia para
+Escolas de Ensino Fundamental do Município Candeias~\cite{santos2012}.
+%
+O projeto EDUCANDOW surgiu, em 2007, através de uma parceria entre a empresa
+Dow Brasil S.A. e o Departamento de Ciência da Computação da Universidade Federal da Bahia,
+com o objetivo de promover uma educação básica qualificada e consistente com as tendências tecnológicas
+do momento.
+%
+Como parte do projeto, em 2009, foi implantada uma rede social, denominada TecCiencia\footnote{\url{tecciencia.ufba.br}}
+na escola SESI de Candeias, Bahia.
+
+A equipe do projeto EDUCANDOW buscou experimentar uma perspectiva educacional que
+alinhe a educação às tecnologias contemporâneas.
+%
+No texto, é defendida a ideia de que a prática pedagógica coerente com a sociedade atual
+implica no uso constante de ferramentas digitais e na educação em rede para quebrar a
+verticalização da relação professor/aluno~\cite{santos2012}.
+
+Resolveram então apostar no software livre por entender que este é um integrante
+fundamental no ensino tecnológico e também adotaram a plataforma Noosfero por sua
+capacidade de ser facilmente adaptado para as mais variadas necessidades. O
+TecCiencia apresenta-se como um ambiente de aprendizado interativo que volta-se
+para a organização desse aprendizado através da disponibilização de comunidades
+que permitem aos estudantes a construção do conhecimento a medida que são
+desafiados à buscar soluções para problemas de forma colaborativa~\cite{santos2012}.
+
+Assim como no caso do Stoa, o TecCiencia provê um ambiente que permite a continuidade do
+aprendizado em sala de aula, em um ambiente virtual compartilhado.
+%
+Nas instituições de ensino, por exemplo, suas estruturas físicas tentam equilibrar espaços ``formais'',
+como as salas de aula, com ambientes públicos de relação social entre professores, alunos e funcionários,
+como praças, cantinas, centros acadêmicos, entre outros. Da mesma forma, o Stoa e TecCiencia tentam
+ser esse espaço aberto e público de colaboração no ``mundo virtual'', contraponto com, por exemplo, seus
+sites institucionais.
+%
+Na UnB, o Comunidade.UnB terá este mesmo objetivo, através da implantação de uma
+rede também baseada no Noosfero (que apresentaremos no próximo capítulo).

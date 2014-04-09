@@ -1,0 +1,89 @@
+%TODO rever referencias
+\chapter{2. Testes}
+\label{cap:testes}
+
+Testar é uma pratica intrínseca ao desenvolvimento e é antiga a necessidade de
+cirar programas para testar cenários específicos~\cite{everett2007}.
+%
+A automação de testes é uma prática ágil, eficaz e de baixo custo para melhorar
+a qualidade dos sistemas de software.
+
+No entanto utilizar testes automatizados 
+como uma premissa básica do desenvolvimento é um fenômeno relativamente recente, ]
+com início em meados  da década de 1990~\cite{cotter1995}.
+%
+Além do fato de ser uma técnica bastante utilizada pelas metodologias ágeis
+de desenvolvimento.
+
+%------------------------------------------------------------------------------%
+
+\section{Testes Automatizados}
+
+Testes automatizados é a prática de tornar os testes de software independentes da
+intervenção humana, criando scripts ou programas simples de computador que exercitam 
+o sistema em teste, capturam os efeitos colaterais e fazem verificações, tudo 
+automaticamente e dinamicamente~\cite{meszaros2007}.
+
+Os testes automatizados afetam diretamente a qualidade dos sistemas de software,
+portanto agregam valor  ao produto final, mesmo que os artefatos adicionais
+produzidos não sejam visíveis para os usuários finais do sistemas.
+%
+Estes testes podem ser divididos em diversos tipo, o que facilita a manutenção 
+dos mesmos, coleta de métricas.
+
+\begin{enumerate}
+
+\item \textbf{Testes de unidade:} teste de correção responsável por testar os 
+menores trechos de código de um sistema que possui um comportamento definido e nomeado.
+%
+Normalmente, ele é associado a funções para linguagens procedimentais e métodos em 
+linguagens orientadas a objetos.
+\item \textbf{Testes funcionais:}
+%ESCREVER
+\item \textbf{Testes de integração:}denominação ampla que representa a busca de erros 
+de relacionamento entre quaisquer módulo de um software, incluindo desde a integração 
+de pequenas unidades até a integração de bibliotecas das quais um sistema depende, 
+servidores e gerenciadores de banco de dados.
+\item \textbf{Testes de interface de usuário} testes que verificam a correção por meio 
+da simulação de eventos de usuário, a partir destes eventos, são feitas verificações 
+na interface e em outras camadas.
+\item \textbf{Testes de leiaute:} testes que buscam avaliar a beleza da interface e 
+verificar a presença de erros após a renderização, dificeis de indentificar com testes 
+comuns de interface
+\item \textbf{Testes de aceitação:} são testes de correção e validação, idealmente 
+especificados por clientes ou usuários finais do sistema para verificar se um modulo 
+funciona como foi especificado~\cite{martin2005}.
+%
+Testes de aceitação devem utilizar linguagem proxima da natural para evitar problemas 
+de interpretação e de ambiguidades~\cite{cunningham2005}.
+\item \textbf{Testes de desempenho:} testes que executam trechos do sistema e armazenam 
+os tempos de duração obtidos, que ajudam a identificar gargalos que precisam de otimização 
+para diminuir o tempo de resposta  para o usuario~\cite{liu2009}.
+\item \textbf{Testes de carga:}  teste que exercita o sistema sobre condições de uso 
+intenso para avaliar se a infraestrutura é adequada para a expectativa de uso do sistema.~\cite{avritze1994}
+\item \textbf{Testes de estresse:} teste que visa descobrir os limites do uso da infraestrutura, 
+isto é , qual a quantidade máxima de usuários e requisições que o sistema consegue antender 
+corretamente e em um tempo aceitável.
+\item \textbf{Testes de longevidade:} teste que tem por objetivo encontrar erros somente 
+visiveis com um longo tempo de execuçao do sistema, erros que podem ser de cache, replicação, 
+execução de serviços agendados, vazamento de memória.
+\item \textbf{Testes de segurança:} os testes de segurança servem para verificar se os 
+dados ou funcionalidades confidenciais de um sistema  estão protegidos de fraude ou de 
+usuários não autorizados. A segurança de um sofware pode envolver aspectos de confidenciabilidade, 
+integridade, autenticação, autorização, privacidade~\cite{whittaker2006}.
+
+
+
+
+\end{enumerate}
+
+%------------------------------------------------------------------------------%
+\section{Técnicas de Desenvolvimento de testes automatizados}
+
+
+\subsection{TDD - Test Driven Development}
+
+
+\subsection{BDD - Behavior Driven Development}
+
+

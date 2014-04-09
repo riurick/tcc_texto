@@ -1,0 +1,21 @@
+% Dados pessoais
+\autor{Rodrigo Medeiros Soares da Silva}
+\curso{Engenharia de Software}
+
+% Dados do trabalho
+\titulo{Técnicas de testes automatizados em processos de
+desenvolvimento de software empírico: um estudo de caso 
+do projeto Noosfero
+}
+\data{2014}
+\palavraChaveUm{Testes}
+\palavraChaveDois{Software livre}
+
+% Dados da orientacao
+\orientador{Prof. Dr. Paulo Roberto Miranda Meirelles}
+
+% Dados para a ficha catalográfica
+\cdu{02:141:005.6}
+
+% Dados da aprovação do trabalho
+

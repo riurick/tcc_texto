@@ -1,0 +1,32 @@
+\begin{resumo}[Abstract]
+  \begin{otherlanguage*}{english}  
+
+  This course conclusion work presents the results of a study to enable the
+  deployment of a collaborative network for the University of
+  Brasilia (UNB), which acts as a virtual environment for the creation and
+  sharing of knowledge in a collaborative and horizontal way.
+  %
+  For this, we choose to use a Brazilian free social networks platform
+  Noosfero, understanding that it satisfies the immediate needs of this
+  proposal, according to studies from University of São Paulo, when it
+  adopted the same.
+  %  
+  Besides the implementation itself at UNB, this study includes a requirements
+  elicitation and the implementation of a set of features and enhancements to
+  the proposed platform, so that it would meet the basic needs for us to perform
+  case studies with students from UnB Gama.
+  %
+  Also, we pointed out steps that will enable the continuity and the
+  officialisation of the Comunidade.UnB network and it's constant evolution.
+  %
+  Additionally, our efforts and knowledge acquired in this work were transferred
+  to a team of developers at UNB Gama, which will provide continuity to the
+  deployment and implementation of this network in UNB, in 2014.
+   
+
+  \vspace{\onelineskip}
+ 
+  \noindent 
+  \textbf{Key-words}: social networking. open-source software. functional requirements. agile methods. distributed software development.
+  \end{otherlanguage*}
+\end{resumo}

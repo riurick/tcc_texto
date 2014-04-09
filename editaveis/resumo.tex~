@@ -1,0 +1,28 @@
+\begin{resumo}
+Este trabalho de conclusão de curso apresenta os resultados de um estudo para
+viabilizar a implantação de uma rede de colaboração para a Universidade de
+Brasília (UnB), que atue como um ambiente virtual para a criação e o
+compartilhamento de conhecimento de forma colaborativa e horizontal.
+%
+Para isso, escolhemos utilizar a plataforma
+brasileira para redes sociais livres Noosfero, por entender que esta satisfaz as
+necessidades imediatas do projeto, de acordo com estudos feitos pela
+Universidade de São Paulo, quando adotou a mesma.
+%
+Além da implantação em si na UnB, este estudo contemplou um levantamento de
+requisitos e a implementação de um conjunto de funcionalidades e melhorias para a
+plataforma em questão, de forma que atendesse as necessidades
+básicas para podermos realizar estudos de caso com alunos da UnB Gama.
+%
+Dessa forma, indicando como podemos oficializar a rede Comunidade.UnB, bem
+como quais os próximos passos para que melhor atenda o público dessa universidade.
+%
+Adicionalmente, os esforços e conhecimento adquiridos neste trabalho foram repassados
+para uma equipe de desenvolvedores na UnB Gama, o que proporcionará a continuidade
+e concretização da implantação desta rede na UnB, em 2014.
+
+ \vspace{\onelineskip}
+    
+ \noindent
+ \textbf{Palavras-chaves}: redes sociais. software livre. requisitos funcionais. métodos ágeis. desenvolvimento distribuído de software.
+\end{resumo}
