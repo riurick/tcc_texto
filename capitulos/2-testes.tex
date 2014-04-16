@@ -88,7 +88,7 @@ Existem várias técnicas de desenvolvimento de software com testes que influenc
 
 \subsection{TDD - Test Driven Development}
 
-Desenvolvimento dirigido por testes, também conhecido como TDD (Test-Driven Develepment) é uma técnica de desenvolvimento de software que se dá pela repetição dosciplinada de um ciclo curto de passos de implementação de testes e do sistema~\cite{koskela2007}.
+Desenvolvimento dirigido por testes, também conhecido como TDD \textit{(Test-Driven Develepment)} é uma técnica de desenvolvimento de software que se dá pela repetição dosciplinada de um ciclo curto de passos de implementação de testes e do sistema~\cite{koskela2007}.
 %
 O ciclo de TDD é definido pelos seguintes passos:
 %
@@ -98,17 +98,29 @@ O ciclo de TDD é definido pelos seguintes passos:
 \item Se necessário, refatorar o código produzido para que ele fique mais organizado;
 \end{enumerate}
 %
+A técnica de desenvolvimento dirigido por testes foi definida por Kent Beck em seu livro \textit{Test-Driven Development: By Example}~\cite{beck2002}. Os passos estão representados na figura abaixo:
+%
+\begin{figure}[h]
+    \centering
+    \includegraphics[keepaspectratio=true,scale=0.25]
+      {figuras/tdd_ciclo.png}
+    \caption{Ciclo de atividades TDD~\cite{beck2002}}
+    \label{tdd_ciclo}
+\end{figure}
+%
 
 \subsubsection {Benefícios do TDD}
 
 Uma boa prática do TDD é a bateria de testes, que ajuda o desenvolvedor a evitar erros de regreção, quando o desenvolvimento de uma nova funcionalidade quebra uma já existente. TDD também tende a contribuir com uma alta cobertura de código, uma fez que o desenvolvedor precisa escrever o testes antes da funcionalidade, possibilitando a criação de um código mais preciso, coeso e menos acoplado. 
 %
-Para Massol em JUnit in Action, “o objetivo de TDD é ‘código claro que funciona’~\cite{massol2003}.
+Para Massol em \textit{JUnit in Action}, “o objetivo de TDD é ‘código claro que funciona’~\cite{massol2003}.
 %
 TDD propõe o desenvolvimento sempre em pequenos passo, deve-se escrever testes sempre para uma menor funcionalidade possível, escrever o código mais simples que faça o teste passar e fazer sempre apenas uma refatoração por vez~\cite{beck2002}. Assim o desenvolvedor se detém a criar soluções simples, sempre acompanhado de um constante feedback dos testes.
 %
-O ciclo curto de passos definidos por TDD cria uma dependência forte entre codificação e testes, o que favorece e facilita a criação de sistemas com alta testabilidade~\cite{bernardo2011}. Índices altos de cobertura de código e testabilidade não garantem necessariamente qualidade do sistema, mas são métricas bem vistas para sistemas bem desenvolvidos.
-
+O ciclo curto de passos definidos por TDD cria uma dependência forte entre codificação e testes, o que favorece e facilita a criação de sistemas com alta testabilidade~\cite{bernardo2011}. Índices altos de cobertura de código e testabilidade não garantem necessariamente qualidade do sistema, mas são métricas bem vistas para sistemas bem desenvolvidos
+%
+Além de uma técnica de testes automatizados, TDD também é uma prática de desenvolvimento de software, pois muda a natureza do processo de codificação, auxiliando na produção de um código funcional e limpo.
+%
 \subsection{BDD - Behavior Driven Development}
-
+Desenvolvimento dirido por comportamento \textit{(BDD - Behavior Driven Development)} é uma prática que recomenda o mesmo ciclo de desenvolvimento de TDD, contudo, induzindo a utilização de uma linguagem ubíqua entre cliente e equipe de desenvolvimento~\cite{bernardo2011}, subistituindo termos como assert, \textit{assert, test case, test suite} por termos mais comuns ao cliente, como \textit{should, context, specification}
 
