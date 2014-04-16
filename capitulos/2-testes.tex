@@ -65,7 +65,7 @@ intenso para avaliar se a infraestrutura é adequada para a expectativa de uso d
 isto é , qual a quantidade máxima de usuários e requisições que o sistema consegue antender 
 corretamente e em um tempo aceitável.
 \item \textbf{Testes de longevidade:} teste que tem por objetivo encontrar erros somente 
-visiveis com um longo tempo de execuçao do sistema, erros que podem ser de cache, replicação, 
+visiveis com um\item longo tempo de execuçao do sistema, erros que podem ser de cache, replicação, 
 execução de serviços agendados, vazamento de memória.
 \item \textbf{Testes de segurança:} os testes de segurança servem para verificar se os 
 dados ou funcionalidades confidenciais de um sistema  estão protegidos de fraude ou de 
@@ -80,9 +80,34 @@ integridade, autenticação, autorização, privacidade~\cite{whittaker2006}.
 %------------------------------------------------------------------------------%
 \section{Técnicas de Desenvolvimento de testes automatizados}
 
+Automação de testes é uma técnica voltada principalmente para a melhoria de qualidade dos sistemas de software. 
+%
+No processo de desenvolvimento de software é fundamental controlar o custo do processo de testes, para isso baterias de testes automatizados devem ser bem definidas e implementadas. Assim é importante conhecer boas práticas e técnicas de de desenvolvimento de testes automatizados.    
+%
+Existem várias técnicas de desenvolvimento de software com testes que influenciam diretamente na qualidade do sistema. Estas técnicas geralmente possuem um processo de atividades pequeno e simples, como TDD e BDD.
 
 \subsection{TDD - Test Driven Development}
 
+Desenvolvimento dirigido por testes, também conhecido como TDD (Test-Driven Develepment) é uma técnica de desenvolvimento de software que se dá pela repetição dosciplinada de um ciclo curto de passos de implementação de testes e do sistema~\cite{koskela2007}.
+%
+O ciclo de TDD é definido pelos seguintes passos:
+%
+\begin{enumerate}
+\item Implementar um caso de teste;
+\item Implementar um trecho do código suficiente para o novo caso de teste ter sucesso de tal modo que não quebre os testes previamente escritos;
+\item Se necessário, refatorar o código produzido para que ele fique mais organizado;
+\end{enumerate}
+%
+
+\subsubsection {Benefícios do TDD}
+
+Uma boa prática do TDD é a bateria de testes, que ajuda o desenvolvedor a evitar erros de regreção, quando o desenvolvimento de uma nova funcionalidade quebra uma já existente. TDD também tende a contribuir com uma alta cobertura de código, uma fez que o desenvolvedor precisa escrever o testes antes da funcionalidade, possibilitando a criação de um código mais preciso, coeso e menos acoplado. 
+%
+Para Massol em JUnit in Action, “o objetivo de TDD é ‘código claro que funciona’~\cite{massol2003}.
+%
+TDD propõe o desenvolvimento sempre em pequenos passo, deve-se escrever testes sempre para uma menor funcionalidade possível, escrever o código mais simples que faça o teste passar e fazer sempre apenas uma refatoração por vez~\cite{beck2002}. Assim o desenvolvedor se detém a criar soluções simples, sempre acompanhado de um constante feedback dos testes.
+%
+O ciclo curto de passos definidos por TDD cria uma dependência forte entre codificação e testes, o que favorece e facilita a criação de sistemas com alta testabilidade~\cite{bernardo2011}. Índices altos de cobertura de código e testabilidade não garantem necessariamente qualidade do sistema, mas são métricas bem vistas para sistemas bem desenvolvidos.
 
 \subsection{BDD - Behavior Driven Development}
 
