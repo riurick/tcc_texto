@@ -123,4 +123,30 @@ Além de uma técnica de testes automatizados, TDD também é uma prática de de
 %
 \subsection{BDD - Behavior Driven Development}
 Desenvolvimento dirido por comportamento \textit{(BDD - Behavior Driven Development)} é uma prática que recomenda o mesmo ciclo de desenvolvimento de TDD, contudo, induzindo a utilização de uma linguagem ubíqua entre cliente e equipe de desenvolvimento~\cite{bernardo2011}, subistituindo termos como assert, \textit{assert, test case, test suite} por termos mais comuns ao cliente, como \textit{should, context, specification}
+%
+O BDD é um processo de desenvolvimento de software baseado no TDD. Embora seja principalmente principalmente uma ideia de como um processo de desenvolvimento de software deve ser gerenciado. a prática do BDD assume a utilização de ferramentas como suporte para o desenvolvimento de software~\cite{haring2011}. O BDD utiliza essas ferramentas para que os testes tenham como ponto de partida o compartemento dos objetos.
+%
+O BDD coloca em foco o comportamento em vez da estrutura e faz isso em todos os níveis de desenvolvimento. Uma vez que nós reconhecemos isso, ele muda a forma como pensamos sobre desenvolvimento para fora do código e começamos a pensar mais sobre as intereações sobre pessoas e sistemas, ou entre os objetos, do que sobre a estrutura do objeto~\cite{chelimsky2010}.
+%
+Para que o comportamento seja analisado, é necessário entender o ponto de vista do cliente, entendendo o comportamento que o sistema deve ter a partir da visão do cliente. 
+%
+\subsubsection{Príncipios do BDD}
+De acordo com Chelimky, estes são os três príncipios do BDD:
+\begin{enumerate}
+\item \textbf{O suficiente é suficiente:} parte da ideia de gerenciar o esfoço no planejamento inicial do sistema, para não fazer menos nem mais do que o necessário para começar, o que se aplica também ao processo de automação.
+\item \textbf{Agregar valor as partes interessadas:} Se você está fazendo algo que não agrega valor ou que não aumenta a capacidade de agregar valor, pare e faça outra coisa em seu lugar.
+\item \textbf{Tudo é comportamento:} Do código à aplicação, pode-se usar o mesmo pensamento e as mesmas construções linguísticas para descrever o comportamento, em qualquer nível de granularidade. 
+\end{enumerate}
+%
+O comportamento do sistema é descrito em historias de usuário, histórias que são escritas com a participação tanto de clientes como desemvolvedores do sistema. Assim cada hisória de usuário deve seguir, de certa forma, a seguinte estrutura:
+%
+\textbf{Título:} do que se trata a história.
+%
+\textbf{Narrativa:} deve identificar as partes interessadas para essa história, as funcionalidades requeridas, e o benefício deste comportamento. A narrativa de uma história pode ter vários formatos.
+%
+\textbf{Critério de aceitação:} descrição de cada caso específico da narrativa, iniciado pela especificação da condição inicial do cenário, seguidos pelos estados que ativam este cenário, finalizado pelos estados esperados ao final do cenário.
+%
 
+\subsection{Considerações Finais}
+Testes automatizados devem ser desenvolvidos com prioridade, buscando um rápido \textit{feedback}, contribuindo assim com a melhoria do sistema. Para isso é necessário que os cenários de testes estejam bem definidos junto à equipe.
+%
