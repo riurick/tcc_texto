@@ -1,9 +1,11 @@
+%------------------------------------------------------------------------------%
+
 \chapter{Métodos de Desenvolvimento Empírico}
 \label{cap:desenvolvimento-empirico}
 
-O Empirismo baseia-se na aquisição de sabedoria através da percepção do mundo externo, 
-ou então do exame da atividade da nossa mente, que abstrai a realidade que nos
-é exterior e as modifica internamente~\cite{chaui2003}.
+O Empirismo baseia-se na aquisição de sabedoria através da percepção do mundo 
+externo, ou então do exame da atividade da nossa mente, que abstrai a realidade 
+que nosé exterior e as modifica internamente~\cite{chaui2003}.
 %
 Mecanismos do Controle de Processo Empírico, onde ciclos de feedback constituem o
 núcleo da técnica de gerenciamento que são usadas em oposição ao tradicional 
@@ -11,7 +13,11 @@ gerenciamento de comando e controle.É uma forma de planejar e gerenciar projeto
 trazendo a autoridade da tomada de decisão a níveis de propriedade de operação e 
 certeza~\cite{Schwaber2004}.
 %
-
+Neste capítulo será abordado algumas ideias e práticas de processo de desenvolvimento
+de software que utilizam métodos ágeis, processos amplamente utilizados no 
+desenvolvimentode software livre, outro assunto também abordado no decorrer 
+deste texto.
+%
 \section{Software Livre}
 
 Software livre é uma filosofia que trata programas de computadores como fontes de 
@@ -23,10 +29,11 @@ um software deve seguir quatro princípios:
 %
 \begin{enumerate}
 \item Liberdade de execução para qualquer uso;
-\item Liberdade de estudar o funcionamento de um software e de adaptá-lo às suas necessidades
+\item Liberdade de estudar o funcionamento de um software e de adaptá-lo às suas 
+necessidades
 \item Liberdade de redistribuir cópias;
-\item Liberdade de melhorar o software e de tornar as modificações públicas de modo que 
-a comunidade se beneficie da melhoria~\cite{stallman2001}.
+\item Liberdade de melhorar o software e de tornar as modificações públicas de modo 
+que a comunidade se beneficie da melhoria~\cite{stallman2001}.
 \end{enumerate}
 %
 Um software é considerado software livre se segue estes quatro princípios, portanto 
@@ -42,22 +49,23 @@ são pagos, não há motivos para restrição de acesso, pois a disseminação d
 
 \subsection{GNU e GNU GPL}
 
-Umas das grandes conquistas de Stallman e da Fre Software Foudation (FSF), principal 
-organização dedicada a produção e à divulgação do software livre, foram o projeto GNU 
-e a licença de software General Public License (GPL).
+Umas das grandes conquistas de Stallman e da Fre Software Foudation (FSF), 
+principal organização dedicada a produção e à divulgação do software livre, 
+foram o projeto GNU e a licença de software General Public License (GPL).
 %
-O projeto GNU consistiu em desenvolver um sistema operacional baseado no sistema Unix, 
-porém livre de código proprietário, proporcionando aos usuários do Unix um sistema 
-totalmente compatível com o Unix, com seu código disponível para todos e a liberdade de 
-buscar suporte e personalizações da forma que quisessem.
+O projeto GNU consistiu em desenvolver um sistema operacional baseado no sistema 
+Unix, porém livre de código proprietário, proporcionando aos usuários do Unix um 
+sistema totalmente compatível com o Unix, com seu código disponível para todos e 
+a liberdade de buscar suporte e personalizações da forma que quisessem.
 %
-om o GNU, também foi desenvolvida a GPL, licença que dá amparo legal e formaliza a ideologia 
-de software livre, amplamente utilizada pelos software livres.
+om o GNU, também foi desenvolvida a GPL, licença que dá amparo legal e formaliza 
+a ideologia de software livre, amplamente utilizada pelos software livres.
 %
-No final do desenvolvimento do GNU, o finlandês Linus Torvalds iniciou o desenvolvimento 
-de um núcleo de sistema operacional também baseado no Unix e deu o nome do núcleo de Linux, 
-disponibilizando-o pela licença GNU GPL. Assim foi promovida a integração entre GNU e Linux, 
-criando assim o GNU/Linux, amplamente utilizado até os dias de hoje.
+No final do desenvolvimento do GNU, o finlandês Linus Torvalds iniciou o 
+desenvolvimento de um núcleo de sistema operacional também baseado no Unix e 
+deu o nome do núcleo de Linux, disponibilizando-o pela licença GNU GPL. Assim 
+foi promovida a integração entre GNU e Linux, criando assim o GNU/Linux, amplamente 
+utilizado até os dias de hoje.
 
 %------------------------------------------------------------------------------%
 
@@ -67,9 +75,9 @@ criando assim o GNU/Linux, amplamente utilizado até os dias de hoje.
 A utilização de métodos ágeis no desenvolvimento de software tem como caracteristicas 
 intrínsecas a flexibilidade e rapidez nas respostas a mudanças. 
 %
-A agilidade, para uma organização de desenvolvimento de software, é a habilidade de
-adotar e reagir rapidamente e apropriadamente a mudanças no seu ambiente e por exigências
-impostas pelos clientes~\cite{nerur2005}.
+A agilidade, para uma organização de desenvolvimento de software, é a habilidade 
+deadotar e reagir rapidamente e apropriadamente a mudanças no seu ambiente e por 
+exigênciasimpostas pelos clientes~\cite{nerur2005}.
 %
 Os métodos ágeis compartilham valores como comunicação, feedback constante, colaboração 
 com o cliente e constante adaptação são baseados no manifesto ágil. Os quatro princípios 
@@ -83,39 +91,40 @@ desta categoria:
 \item Responder as  mudanças sobre seguir um planejamento;
 \end{enumerate}
 %
-Em projetos ágeis o cliente é mais ativo durante o processo de desenvolvimento, determinando
-em conjunto com a equipe de desenvolvimento o que será desenvolvido, além de participar
-da validação. Os projetos ágeis também buscam estabelecer um tempo determinado e curto 
-para entregade novas releases do sistema, com o objetivo de trazer mais satisfação ao 
-cliente.
+Em projetos ágeis o cliente é mais ativo durante o processo de desenvolvimento, 
+determinandoem conjunto com a equipe de desenvolvimento o que será desenvolvido, 
+além de participarda validação. Os projetos ágeis também buscam estabelecer um 
+tempo determinado e curto para entregade novas releases do sistema, com o objetivo 
+de trazer mais satisfação ao cliente.
 %
-A partir destes curtos ciclos, que são as interações, a equipe de desenvolvimento deve
-se preocupar mais com a evolução dos requisitos, que pode gerar mudanças, porém mantém o 
-projetoatualizados e diminui o riscos de grandes mudanças a medida que o projeto chega ao 
-final.
+A partir destes curtos ciclos, que são as interações, a equipe de desenvolvimento 
+devese preocupar mais com a evolução dos requisitos, que pode gerar mudanças, porém 
+mantém o projetoatualizados e diminui o riscos de grandes mudanças a medida que o 
+projeto chega ao final.
 %
-Da perspectiva do produto, métodos ágeis são mais adequados quando os requisitos estão 
-emergindo e mudando rapidamente, embora não exista um consenso completo neste ponto. De 
-uma perspectiva organizacional, a aplicabilidade pode ser expressa examinando três dimensões 
-chaves da organização: cultura, pessoal e comunicação. Em relação a estas áreas inúmeros 
-fatores chave do sucesso podem ser identificados~\cite{cohen2004}.
+Da perspectiva do produto, métodos ágeis são mais adequados quando os requisitos 
+estão emergindo e mudando rapidamente, embora não exista um consenso completo 
+neste ponto. De uma perspectiva organizacional, a aplicabilidade pode ser expressa 
+examinando três dimensões chaves da organização: cultura, pessoal e comunicação. 
+Em relação a estas áreas inúmeros fatores chave do sucesso podem ser identificados~\cite{cohen2004}.
+
+%------------------------------------------------------------------------------%
 
 \subsection{Programação Extrema - XP}
 
-Um método ágil conhecido como Programação extrema, (Extreme Programming - XP) se tornou-se 
-bastante popular por utilizar práticas focadas em codificação, como programação pareada, 
-integração contínua e desenvolvimento dirigido por testes.
+Um método ágil conhecido como Programação extrema, (Extreme Programming - XP) se 
+tornou-se bastante popular por utilizar práticas focadas em codificação, como 
+programação pareada, integração contínua e desenvolvimento dirigido por testes.
 %
-O objetivo principal do XP é a excelência no desenvolvimento de software, visando um baixo 
-custo, poucos defeitos, alta produtividade e alto retorno de investimento~\cite{sato2007}.
-O XP conta com algumas práticas de desenvolvimento para dar suporte à busca pelos objetivos 
-citados, essas práticas são: refatoração, integração contínua, testes automatizados, código 
-coletivo e programação em pares.
+O objetivo principal do XP é a excelência no desenvolvimento de software, visando 
+um baixo custo, poucos defeitos, alta produtividade e alto retorno de investimento~\cite{sato2007}.
+O XP conta com algumas práticas de desenvolvimento para dar suporte à busca pelos 
+objetivos citados, essas práticas são: refatoração, integração contínua, testes 
+automatizados, código coletivo e programação em pares.
 %
 
 %------------------------------------------------------------------------------%
 
 
-%------------------------------------------------------------------------------%
 
 
