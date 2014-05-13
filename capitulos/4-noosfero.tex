@@ -1,6 +1,11 @@
 \chapter{Estudo de Caso: Noosfero}
 \label{noosfero}
 %------------------------------------------------------------------------------%
+Durante o quarto capítulo deste trabalho de conclusão de curso, discutiremos sobre 
+o ambiente de trabalho e a plataforma de desenvolvimento, chamada Noosfero, assim 
+como os testes e as funcionalidades desenvolvidas dentro do processo de colaboração 
+com esta plataforma.
+%
 Noosfero é uma plataforma desenvolvida pela Colivre (Cooperativa de Tecnologias
 Livre), possui licença AGPL e é utilizado, principalmente em universidades públicas,
 para desenvolvimento de redes colaborativas.
@@ -11,8 +16,209 @@ o framework Model-View-Controller (MVC) para aplicações web Ruby on Rails, ver
 fato de que o Ruby possui sintaxe simples, elegante e de fácil leitura, o que aumenta
 a manutenibilidade do sistema, uma característica importante num projeto de software
 livre que visa atrair desenvolvedores externos~\cite{meirelles2013}.
+
+%------------------------------------------------------------------------------%
 \section{Desenvolvimento no processo de colaboração ao Noosfero}
+Por tratar de um software livre, a plataforma Noosfero possui uma grande quantidade 
+de colaboradores, formado por equipes de desenvolvimento como na Universidade de 
+Brasília, ou por desenvolvedores independentes. Assim, para que haja sucesso na 
+colaboração, são feitas exigências durante o desenvolvimento, assim como testes 
+bem definidos para aprovar novas funcionalidade.
+%
+De acordo com os contribuidores do noosfero, a plataforma livre possui as seguintes 
+caracteristicas:
+%
+\begin{enumerate}
+\item Rede Social (três entidades: pessoas, comunidades e organizações); 
+\item  CMS: pastas, artigos, RSS, upload e publicação de imagens e arquivos; 
+\item  Blog com sistema de notificação de comentários; 
+\item  Galeria de imagens; 
+\item  e-Portfolios (individuais e de grupos); 
+\item  Compartilhar Interesses; 
+\item  Fóruns / Discussão Temática; 
+\item  Agenda de eventos compartilhadas; 
+\item  Vitrine Digital para exposição de produtos e serviços e carrinho de compras; 
+\item  Acompanhamento de atividades de usuários e grupos; 
+\item  Mensagens assíncronas e Web Chat. 
+\end{enumerate}
+%
+Além da utilização da linguagem de programação Ruby, o desenvolvimento da plataforma 
+Noosfero também se baseia em JavaScript, CSS, dentre outras linguagens, como pode-se 
+ver na figura abaixo:
+%
+\begin{figure}[h]
+    \centering
+    \includegraphics[keepaspectratio=true,scale=0.60]
+      {figuras/noosfero.eps}
+    \caption{Desenvolvimento Noosfero}
+    \label{noosfero}
+\end{figure}
+
+%------------------------------------------------------------------------------%
+\subsection{Ciclo de desenvolvimento do Noosfero}
+%
+O desenvolvimento para a plataforma Noosfero é realizado em ciclos e, pela Colivre, 
+possui as seguintes fases: desenvolvimento, release 1, release 2 e release final.
+%
+\subsubsection{Fase de Desenvolvimento}
+%
+Antes da fase de desenvolvimento for iniciada é necessário que seja feita a 
+documentação do que será desenvolvido. Os desenvolvedores responsáveis criam um 
+Action Item (Item de ação), contendo a historia de usuário ou os requisitos do novo 
+recurso. Um action item pode ser descrito como uma feature (novo recurso) ou como 
+um bug (defeito) encontrado, como demonstrado nas figuras abaixo:
+%
+\begin{figure}
+    \centering
+    \includegraphics[keepaspectratio=true,scale=0.65]
+      {figuras/noosfero_feature.eps}
+    \caption{Descrição de feature - Noosfero}
+    \label{noosfero_feature}
+\end{figure}
+%
+\begin{figure}
+    \centering
+    \includegraphics[keepaspectratio=true,scale=0.65]
+      {figuras/noosfero_bug.eps}
+    \caption{Descrição de bug - Noosfero}
+    \label{noosfero_bug}
+\end{figure}
+
+%------------------------------------------------------------------------------%
+
+Além da documentação, é necessário o envio de um email a comunidade descrevendo o 
+que será desenvolvido. A partir deste email, a comunidade irá avaliar a funcionalidade 
+descrita e decidir se é um funcionalidade importante para se incorporar ou não. 
+Este processo de avaliação tem a duração de uma semana, geralmente.
+%
+Com a aprovação da comunidade são feitas as revisões do ciclo de desenvolvimento, 
+que deve seguir os seguintes passos:
+%
+\begin{enumerate}
+\item Criar um ‘merge request’ juntamente com o código;
+\item Código é revisado pela comunidade;
+\item Código é bom? 
+\subitem Se sim:
+\subsubitem Vá para o passo 4;
+\subitem Se não:
+\subsubitem ‘Merge request’ é rejeitado e as razões por tal são comentadas e 
+respondidas.
+\subsubitem Desenvolvedores revisam o que está errado reabre atualiza o merge 
+request;
+\item Código é incluido no código principal.
+\end{enumerate}
+%------------------------------------------------------------------------------%
+\subsubsection{Fase de Release 1}
+%
+A entrega da release consiste na instalacao da nova versao do codigo no repositorio 
+de testes, assim como no código principal quando não houver mais defeitos, ou todos 
+os defeitos encontrados forem tratados devidamente. Porém se algum erro crítico for 
+encontrado e não for tratado a tempo da release final, o lançamento pode ser adiado 
+para a próxima release.
+%
+\subsubsection{Fase de Release 2}
+%
+A release 2 não é obrigatória, so ocorre se houver muitas mudanças na release 1 e 
+requerer novos testes. Vale lembrar que os procedimentos realizados para aprovar a 
+release 2 são os mesmos da release 1
+%
+\subsubsection{Release Final}
+%
+A versão final do código é lançada após todos os testes serem aprovados nas releases 
+1 e 2, assim o código pode ser atualizado para o código principal do Noosfero, 
+encerrando o ciclo de desenvolvimento.
+
+%------------------------------------------------------------------------------%
 
 \section{Testes no processo de colaboração ao Noosfero}
+%
+Os responsáveis por manter o Noosfero, pessoas que aprovam as solicitações de 
+alteração na plataforma, exigem que os plugins passem por uma bateria de testes 
+para que esses plugins tenham capacidade de ser incorporados à uma versão do 
+Noosfero, prevenindo assim uma possível  inserção de código defeituoso que possa 
+afetar o núcleo da plataforma até outros  plugins, além de manter a qualidade de 
+código no padrão desejado.
+%
+Alguns testes automatizados são realizados no noosfero para validação de novos 
+recursos de software, dentre eles estão: testes funcionais, testes de aceitação e 
+testes unitários, testes estes que são executados na própria plataforma do noosfero.
+%
+\subsection{Testes de aceitação - Cucumber}
+Os testes de aceitação, que possuem uma visão mais voltada para o usuário, fazem 
+parte de uma fase do processo de teste em que um teste de caixa-preta é realizado 
+num sistema antes de sua disponibilização. Para isso utilizamos o Cucumber, uma 
+ferramenta que pode executar documentação de funcionalidades escrita em texto puro. 
+Com base nesta especificações, o Cucumber executa testes.
+%
+O cucumber proporciona uma melhor comunicação entre equipe de desenvolvimento e 
+cliente, por utilizar uma linguagem  em texto puro.
+%
+No cucumber, uma feature (novo recurso de software) é um requisito de alto nível 
+expressado da pespectiva de uma pessoa e possui uma estrutura similar as historias 
+de usuario do XP~\cite{chelimsky2010}. Essa estrutura é proposta da seguinte forma:
+\begin{enumerate}
+\item \textbf{Titulo:} Palavra-chave ‘feature’ e um titulo curto que representa o 
+objetivo da feature.
+\item \textbf{Narrativa:} um texto curto que demonstre os cenários de execução, 
+exatamente como a narrativa de uma história de usuário:
+%FIGURA%
+%Feature: 
+%In order to
+%As a
+%I want
+%
+\item \textbf{Cenarios:} são a parte concreta de como queremos que o software se 
+comporte~\cite{chelimsky2010}, e sendo a parte essencial do teste realizado no 
+cucumber. Após a palavra-chave ‘scenario’ define-se o nome do cenário em questão:
+%FIGURA%
+%Scenario: 
+%
+\item \textbf{Passos:} Cada cenario possui uma serie de passos que demontram o seu 
+comportamento, que são linhas simples iniciadas com as seguintes palavras-chaves: 
+Given, When, Then, And, But.
+\item \textbf{Given:} Indica uma condição inicial para que o cenario seja executado, 
+trata-se das pré-condições do cenário.
+\item \textbf{When:}Indica o evento do cenário
+\item \textbf{Then:} Indica o que é esperado após o evento ocorrer.
+%FIGURA%
+%Scenario: 
+%Given 
+%And
+%When
+%Then
+%And
+\end{enumerate}
+%------------------------------------------------------------------------------%
+\subsection{Testes Funcionais}
+%
+Os testes funcionais são escritos da seguinte forma:
+%
+Setup: indica as condições inciais dos testes, setando variáveis de ambiente e de 
+configuração por exemplo.
+%FIGURA%
+%def setup
+%    @controller: AccountController.new
+%@response: AccountController::Testresponse.new
+%    @environment = Environment.default
+%end
 
+Titulo: titulo do teste iniciado com a palavra ‘should’ e finalizado com ‘do’
+%FIGURA%
+%should ‘not authenticate user’ do
+%
+Passos: código que define o comportamento do teste
+%FIGURA%
+%post :login, :user => {:login =>’someuser’, :password => ‘somepass’}
+%
+Verificação: Assertiva que verifica se a ação foi realizada como esperada.
+%FIGURA%
+%assert nil session [:user]
+
+
+%------------------------------------------------------------------------------%
 \section{Funcionalidades desenvolvidas}
+O processo de desenvolvimento de software, assim como o desenvolvimento de testes 
+deste trabalho de conclusão de curso teve seu enfoque na rede colaborativa baseada
+no noosfero desenvolvida para a Universidade de Brasília (UnB), trata-se na rede 
+chamada de Comunidade UnB, que se encontra em produção, sendo utilizada por 
+aproximadamente 160 usuários.
