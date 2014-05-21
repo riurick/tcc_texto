@@ -50,7 +50,7 @@ ver na figura abaixo:
     \centering
     \includegraphics[keepaspectratio=true,scale=0.60]
       {figuras/noosfero.eps}
-    \caption{Desenvolvimento Noosfero}
+    \caption{Desenvolvimento Noosfero - extraída do noosfero.org}
     \label{noosfero}
 \end{figure}
 
@@ -218,7 +218,108 @@ Verificação: Assertiva que verifica se a ação foi realizada como esperada.
 %------------------------------------------------------------------------------%
 \section{Funcionalidades desenvolvidas}
 O processo de desenvolvimento de software, assim como o desenvolvimento de testes 
-deste trabalho de conclusão de curso teve seu enfoque na rede colaborativa baseada
+deste trabalho de conclusão de curso teve seu enfoque na rede colaborativa baseada 
 no noosfero desenvolvida para a Universidade de Brasília (UnB), trata-se na rede 
-chamada de Comunidade UnB, que se encontra em produção, sendo utilizada por 
-aproximadamente 160 usuários.
+chamada de Comunidade UnB, que se encontra em ambiente de testes, porém disponível 
+para acesso externo, contando com aproximadamente 160 usuários ativos. A rede 
+Comunidade UnB é uma instância do Noosfero instalada através de um pacote em um 
+servidor do Centro de Difusão de Tecnologia e Conhecimetno (CDTC) da UnB.
+%
+O propósito da rede Comunidade UnB é tornar-se um ambiente de colaboração entre os 
+alunos da Universidade de Brasília, tanto de graduação quanto de pós-graduação, 
+possibilitando criação comunidades e blogs para discussões, ou a disponibilização 
+de artigos, trabalhos de graduação e pós-graduação onde qualquer membro da universidade 
+tenha acesso.
+%
+Para que este propósito seja cumprido, funcionalidades importantes do Comunidade 
+UnB precisavam ser desenvolvidas. Ao decorrer deste trabalho de graduação, foram 
+desenvolvidos, juntamente com seus respectivos testes, alguns plugins que serão 
+descritos abaixo.
+%------------------------------------------------------------------------------%
+\subsection{Plugin Ldap UnB}
+%
+Como rede colaborativa dos membros da Universidade de Brasília, o Comunidade UnB 
+necessita possuir restrição de acesso aos usuários, para que somente membros ativos 
+da Universidade tenham acesso ao conteúdo da rede colaborativa. 
+%
+Para que esta necessidade fosse satisfeita foi desenvolvido um plugin no Noosfero, 
+que efetuasse as restrições necessárias, utilizando o protocolo de autenticação da 
+UnB, o LDAP.
+%
+\textit{Lightweight Directory Access Protocol} (LDAP) é um protocolo de aplicação 
+aberto para acesso e manutenção  de serviços de informação de diretório distribuídos 
+na internet~\cite{sermersheim2006}.
+%
+Os serviços de diretório desempenham um papel importante no desenvolvimento de aplicativos 
+de intranet e Internet, permitindo o compartilhamento de informações sobre os usuários, 
+sistemas, redes, serviços e aplicações em toda a rede~\cite{oracle2000}.
+%
+Um cliente inicia uma sessão de LDAP através da ligação a um servidor LDAP, chamado 
+\textit{Directory System Agent} (DSA), por padrão, a porta TCP e UDP porta 389. Após 
+a conexão,é requerida ao servidor uma operação do cliente, e o servidor responde a 
+mesma. 
+%
+Abaixo, as operações que podem ser requeridas pelo cliente:
+%
+\begin{enumerate}
+\item \textit{startTLS}: utilização da extensão TLS (\textit{Transport Layer Security}) 
+para conexão segura;
+\item \textit{bind}: autenticar e especificar versão do protocolo LDAP;
+\item \textit{search}: busca de entradas de diretório
+\item \textit{compare}: verificar atributos em uma entrada de diretório;
+\item \textit{add}: adicionar uma nova entrada;
+\item \textit{delete}: excluir uma entrada existente;
+\item \textit{modify}: modificar  uma entrada existente;
+\item \textit{modify distinguished name (DN}: mover ou renomear uma entrada existente;
+\item \textit{abandon} : abortar uma requisição efetuada anteriormente;
+\item \textit{extended operation}: operação genérica;
+\item \textit{unbind} : finalizar conexão;
+\end{enumerate}
+%
+Para o usuário, o plugin desenvolvido modifica a seção de cadastro de novos usuários 
+e a seção de login de usuários. Na seção de cadastro o usuário agora deve cadastrar a 
+matrícula e senha que o mesmo usa no matricula web da UnB, além dos dados que já eram 
+cadastrados anteriormente. Na seção de login o usuário também pode entrar no Comunidade 
+UnB através de sua matricula e senha do matricula web da UnB (além do email e username 
+- entradas normalmente utilizadas)
+%
+Nas camadas mais inferiores, o plugin é responsável por modificar o modelo de dados do 
+sistema, para que o usuário possa assim cadastrar sua matrícula. Assim o plugin também é responsável por configurar a conexão com o LDAP server da UnB e finalmente verificar se 
+os dados do usuário estão corretos no momento do seu cadastro.
+\subsubsection{Testes com plugin ldap}
+%
+Foram realizados os seguintes testes  com o plugin ldap unb: testes funcionais, testes 
+unitários e testes de aceitação. Os testes funcionais e unitários foram executados através 
+do próprio noosfero, já os testes de aceitação foram executados com auxílio das ferramentas Cucumber e Selenium.
+%
+\subsubsection{Testes Funcionais}
+%
+Os testes funcionais do plugin ldap foram divididos em duas categorias, sendo estas compostas por testes que não dependem do LDAP está configurado e os testes que dependem do LDAP configurado. Os testes independentes do LDAP são simples, basicamente verificando as possiveis mensagem de errro ou de notificações durante o login. Os testes  que dependem do ldap verificam os seguintes fatores:
+%
+\begin{enumerate}
+\item Autenticação de usuario com ldap;
+\item Criação de usuário utilizando as propriedades do ldap;
+\item Definição de campos obrigatorios;
+\item Autenticação de usuario não registadro locamente, mas com ldap;
+\end{enumerate}
+%
+Também foram executados testes na interface de administrador do sistema, onde o usuário tem a opção de ativar o plugin e informar dados de configuração do mesmo, estes testes verificam os seguintes fatores:
+%
+\begin{enumerate}
+\item Acesso à página de administrador;
+\item Exibição de mensagens de sucesso e de erro;
+\item Atualização do ldap;
+\item Atualização do host do ldap;
+\item Atualização da porta do ldap;
+\item Atualização da conta do ldap;
+\item Atualização da senha do ldap;
+\item Atualização da base dn;
+\item Atualização do atributo de login;
+\item Atualização do atributo de email;
+\item Atualização do filtro do ldap;
+\item Atualização de TLS;
+\end{enumerate}
+%
+\subsubsection{Testes unitários}
+
+\subsubsection{Testes de aceitação}
