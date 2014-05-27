@@ -298,9 +298,12 @@ Os testes funcionais do plugin ldap foram divididos em duas categorias, sendo es
 %
 \begin{enumerate}
 \item Autenticação de usuario com ldap;
+\item Autenticação de usuário a partir da sua matrícula;
+\item Exibição de mensagens de logs
 \item Criação de usuário utilizando as propriedades do ldap;
-\item Definição de campos obrigatorios;
-\item Autenticação de usuario não registadro locamente, mas com ldap;
+\item Não autenticação de usuário registadro localmente, mas não com ldap;
+\item Não autenticação de usuário não registrado localmente, mas com ldap;
+\item Criação e autenticação de um novo usuário a partir do plugin ldap;
 \end{enumerate}
 %
 Também foram executados testes na interface de administrador do sistema, onde o usuário tem a opção de ativar o plugin e informar dados de configuração do mesmo, estes testes verificam os seguintes fatores:
@@ -319,7 +322,10 @@ Também foram executados testes na interface de administrador do sistema, onde o
 \item Atualização do filtro do ldap;
 \item Atualização de TLS;
 \end{enumerate}
-%
-\subsubsection{Testes unitários}
 
+% -------------PENSAR EM IMAGENS-----------------------%
+
+\subsubsection{Testes unitários}
+%
+Os testes unitários do plugin verificam a definição dos parâmetros do ldap, verificação esta que é realizada tanto na passagem dos parâmentros quanto na verificação dos valores de default.
 \subsubsection{Testes de aceitação}
