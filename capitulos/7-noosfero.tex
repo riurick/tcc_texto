@@ -46,7 +46,7 @@ Além da utilização da linguagem de programação Ruby, o desenvolvimento da p
 Noosfero também se baseia em JavaScript, CSS, dentre outras linguagens, como pode-se 
 ver na figura abaixo:
 %
-\begin{figure}[h]
+\begin{figure}[!h]
     \centering
     \includegraphics[keepaspectratio=true,scale=0.60]
       {figuras/noosfero.eps}
@@ -68,7 +68,7 @@ Action Item (Item de ação), contendo a historia de usuário ou os requisitos d
 recurso. Um action item pode ser descrito como uma feature (novo recurso) ou como 
 um bug (defeito) encontrado, como demonstrado nas figuras abaixo:
 %
-\begin{figure}
+\begin{figure}[!h]
     \centering
     \includegraphics[keepaspectratio=true,scale=0.65]
       {figuras/noosfero_feature.eps}
@@ -76,7 +76,7 @@ um bug (defeito) encontrado, como demonstrado nas figuras abaixo:
     \label{noosfero_feature}
 \end{figure}
 %
-\begin{figure}
+\begin{figure}[!h]
     \centering
     \includegraphics[keepaspectratio=true,scale=0.65]
       {figuras/noosfero_bug.eps}
@@ -331,19 +331,21 @@ Os testes unitários do plugin verificam a definição dos parâmetros do ldap, 
 
 Com o auxilio de uma ferramenta de análise de código para Ruby chamada Rcov, foi obtida a taxa de cobertura de código do plugin desenvolvido, além de alguns dados sobre a execução dos testes que seguem abaixo:
 \begin{enumerate}
-\item Quantidade de testes executados: 96
-\item Quantidade de assertivas executadas: 111
-\item Quantiadde de falhas obtidas: 0
+\item Quantidade de testes executados: 96 testes
+\item Quantidade de assertivas executadas: 111 assertivas
+\item Quantiadde de falhas obtidas: 0 falhas
 \item Tempo de execução dos testes: 7.8 segundos
 \end{enumerate}
 %
-\begin{figure}
+Na imagem abaixo existem dois graficos de cobertura de codigo, o primeiro definido como \textit{'total coverage'} representa a contagem realizada com as linhas em branco e os comentários do código, já o \textit{'code coverage'} representa a contagem realizada sem as linhas em branco e os comentários do código.
+%
+\begin{figure}[!h]
     \centering
-    \includegraphics[keepaspectratio=true,scale=0.65]
+    \includegraphics[keepaspectratio=false,scale=0.45]
       {figuras/cobertura_teste.eps}
     \caption{Cobertura de código do Plugin LdapUnb}
     \label{noosfero_bug}
 \end{figure}
 %
-Na imagem acima existem dois graficos de cobertura de codigo, o primeiro definido como \textit{'total coverage'} representa a contagem realizada com as linhas em branco e os comentários do código, já p \textit{'code coverage'} representa a contagem realizada sem as linhas em branco e os comentários do código.
+
 \subsubsection{Testes de aceitação}
