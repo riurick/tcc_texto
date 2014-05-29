@@ -4,11 +4,19 @@
 
 	Para entender o que é usabilidade e como ela está inserida no ciclo de vida do desenvolvimento de software precisamos compreender as relações que o termo tem com as diversas áreas que a envolve. 
 
-	A usabilidade é um termo antigo que começou a ser utilizado pela Ciência Cognitiva e depois pela Psicologia e Ergonomia em substituição ao termo “amigável”. ~\cite{dias2006} 
+\subsection{Usabilidade}
 
-	A usabilidade é um atributo de qualidade relacionado à facilidade de uso de algo. Refere-se a rapidez com que os usuários podem aprender a usar alguma coisa, a eficiência deles ao usá-la, o quanto lembram daquilo, seu grau de propensão a erros e o quanto gostam de utilizá-la. ~\cite{nielsen2007} 
+	A usabilidade é um termo antigo que começou a ser utilizado pela Ciência Cognitiva e depois pela Psicologia e Ergonomia em substituição ao termo “amigável” ~\cite{dias2006}.
 
-	Preece ~\cite{preece2007} define usabilidade como o fator que assegura que um produto ou serviço é fácil de usar, eficiente e agradável a partir do ponto de vista do usuário.
+	A usabilidade é um atributo de qualidade relacionado à facilidade de uso de algo. Refere-se a rapidez com que os usuários podem aprender a usar alguma coisa, a eficiência deles ao usá-la, o quanto lembram daquilo, seu grau de propensão a erros e o quanto gostam de utilizá-la ~\cite{nielsen2007}. .
+
+	Uma outra definição de usabilidade é a capacidade do produto de software ser compreendido, aprendido, operado e atraente ao usuário, quando usado sob condições específicas. ISO/IEC 9126-1 (2003)
+
+	A Qualidade em uso engloba o contexto do ambiente de trabalho para caracterizar a satisfação de uso, focando não apenas no usuário, mas em seu comportamento ao interagir com um sistema computacional.
+
+%Falar da qualidade em uso
+
+	Ainda usabilidade é definida como o fator que assegura que um produto ou serviço é fácil de usar, eficiente e agradável a partir do ponto de vista do usuário ~\cite{preece2007}.
 
 	Segundo a ISO 9241, usabilidade é a capacidade de um produto ser usado por usuários específicos para alcançar objetivos específicos com eficácia, eficiência e satisfação em um contexto de uso específico.
 
@@ -26,7 +34,7 @@
     \label{tdd_ciclo}
 \end{figure}
 
-	A 
+
 
 \subsection{Interação Humano Computador}
 
@@ -46,6 +54,10 @@ O arquiteto de informação deve ser um profissional multidisciplinar com conhec
 \subsection{Ergonomia}
 
 A ergonomia está na origem da usabilidade, pois visa proporcionar eficácia e eficiência, além de bem-estar e saúde do usuário através da adaptação do trabalho ao homem. O seu objetivo é garantir que sistemas e dispositivos estejam adaptados às maneiras de pensar, agir e trabalhar do usuário. ~\cite{cybis2010}
+
+\subsection{Design de Interaçao}
+
+	
 
 
 \subsection{Engenharia de Usabilidade}
@@ -91,12 +103,11 @@ Para a Associação de Profissionais de usabilidade (UPA), a usabilidade inclui 
 
 \section{Design Centrado no usuário}
 
-É um processo de criação que se baseia nas necessidades, desejos e limitações das pessoas. O usuário deve está presente no ínicio ao fim do projeto.
-O DCU deve-se iniciar com usuários e suas necessidades em vez de começar com a tecnologia.()
-
 Sabemos que a ciência experimental que utiliza-se dos métodos empíricos tradicionais para coletar dados e testar hipóteses sobre o comportamento humano aplicam-se de várias técnicas em nome de pessoas.Essa abordagem é preocupada com os usuários quando as representa mas ela não leva em conta diversos aspectos do usuário real, por não envolvê-los no processo. ~\cite{eason1995} afirma que não basta fazer para o usuário, é preciso fazer com o usuário. 
 
 No Design Centrado no usuário (DCU) diferente dos métodos empíricos tradicionais que tem o usuário apenas como  referência, no DCU o usuário tem que ser o elemento central e é necessário envolvê-lo desde o inicio do processo.
+
+DCU é um processo de criação que se baseia nas necessidades, desejos e limitações das pessoas. O usuário deve está presente no ínicio ao fim do projeto.Deve-se iniciar com usuários e suas necessidades em vez de começar com a tecnologia.()
 
 Gould e Lewis estabeleceram alguns princípios para o desenvolvimento centrado no usuário na decada 70 que são utilizados até hoje que são: Foco desde o inicio nos usuários e nas tarefas, medidas empiricas e design interativo.
 
@@ -104,9 +115,14 @@ Gould e Lewis estabeleceram alguns princípios para o desenvolvimento centrado n
 
 O DCU surgiu da IHC e consiste em uma metodologia de design de software para 
 
+
+
 %	Detalhar o fluxo do DCU
 
 Para criar produtos que os usuário amem, é necessário incluir os usuários no processo de criação dos produtos \cite{travis2013}
+
+
+
 
 \section{Métodos Agéis e o DCU}
 
@@ -126,10 +142,36 @@ As características da abordagem ágil facilitam na utilização da ergonomia e 
 \item As avaliações de ergonomia, testes de usabilidade e especificações de revisões de interface devem ser realizados rapidamente.
 \end{itemize}
 
+Pode ser definido então o DCU ágil como a pŕatica de design centrado no usuário quando conduzida dentro de uma metodologia ou filosofia de desenvovlimento ágil de software.(Ana Paula)
+
+O grande desafio do DCU ágil é de encontrar a melhor maneira de realizar as atividades de pesquisa do usuário, design de versões que atendem as necessidades dos usuário, construção de versões interativas e realização de testes de usabilidade, dentro de um ambiente de desenvolvimento com métodos ágeis, tendo a participação dos usuários tipicos em todas as atividades. % (Copia da Ana Paula) - Verificar como reescrever.
+
+Pesquisas relatam que praticantes de UX que passaram a trabalhar em ambientes ágeis não querem mais retornar ao método antigo de desenvolvimento baseado no modelo cascata. Em média, essas equipes levam de 6 a 12 meses para se adptar ao novo ambiente. (Ana Paula)
+
+O termo experiência do usuário é utilizado na comunidade ágil para qualquer atividade relacionada com a pesquisa do usuário, DCU, usabilidade, design de interfaces.A utilização do termo não indica que eles realizam todas as atividades de UX{Ana Paula}
+
+
+DCU e XP
+
+Foram encontrados alguns estudos que descrevem a integração do IHC com as práticas de Programação Extrema.
+
+McInerney e Maurer mostraram que é possivel unir as duas abordagens.
+
+O processo de usabilidade ágil é integrar os instrumentos de IHC dentro dos processos clássico de XP.(
+
+
+
+
+
+
+	
+
 Citar a filosofia de trabalho que a  ISO 13407 define para as empresas que vise a usabilidade.
 
-Modelos de Ciclo de Vida
 
+
+Modelos de Ciclo de Vida
+DCU é um processo de criação que se baseia nas necessidades, desejos e limitações das pessoas. O usuário deve está presente no ínicio ao fim do projeto.Deve-se iniciar com usuários e suas necessidades em vez de começar com a tecnologia.()
 	Para que possamos conhecer o processo completo de desenvolvimento é importante considerar as como as atividades se relacionam. Entender que atividades estão envolvidas no design de interação é o primeiro passo para estar apto à faze-lo.
 	O termo modelo de ciclo de vida é utilizado para representar um modelo que capta um conjunto de atividades e a maneira como elas se relacionam. ~\cite{preece2005}
 
@@ -141,12 +183,18 @@ Modelos de Ciclo de Vida
 \item Ciclo de vida de Engenharia de Usabilidade
 \end{itemize}
 
+A ISO 13405 define um processo geral para incluir atividades centradas em humano através do ciclo de vida de desenvolvimento sem especificar métodos exatos.{Ana Paula}
+
+
+
 
 O ciclo de vida da Engenharia de Usabilidade
 
 	
 	O ciclo de vida de engenharia de usabilidade foi proposto por Deborah Mayhew em 1999. 
 A ISO 13407 também propõe um modelo de ciclo de concepção centrado no usuário. Ambos possuem a mesma estrutura e propõem ciclos de atividades de análise, projeto, construção e testes. ~\cite{cybis2010}
+
+	
 
 	O ciclo proposto por Mayhew oferece uma visão holística acerca dessa engenharia e uma descrição detalhada de como podemos realizar os testes de usabilidade. ~\cite{preece2005}
 
@@ -169,5 +217,7 @@ B. Projeto, Testes e Implementação
 
 C. Instalação
 
+
+ISO 13407
 
 
