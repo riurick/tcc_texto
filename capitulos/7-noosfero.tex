@@ -327,25 +327,19 @@ Também foram executados testes na interface de administrador do sistema, onde o
 
 \subsubsection{Testes unitários}
 %
-Os testes unitários do plugin verificam a definição dos parâmetros do ldap, verificação esta que é realizada tanto na passagem dos parâmentros quanto na verificação dos valores de default.
+Os testes unitários do plugin verificam a definição dos parâmetros do ldap, verificação esta que é realizada tanto na passagem dos parâmentros quanto na verificação dos valores de default, outra verificação destes parâmetros que também é feita é a tentativa de criação de uma autenticação no ldap. Dentre estes parâmetros estão os seguintes:
 
-Com o auxilio de uma ferramenta de análise de código para Ruby chamada Rcov, foi obtida a taxa de cobertura de código do plugin desenvolvido, além de alguns dados sobre a execução dos testes que seguem abaixo:
-\begin{enumerate}
-\item Quantidade de testes executados: 96 testes
-\item Quantidade de assertivas executadas: 111 assertivas
-\item Quantiadde de falhas obtidas: 0 falhas
-\item Tempo de execução dos testes: 7.8 segundos
-\end{enumerate}
-%
-Na imagem abaixo existem dois graficos de cobertura de codigo, o primeiro definido como \textit{'total coverage'} representa a contagem realizada com as linhas em branco e os comentários do código, já o \textit{'code coverage'} representa a contagem realizada sem as linhas em branco e os comentários do código.
-%
-\begin{figure}[!h]
-    \centering
-    \includegraphics[keepaspectratio=false,scale=0.45]
-      {figuras/cobertura_teste.eps}
-    \caption{Cobertura de código do Plugin LdapUnb}
-    \label{noosfero_bug}
-\end{figure}
-%
+\begin{itemize}
+\item Host do ldap;
+\item Porta do ldap;
+\item Conta do ldap;
+\item Senha da conta;
+\item Base DN do ldap;
+\item atributo de login do ldap;
+\item atributo de nome do ldap;
+\item atributo de email do ldap;
+\item filtros do ldap;
+\item TLS do ldap;
+\end{itemize}
 
-\subsubsection{Testes de aceitação}
+Não foram desenvolvidos testes de aceitação para o plugin LdapUnb, pelo fato de ser uma aplicação que opera a maior parte das suas funcionalidades nas camadas mais baixas do sistema, alterando muito pouco a percepção do usuário.
