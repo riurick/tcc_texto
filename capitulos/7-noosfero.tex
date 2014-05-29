@@ -328,4 +328,22 @@ Também foram executados testes na interface de administrador do sistema, onde o
 \subsubsection{Testes unitários}
 %
 Os testes unitários do plugin verificam a definição dos parâmetros do ldap, verificação esta que é realizada tanto na passagem dos parâmentros quanto na verificação dos valores de default.
+
+Com o auxilio de uma ferramenta de análise de código para Ruby chamada Rcov, foi obtida a taxa de cobertura de código do plugin desenvolvido, além de alguns dados sobre a execução dos testes que seguem abaixo:
+\begin{enumerate}
+\item Quantidade de testes executados: 96
+\item Quantidade de assertivas executadas: 111
+\item Quantiadde de falhas obtidas: 0
+\item Tempo de execução dos testes: 7.8 segundos
+\end{enumerate}
+%
+\begin{figure}
+    \centering
+    \includegraphics[keepaspectratio=true,scale=0.65]
+      {figuras/cobertura_teste.eps}
+    \caption{Cobertura de código do Plugin LdapUnb}
+    \label{noosfero_bug}
+\end{figure}
+%
+Na imagem acima existem dois graficos de cobertura de codigo, o primeiro definido como \textit{'total coverage'} representa a contagem realizada com as linhas em branco e os comentários do código, já p \textit{'code coverage'} representa a contagem realizada sem as linhas em branco e os comentários do código.
 \subsubsection{Testes de aceitação}
