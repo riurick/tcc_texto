@@ -188,10 +188,26 @@ trata-se das pré-condições do cenário.
 %Then
 %And
 \end{enumerate}
-%------------------------------------------------------------------------------%
-\subsection{Testes Funcionais}
+Além do Cucumber, também é utilizado um software chamado selenium, que é uma ferramenta
+usada para desenvolver casos de testes a partir de web browsers, como o Mozilla Firefox. 
+Estas duas ferramentas, Cucumber e Selenium, utilizadas em conjunto, proporciona ao desenvolvedor
+a facilidade ao escrever os casos de testes em linguagem pura simular a execução automática
+destes testes em um web browser.
 %
-Os testes funcionais são escritos da seguinte forma:
+Porém o Cucumber não faz tudo em linguagem pura, é necessário que outro código seja desenvolvido,
+em Ruby, fazendo par por baixo dos panos com a linguagem pura e executando os testes~\cite{akita2011}.
+%FIGURA%
+
+%------------------------------------------------------------------------------%
+\subsection{Testes Funcionais e Unitários}
+%
+Os testes funcionais tem como objetivo no desenvolvimento na plataforma Noosfero, verificar
+a integraçao da aplicação desenvolvida.
+%
+Os testes unitários são executados em conjunto com os testes funcionais, porém  com o objetivo
+de verificar trechos menores de códigos.
+%
+Assim os testes funcionais e unitários são escritos da seguinte forma:
 %
 Setup: indica as condições inciais dos testes, setando variáveis de ambiente e de 
 configuração por exemplo.
@@ -213,7 +229,7 @@ Passos: código que define o comportamento do teste
 Verificação: Assertiva que verifica se a ação foi realizada como esperada.
 %FIGURA%
 %assert nil session [:user]
-
+%
 
 %------------------------------------------------------------------------------%
 \section{Funcionalidades desenvolvidas}
@@ -348,6 +364,45 @@ Não foram desenvolvidos testes de aceitação para o plugin LdapUnb, pelo fato 
 
 Este plugin também foi desenvolvido para a plataforma Noosfero, porém em uma aplicãção diferente, o Portal da FGA. A ideia deste plugin surgiu da necessidade de existir um ambiente virtual em que os trabalhos de conclusão de curso pudessem ser submetidos aos professores e compartilhados com a comunidade acadêmica, buscando assim manter uma forma de versionamento dos trabalhos desenvolvidos.
 %
-Este plugin possui algumas funcionalidades específicas como possibilitar que os usuários envolvidos serjam norificados via email sobre a submissão de um certo trabalho. Para tal foi necessário subir um servidor de email para executar estas notificações, assim como criar uma página no portal para que o usuário pudesse submeter este trabalho.
+Este plugin é responsável por criar uma atribuição de trabalhos, chamada de \textit{work assignment}. Atribuiçao que possui algumas funcionalidades específicas como possibilitar que os usuários envolvidos sejam notificados via email sobre a submissão de um certo trabalho. Para tal foi necessário subir um servidor de email para executar estas notificações, assim como criar uma página no Portal FGA para que o usuário pudesse submeter seu trabalho.
 %
-Para validar o desenvolvimento desta funcionalidade foram desenvolvidos os seguintes testes: funcionais, unitário e de aceitação
+Para validar o desenvolvimento desta funcionalidade foram desenvolvidos os seguintes tipos de testes: funcionais, unitário e de aceitação.
+\subsubsection{Testes Funcionais}
+
+Os testes funcionais do plugin para envio de TCC são responsáveis por verificar os seguintes fatores:
+
+\begin{itemize}
+\item Permissão para enviar trabalhos somente para usuários autorizados;
+\item Capacidade de enviar um arquivo ou mais;
+\item Capacidade de atualizar um arquivo enviado;
+\item Validação de arquivos;
+\item Capacidade de enviar emailsaos usuários envolvidos;
+\item Tratamento do redirecionamento das páginas;
+\item Capacidade de deletar arquivos por usuários autorizados;
+\item Capacidade de carregar arquivos por usuários envolvidos;
+\end{itemize}
+
+\subsubsection{Testes Unitários}
+
+Os testes unitários do plugin para envio de TCC são responsáveis por verificar os seguintes parâmetros:
+
+\begin{itemize}
+\item Nome do plugin;
+\item Descrição do plugin;
+\item Possibilidade de submissão de um arquivo por um usuário;
+\item Nome do arquivo;
+\item Versão do arquivo;
+\item Autor do arquivo;
+\end{itemize}
+
+\subsubsection{Testes de Aceitação}
+
+Os testes de aceitação do plugin para envio de TCC são responsáveis por verificar os seguintes fatores:
+
+\begin{itemize}
+\item Capacidade de criar, editar e deletar uma atribuição de trabalhos (work assignment);
+\item Validação de parâmetros durante a criação e edição de uma atribuição de trabalhos;
+\item Capacidade de enviar e receber emails sobre o envio de um trabalho;
+\item Capacidade de postar comentários sobre uma atribuição de trabalhos;
+\item Capacidade de reportar problemas;
+\end{itemize}
