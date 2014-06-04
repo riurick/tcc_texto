@@ -8,7 +8,7 @@ com esta plataforma.
 %
 Noosfero é uma plataforma desenvolvida pela Colivre (Cooperativa de Tecnologias
 Livre), possui licença AGPL e é utilizado, principalmente em universidades públicas,
-para desenvolvimento de redes colaborativas.
+para desenvolvimento de redes colaborativas. %Referenciar%
 %
 O Noosfero foi desenvolvido na linguagem de programação Ruby, versão 1.8.7, e utiliza
 o framework Model-View-Controller (MVC) para aplicações web Ruby on Rails, versão 
@@ -23,7 +23,7 @@ Por tratar de um software livre, a plataforma Noosfero possui uma grande quantid
 de colaboradores, formado por equipes de desenvolvimento como na Universidade de 
 Brasília, ou por desenvolvedores independentes. Assim, para que haja sucesso na 
 colaboração, são feitas exigências durante o desenvolvimento, assim como testes 
-bem definidos para aprovar novas funcionalidade.
+bem definidos para aprovar novas funcionalidade.%Referenciar%
 %
 De acordo com os contribuidores do noosfero, a plataforma livre possui as seguintes 
 caracteristicas:
@@ -66,7 +66,7 @@ Antes da fase de desenvolvimento for iniciada é necessário que seja feita a
 documentação do que será desenvolvido. Os desenvolvedores responsáveis criam um 
 Action Item (Item de ação), contendo a historia de usuário ou os requisitos do novo 
 recurso. Um action item pode ser descrito como uma feature (novo recurso) ou como 
-um bug (defeito) encontrado, como demonstrado nas figuras abaixo:
+um bug (defeito) encontrado, como demonstrado nas figuras abaixo:%Referenciar%
 %
 \begin{figure}[!h]
     \centering
@@ -89,7 +89,7 @@ um bug (defeito) encontrado, como demonstrado nas figuras abaixo:
 Além da documentação, é necessário o envio de um email a comunidade descrevendo o 
 que será desenvolvido. A partir deste email, a comunidade irá avaliar a funcionalidade 
 descrita e decidir se é um funcionalidade importante para se incorporar ou não. 
-Este processo de avaliação tem a duração de uma semana, geralmente.
+Este processo de avaliação tem a duração de uma semana, geralmente.%Referenciar%
 %
 Com a aprovação da comunidade são feitas as revisões do ciclo de desenvolvimento, 
 que deve seguir os seguintes passos:
@@ -114,19 +114,19 @@ A entrega da release consiste na instalacao da nova versao do codigo no reposito
 de testes, assim como no código principal quando não houver mais defeitos, ou todos 
 os defeitos encontrados forem tratados devidamente. Porém se algum erro crítico for 
 encontrado e não for tratado a tempo da release final, o lançamento pode ser adiado 
-para a próxima release.
+para a próxima release.%Referenciar%
 %
 \subsubsection{Fase de Release 2}
 %
 A release 2 não é obrigatória, so ocorre se houver muitas mudanças na release 1 e 
 requerer novos testes. Vale lembrar que os procedimentos realizados para aprovar a 
-release 2 são os mesmos da release 1
+release 2 são os mesmos da release 1%Referenciar%
 %
 \subsubsection{Release Final}
 %
 A versão final do código é lançada após todos os testes serem aprovados nas releases 
 1 e 2, assim o código pode ser atualizado para o código principal do Noosfero, 
-encerrando o ciclo de desenvolvimento.
+encerrando o ciclo de desenvolvimento.%Referenciar%
 
 %------------------------------------------------------------------------------%
 
@@ -209,30 +209,34 @@ Os testes unitários são executados em conjunto com os testes funcionais, poré
 de verificar trechos menores de códigos.
 %
 Assim os testes funcionais e unitários são escritos da seguinte forma:
-%
-Setup: indica as condições inciais dos testes, setando variáveis de ambiente e de 
-configuração por exemplo.
-IMAGEM
-%def setup
-%    @controller: AccountController.new
-%@response: AccountController::Testresponse.new
-%    @environment = Environment.default
-%end
 
-Titulo: titulo do teste iniciado com a palavra ‘should’ e finalizado com ‘do’
-IMAGEM
-%should ‘not authenticate user’ do
-%
-Passos: código que define o comportamento do teste
-IMAGEM
-%post :login, :user => {:login =>’someuser’, :password => ‘somepass’}
-%
-Verificação: Assertiva que verifica se a ação foi realizada como esperada.
-IMAGEM
-%assert nil session [:user]
-%
+\textbf{Setup:} indica as condições inciais dos testes, setando variáveis de ambiente e de 
+configuração por exemplo.
+
+\begin{figure}[!h]
+    \centering
+    \includegraphics[keepaspectratio=true,scale=0.50]
+      {figuras/teste_setup.eps}
+    \caption{Descrição do setup de um teste}
+    \label{nosfero_setup}
+\end{figure}
+
+\textbf{Título:} titulo do teste iniciado com a palavra ‘should’ e finalizado com ‘do’
+
+\textbf{Passos:} código que define o comportamento do teste
+
+\textbf{Verificação:} Assertiva que verifica se a ação foi realizada como esperada.
+
+\begin{figure}[!h]
+    \centering
+    \includegraphics[keepaspectratio=true,scale=0.55]
+      {figuras/teste_should.eps}
+    \caption{Código de teste}
+    \label{noosfero_should}
+\end{figure}
 
 %------------------------------------------------------------------------------%
+
 \section{Funcionalidades desenvolvidas}
 O processo de desenvolvimento de software, assim como o desenvolvimento de testes 
 deste trabalho de conclusão de curso teve seu enfoque na rede colaborativa baseada 
@@ -303,6 +307,7 @@ UnB através de sua matricula e senha do matricula web da UnB (além do email e 
 Nas camadas mais inferiores, o plugin é responsável por modificar o modelo de dados do 
 sistema, para que o usuário possa assim cadastrar sua matrícula. Assim o plugin também é responsável por configurar a conexão com o LDAP server da UnB e finalmente verificar se 
 os dados do usuário estão corretos no momento do seu cadastro.
+
 \subsubsection{Testes com plugin ldap}
 %
 Foram realizados os seguintes testes  com o plugin ldap unb: testes funcionais, testes 
