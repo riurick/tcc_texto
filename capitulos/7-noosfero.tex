@@ -161,7 +161,7 @@ de usuario do XP~\cite{chelimsky2010}. Essa estrutura é proposta da seguinte fo
 objetivo da feature.
 \item \textbf{Narrativa:} um texto curto que demonstre os cenários de execução, 
 exatamente como a narrativa de uma história de usuário:
--IMAGEM-
+IMAGEM
 %Feature: 
 %In order to
 %As a
@@ -170,7 +170,7 @@ exatamente como a narrativa de uma história de usuário:
 \item \textbf{Cenarios:} são a parte concreta de como queremos que o software se 
 comporte~\cite{chelimsky2010}, e sendo a parte essencial do teste realizado no 
 cucumber. Após a palavra-chave ‘scenario’ define-se o nome do cenário em questão:
--IMAGEM-
+IMAGEM
 %Scenario: 
 %
 \item \textbf{Passos:} Cada cenario possui uma serie de passos que demontram o seu 
@@ -181,7 +181,7 @@ trata-se das pré-condições do cenário.
 \item \textbf{When:}Indica o evento do cenário
 \item \textbf{Then:} Indica o que é esperado após o evento ocorrer.
 
--IMAGEM-
+IMAGEM
 %Scenario: 
 %Given 
 %And
@@ -197,7 +197,7 @@ destes testes em um web browser.
 %
 Porém o Cucumber não faz tudo em linguagem pura, é necessário que outro código seja desenvolvido,
 em Ruby, fazendo par por baixo dos panos com a linguagem pura e executando os testes~\cite{akita2011}.
--IMAGEM-
+IMAGEM
 
 %------------------------------------------------------------------------------%
 \subsection{Testes Funcionais e Unitários}
@@ -212,7 +212,7 @@ Assim os testes funcionais e unitários são escritos da seguinte forma:
 %
 Setup: indica as condições inciais dos testes, setando variáveis de ambiente e de 
 configuração por exemplo.
--IMAGEM-
+IMAGEM
 %def setup
 %    @controller: AccountController.new
 %@response: AccountController::Testresponse.new
@@ -220,15 +220,15 @@ configuração por exemplo.
 %end
 
 Titulo: titulo do teste iniciado com a palavra ‘should’ e finalizado com ‘do’
--IMAGEM-
+IMAGEM
 %should ‘not authenticate user’ do
 %
 Passos: código que define o comportamento do teste
--IMAGEM-
+IMAGEM
 %post :login, :user => {:login =>’someuser’, :password => ‘somepass’}
 %
 Verificação: Assertiva que verifica se a ação foi realizada como esperada.
--IMAGEM-
+IMAGEM
 %assert nil session [:user]
 %
 
