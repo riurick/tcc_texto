@@ -20,13 +20,16 @@
 
 	Ainda usabilidade é definida como o fator que assegura que um produto ou serviço é fácil de usar, eficiente e agradável a partir do ponto de vista do usuário ~\cite{preece2007}.
 
-	Segundo a ISO 9241, usabilidade é a capacidade de um produto ser usado por usuários específicos para alcançar objetivos específicos com eficácia, eficiência e satisfação em um contexto de uso específico.
+	Segundo a ISO 9241, usabilidade é a capacidade de um produto ser usado por usuários específicos para alcançar objetivos específicos com eficácia, eficiência e satisfação em um contexto de uso específico.A iso define alguns termos que são amplamente utilizados quando se fala em usabilidade.
 
-	\textbf{Eficácia} é a capacidade que os sistemas conferem a diferentes tipos de usuários para alcançar seus objetivos em número e com a qualidade necessária. (Cybis)
+\begin{itemize}
+\item \textbf{Eficácia} é a capacidade que os sistemas conferem a diferentes tipos de usuários para alcançar seus objetivos em número e com a qualidade necessária. 
 
-	\textbf{Eficiência} é a quantidade de recursos que os sistemas solicitam aos usuários para a observação de seu objetivos com o sistema. ~\cite{cybis2010ergonomia}
+\item \textbf{Eficiência} é a quantidade de recursos que os sistemas solicitam aos usuários para a observação de seu objetivos com o sistema.
 
-	\textbf{Satisfação} é a emoção que os sistemas proporciona, aos usuários em face dos resultados obtidos e dos recursos necessários para alcançar tais objetivos. (Cybis)
+\item \textbf{Satisfação} é a emoção que os sistemas proporciona, aos usuários em face dos resultados obtidos e dos recursos necessários para alcançar tais objetivos. 
+\end{itemize}
+
 
 \begin{figure}[h]
     \centering
@@ -149,50 +152,55 @@ Para a Associação de Profissionais de usabilidade (UPA), a usabilidade inclui 
 
 	O ciclo de vida de engenharia de usabilidade foi proposto por Deborah Mayhew em 1999. A ISO 13407 também propõe um modelo de ciclo de concepção centrado no usuário. Ambos possuem a mesma estrutura e propõem ciclos de atividades de análise, projeto, construção e testes ~\cite{cybis2010}.
 
-	O ciclo proposto por Mayhew oferece uma visão holística acerca dessa engenharia e uma descrição detalhada de como podemos realizar os testes de usabilidade ~\cite{preece2005}.
+	O ciclo proposto por ~\citeonline{mayhew1999} oferece uma visão holística acerca dessa engenharia e uma descrição detalhada de como podemos realizar os testes de usabilidade ~\cite{preece2005}.
 
-A. Análise de Requisitos
-
-	Mayhew propõe quatro tipos de atividades de análise de requisitos: 
+	A primeira etapa do ciclo é a análise dos requisitos.Mayhew propõe quatro tipos de atividades de análise de requisitos que são detalhadas abaixo:
 
 \begin{itemize}
-\item Análise do perfil do usuário
-\item Análise do contexto da tarefa
-\item Análise das possibilidades e restrições da plataforma
-\item Análise dos princípios gerais para o projeto
+\item \textbf{Análise do perfil do usuário:} Os projetistas devem conhecer os atributos pessoais e suas habilidades para cada tipo de usuário identificado. 
+	
+\item \textbf{Análise do contexto da tarefa:} Os projetistas devem conhecer os objetivos e resultados, a estrutura, duração, custos e etc. de cada tarefa a ser realizada.
+
+\item \textbf{Análise das possibilidades e restrições da plataforma:} Verificar quais são as possibilidades e restrições em termos de equipamentos, sistems operacionais e etc.
+
+\item \textbf{Análise dos princípios gerais para o projeto:} Atividade relacionada à pesquisa e catalogação dos conhecimentos de ergonomia disponível para a concepção da interface no tipo de contexto de uso.
+
 \end{itemize}
+
+%inserir figura de requisitos ?
 
 	Depois da análise dos requisitos é preciso especificar as metas de usabilidade do futuro sistema. A norma ISO 9241:11 orienta como podemos especificar essas metas.
 
-B. Projeto, Testes e Implementação
+	%falar sobre as medidas de usabilidade geral? fatores de usabilidade ou ter uma seção somente para falar das métricas?
 
-	
+	Na etapa de projetos, testes e implementação, Mayhew propôs que os ciclos devem se repetir de forma a tratar três nivéis de aspectos de uma interface: No primeiro nível sendo a interface definida conceitualmente; no segundo nível refere-se as definições em termos de estilo; e no terceiro nível as interações e componentes relacionados com os contextos das tarefas especiais.A figura mostra o passo a passo da etapa de projetos/testes e implementação.
+	A última fase é a de instalação do sistema onde depois que o usuário já estiver acostumado com o sistema ele pode dar um feedback sobre a usabilidade do produto de forma mais fidedigna por já ser um "especialista" da ferramenta como cita a autora. 
 
-C. Instalação
+%inserir figura.
+
+	Uma das técnicas utilizadas para coletar feedback são os testes de usabilidade no local do trabalho dos usuários ou utilizando métodos de análise como entrevistas, observações, questionários, grupos de discussões. Esses métodos serão detalhados no pŕoximo cápitulo.
 
 
 \subsection{Design Centrado no usuário - ISO/IEC 13407}
 
+O DCU surgiu da IHC e consiste em uma metodologia de design de software para desenvolvedores e designers.
+
 Sabemos que a ciência experimental que utiliza-se dos métodos empíricos tradicionais para coletar dados e testar hipóteses sobre o comportamento humano aplicam-se de várias técnicas em nome de pessoas.Essa abordagem é preocupada com os usuários quando as representa mas ela não leva em conta diversos aspectos do usuário real, por não envolvê-los no processo. Não basta fazer para o usuário, é preciso fazer com o usuário ~\cite{eason1995}. 
 
-No Design Centrado no usuário (DCU) diferente dos métodos empíricos tradicionais que tem o usuário apenas como  referência, no DCU o usuário tem que ser o elemento central e é necessário envolvê-lo do início ao fim do projeto.Baseia-se nas necessidades, desejos e limitações das pessoas. O usuário deve está presente no ínicio ao fim do projeto.Deve-se iniciar com usuários e suas necessidades em vez de começar com a tecnologia.(Várias fontes ?)
+No Design Centrado no usuário (DCU) diferente dos métodos empíricos tradicionais que tem o usuário apenas como  referência, no DCU o usuário tem que ser o elemento central e é necessário envolvê-lo do início ao fim do projeto.Baseia-se nas necessidades, desejos e limitações das pessoas. Deve-se iniciar com usuários e suas necessidades em vez de começar com a tecnologia (Várias fontes ?). ~\citeonline{travis2013} afirma que "para criar produtos que os usuário amem, é necessário incluir os usuários no processo de criação dos produtos". 
+
 
 Gould e Lewis estabeleceram alguns princípios para o desenvolvimento centrado no usuário na decada 70 que são utilizados até hoje que são: Foco desde o inicio nos usuários e nas tarefas, medidas empiricas e design interativo.
 
-O processo do design centrado no usuário pode ser dividido em 3 fases: análise, desenvolvimento e pós-liberação.
-
-O DCU surgiu da IHC e consiste em uma metodologia de design de software para desenvolvedores e designers. 
+O processo do design centrado no usuário pode ser dividido em 3 fases: análise, desenvolvimento e pós-liberação. 
 
 %	Detalhar o fluxo do DCU
-
-Para criar produtos que os usuário amem, é necessário incluir os usuários no processo de criação dos produtos \cite{travis2013}
 
 \subsubsection{ISO 13407 e 9241-210}
 	
 A ISO 13407 define um processo geral para incluir atividades centradas em humano através do ciclo de vida de desenvolvimento sem especificar métodos exatos ~\cite{santos2012}.
 
-A norma é caracterizado por quatro princípios: Ativo envolvimento do usuário; alocação apropriada de funções entre usuários e tecnologia; Testes de solução de design; Design multidisciplinar.
-Em 2010 essa ISO foi revista e renomeada para a ISO 9241-210.
+A norma é caracterizado por quatro princípios: Ativo envolvimento do usuário; alocação apropriada de funções entre usuários e tecnologia; Testes de solução de design; Design multidisciplinar.Em 2010 essa ISO foi revista e renomeada para a ISO 9241-210.
 
 Existem quatro atividades de Design Centrado no Usuário que devem estar presentes no inicío do projeto:
 
@@ -218,9 +226,9 @@ A ISO 13407 propõe que o envolvimento do usuário seja uma prática frequente e
 \section{Métodos Ágeis e o Design Centrado no usuário}
 
 	Os métodos ágeis é uma abordagem de desenvolvimento que têm como princípio ....%ver como escrever isso
-Muitos autores têm defenfido a ideia da integração dos aspectos da usabilidade com os métodos ágeis.
-
-	Um dos grandes problemas da integração dessas duas metodologias é o fato de que elas utilizam-se de abordagens diferentes sobre como os recursos são alocados como a defesa da coleta de requisitos e projetos de forma antecipada, mas as abordagens são centradas no usuário.
+Muitos autores têm defendido a ideia da integração dos aspectos da usabilidade com os métodos ágeis.
+	
+	Um dos grandes problemas da integração dessas duas metodologias é o fato de que elas utilizam-se de abordagens diferentes sobre como os recursos são alocados e como a defesa da coleta de requisitos e projetos de forma antecipada, mas as abordagens são centradas no usuário.
 
 	Há uma semelhança entre os valores da abordagem ágil e a de IHC proporcionando um quadro favorável à integração minimalista de pŕaticas de IHC em ambientes ágeis.Podemos citar alguns desse valores como por exemplo: (i) ciclos curtos com entregas contínuas e incrementais, que favorecem a aplicação de técnicas de prototipagem; (ii) forte envolvimento do usuário que favorece a aplicação de princípios de projetos participativos e (iii) programação em pares onde em IHC geralmente a avaliação de usabilidade é feita em pares ~\cite{barbosa2008estrategia}. 
 
@@ -241,7 +249,7 @@ Muitos autores têm defenfido a ideia da integração dos aspectos da usabilidad
 	
 	O grande desafio do DCU ágil é de encontrar a melhor maneira de realizar as atividades de pesquisa do usuário, design de versões que atendem as necessidades dos usuário, construção de versões interativas e realização de testes de usabilidade, dentro de um ambiente de desenvolvimento com métodos ágeis, tendo a participação dos usuários tipicos em todas as atividades ~\cite{santos2012}.% (Copia da Ana Paula) - Verificar como reescrever.
 	
-        A modelagem e projeto de interfaces devem ser orientados a padrões de projeto e as avaliações de ergonomia, testes de usabilidade e especificações de revisões de interface devem ser realizados rapidamente.~\cite{cybis2010}.
+        A modelagem e projeto de interfaces devem ser orientados a padrões de projeto e as avaliações de ergonomia, testes de usabilidade e especificações de revisões de interface devem ser realizados rapidamente ~\cite{cybis2010}.
 	
 	Pesquisas relatam que praticantes de UX que passaram a trabalhar em ambientes ágeis não querem mais retornar ao método antigo de desenvolvimento baseado no modelo cascata. Em média, essas equipes levam de 6 a 12 meses para se adptar ao novo ambiente ~\cite{santos2012}.
 
@@ -254,7 +262,7 @@ Muitos autores têm defenfido a ideia da integração dos aspectos da usabilidad
 
 	Foram encontrados alguns estudos que descrevem a integração do IHC com as práticas de Programação Extrema (XP). Segundo ~\citeonline{mcinerney2005ucd} métodos ágeis e design centrado no usuário possuem uma cultura distinta mas eles mostraram que é possivel unir essas duas abordagens. Em seu artigo ....
 
-	O processo de usabilidade ágil é integrar os instrumentos de IHC dentro dos processos clássico de XP. ~\citeonline{wolkerstorfer2008probing} usam o dcu ágil desde 2007 e que não houve até hoje nenhum problema entre as culturas e que tanto os especialistas de usabilidade quanto os desenvolvedores estão bem integrados.Pode-se encontrar vantagens na combinação das duas abordagens. 
+	O processo de usabilidade ágil é integrar os instrumentos de IHC dentro dos processos clássico de XP. ~\citeonline{wolkerstorfer2008probing} usam o dcu ágil desde 2007 e que até hoje não houve nenhum problema entre as culturas e que tanto os especialistas de usabilidade quanto os desenvolvedores estão bem integrados.Pode-se encontrar vantagens na combinação das duas abordagens. 
 
 	Em 2008 foi proposto uma metodologia revisional institulada XPlus que insere as técnicas de design e de usabilidade em determinadas fases do ciclo de desenvolvimento de software.O XPlus agrega algumas práticas de User Experience às práticas tradicionais de XP. A figura mostra uma visão geral do processo de desenvolvimento de software de XPlus.
 
@@ -265,12 +273,13 @@ Muitos autores têm defenfido a ideia da integração dos aspectos da usabilidad
 	A natureza iterativa de desenvolvimento XP necessário que os designers de interação tem envolvimento contínuo com o desenvolvimento do produto influenciou a natureza da relação entre os designers de interação e os desenvolvedores.
 
 	 
-%Acresecentar informações da dissertação que achou sobre XP.
+%Acrecentar informações da dissertação que achou sobre XP.
 
 
 \subsection{AgilUS}
 
 	Outra metodologia encontrada foi a de AgilUS que é um método de desenvolvimento ágil que baseia-se no conceito de usabilidade e na necessidade de desenvolver software usável. Essa metodologia foi resultado de uma das linhas de investigação desenvolvida pelo Centro de Engenharia de Software da Universidade Central da Venezuela.
+
 	O objetivo do método AgilUS é proporcionar um conjunto de atividades organizadas para construir a usabilidade de design de interface do usuário durante o desenvolvimento do software.
 
 
@@ -282,29 +291,47 @@ Muitos autores têm defenfido a ideia da integração dos aspectos da usabilidad
 
 \item Coompreender e Identificar as necessidades reais dos usuários
 
-	 O Objetivo dessa etapa é conhecer o usuário alvo 
+	O Objetivo dessa etapa é conhecer o usuário alvo. Deve-se projetar ferramentas que irão dar suporte aos objetivos e atividades das pessoas.
+
+	Algumas técnicas são utilizadas para identificar as necessidades dos usuários como a observação natural que serve para responder a questão do tipo:o que e como as pessoas fazem? E as entrevistas que responde o que as pessoas pensam e dizem.Os resultados da pesquisa devem ser comunicados para a equipe.
 
 \item Focar na Essência
 
 	 O foco na essência ajuda a desenvolver soluções que atendem às reais necessidades dos usuários diminuindo os riscos de desenvolvimento de funcionalidades com pouco ou nenhum uso.
 
+	A ideia desse príncipio é que deve-se começar a desenvolver apenas pelo que é essencial, começando pela menor unidade de um sistem sem perder a visão de um todo.
+
 \item Iterar mais rápido
 
-	É importante colocar o produto nas mãoe dos usuários para se ter um feedback o mais cedo possível.
+	É importante colocar o produto nas mãos dos usuários para se ter um feedback o mais cedo possível.Quando a iteração é feita de forma rápida e começando cedo podemos identificar os problemas com antecedência o que diminui o tempo com retrabalho e evita que o produto não atenda aos usuários.
+	
 
 \item Criar designs alternativos
-\item Prototipar em baixa resolução
-\item Menos documentação, mais comunicação
-\item Pesquisa e design em paralelo ao desenvolvimento
-\item Testes de usabilidades ágeis
-\item O fim não é o lançamento
-\end{enumerate}
 
+	Rettig em 1994 disse que "para ter uma boa idéia é preciso que se tenha várias". A ideia do autor da frase é que devemos pensar e criar várias soluções para um mesmo problema afim de que possa ter mais possibilidades de escolha. 
+
+\item Prototipar em baixa resolução
+
+	Os protótipos de baixa resolução permite visualizar uma solução de forma mais rápida e concreta economizando tempo de design e desenvolvimento. Esses prótotipos ajuda a comunicar e entender idéias e serve para validar uma solução.Eles são úteis pois tendem a ser simples, baratos e de rápida produção.
+	Um exemplo de prótotipo de baixa fidelidade são os storyboard que será detalhado no pŕoximo cápitulo. 
 	
-	Sabemos que existem vários problemas no desenvolvimento de software 
+\item Menos documentação, mais comunicação
+
+	É essencial que tenha uma boa comunicação em todo o processo entre os desenvolvedores, designs e stakeholders envolvidos no projeto.
+
+\item Pesquisa e design em paralelo ao desenvolvimento
+
+
+\item Testes de usabilidades ágeis
+
+	Os testes de usabilidade devem ser feitos em todos os ciclos do projeto. Recomenda-se que os testes sejam feitos mais vezes e que seja menos formal como são feitos atualmente. Os resultados encontrados nos testes deve ser comunicado à equipe para que possa corrigir os erros  graves rapidamente.
+	No pŕoximo capítulo detalharemos como funciona um teste de usabilidade, os tipos existentes e as práticas identicadas pela comunidade de arquitetura da informação e áreas correlatas.
+
+\item O fim não é o lançamento
+
+	No fim de cada ciclo lança-se o mínimo adequado às necessidades reais dos usuários. Ao observar o uso real identificamos que existem novas formas para usar a ferramenta e podemos propor novas melhorias para o sistema. 
 	
-	Alguns problemas foram identificados que contribuem para a adoção dos métodos ágeis no design centrado no usuário.
-	
-	Muitos problemas são encontrados no desenvolvimento de software 
+
+\end{enumerate}
 
 
