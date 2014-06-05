@@ -161,18 +161,29 @@ de usuario do XP~\cite{chelimsky2010}. Essa estrutura é proposta da seguinte fo
 objetivo da feature.
 \item \textbf{Narrativa:} um texto curto que demonstre os cenários de execução, 
 exatamente como a narrativa de uma história de usuário:
-IMAGEM
-%Feature: 
-%In order to
-%As a
-%I want
-%
-\item \textbf{Cenarios:} são a parte concreta de como queremos que o software se 
-comporte~\cite{chelimsky2010}, e sendo a parte essencial do teste realizado no 
-cucumber. Após a palavra-chave ‘scenario’ define-se o nome do cenário em questão:
-IMAGEM
-%Scenario: 
-%
+
+\begin{figure}[!h]
+    \centering
+    \includegraphics[keepaspectratio=true,scale=0.50]
+      {figuras/noosfero_feature2.eps}
+    \caption{Descrição do título (\textit{feature}) de um teste}
+    \label{nosfero_feature}
+\end{figure}
+
+\item \textbf{Pré condições:} representado pela palavra-chave \textit{'background'}, define os passos 
+precedem cada cenário de teste.
+
+\begin{figure}[!h]
+    \centering
+    \includegraphics[keepaspectratio=true,scale=0.50]
+      {figuras/noosfero_back.eps}
+    \caption{Descrição de pré condições (\textit{background}) de um teste}
+    \label{nosfero_feature}
+\end{figure}
+
+\item \textbf{Cenarios:} representam parte concreta de como o software deve se 
+comportar, e sendo a parte essencial do teste realizado no 
+cucumber. Após a palavra-chave \textit{‘scenario’} define-se o nome do cenário em questão:
 \item \textbf{Passos:} Cada cenario possui uma serie de passos que demontram o seu 
 comportamento, que são linhas simples iniciadas com as seguintes palavras-chaves: 
 Given, When, Then, And, But.
@@ -181,13 +192,14 @@ trata-se das pré-condições do cenário.
 \item \textbf{When:}Indica o evento do cenário
 \item \textbf{Then:} Indica o que é esperado após o evento ocorrer.
 
-IMAGEM
-%Scenario: 
-%Given 
-%And
-%When
-%Then
-%And
+\begin{figure}[!h]
+    \centering
+    \includegraphics[keepaspectratio=true,scale=0.50]
+      {figuras/noosfero_scenario.eps}
+    \caption{Descrição do cenário (\textit{scenario}) de um teste}
+    \label{nosfero_scenario}
+\end{figure}
+
 \end{enumerate}
 Além do Cucumber, também é utilizado um software chamado selenium, que é uma ferramenta
 usada para desenvolver casos de testes a partir de web browsers, como o Mozilla Firefox. 
@@ -306,7 +318,30 @@ UnB através de sua matricula e senha do matricula web da UnB (além do email e 
 %
 Nas camadas mais inferiores, o plugin é responsável por modificar o modelo de dados do 
 sistema, para que o usuário possa assim cadastrar sua matrícula. Assim o plugin também é responsável por configurar a conexão com o LDAP server da UnB e finalmente verificar se 
-os dados do usuário estão corretos no momento do seu cadastro.
+os dados do usuário estão corretos no momento do seu cadastro. Abaixo encontra-se descritas as histórias de usuário referente Plugin Ldap UnB:
+
+\textbf{Plugin Ldap UnB - Cadastro:}
+\textbf{Como} aluno da UnB e novo usuário
+\textbf{Gostaria} de cadastra-me no Comunidade UnB através da minha matrícula e senha do sistemas da UnB
+\textbf{para} utilizar o Comunidade UnB.
+
+Cenário:
+\textbf{Dado} que não estou autenticado
+\textbf{Quando} eu entrar em "Novo Usuário"
+\textbf{E} preencher os campos "nome de usuário", "senha", "confirmação de senha", "nome completo", "e-mail" e "matrícula"
+\textbf{E} clicar no botão "Registrar"
+\textbf{Então} eu devo ser redirecionado ao perfil "nome de usuario"
+
+\textbf{Plugin Ldap UnB - Login:}
+\textbf{Como} aluno da UnB usuário do sistema
+\textbf{Gostaria} acessar Comunidade UnB através da minha matrícula e senha do sistemas da UnB
+\textbf{para} facilitar a utilização do Comunidade UnB.
+
+Cenário:
+\textbf{Dado} que não estou autenticado
+\textbf{Quando} eu preencher os campos "nome de usuário" e "senha"
+\textbf{E} clicar em "entrar"
+\textbf{Então} eu devo ser redirecionado ao perfil "nome de usuario"
 
 \subsubsection{Testes com plugin ldap}
 %
@@ -366,13 +401,37 @@ Os testes unitários do plugin verificam a definição dos parâmetros do ldap, 
 
 Não foram desenvolvidos testes de aceitação para o plugin LdapUnb, pelo fato de ser uma aplicação que opera a maior parte das suas funcionalidades nas camadas mais baixas do sistema, alterando muito pouco a percepção do usuário.
 
-\subsection{Plugin para envio de TCC}
+\subsection{Plugin para submissão de TCC}
 
 Este plugin também foi desenvolvido para a plataforma Noosfero, porém em uma aplicãção diferente, o Portal da FGA. A ideia deste plugin surgiu da necessidade de existir um ambiente virtual em que os trabalhos de conclusão de curso pudessem ser submetidos aos professores e compartilhados com a comunidade acadêmica, buscando assim manter uma forma de versionamento dos trabalhos desenvolvidos.
 %
 Este plugin é responsável por criar uma atribuição de trabalhos, chamada de \textit{work assignment}. Atribuiçao que possui algumas funcionalidades específicas como possibilitar que os usuários envolvidos sejam notificados via email sobre a submissão de um certo trabalho. Para tal foi necessário subir um servidor de email para executar estas notificações, assim como criar uma página no Portal FGA para que o usuário pudesse submeter seu trabalho.
 %
-Para validar o desenvolvimento desta funcionalidade foram desenvolvidos os seguintes tipos de testes: funcionais, unitário e de aceitação.
+Para validar o desenvolvimento desta funcionalidade foram desenvolvidos os seguintes tipos de testes: funcionais, unitário e de aceitação. Abaixo encontra-se descrita a história de usuário referente Plugin submissão de TCC:
+
+\textbf{Plugin submissão de TCC}
+\textbf{Como} usuário
+\textbf{Gostaria} de submeter um trabalho para uma comunidade, seguindo um formulário (título, nome do remetente, email do destinatário, nome do destinatário e descrição) enviando um aviso para ambas as partes
+\textbf{para} manter um versionamento do trabalho.
+
+Cenário:
+\textbf{Dado} que estou autenticado como "usuário"
+\textbf{Quando} eu entrar no painel de controle da "Minha Comunidade"
+\textbf{E} entrar em "Gerenciar Conteúdo"
+\textbf{E} entrar em "Novo Conteúdo"
+\textbf{E} entrar em "Trabalho a ser entregue"
+\textbf{E} preencher o campo "Título"
+\textbf{E} clicar em "Salvar"
+\textbf{Então} eu devo ser redirecionado à pagina de "Gerenciar Conteúdos"
+\textbf{E} visualizar o campo "Título"
+\textbf{Quando} eu entrar em "Carregar Arquivo"
+\textbf{E} marcar o campo "Enviar notificação"
+\textbf{E} preencher o campo "Assunto"
+\textbf{E} preencher o campo "Destinatário"
+\textbf{E} clicar em "Enviar"
+\textbf{Então} eu devo visualizar "Enviando com sucesso"
+
+
 \subsubsection{Testes Funcionais}
 
 Os testes funcionais do plugin para envio de TCC são responsáveis por verificar os seguintes fatores:
