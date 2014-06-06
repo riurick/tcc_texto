@@ -227,7 +227,7 @@ configuração por exemplo.
 
 \begin{figure}[!h]
     \centering
-    \includegraphics[keepaspectratio=true,scale=0.50]
+    \includegraphics[keepaspectratio=true,scale=0.5]
       {figuras/teste_setup.eps}
     \caption{Descrição do setup de um teste}
     \label{nosfero_setup}
@@ -319,29 +319,48 @@ UnB através de sua matricula e senha do matricula web da UnB (além do email e 
 Nas camadas mais inferiores, o plugin é responsável por modificar o modelo de dados do 
 sistema, para que o usuário possa assim cadastrar sua matrícula. Assim o plugin também é responsável por configurar a conexão com o LDAP server da UnB e finalmente verificar se 
 os dados do usuário estão corretos no momento do seu cadastro. Abaixo encontra-se descritas as histórias de usuário referente Plugin Ldap UnB:
+\begin{enumerate}
 
-\textbf{Plugin Ldap UnB - Cadastro:}
+\item \textbf{Plugin Ldap UnB - Cadastro:}
+
 \textbf{Como} aluno da UnB e novo usuário
+
 \textbf{Gostaria} de cadastra-me no Comunidade UnB através da minha matrícula e senha do sistemas da UnB
+
 \textbf{para} utilizar o Comunidade UnB.
 
-Cenário:
-\textbf{Dado} que não estou autenticado
-\textbf{Quando} eu entrar em "Novo Usuário"
-\textbf{E} preencher os campos "nome de usuário", "senha", "confirmação de senha", "nome completo", "e-mail" e "matrícula"
-\textbf{E} clicar no botão "Registrar"
-\textbf{Então} eu devo ser redirecionado ao perfil "nome de usuario"
+\textbf{Cenário:}
 
-\textbf{Plugin Ldap UnB - Login:}
+\textbf{Dado} que não estou autenticado
+
+\textbf{Quando} eu entrar em ``Novo Usuário''
+
+\textbf{E} preencher os campos ``nome de usuário'', ``senha'', ``confirmação de senha'', ``nome completo'', ``e-mail'' e ``matrícula''
+
+\textbf{E} clicar no botão ``Registrar''
+
+\textbf{Então} eu devo ser redirecionado ao perfil ``nome de usuario''
+
+
+\item  \textbf{Plugin Ldap UnB - Login:}
+
 \textbf{Como} aluno da UnB usuário do sistema
+
 \textbf{Gostaria} acessar Comunidade UnB através da minha matrícula e senha do sistemas da UnB
+
 \textbf{para} facilitar a utilização do Comunidade UnB.
 
-Cenário:
+\textbf{Cenário:}
+
 \textbf{Dado} que não estou autenticado
-\textbf{Quando} eu preencher os campos "nome de usuário" e "senha"
-\textbf{E} clicar em "entrar"
-\textbf{Então} eu devo ser redirecionado ao perfil "nome de usuario"
+
+\textbf{Quando} eu preencher os campos ``nome de usuário'' e ``senha''
+
+\textbf{E} clicar em ``entrar''
+
+\textbf{Então} eu devo ser redirecionado ao perfil ``nome de usuario''
+
+\end{enumerate}
 
 \subsubsection{Testes com plugin ldap}
 %
@@ -410,29 +429,49 @@ Este plugin é responsável por criar uma atribuição de trabalhos, chamada de 
 O processo de desenvolvimento deste plugin ocorreu juntamente com uma transição da equipe de desenvolvimento, o que prejudicou o desenvolvimento de testes do mesmo.
 %
 Para validar o desenvolvimento desta funcionalidade foram desenvolvidos os seguintes tipos de testes: funcionais, unitário e de aceitação. Abaixo encontra-se descrita a história de usuário referente Plugin submissão de TCC:
+\begin{enumerate}
+\item  \textbf{Plugin submissão de TCC}
 
-\textbf{Plugin submissão de TCC}
 \textbf{Como} usuário
+
 \textbf{Gostaria} de submeter um trabalho para uma comunidade, seguindo um formulário (título, nome do remetente, email do destinatário, nome do destinatário e descrição) enviando um aviso para ambas as partes
+
 \textbf{para} manter um versionamento do trabalho.
 
-Cenário:
-\textbf{Dado} que estou autenticado como "usuário"
-\textbf{Quando} eu entrar no painel de controle da "Minha Comunidade"
-\textbf{E} entrar em "Gerenciar Conteúdo"
-\textbf{E} entrar em "Novo Conteúdo"
-\textbf{E} entrar em "Trabalho a ser entregue"
-\textbf{E} preencher o campo "Título"
-\textbf{E} clicar em "Salvar"
-\textbf{Então} eu devo ser redirecionado à pagina de "Gerenciar Conteúdos"
-\textbf{E} visualizar o campo "Título"
-\textbf{Quando} eu entrar em "Carregar Arquivo"
-\textbf{E} marcar o campo "Enviar notificação"
-\textbf{E} preencher o campo "Assunto"
-\textbf{E} preencher o campo "Destinatário"
-\textbf{E} clicar em "Enviar"
-\textbf{Então} eu devo visualizar "Enviando com sucesso"
+x
+\textbf{Cenário:}
 
+\textbf{Dado} que estou autenticado como ``usuário''
+
+\textbf{Quando} eu entrar no painel de controle da ``Minha Comunidade''
+
+\textbf{E} entrar em ``Gerenciar Conteúdo''
+
+\textbf{E} entrar em ``Novo Conteúdo''
+
+\textbf{E} entrar em ``Trabalho a ser entregue''
+
+\textbf{E} preencher o campo ``Título''
+
+\textbf{E} clicar em ``Salvar''
+
+\textbf{Então} eu devo ser redirecionado à pagina de ``Gerenciar Conteúdos''
+
+\textbf{E} visualizar o campo ``Título''
+
+\textbf{Quando} eu entrar em ``Carregar Arquivo''
+
+\textbf{E} marcar o campo ``Enviar notificação''
+
+\textbf{E} preencher o campo ``Assunto''
+
+\textbf{E} preencher o campo ``Destinatário''
+
+\textbf{E} clicar em ``Enviar''
+
+\textbf{Então} eu devo visualizar ``Enviando com sucesso''
+
+\end{enumerate}
 
 \subsubsection{Testes Funcionais}
 
@@ -473,3 +512,213 @@ Os testes de aceitação do plugin para envio de TCC são responsáveis por veri
 \item Capacidade de postar comentários sobre uma atribuição de trabalhos;
 \item Capacidade de reportar problemas;
 \end{itemize}
+
+Abaixo estão descritos os testes desenvolvidos para o plugin:
+
+
+\textbf{Feature: send work plugin}
+
+\textbf{As} an user
+
+\textbf{I want} to send work with notification email
+
+\textbf{Background:}
+
+\textbf{Given} ``Work Assignment'' plugin is enabled
+
+\textbf{Given} the following users
+
+      | login     | name          |
+
+      | joaosilva | Joao da Silva |
+
+      | josesilva | Jose da Silva |
+
+\textbf{And} the following community
+
+      | identifier  | name         |
+
+      | mycommunity | My Community |
+
+\textbf{And} ``Joao da Silva" is admin of ``My Community"
+
+\textbf{And} I am logged in as admin
+
+\textbf{And} I go to /admin/plugins
+
+\textbf{And} I check ``Work Assignment"
+
+\textbf{And} I press ``Save changes"
+
+\textbf{Then} I should see ``Plugins updated successfully." 
+
+
+
+\begin{enumerate}
+
+\item \textbf{Scenario:} Create a work assignment and continue edition
+
+    \textbf{Given} I am logged in as ``joaosilva" 
+    
+    \textbf{When} I follow ``My Community"
+    
+    \textbf{When} I go to mycommunity's control panel
+    
+    \textbf{And} I follow ``Manage Content"
+    
+    \textbf{And} I follow ``New content"
+    
+    \textbf{And} I follow ``Work Assignment"
+
+    \textbf{Then} I should be on /myprofile/mycommunity/cms/new
+    
+    \textbf{When} I fill in ``Title" with ``test"
+    
+    \textbf{And} I press ``Save and continue"
+    
+    \textbf{Then} I should be on /myprofile/mycommunity/cms/edit/13
+
+ 
+\item \textbf{Scenario:} Can't create work assignment without name
+    
+    \textbf{Given}  I am logged in as ``joaosilva" 
+    
+    \textbf{When} I follow ``My Community"
+    
+    \textbf{When} I go to mycommunity's control panel
+    
+    \textbf{And} I follow ``Manage Content"
+    
+    \textbf{And} I follow ``New content"
+    
+    \textbf{And} I follow ``Work Assignment"
+    
+    \textbf{Then} I should be on /myprofile/mycommunity/cms/new
+    
+    \textbf{When} I fill in ``Title" with ``"
+    
+    \textbf{And} I press ``Save"
+    
+    \textbf{Then} I should see ``There were problems with the following fields:"
+
+\item \textbf{Scenario:} Can't create work assignment without file
+   
+    \textbf{Given} I am logged in as ``joaosilva" 
+   
+    \textbf{When} I follow ``My Community"
+   
+    \textbf{When} I go to mycommunity's control panel
+   
+    \textbf{And} I follow ``Manage Content"
+   
+    \textbf{And} I follow ``New content"
+   
+    \textbf{And} I follow ``Work Assignment"
+   
+    \textbf{Then} I should be on /myprofile/mycommunity/cms/new
+   
+    \textbf{When} I fill in ``Title" with ``test"
+   
+    \textbf{And} I press ``Save"
+   
+    \textbf{Then} I should be on /mycommunity/test
+   
+    \textbf{When} I follow ``Upload files"
+   
+    \textbf{And} I press ``Upload"
+   
+    \textbf{Then} I should be on /myprofile/mycommunity/cms/uploadfiles
+
+\item \textbf{Scenario:} Cancel create work assignment
+    
+    \textbf{Given} I am logged in as ``joaosilva"
+    
+    \textbf{When} I follow ``My Community"
+    
+    \textbf{When} I go to mycommunity's control panel
+    
+    \textbf{And}  I follow ``Manage Content"
+    
+    \textbf{And}  I follow ``New content"
+    
+    \textbf{And}  I follow ``Work Assignment"
+    
+    \textbf{Then} I should be on /myprofile/mycommunity/cms/new
+    
+    \textbf{When} I fill in ``Title" with ``test"
+    
+    \textbf{And}  I press ``Save"
+    
+    \textbf{Then} I should be on /mycommunity/test
+    
+    \textbf{When} I follow ``Upload files"
+    
+    \textbf{And}  I follow ``Cancel"
+    
+    \textbf{Then} I should be on /mycommunity/test
+
+\item \textbf{Scenario:} Edit work assignment 
+    
+    \textbf{Given} I am logged in as ``joaosilva"
+    
+    \textbf{When} I follow ``My Community"
+    
+    \textbf{When} I go to mycommunity's control panel
+    
+    \textbf{And} I follow ``Manage Content"
+    
+    \textbf{And} I follow ``New content"
+    
+    \textbf{And} I follow ``Work Assignment"
+    
+    \textbf{Then} I should be on /myprofile/mycommunity/cms/new
+    
+    \textbf{When} I fill in ``Title" with ``test"
+    
+    \textbf{And} I press ``Save"
+    
+    \textbf{Then} I should be on /mycommunity/test
+    
+    \textbf{When} I follow ``Edit"
+    
+    \textbf{And} I fill in ``Title" with ``test2"
+    
+    \textbf{And} I press ``Save"
+    
+    \textbf{Then} I should be on /mycommunity/test2
+
+\item \textbf{Scenario:} Upload a file with work assignment without 
+   
+    \textbf{Given} I am logged in as ``joaosilva"
+   
+    \textbf{When} I follow ``My Community"
+   
+    \textbf{When} I go to mycommunity's control panel
+   
+    \textbf{And} I follow ``Manage Content"
+   
+    \textbf{And} I follow ``New content"
+   
+    \textbf{And} I follow ``Work Assignment"
+   
+    \textbf{Then} I should be on /myprofile/mycommunity/cms/new
+   
+    \textbf{When} I fill in ``Title" with ``test"
+   
+    \textbf{And} I press ``Save"
+   
+    \textbf{Then} I should be on /mycommunity/test
+   
+    \textbf{When} I follow ``Edit"
+   
+    \textbf{And} I follow ``Delete"
+   
+    \textbf{And} I confirm the browser dialog
+   
+    \textbf{Then} I should see ``test was removed"
+    
+    \textbf{And} I attach the file ``public/images/rails.png" to ``Uploaded data"
+   
+    \textbf{And} I press ``Save"
+
+\end{enumerate}
