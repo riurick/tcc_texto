@@ -5,7 +5,7 @@
 \section{Resultados Prelimirares}
 \label{results}
 
-\subsection{Plugin Ldap UnB}
+\subsection{Plugins}
 
 O \textit{plugin} que faz comunicação com o Ldap da UnB encontra-se em fase de homolagação
 Com o auxilio de uma ferramenta de análise de código para \textit{Ruby} chamada Rcov, foi obtida a taxa de cobertura de código do plugin desenvolvido, além de alguns dados sobre a execução dos testes funcionais e unitários que seguem abaixo:
@@ -29,9 +29,8 @@ Na imagem abaixo existem dois gráficos de cobertura de codigo, o primeiro defin
 \end{figure}
 %
 
-\subsection{Plugin para envio de TCC}
 
-A ferramenta Rcov também foi utilizada para dimensionar a taxa de cobertura de código deste plugin, segue os dados sobre a execução dos testes funcionais e unitários:
+A ferramenta Rcov também foi utilizada para dimensionar a taxa de cobertura de código do plugin para envio de TCC, segue os dados sobre a execução dos testes funcionais e unitários:
 \begin{itemize}
 \item Quantidade de testes executados: \textbf{28 testes};
 \item Quantidade de assertivas executadas: \textbf{84 assertivas};
@@ -57,7 +56,41 @@ Para este plugin também foram desenvolvidos testes automáticos de aceitação,
 \item Tempo de execução dos testes: \textbf{7 minutos e 18 segundos};
 \end{itemize}
 
-IMAGEM
+A partir da cobertura dos testes do plugin de envio de TCC, foi verificado que existe uma necessidade de refatoração desta funcionalidade, considerando alguns aspectos que dificultaram o desenvolvimento de testes desta funcionalidade, como a duplicação de código.
+
+Porém estes resultados preliminares foram considerados satisfatórios, considerando que outros plugins desenvolvidos pela comunidade do Noosfero e já homolagados apresentam métricas semelhantes.
+\begin{itemize}
+\item Plugin Stoa: Plugin que inclui funcionalidades ao Stoa, rede colaborativa da USP (Universidade de São Paulo)
+
+\begin{figure}[!h]
+    \centering
+    \includegraphics[keepaspectratio=false,scale=0.45]
+      {figuras/stoa.eps}
+    \caption{Cobertura de código do Plugin Stoa}
+    \label{consideracoes_cobertura3}
+\end{figure}
+
+\item Plugin Ldap: Plugin que permite autenticação via Ldap;
+
+\begin{figure}[!h]
+    \centering
+    \includegraphics[keepaspectratio=false,scale=0.45]
+      {figuras/ldap.eps}
+    \caption{Cobertura de código do Plugin Ldap}
+    \label{consideracoes_cobertura4}
+\end{figure}
+
+\item plugin Statistics: Plugin que permite adicionar um bloco de estatísticas ao perfil do usuário
+
+\begin{figure}[!h]
+    \centering
+    \includegraphics[keepaspectratio=false,scale=0.45]
+      {figuras/statistics.eps}
+    \caption{Cobertura de código do Plugin Statistics}
+    \label{consideracoes_cobertura3}
+\end{figure}
+
+\end{itemize}
 
 \section{Próximos Passos}
 
