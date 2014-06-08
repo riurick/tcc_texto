@@ -555,6 +555,47 @@ Abaixo estão descritos os testes desenvolvidos para o plugin:
 
 
 \begin{enumerate}
+\item  \textbf{Scenario:} Upload a file to work assignment and send a email
+    
+    \textbf{Given} I am logged in as ``joaosilva" 
+    
+    \textbf{When} I follow ``My Community"
+    
+    \textbf{When} I go to mycommunity's control panel
+    
+    \textbf{And} I follow ``Manage Content"
+    
+    \textbf{And} I follow ``New content"
+    
+    \textbf{And} I follow ``Work Assignment"
+    
+    \textbf{Then} I should be on /myprofile/mycommunity/cms/new
+    
+    \textbf{When} I fill in ``Title" with ``test"
+    
+    \textbf{And} I press ``Save"
+    
+    \textbf{Then} I should be on /mycommunity/test
+    
+    \textbf{When} I follow ``Upload files"
+    
+    \textbf{And} I check ``Send notification"
+    
+    \textbf{And} I attach the file ``public/images/rails.png" to ``uploadedfiles"
+    
+    \textbf{And} I press ``Upload"
+    
+    \textbf{Then} I should be on /myprofile/mycommunity/cms/sendemail
+    
+    \textbf{When} I fill in ``Title" with ``Work"
+    
+    \textbf{And} I fill in ``Receiver" with ``josesilva@example.com"
+    
+    \textbf{And} I fill in ``Message" with ``test"
+    
+    \textbf{And} I press ``Send"
+    
+    \textbf{Then} I should see ``Contact sent successfully"
 
 \item \textbf{Scenario:} Create a work assignment and continue edition
 
@@ -687,7 +728,7 @@ Abaixo estão descritos os testes desenvolvidos para o plugin:
     
     \textbf{Then} I should be on /mycommunity/test2
 
-\item \textbf{Scenario:} Upload a file with work assignment without 
+\item \textbf{Scenario:} Delete a work assignment  
    
     \textbf{Given} I am logged in as ``joaosilva"
    
@@ -715,10 +756,6 @@ Abaixo estão descritos os testes desenvolvidos para o plugin:
    
     \textbf{And} I confirm the browser dialog
    
-    \textbf{Then} I should see ``test was removed"
+    \textbf{Then} I should see /``test" was removed./
     
-    \textbf{And} I attach the file ``public/images/rails.png" to ``Uploaded data"
-   
-    \textbf{And} I press ``Save"
-
 \end{enumerate}
