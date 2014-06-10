@@ -11,7 +11,7 @@ A partir da pesquisa realizada e do processo iniciado neste trabalho
 \subsection{Plugins}
 
 O \textit{plugin} que faz comunicação com o Ldap da UnB encontra-se em fase de homolagação
-Com o auxilio de uma ferramenta de análise de código para \textit{Ruby} chamada Rcov, foi obtida a taxa de cobertura de código do plugin desenvolvido, além de alguns dados sobre a execução dos testes funcionais e unitários que seguem abaixo:
+Com o auxílio de uma ferramenta de análise de código para \textit{Ruby} chamada Rcov, foi obtida a taxa de cobertura de código do plugin desenvolvido, além de alguns dados sobre a execução dos testes funcionais e unitários que seguem abaixo:
 
 \begin{itemize}
 \item Quantidade de testes executados: \textbf{96 testes;}
@@ -20,20 +20,20 @@ Com o auxilio de uma ferramenta de análise de código para \textit{Ruby} chamad
 \item Tempo de execução dos testes: \textbf{7.8 segundos;}
 \end{itemize}
 
-Na imagem abaixo existem dois gráficos de cobertura de codigo, o primeiro definido como \textit{'total coverage'} representa a contagem realizada com as linhas em branco e os comentários do código, já o \textit{'code coverage'} representa a contagem realizada sem as linhas em branco e os comentários do código.
+Na imagem abaixo existem dois gráficos de cobertura de código, o primeiro definido como \textit{'total coverage'} representa a contagem realizada com as linhas em branco e os comentários do código, já o \textit{'code coverage'} representa a contagem realizada sem as linhas em branco e os comentários do código.
 
 %
 \begin{figure}[!h]
     \centering
     \includegraphics[keepaspectratio=false,scale=0.45]
       {figuras/cobertura_teste.eps}
-    \caption{Cobertura de código do Plugin LdapUnb}
+    \caption{Cobertura de código do plugin LdapUnb}
     \label{consideracoes_cobertura1}
 \end{figure}
 %
 
 
-A ferramenta Rcov também foi utilizada para dimensionar a taxa de cobertura de código do plugin para envio de TCC, segue os dados sobre a execução dos testes funcionais e unitários:
+A ferramenta Rcov também foi utilizada para dimensionar a taxa de cobertura de código do \textir{plugin} para envio de TCC, segue os dados sobre a execução dos testes funcionais e unitários:
 \begin{itemize}
 \item Quantidade de testes executados: \textbf{28 testes};
 \item Quantidade de assertivas executadas: \textbf{84 assertivas};
@@ -47,11 +47,11 @@ Na imagem abaixo está representado a cobertura de código, extraída da ferrame
     \centering
     \includegraphics[keepaspectratio=false,scale=0.45]
       {figuras/cobertura_tcc.eps}
-    \caption{Cobertura de código do Plugin para envio de TCC}
+    \caption{Cobertura de código do plugin para envio de TCC}
     \label{consideracoes_cobertura2}
 \end{figure}
 
-Para este plugin também foram desenvolvidos testes automáticos de aceitação, afim de validar a experiência do usuário em diferentes cenários possiveis:
+Para este \textit{plugin} também foram desenvolvidos testes automáticos de aceitação, afim de validar a experiência do usuário em diferentes cenários possiveis:
 \begin{itemize}
 \item Quantidade de cenários executados: \textbf{6 cenários};
 \item Quantidade de passos executadas: \textbf{130 passos};
@@ -59,37 +59,37 @@ Para este plugin também foram desenvolvidos testes automáticos de aceitação,
 \item Tempo de execução dos testes: \textbf{7 minutos e 18 segundos};
 \end{itemize}
 
-A partir da cobertura dos testes do plugin de envio de TCC, foi verificado que existe uma necessidade de refatoração desta funcionalidade, considerando alguns aspectos que dificultaram o desenvolvimento de testes desta funcionalidade, como a duplicação de código.
+A partir da cobertura dos testes do \textit{plugin} de envio de TCC, foi verificado que existe uma necessidade de refatoração desta funcionalidade, considerando alguns aspectos que dificultaram o desenvolvimento de testes desta funcionalidade, como a duplicação de código.
 
-Porém estes resultados preliminares foram considerados satisfatórios, considerando que outros plugins desenvolvidos pela comunidade do Noosfero e já homolagados apresentam métricas semelhantes.
+Porém estes resultados preliminares foram considerados satisfatórios, considerando que outros \textit{plugins} desenvolvidos pela comunidade do Noosfero e já homolagados apresentam métricas semelhantes.
 \begin{itemize}
-\item Plugin Stoa: Plugin que inclui funcionalidades ao Stoa, rede colaborativa da USP (Universidade de São Paulo)
+\item Plugin Stoa: \textir{Plugin} que inclui funcionalidades ao Stoa, rede colaborativa da USP (Universidade de São Paulo)
 
 \begin{figure}[!h]
     \centering
     \includegraphics[keepaspectratio=false,scale=0.45]
       {figuras/stoa.eps}
-    \caption{Cobertura de código do Plugin Stoa}
+    \caption{Cobertura de código do plugin Stoa}
     \label{consideracoes_cobertura3}
 \end{figure}
 
-\item Plugin Ldap: Plugin que permite autenticação via Ldap;
+\item Plugin Ldap: \textit{Plugin} que permite autenticação via Ldap;
 
 \begin{figure}[!h]
     \centering
     \includegraphics[keepaspectratio=false,scale=0.45]
       {figuras/ldap.eps}
-    \caption{Cobertura de código do Plugin Ldap}
+    \caption{Cobertura de código do plugin Ldap}
     \label{consideracoes_cobertura4}
 \end{figure}
 
-\item plugin Statistics: Plugin que permite adicionar um bloco de estatísticas ao perfil do usuário
+\item plugin Statistics: \textit{Plugin} que permite adicionar um bloco de estatísticas ao perfil do usuário
 
 \begin{figure}[!h]
     \centering
     \includegraphics[keepaspectratio=false,scale=0.45]
       {figuras/statistics.eps}
-    \caption{Cobertura de código do Plugin Statistics}
+    \caption{Cobertura de código do plugin Statistics}
     \label{consideracoes_cobertura3}
 \end{figure}
 
@@ -109,7 +109,7 @@ De acordo com os autores pesquisados é possível fazer a integração das abord
 
 	Primeiramente precisou conhecer quem são os usuários do portal e quais são seus interesses. Para isso foi proposto algumas técnicas para análise do perfil do usuário: como aplicação de questionário de perfil de uso, análise de dados estatísticos e criação de persona do usuário.
 
-	A Persona foi criada analisando alguns usuários cadastrados no portal e através de informações tanto no perfil do portal, como de informações em redes sociais e sites pessoais conseguimos captar algumas informações de um determinado público do site.
+	A persona foi criada analisando alguns usuários cadastrados no portal e através de informações tanto no perfil do portal, como de informações em redes sociais e sites pessoais conseguimos captar algumas informações de um determinado público do site.
 
 	Com a persona identificada é possível criar alguns cenários de uso do sistema, na qual as tarefas levantadas farão parte do teste de usabilidade.
 
@@ -124,11 +124,11 @@ De acordo com os autores pesquisados é possível fazer a integração das abord
 
 Nesta seção está descrita suscitamente a proposta dos próximos passos deste trabalho de conclusão de curso. Basicamente, buscamos aplicar as técnicas de usabilidade pesquisadas durante o trabalho, em um processo baseado em BDD e TDD, a fim de verificar problemas de usabilidade, e satisfação e uso em um estudo de caso específico, no caso plataforma Noosfero. 
 
-Outro passo a ser realizdo é verificar os padrões de design e usabilidade adotados pelo Noosfero e propor possíveis melhorias.
+Outro passo a ser realizado é verificar os padrões de design e usabilidade adotados pelo Noosfero, propor  e implementar possíveis melhorias.
 
 \subsection{Portal do Software Público}
 
-Criado em 12 de abril de 2007, o portal do SPB já conta com mais de 60 soluções voltadas para diversos setores. Para a SLTI, o portal já se consolidou como um ambiente de compartilhamento de softwares. Isso resulta em uma gestão de recursos e gastos de informática mais racionalizada, ampliação de parcerias e reforço da política de software livre no setor público~\footnote{www.softwarepublico.gov.br}. 
+Criado em 12 de abril de 2007, o portal do SPB já conta com mais de 60 soluções voltadas para diversos setores. Para a SLTI (Secretaria de Logística e Tecnologia da Informação), o portal já se consolidou como um ambiente de compartilhamento de softwares. Isso resulta em uma gestão de recursos e gastos de informática mais racionalizada, ampliação de parcerias e reforço da política de software livre no setor público~\footnote{www.softwarepublico.gov.br}. 
 
 As tecnologias de informação e comunicação estão se consolidando como meios de expressão do conhecimento, de expressão cultural e de transações econômicas. Na sociedade em rede, baseada em comunicação feita através de computadores, não é possível aceitar que as linguagens usadas nessa comunicação fiquem sob o poder de apenas alguns gigantes. No desenvolvimento de software que apresenta código aberto, como o SPB, as inovações são compartilhadas entre todos, permitindo que as melhorias sejam adotadas por qualquer um, assim o conhecimento passa a ser sempre disseminado, ajudando principalmente as pequenas e médias empresas~\footnote{www.softwarepublico.gov.br}.
 
