@@ -3,14 +3,14 @@
 \label{cap:testes}
 
 Testar é uma pratica intrínseca ao desenvolvimento e é antiga a necessidade de
-cirar programas para testar cenários específicos~\cite{everett2007}. Testes de 
+criar programas para testar cenários específicos~\citeonline{everett2007}. Testes de software 
 serão abordados neste cápítulo, iniciando com uma visão geral de testes 
 automatizados e conhecendo algumas práticas e padrões utilizados para desenvolver
 os mesmos.
 %
 A automação de testes é uma prática ágil, eficaz e de baixo custo para melhorar
 a qualidade dos sistemas de software. No entanto utilizar testes automatizados 
-como uma premissa básica do desenvolvimento é um fenômeno relativamente recente, ]
+como uma premissa básica do desenvolvimento é um fenômeno relativamente recente, 
 com início em meados  da década de 1990~\cite{cotter1995}.
 %
 Além do fato de ser uma técnica bastante utilizada pelas metodologias ágeis
@@ -20,66 +20,65 @@ de desenvolvimento.
 
 \section{Testes Automatizados}
 
-Testes automatizados é a prática de tornar os testes de software independentes da
+Teste automatizado é a prática de tornar os testes de software independentes da
 intervenção humana, criando scripts ou programas simples de computador que exercitam 
 o sistema em teste, capturam os efeitos colaterais e fazem verificações, tudo 
-automaticamente e dinamicamente~\cite{meszaros2007}.
+automatica e dinamicamente~\cite{meszaros2007}.
 
 Os testes automatizados afetam diretamente a qualidade dos sistemas de software,
 portanto agregam valor  ao produto final, mesmo que os artefatos adicionais
 produzidos não sejam visíveis para os usuários finais do sistemas.
 %
-Estes testes podem ser divididos em diversos tipo, o que facilita a manutenção 
-dos mesmos, coleta de métricas.
+Estes testes podem ser divididos em diversos tipos, o que facilita a manutenção 
+dos mesmos.
 
 \begin{enumerate}
 
-\item \textbf{Testes de unidade:} teste de correção responsável por testar os 
+\item \textbf{Testes de unidade:} testes de correção responsável por testar os 
 menores trechos de código de um sistema que possui um comportamento definido e 
 nomeado.
 %
 Normalmente, ele é associado a funções para linguagens procedimentais e métodos em 
 linguagens orientadas a objetos.
-\item \textbf{Testes funcionais:} teste que tem como objetivo verificar a eficiência
-dos componentes de um sistema.~\cite{molinari2003}
-\item \textbf{Testes de integração:}denominação ampla que representa a busca de 
-erros de relacionamento entre quaisquer módulo de um software, incluindo desde 
+\item \textbf{Testes funcionais:} testes que tem como objetivo verificar a eficiência
+dos componentes de um sistema.~\citeonline{molinari2003}
+\item \textbf{Testes de integração:} denominação ampla que representa a busca de 
+erros de relacionamento entre quaisquer módulos de um software, incluindo desde 
 a integração de pequenas unidades até a integração de bibliotecas das quais um 
 sistema depende, servidores e gerenciadores de banco de dados.
 \item \textbf{Testes de interface de usuário} testes que verificam a correção 
-por meio da simulação de eventos de usuário, a partir destes eventos, são feitas 
+por meio da simulação de eventos de usuário. A partir destes eventos, são feitas 
 verificações na interface e em outras camadas.
 \item \textbf{Testes de leiaute:} testes que buscam avaliar a beleza da interface 
 e verificar a presença de erros após a renderização, dificeis de indentificar 
 com testes comuns de interface
 \item \textbf{Testes de aceitação:} são testes de correção e validação, idealmente 
 especificados por clientes ou usuários finais do sistema para verificar se um 
-modulo funciona como foi especificado~\cite{martin2005}.
+módulo funciona como foi especificado~\citeonline{martin2005}.
 %
 Testes de aceitação devem utilizar linguagem proxima da natural para evitar 
-problemas de interpretação e de ambiguidades~\cite{cunningham2005}.
+problemas de interpretação e de ambiguidades~\citeonline{cunningham2005}.
 \item \textbf{Testes de desempenho:} testes que executam trechos do sistema e 
 armazenam os tempos de duração obtidos, que ajudam a identificar gargalos que 
-precisam de otimização para diminuir o tempo de resposta  para o usuario~\cite{liu2009}.
-\item \textbf{Testes de carga:}  teste que exercita o sistema sobre condições de uso 
+precisam de otimização para diminuir o tempo de resposta  para o usuário~\citeonline{liu2009}.
+\item \textbf{Testes de carga:}  testes que exercitam o sistema sobre condições de uso 
 intenso para avaliar se a infraestrutura é adequada para a expectativa de uso do 
-sistema~\cite{avritze1994}.
+sistema~\citeonline{avritze1994}.
 \item \textbf{Testes de estresse:} teste que visa descobrir os limites do uso da 
 infraestrutura, isto é , qual a quantidade máxima de usuários e requisições que o 
 sistema consegue antender corretamente e em um tempo aceitável.
-\item \textbf{Testes de longevidade:} teste que tem por objetivo encontrar erros 
-somente visiveis com um
-\item longo tempo de execuçao do sistema, erros que podem ser de cache, replicação, 
-execução de serviços agendados, vazamento de memória.
+\item \textbf{Testes de longevidade:} testes que tem por objetivo encontrar erros 
+somente visíveis com um longo tempo de execução do sistema, erros que podem ser de cache, replicação, 
+execução de serviços agendados ou vazamento de memória.
 \item \textbf{Testes de segurança:} os testes de segurança servem para verificar se 
 os dados ou funcionalidades confidenciais de um sistema  estão protegidos de fraude 
 ou de usuários não autorizados. A segurança de um sofware pode envolver aspectos de 
-confidenciabilidade, integridade, autenticação, autorização, privacidade~\cite{whittaker2006}.
+confidenciabilidade, integridade, autenticação, autorização, privacidade~\citeonline{whittaker2006}.
 
 \end{enumerate}
 
 %------------------------------------------------------------------------------%
-\section{Técnicas de Desenvolvimento de testes automatizados}
+\section{Técnicas de desenvolvimento de testes automatizados}
 
 Automação de testes é uma técnica voltada principalmente para a melhoria de 
 qualidade dos sistemas de software. 
@@ -109,7 +108,7 @@ de tal modo que não quebre os testes previamente escritos;
 \end{enumerate}
 %
 A técnica de desenvolvimento dirigido por testes foi definida por Kent Beck em seu 
-livro \textit{Test-Driven Development: By Example}~\cite{beck2002}. Os passos estão 
+livro \textit{Test-Driven Development: By Example}~\citeonline{beck2002}. Os passos estão 
 representados na figura abaixo:
 %
 \begin{figure}[h]
@@ -130,14 +129,14 @@ já existente. TDD também tende a contribuir com uma alta cobertura de código,
 fez que o desenvolvedor precisa escrever o testes antes da funcionalidade, 
 possibilitando a criação de um código mais preciso, coeso e menos acoplado. 
 %
-Para Massol~\citeonline{massol2003} em \textit{JUnit in Action}, “o objetivo de TDD é ‘código claro que 
+Para ~\citeonline{massol2003} “o objetivo de TDD é ‘código claro que 
 funciona’.
 %
 TDD propõe o desenvolvimento sempre em pequenos passo, deve-se escrever testes sempre 
 para uma menor funcionalidade possível, escrever o código mais simples que faça o 
 teste passar e fazer sempre apenas uma refatoração por vez~\citeonline{beck2002}. Assim o 
 desenvolvedor se detém a criar soluções simples, sempre acompanhado de um constante 
-feedback dos testes.
+\textit{feedback} dos testes.
 %
 O ciclo curto de passos definidos por TDD cria uma dependência forte entre codificação 
 e testes, o que favorece e facilita a criação de sistemas com alta testabilidade~\citeonline{bernardo2011}. 
@@ -157,7 +156,7 @@ a utilização de uma linguagem ubíqua entre cliente e equipe de desenvolviment
 mais comuns ao cliente, como \textit{should, context, specification}
 %
 O BDD é um processo de desenvolvimento de software baseado no TDD. Embora seja 
-principalmente principalmente uma ideia de como um processo de desenvolvimento de 
+principalmente uma ideia de como um processo de desenvolvimento de 
 software deve ser gerenciado. a prática do BDD assume a utilização de ferramentas 
 como suporte para o desenvolvimento de software~\citeonline{haring2011}. O BDD utiliza 
 essas ferramentas para que os testes tenham como ponto de partida o compartemento 
@@ -173,7 +172,7 @@ Para que o comportamento seja analisado, é necessário entender o ponto de vist
 cliente, entendendo o comportamento que o sistema deve ter a partir da visão do cliente. 
 %
 \subsubsection{Príncipios do BDD}
-De acordo com Chelimky, estes são os três príncipios do BDD:
+De acordo com ~\citeonline{chelimsky2010}, estes são os três príncipios do BDD:
 \begin{enumerate}
 \item \textbf{O suficiente é suficiente:} parte da ideia de gerenciar o esfoço no 
 planejamento inicial do sistema, para não fazer menos nem mais do que o necessário 
@@ -183,12 +182,12 @@ não agrega valor ou que não aumenta a capacidade de agregar valor, pare e faç
 coisa em seu lugar.
 \item \textbf{Tudo é comportamento:} Do código à aplicação, pode-se usar o mesmo 
 pensamento e as mesmas construções linguísticas para descrever o comportamento, em 
-qualquer nível de granularidade ~\cite{chelimsky2010}. 
+qualquer nível de granularidade ~\citeonline{chelimsky2010}. 
 \end{enumerate}
 %
-O comportamento do sistema é descrito em historias de usuário, histórias que são 
+O comportamento do sistema é descrito em histórias de usuário, que são 
 escritas com a participação tanto de clientes como desemvolvedores do sistema. Assim 
-cada hisória de usuário deve seguir, de certa forma, a seguinte estrutura:
+cada história de usuário deve seguir, de certa forma, a seguinte estrutura:
 %
 \textbf{Título:} do que se trata a história.
 %
