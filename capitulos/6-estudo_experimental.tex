@@ -2,7 +2,7 @@
 
 Durante este capítulo, será apresentada uma introdução sobre o ambiente de trabalho e a plataforma de desenvolvimento, chamada Noosfero. A partir desta introdução apresentaremos os a avaliação de usabildiade, assim como os testes e as funcionalidades desenvolvidas dentro do processo de colaboração com esta plataforma.
 
-\section{Estudo de Caso - Nossfero}
+\section{Estudo de Caso - Noosfero}
 
 Noosfero\footnote{\url{noosfero.org}} é uma plataforma desenvolvida pela Colivre (Cooperativa de Tecnologias Livre)\footnote{url{colivre.coop.br}}, possui licença AGPL e é utilizado, principalmente em universidades públicas, para desenvolvimento de redes colaborativas. \footnote{url{http://softwarelivre.org/colivre/blog/projeto-noosfero}}
 %
@@ -103,44 +103,23 @@ A rede Comunidade UnB, que se encontra em ambiente de testes, porém disponível
 
 \section {Estudo sobre Usabilidade - Portal da Participação Social}
 
-\subsection{Identificação} ?? Realmente Necessária ?? 
+\subsection{Introdução}
 
-\textbf{Título}:“Avaliação da usabilidade do portal participa.br”.
+O Portal da Participação Social \footnote{\url{participa.br}} é um portal que agrega informações sobre oportunidades de participação social no governo federal e estimula a formação de comunidades em torno de temas ligados à participação. Informa sobre as consultas públicas, oferece ambientes para interação em vídeo e chat em eventos de governo. É um repositório das metodologias das conferências de políticas públicas. O Portal capta demandas da sociedade que não passem, necessariamente, pelos fluxos formais de participação. É uma plataforma para ampliar o debate entre a sociedade civil e o governo. % [Citar fonte]
 
-\textbf{Tema}: “Avaliação da Usabilidade” 
+\subsection{Justificativa}	
 
-\textbf{Área técnica}: “Qualidade de Software” 
+	A ideia de fazer esses estudo experimental era de conhecer e aplicar as técnicas existentes na engenharia de usabilidade em um contexto real de uso para verificar como funcionam as técnicas utilizadas na engenharia de usabilidade para avaliação de um website.
+	
+		
 
-\textbf{Autor:} Jônatas Medeiros de Mendonça  
+	% verificar essa justificativa
 
-\textbf{Afiliação:} FGA/UnB 
+	No ano 2000 foi criado o programa de Governo Eletrônico (e-GOV) \footnote{\url{www.governoeletronico.gov.br}} que têm como principais objetivos democratizar o acesso a informação e dinamizar a prestação de serviços públicos eletrônicos com foco em eficiência e efetividade das funções governamentais prestadas ao cidadão.
 
-\textbf{Local:} Brasília – Brasil - Data:  21/03/2014 
+	O Governo Federal adotou várias práticas de padrões para melhorar o acesso e a divulgação das informações e dos serviços do governo eletrônico, respeitando as particularidades de cada cidadão. Por isso foi criado o Modelo de Acessibilidade do Governo Federal (e-MAG) \footnote{e-MAG <portal>} que contém um conjunto de recomendações para tornar os sítios e portais acessíveis para uma maior quantidade de pessoas possíveis. 
 
-\subsection{Caracterização}
-
-\textbf{Nome da empresa:} Presidência da República
-
-\textbf{Domínio:} Análise do usuário participa.br
-
-\textbf{Tecnologias:} Noosfero, Rails 
-
-\textbf{Plataforma:} Linux 
-
-\textbf{Equipe:} 
-
-\textbf{Orientador:} Paulo Meirelles
-
-\textbf{Aluno pesquisador}: Jônatas Medeiros de Mendonça
-
-
-\subsection{Justificativa}
-
-	%No ano 2000 foi criado o programa de Governo Eletrônico (e-GOV) que têm como principais objetivos democratizar o acesso a informação e dinamizar a prestação de serviços públicos eletrônicos com foco em eficiência e efetividade das funções governamentais prestadas ao cidadão.~\footnote{www.governoeletronico.gov.br}
-
-O Governo Federal adotou várias práticas de padrões para melhorar o acesso e a divulgação das informações e dos serviços do governo eletrônico, respeitando as particularidades de cada cidadão. Por isso foi criado o Modelo de Acessibilidade do Governo Federal (e-MAG) que contém um conjunto de recomendações para tornar os sítios e portais acessíveis para uma maior quantidade de pessoas possíveis. 
-
-	O objetivo era de estabelecer padrões de qualiedade de uso, desenho, arquitetura da informação e navegação, desenvolvimento e manutenção na gestão dos sítios governamentais.O  e-PWG ~\footnote{e-PWG <portal>}, como ficou conhecido, são padrões web para o Governo eletrônico.
+	O objetivo era de estabelecer padrões de qualidade de uso, desenho, arquitetura da informação e navegação, desenvolvimento e manutenção na gestão dos sítios governamentais.O  e-PWG \footnote{e-PWG <portal>}, como ficou conhecido, são padrões web para o Governo eletrônico.
 
 	Foi feita uma análise do sítio participa.br em parceria com o Instituto Federal do Rio Grande do Sul (IFRS) onde foi criado um relatório para orientar e sugerir correções que facilitarão o acesso ao seu conteúdo quanto as recomendações sobre o Modelo de Acessibilidade em Governo Eletrônico (e-MAG) e com os Padrões Web em governo Eletrônico (e-PWG). Essas recomendações busca levantar problemas que impactarão na experiência de uso do portal pelo cidadão.
 
@@ -182,7 +161,7 @@ No contexto de       & Portais Governamentais                       \\ \hline
 A partir do objetivo de medição estabelecido no quadro 1  foram definidas questões sobre o que é preciso saber de forma a apoiá-la a entender se o objetivo específico foi alcançado, e para cada questão foram definidas as métricas relacionadas no quadro 2: 
 
 \begin{table}[h]
-\begin{tabular}{| p{15cm} |l|l|}
+\begin{tabular}{| p{5cm} |l|l|}
 \hline
 \textbf{Questões}                                                          & Métricas                      & Diretrizes para interpretação                                                       \\ \hline
 Q1. Qual o perfil do usuário que utiliza o portal participa.br?            &                               & Análise de Dados Estatísticos, criação de personas, análise dos dados qualitativos. \\ \hline
@@ -295,40 +274,44 @@ a. Independentes
 
 São variáveis que podem ser manipuladas no estudo experimental. É a “causa, antecedente, origem de um fenômeno, processo que constitui o objeto de estudo”.(Carrasco)
 
-%Colocar tabela
+Foram identificadas as seguintes váriavéis idependentes: 
 
-A interface do Portal da Participação Social
-Questionários de usabilidade.
-Questionários de Perfil do usuário
-
-%colocar tabela
+\begin{itemize}
+	\item A interface do Portal da Participação Social
+	\item Os cenários/tarefas para realização
+	\item Perfil do usuário
+	\item Contexto da avaliação
+\end{itemize}
 
 b. Dependentes
 
 É o efeito, consequência o resultado observado da influência das variávies independentes (Carrasco).
 
-
 \begin{table}[h]
 \begin{tabular}{|l|l|l|l|l|l|l|l|}
 \hline
-\textbf{Nome}                                                                 & \textbf{Abreviação} & \textbf{Classe} & \textbf{Entidade}                                                  & \textbf{\begin{tabular}[c]{@{}l@{}}Tipo \\ Atributo\end{tabular}} & \textbf{\begin{tabular}[c]{@{}l@{}}Tipo de \\ escala\end{tabular}} & \textbf{Faixa de Contagem}                                                          & \textbf{Regra de Contagem}                                                                          \\ \hline
-\begin{tabular}[c]{@{}l@{}}Grau de \\ Satisfação \\ do Usuário\end{tabular}   & OVERALL             & Produto         & Satisfação                                                         & Externo                                                           & Ordinal                                                            & \begin{tabular}[c]{@{}l@{}}Discordo Fortemente /\\ Concordo Fortemente\end{tabular} & \begin{tabular}[c]{@{}l@{}}Avalia os \\ itens 1 até 19.\end{tabular}                                \\ \hline
-\begin{tabular}[c]{@{}l@{}}Grau de \\ Utilidade \\ do sistema\end{tabular}    & SYSUSE              & Produto         & Utilidade                                                          & Externo                                                           & Ordinal                                                            & \begin{tabular}[c]{@{}l@{}}Discordo Fortemente /\\ Concordo Fortemente\end{tabular} & \begin{tabular}[c]{@{}l@{}}Avalia os \\ itens 1 até 8.\end{tabular}                                 \\ \hline
-\begin{tabular}[c]{@{}l@{}}Grau de \\ Qualidade \\ da Informação\end{tabular} & INFOQUAL            & Produto         & \begin{tabular}[c]{@{}l@{}}Qualidade \\ da Informação\end{tabular} & Externo                                                           & Ordinal                                                            & \begin{tabular}[c]{@{}l@{}}Discordo Fortemente /\\ Concordo Fortemente\end{tabular} & \begin{tabular}[c]{@{}l@{}}Avalia os\\ itens 9 até 15.\end{tabular}                                 \\ \hline
-\begin{tabular}[c]{@{}l@{}}Grau de \\ Qualidade \\ da Interface\end{tabular}  & INTERQUAL           & Produto         & \begin{tabular}[c]{@{}l@{}}Qualidade \\ da Interface\end{tabular}  & Externo                                                           & Ordinal                                                            & \begin{tabular}[c]{@{}l@{}}Discordo Fortemente /\\ Concordo Fortemente\end{tabular} & \begin{tabular}[c]{@{}l@{}}Avalia os \\ itens 16 até 18.\end{tabular}                               \\ \hline
-\begin{tabular}[c]{@{}l@{}}Tempo de \\ duração de \\ uma tarefa\end{tabular}  & Tempo               & Produto*        & Duração                                                            & Externo*                                                          & Hora*                                                              & Minutos                                                                             & Cronometro                                                                                          \\ \hline
-\begin{tabular}[c]{@{}l@{}}Taxa de \\ conclusão \\ da tarefa\end{tabular}     & Conclusão           & Produto*        & Conclusão                                                          & Externo*                                                          & Percentual                                                         & 0 a 100 \%                                                                          & \begin{tabular}[c]{@{}l@{}}(Tarefas não \\ concluidas/\\ tarefas \\ concluídas)\\ *100\end{tabular} \\ \hline
+\textbf{Nome} & \textbf{Abreviação}  & \textbf{Entidade} & \textbf{\begin{tabular}[c]{@{}l@{}}Faixa \\ de Contagem\end{tabular}} & \textbf{\begin{tabular}[c]{@{}l@{}}Regra de \\ contagem\end{tabular}}                                                                 \\ \hline
+\begin{tabular}[c]{@{}l@{}}Grau de \\ Satisfação \\ do Usuário\end{tabular}   & OVERALL                     & Satisfação                                                                                                                                                                               & \begin{tabular}[c]{@{}l@{}}Discordo \\Fortemente /\\ Concordo \\Fortemente\end{tabular} & \begin{tabular}[c]{@{}l@{}}Avalia os \\ itens 1 até 19.\end{tabular}                                \\ \hline
+\begin{tabular}[c]{@{}l@{}}Grau de \\ Utilidade \\ do sistema\end{tabular}    & SYSUSE                       & Utilidade                                                                                                                                                                                & \begin{tabular}[c]{@{}l@{}}Discordo\\ Fortemente /\\ Concordo \\Fortemente\end{tabular} & \begin{tabular}[c]{@{}l@{}}Avalia os \\ itens 1 até 8.\end{tabular}                                 \\ \hline
+\begin{tabular}[c]{@{}l@{}}Grau de \\ Qualidade \\ da Informação\end{tabular} & INFOQUAL                    & \begin{tabular}[c]{@{}l@{}}Qualidade \\ da Informação\end{tabular}                                                                                                                        & \begin{tabular}[c]{@{}l@{}}Discordo \\Fortemente /\\ Concordo \\Fortemente\end{tabular} & \begin{tabular}[c]{@{}l@{}}Avalia os\\ itens 9 até 15.\end{tabular}                                 \\ \hline
+\begin{tabular}[c]{@{}l@{}}Grau de \\ Qualidade \\ da Interface\end{tabular}  & INTERQUAL                    & \begin{tabular}[c]{@{}l@{}}Qualidade \\ da Interface\end{tabular}                                                                                                                        & \begin{tabular}[c]{@{}l@{}}Discordo \\ Fortemente /\\ Concordo\\ Fortemente\end{tabular} & \begin{tabular}[c]{@{}l@{}}Avalia os \\ itens 16 até 18.\end{tabular}                               \\ \hline
+\begin{tabular}[c]{@{}l@{}}Tempo de \\ duração de \\ uma tarefa\end{tabular}  & Tempo               &                                                                                                                               Hora*                                                              & Minutos                                                                             & Cronometro                                                                                          \\ \hline
+\begin{tabular}[c]{@{}l@{}}Taxa de \\ conclusão \\ da tarefa\end{tabular}     & Conclusão                   & Conclusão                                                                                                                                                                            & 0 a 100 \%                                                                          & \begin{tabular}[c]{@{}l@{}}(Tarefas não \\ concluidas/\\ tarefas \\ concluídas)\\ *100\end{tabular} \\ \hline
 \end{tabular}
 \end{table}
+
+
 
 \subsubsection{Recursos}
 
 \begin{itemize}
 \item Estação de trabalho para cada participante.
-\item Navegador de Internet
-\item Questionário para a avaliação da usabilidade. (Definir o questionário)
+\item Navegador de Internet.
+\item Questionário para a avaliação da usabilidade.
 \item Software de Vídeo (Camtasia - versão trial) ou outro.
 \end{itemize}
+
+% verificar o que falta
 
 \subsubsection{Validade dos Resultados}
 
@@ -357,16 +340,14 @@ Enquanto o participante realiza as atividades, um observador registra se o parti
 
 \subsection{Avaliação dos Resultados}
 
-\subsubsection{Plano de Avaliação}
-
 \begin{table}[h]
-\begin{tabular}{|l| p{10cm}|}
+\begin{tabular}{|l|l|}
 \hline
 \textbf{Técnica}               & \textbf{Descrição}                                                                                                                                                                                                 \\ \hline
-Avaliação da Ferramenta        & Aplicação do questionário de usabilidade para o portal participa.br                                                                                                                                                \\ \hline
-Registro de ocorrências        & \begin{tabular}[c]{@{}l@{}}Durante o experimento, um observador irá registrar todas as \\ ocorrências referentes à avaliação das ferramentas.\end{tabular}                                                         \\ \hline
-Avaliação do Experimento       & \begin{tabular}[c]{@{}l@{}}Ao final da avaliação das ferramentas os participantes irão preencher \\ um questionário geral, avaliando o andamento do experiment\end{tabular}                                        \\ \hline
-Relatório de análise dos dados & \begin{tabular}[c]{@{}l@{}}No final do estudo será feito um relatório com a análise dos dados\\ e lições aprendidas no que diz respeito à atuação da sua equipe \\ durante a execução do experimento.\end{tabular} \\ \hline
+Avaliação da Ferramenta        & Aplicação do questionário de usabilidade \\para o portal participa.br                                                                                                                                                \\ \hline
+Registro de ocorrências        & \begin{tabular}[c]{@{}l@{}}Durante o experimento, um observador \\ irá registrar todas as ocorrências \\ referentes à avaliação das ferramentas.\end{tabular}                                                         \\ \hline
+Avaliação do Experimento       & \begin{tabular}[c]{@{}l@{}}Ao final da avaliação das\\ ferramentas os participantes irão preencher \\ um questionário geral, avaliando o andamento do experiment\end{tabular}                                        \\ \hline
+Relatório de análise dos dados & \begin{tabular}[c]{@{}l@{}}No final do estudo será feito um \\relatório com a análise dos dados\\ e lições aprendidas no que \\diz respeito à atuação da sua equipe \\ durante a execução do experimento.\end{tabular} \\ \hline
 \end{tabular}
 \end{table}
 
