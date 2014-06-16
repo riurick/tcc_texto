@@ -4,7 +4,7 @@ Durante este capítulo, será apresentada uma introdução sobre o ambiente de t
 
 \section{Estudo de Caso - Noosfero}
 
-Noosfero\footnote{\url{noosfero.org}} é uma plataforma desenvolvida pela Colivre (Cooperativa de Tecnologias Livre)\footnote{url{colivre.coop.br}}, possui licença AGPL e é utilizado, principalmente em universidades públicas, para desenvolvimento de redes colaborativas. \footnote{url{http://softwarelivre.org/colivre/blog/projeto-noosfero}}
+Noosfero\footnote{\url{noosfero.org}} é uma plataforma desenvolvida pela Colivre (Cooperativa de Tecnologias Livre)\footnote{\url{colivre.coop.br}}, possui licença AGPL e é utilizado, principalmente em universidades públicas, para desenvolvimento de redes colaborativas. \footnote{\url{http://softwarelivre.org/colivre/blog/projeto-noosfero}}
 %
 O noosfero foi desenvolvido na linguagem de programação Ruby, versão 1.8.7, e utiliza
 o framework Model-View-Controller (MVC) para aplicações web Ruby on Rails, versão 
@@ -40,7 +40,7 @@ Antes da fase de desenvolvimento for iniciada é necessário que seja feita a
 documentação do que será desenvolvido. Os desenvolvedores responsáveis criam um 
 \textit{action item} (item de ação), contendo a história de usuário ou os requisitos do novo 
 recurso. Um \textit{action item} pode ser descrito como uma \textit{feature} (novo recurso) ou como 
-um \textit{bug} (defeito) encontrado, como demonstrado nas figuras abaixo:\footnote{url{noosfero.org}}
+um \textit{bug} (defeito) encontrado, como demonstrado nas figuras abaixo:\footnote{\url{noosfero.org}}
 %
 \begin{figure}[!h]
     \centering
@@ -63,7 +63,7 @@ um \textit{bug} (defeito) encontrado, como demonstrado nas figuras abaixo:\footn
 Além da documentação, é necessário o envio de um \textit{email} a comunidade descrevendo o 
 que será desenvolvido. A partir deste \textit{email}, a comunidade irá avaliar a funcionalidade 
 descrita e decidir se é um funcionalidade importante para se incorporar ou não. 
-Este processo de avaliação tem a duração de uma semana, geralmente.\footnote{url{noosfero.org}}
+Este processo de avaliação tem a duração de uma semana, geralmente.\footnote{\url{noosfero.org}}
 
 Com a aprovação da comunidade são feitas as revisões do ciclo de desenvolvimento, 
 que deve seguir os seguintes passos:
@@ -474,7 +474,7 @@ Um cliente inicia uma sessão de LDAP através da ligação a um servidor LDAP, 
 a conexão,é requerida ao servidor uma operação do cliente, e o servidor responde a 
 mesma. 
 %
-Para o usuário, o \textit{plugin} desenvolvido modifica a seção de cadastro de novos usuários e a seção de \textit{login} de usuários. Na seção de cadastro o usuário agora deve cadastrar a matrícula e senha que o mesmo usa no matricula web da UnB\footnote{url{matriculaweb.unb.br}}, além dos dados que já eram cadastrados anteriormente. Na seção de \textit{login} o usuário também pode entrar no Comunidade UnB através de sua matrícula e senha do matrícula web da UnB (além do \textit{email} e \textit{username} 
+Para o usuário, o \textit{plugin} desenvolvido modifica a seção de cadastro de novos usuários e a seção de \textit{login} de usuários. Na seção de cadastro o usuário agora deve cadastrar a matrícula e senha que o mesmo usa no matricula web da UnB\footnote{\url{matriculaweb.unb.br}}, além dos dados que já eram cadastrados anteriormente. Na seção de \textit{login} o usuário também pode entrar no Comunidade UnB através de sua matrícula e senha do matrícula web da UnB (além do \textit{email} e \textit{username} 
 - entradas normalmente utilizadas)
 %
 Nas camadas mais inferiores, o \textit{plugin} é responsável por modificar o modelo de dados do sistema, para que o usuário possa assim cadastrar sua matrícula. Assim o \textit{plugin} também é responsável por configurar a conexão com o LDAP server da UnB e finalmente verificar se os dados do usuário estão corretos no momento do seu cadastro. Abaixo encontra-se descritas as histórias de usuário referente ao {plugin} Ldap UnB:
