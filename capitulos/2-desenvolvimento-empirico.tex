@@ -1,28 +1,26 @@
-%------------------------------------------------------------------------------%
-
-\chapter{Métodos de Desenvolvimento Empírico}
+\chapter{Métodos Empíricos de Desenvolvimento de Software}
 \label{cap:desenvolvimento-empirico}
 
 O Empirismo baseia-se na aquisição de sabedoria através da percepção do mundo 
 externo, ou então do exame da atividade da nossa mente, que abstrai a realidade 
-que nosé exterior e as modifica internamente~\cite{chaui2003}.
+que nos é exterior e as modifica internamente~\cite{chaui2003}.
 %
-Mecanismos do controle de processo empírico, onde ciclos de feedback constituem o
+Mecanismos do controle de processo empírico, onde ciclos de \emph{feedback} constituem o
 núcleo da técnica de gerenciamento que são usadas em oposição ao tradicional 
-gerenciamento de comando e controle.É uma forma de planejar e gerenciar projetos 
+gerenciamento de comando e controle.
+%
+É uma forma de planejar e gerenciar projetos 
 trazendo a autoridade da tomada de decisão a níveis de propriedade de operação e 
 certeza~\cite{Schwaber2004}.
 %
 Neste capítulo será abordado algumas ideias e práticas de processo de desenvolvimento
-de software que utilizam métodos ágeis, processos amplamente utilizados no 
-desenvolvimentode software livre, outro assunto também abordado no decorrer 
-deste texto.
+de software que utilizam métodos empíricos, como os métodos ágeis e o processo
+de desenvolvimento usado pelas comunidade de sofware livre.
 %
 \section{Software Livre}
 
 Software livre é uma filosofia que trata programas de computadores como fontes de 
-conhecimento que devem ser compartilhados entre a comunidade, evoluindo assim o 
-desenvolvimento do pensamento no que se diz respeito a desenvolvimento de software.
+conhecimento que devem ser compartilhados entre a comunidade.
 %
 De acordo com ~\citeonline{stallman2001}, ativista fundador do movimento software livre, um software deve seguir quatro princípios:
 %
@@ -32,21 +30,18 @@ De acordo com ~\citeonline{stallman2001}, ativista fundador do movimento softwar
 necessidades
 \item Liberdade de redistribuir cópias;
 \item Liberdade de melhorar o software e de tornar as modificações públicas de modo 
-que a comunidade se beneficie da melhoria~\cite{stallman2001}.
+que a comunidade se beneficie da melhoria.
 \end{enumerate}
 %
-Um software é considerado software livre se segue estes quatro princípios, portanto 
+Um software é considerado software livre se segue esses quatro princípios, portanto 
 o usuário deve poder utilizar, estudar e modificar o software como ele bem entender, 
 não significa que o software é necessariamente de graça, mas a partir do momento em 
 que se obtém posse de um programa um usuário pode modificar e redistribuir o mesmo 
 programa.
 %
 Para ~\citeonline{stallman2001}, a partir do momento em que os custos de desenvolvimento de um software são pagos, não há motivos para restrição de acesso, pois a disseminação de conhecimento é muito mais benéfica do que potenciais lucros para o produtor.
-%
 
-\subsection{GNU e GNU GPL}
-
-Umas das grandes conquistas de Stallman e da Fre Software Foudation (FSF), 
+Umas das grandes conquistas de Stallman e da \emph{Fre Software Foudation} (FSF), 
 principal organização dedicada a produção e à divulgação do software livre, 
 foram o projeto GNU\footnote{\url{www.gnu.org}} e a licença de software General Public License (GPL).
 %
@@ -58,11 +53,10 @@ a liberdade de buscar suporte e personalizações da forma que quisessem.
 Com o GNU, também foi desenvolvida a GPL, licença que dá amparo legal e formaliza 
 a ideologia de software livre, amplamente utilizada pelos software livres.
 %
-No final do desenvolvimento do GNU, o finlandês Linus Torvalds iniciou o 
-desenvolvimento de um núcleo de sistema operacional também baseado no Unix e 
-deu o nome do núcleo de Linux, disponibilizando-o pela licença GNU GPL. Assim 
-foi promovida a integração entre GNU e Linux, criando assim o GNU/Linux, amplamente 
-utilizado até os dias de hoje.
+Em paralelo ao desenvolvimento do GNU, sem relação alguma com o projeto da FSF,
+o finlandês Linus Torvalds iniciou o desenvolvimento de um núcleo de sistema operacional também baseado no Unix e deu o nome do núcleo Linux (\emph{Linux Kernel}), disponibilizando-o pela licença GNU GPL.
+%
+Assim, como o fato do projeto GNU ainda não ter seu núcleo pronto, foi promovida a integração entre GNU e Linux, resultando no sistema operacional GNU/Linux, amplamente utilizado até os dias de hoje, configurando o sucesso do processo empírico e colaborativo dos projetos de software livre.
 
 %------------------------------------------------------------------------------%
 
@@ -73,10 +67,10 @@ A utilização de métodos ágeis no desenvolvimento de software tem como caract
 intrínsecas a flexibilidade e rapidez nas respostas a mudanças. 
 %
 A agilidade, para uma organização de desenvolvimento de software, é a habilidade 
-deadotar e reagir rapidamente e apropriadamente a mudanças no seu ambiente e por 
-exigências impostas pelos clientes~\cite{nerur2005}.
+de adotar e reagir rapidamente e apropriadamente a mudanças no seu ambiente e por 
+exigências impostas pelos ``clientes''~\cite{nerur2005}.
  	
-Os métodos ágeis compartilham valores como comunicação, feedback constante, colaboração com o cliente e constante adaptação são baseados no manifesto ágil. Os quatro princípios básicos do manifesto ágil mostra o que se espera de qualquer método de desenvolvimento desta categoria:
+Os métodos ágeis compartilham valores como comunicação, \emph{feedback} constante, colaboração com o cliente e constante adaptação são baseados no manifesto ágil. Os quatro princípios básicos do manifesto ágil mostra o que se espera de qualquer método de desenvolvimento desta categoria:
 %
 \begin{enumerate}
 \item Indivíduos  e interações sobre processos e ferramentas;
@@ -84,38 +78,42 @@ Os métodos ágeis compartilham valores como comunicação, feedback constante, 
 \item Colaboração com o cliente sobre negocioação de contrato;
 \item Responder às  mudanças sobre seguir um planejamento;
 \end{enumerate}
+%TODO: nota de rodapé para o manifesto ágil
+
+Em projetos ágeis, o cliente/usuário é mais ativo durante o processo de desenvolvimento, 
+determinando em conjunto com a equipe de desenvolvimento o que será desenvolvido, 
+além de participar da validação do o que foi desenvolvido.
 %
-Em projetos ágeis o cliente é mais ativo durante o processo de desenvolvimento, 
-determinandoem conjunto com a equipe de desenvolvimento o que será desenvolvido, 
-além de participarda validação. Os projetos ágeis também buscam estabelecer um 
-tempo determinado e curto para entregade novas releases do sistema, com o objetivo 
-de trazer mais satisfação ao cliente.
+Os projetos ágeis também buscam estabelecer um 
+tempo determinado e curto para entrega de novas versões do sistema, com o objetivo 
+de trazer mais satisfação ao cliente/usuário.
 %
-A partir destes curtos ciclos, que são as interações, a equipe de desenvolvimento 
-devese preocupar mais com a evolução dos requisitos, que pode gerar mudanças, porém 
+A partir desses curtos ciclos, que são as interações, a equipe de desenvolvimento 
+deve se preocupar mais com a evolução dos requisitos, que pode gerar mudanças, porém 
 mantém o projetoatualizados e diminui o riscos de grandes mudanças a medida que o 
 projeto chega ao final.
 %
 Da perspectiva do produto, métodos ágeis são mais adequados quando os requisitos 
 estão emergindo e mudando rapidamente, embora não exista um consenso completo 
-neste ponto. De uma perspectiva organizacional, a aplicabilidade pode ser expressa 
+nesse ponto.
+%TODO: eu discordo
+De uma perspectiva organizacional, a aplicabilidade pode ser expressa 
 examinando três dimensões chaves da organização: cultura, pessoal e comunicação. 
-Em relação a estas áreas, inúmeros fatores chave do sucesso podem ser identificados 
+Em relação a essas áreas, inúmeros fatores chave do sucesso podem ser identificados 
 ~\cite{cohen2004}.
+%TODO: Vocês escreveram isso baseado na Wikipédia:
+%http://pt.wikipedia.org/wiki/Desenvolvimento_%C3%A1gil_de_software
+%tem um bom percentual de ctrl C + V
 
-Um método ágil conhecido como programação extrema, (Extreme Programming - XP) se 
-tornou-se bastante popular por utilizar práticas focadas em codificação, como 
-programação pareada, integração contínua e desenvolvimento dirigido por testes.
+Um método ágil conhecido como programação extrema (\emph{Extreme Programming} - XP), 
+tornou-se bastante popular por utilizar práticas focadas em codificação.
 %
 O objetivo principal do XP é a excelência no desenvolvimento de software, visando 
-um baixo custo, poucos defeitos, alta produtividade e alto retorno de investimento
-, de acordo com ~\citeonline{sato2007}. O XP conta com algumas práticas de desenvolvimento para dar suporte à busca pelos objetivos citados, essas práticas são: refatoração, integração contínua, testes automatizados, código coletivo e programação em pares.
+um baixo custo, poucos defeitos, alta produtividade e alto retorno de investimento,
+de acordo com ~\citeonline{sato2007}. O XP conta com algumas práticas de desenvolvimento para dar suporte à busca pelos objetivos citados, essas práticas são: refatoração, integração contínua, testes automatizados, código coletivo e programação em pares.
 
-\section{Considerações finais}
+Em suma, o ambiente de desenvolvimento que este trabalho está inserido é baseado em métodos empíricos de desenvolvimento de software, com XP e Software Livre, buscando seguir os princípios ágeis para o desenvolvimento de software livre, que será especificado no capítulo 5.
 
-O ambiente de desenvolvimento que este trabalho está inserido é baseado em metodologias ágeis como Scrum e XP, buscando seguir os princípios ágeis para o desenvolvimento de software livre, que será especificado no capítulo 5.
-%------------------------------------------------------------------------------%
-
-
-
-
+%TODO: Está incompleto este capítulo. Não relacionou métodos ágeis e software livre. A ideia não é usar métodos ágeis para desenvolvimento de software livre: software livre é um método empírico de desenvolvimento de software, assim como métodos ágeis. Eles têm várias práticas em comum.
+%TODO: porque SL e MA são métodos empíricos? Quais as vantagens? Por que estamos trabalhando neste contexto?
+%TODO: tem algumas parte que foram simplesmente copiada: deve-se ter cuidado com isso para não caracterizar plágio.
