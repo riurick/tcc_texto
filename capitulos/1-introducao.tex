@@ -1,36 +1,37 @@
 \chapter{Introdução}
 
-O desenvolvimento de software usando métodos empíricos de desenvolvimento de software, como software livre e métodos ágeis, é uma realidade.
+O desenvolvimento de software usando métodos empíricos, como software livre e métodos ágeis, é uma realidade. A prática básica desses métodos são os testes automatizados, preocupando-se com as aplicações de testes em sistemas cada vez mais dinâmicos e reutilizáveis com propostas para aumento de qualidade e produtividade de software~\cite{vicente2010}.
 %
-A prática básica desses métodos são os testes automatizados, preocupando-se com as aplicações de testes em sistemas cada vez mais dinâmicos e reutilizáveis com propostas para aumento de qualidade e produtividade de software~\cite{vicente2010}.
-%
-Adicionalmente, as áreas relacionadas a usabilidade vem sendo estudas para serem aplicadas no contexto de desenvolvimento empírico de software. Criar software que seja útil e fácil de usar é fator importante para a evolução dos sistemas ~\cite{santos2012}
-%TODO: referência o trabalho da Ana Paula Santos.
+Adicionalmente, as áreas relacionadas a usabilidade vem sendo estudas para serem aplicadas no contexto de desenvolvimento empírico de software. Criar software que seja útil e fácil de usar é fator importante para a evolução dos sistemas ~\cite{santos2012}.
+%DONE: referência o trabalho da Ana Paula Santos.
 
+Um dos grandes problemas encontrados em projetos software livre, por exemplo, é a pouca atenção dada aos aspectos referentes a usabilidade e acessibilidade das aplicações. Para ~\citeonline{moreira} a comunidade de software livre é um dos principais problemas que contribui para a falta de usabilidade dos softwares por apenas enfatizar na criação, melhoria e teste do código fonte.
 
-Um dos grandes problemas encontrados em projetos software livre, por exemplo, é a pouca atenção dada aos aspectos referentes a usabilidade e acessibilidade das aplicações. Para ~\citeonline{moreira} a comunidade de software livre é um dos principais problemas que contribui para a falta de usabilidade dos softwares por apenas enfatizar na criação. melhoria e teste do código fonte.
-
-%TODO: faltou referência aqui... possivelmente também o texto da Ana Paula  
+%done: faltou referência aqui... possivelmente também o texto da Ana Paula  
 %
 Segundo ~\citeonline{preece2007}, uma das causas da baixa adoção de softwares livres em mercados de larga escala é a baixa qualidade dos estilos de interação implementados nas interfaces dos produtos. Uma maioria não se preocupa com bons elementos de interface com usuário (UI). 
 
 Atualmente, algumas comunidades de software livre vêm se atentando as questões de usabilidade como forma de se manter no mercado. Um dos casos que conhecemos foi do Joomla que é um CMS (Content Manager System) ou em português, sistema de gerenciamento de conteúdo que nessas últimas versões investiram em questões de usabilidade, sendo o primeiro CMS a ser 100 por cento adaptado à dispositivos móveis tanto no conteúdo como na área administrativa. \footnote{\url{http://www.joomla.org/3/pt_br}}
-%TODO: o que é ser responsivo? Sejam mais didáticos com o Leitor
-%TODO: quero uma nota de rodapé para a notícia sobre esta funcionalidade no Joomla
-Foi criada uma frente de desenvolvimento focado na experência do usuário que trouxe melhorias significativas a partir da versão 3.0 do CMS \footnote{\url{http://ux.joomla.org/}}. A partir dessa nova versão foi adotado o framework Twitter Bootstrap \footnote{\url{http://getbootstrap.com/}} que proporciona um conjunto padrão de “widgets” de interface de usuário que irão permitir aos desenvolvedores de extensçao e templates  trabalharem com o mesmo conjunto de normas de marcação, permitindo que os desenvolvedores de extensões se concentrem na funcionalidade e que desenvolvedores de templates desenvolvam templates que funcionem sem modificação das extensões. 
-%TODO: descrever sigla CMS
-%TODO: quais melhorias?
+%done: o que é ser responsivo? Sejam mais didáticos com o Leitor
+%done: quero uma nota de rodapé para a notícia sobre esta funcionalidade no Joomla
+Foi criada uma frente de desenvolvimento focado na experência do usuário que trouxe melhorias significativas a partir da versão 3.0 do CMS \footnote{\url{http://ux.joomla.org/}}. A partir dessa nova versão foi adotado o framework Twitter Bootstrap \footnote{\url{http://getbootstrap.com/}} que proporciona um conjunto padrão de “widgets” de interface de usuário que irão permitir aos desenvolvedores de extensões e templates  trabalharem com o mesmo conjunto de normas de marcação, permitindo que os desenvolvedores de extensões se concentrem na funcionalidade e que desenvolvedores de templates desenvolvam templates que funcionem sem modificação das extensões. 
+%done: descrever sigla CMS
+%done: quais melhorias?
 Logo em seguida o Wordpress, outro sistema de gerenciamento de contéudo, investiu em melhorias da interface se atentando aos novos padrões adotados na web.
 %TODO: Quais melhorias?
 %TODO: falou do Joomla, falou do Wordpress... e o Noosfero?
 
 Entender o perfil do usuário é um dos principais pontos que devem ser levados em consideração pelos desenvolvedores de software em geral. Cada perfil de usuário tem suas particularidades e suas expectativas quanto a utilização do sistema. Quando falamos de usuários com experiência de uso de softwares semelhantes é preciso ter uma maior atenção na usabilidade para que possa ter uma boa aceitação e menor impacto com as mudanças.
+
+A adoção das práticas de usabilidade no contexto de métodos ágeis vêm sendo estudada por vários autores no qual afirmam que é possível a integração visto que tanto os métodos ágeis como os processo de usabilidade têm em comum características que colocam o foco do desenvolvimento nas necessidades e anseios dos usuários finais, na interação entre os stakeholders envolvidos e na qualidade final do produto a ser desenvolvido.
+
 %TODO: apenas falou de software livre e não fez o link que com os métodos ágeis.
 %TODO: software livre é um método empírico de desenvolvimento assim como os métodos ágeis
 %Done: não fizeram um link entre uma possível relação entre testes e usabilidade
 
-A automação de testes é uma prática ágil, eficaz e de baixo custo para melhorar
-a qualidade dos sistemas de software~\cite{cotter1995}. O que este trabalho busca é encontrar um ponto de intersecção entre os testes automatizados utilizados no desenvolvimento ágil e a usabilidade de um sistema. 
+A automação de testes é uma prática ágil, eficaz e de baixo custo para melhorar a qualidade dos sistemas de software~\cite{cotter1995}. O que este trabalho busca é encontrar um ponto de intersecção entre os testes automatizados utilizados no desenvolvimento ágil e a usabilidade de um sistema.
+
+ 
 
 %------------------------------------------------------------------------------%
 \section{Problemas}
@@ -62,11 +63,6 @@ Para satisfazer os objetivos gerais do trabalho foram definidos objetivos specí
 \item Identificar quais as técnicas de \emph{design} e usabilidade  podem ser utilizadas em cada fase do processo ágil de desenvolvimento de software livre;
 \item Verificar como práticas de BDD e TDD podem influenciar a usabilidade de um software.
 
-%\item Analisar a usabilidade dos portais governamentais utilizando diferentes técnicas de avaliação, a fim de que a avaliação possa ser feita não somente pelo especialista de usabilidade, mas também para que os usuários avaliem a qualidade em uso dos portais;
-%TODO: acho que não faremos isso
-
-%\item Evoluir o processo de desenvolvimento de software empírico a partir de um estudo de caso específico;
-%TODO: não vamos evoluir processo...
 
 \end{enumerate}
 
@@ -94,12 +90,15 @@ Neste trabalho, a coleta e análise dos dados serão realizadas com base em  mat
 
 \begin{description}
 \item[Estudo bibliográfico]
+
 %
 Levando em consideração os objetivos da pesquisa, o estudo bibliográfico aborda a usabilidade e a sua relação com as diferentes áreas de conhecimento, tentando entender como a usabilidade está presente em nosso meio. As áreas pesquisadas são (Arquitetura da Informação, Design, Ergonomia, Interação Humano Computador, Engenharia de Usabilidade, Experiência do Usuário, Psicologia, entre outras).
 %
-Estamos estudando os métodos ágeis de desenvolvimento e o software livre como um método de desenvolvimento de software.
+Uma das relações estudadas se encontra na adoção das práticas de usabilidade no desenvolvimento empírico de software. Para isso é preciso conhecer o que são os métodos ágeis e o desenvolvimento de software livre.
+
 %
-Além disso é necessário conhecer o ciclo de \emph{design} centrado no usuário. Encontrar maneiras de como inserir os métodos de usabilidade utilizando uma abordagem ágil em um contexto de software livre. 
+Além disso é necessário conhecer os métodos utilizados pela Engenharia de Usabilidade e Interação Humano Computador. Conhecer o ciclo de \emph{design} centrado no usuário e encontrar maneiras de como é possível integrar a abordagem ágil com os processos centrado no usuário.
+%
 
 
 
