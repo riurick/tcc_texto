@@ -3,7 +3,9 @@
 \label{cap:testes}
 
 Testar é uma pratica intrínseca ao desenvolvimento e é antiga a necessidade de
-criar programas para testar cenários específicos por ~\citeonline{everett2007}. Testes de software serão abordados neste cápítulo, iniciando com uma visão geral de testes 
+criar programas para testar cenários específicos por ~\citeonline{everett2007}.
+%
+Testes de software serão abordados neste cápítulo, iniciando com uma visão geral de testes 
 automatizados e conhecendo algumas práticas e padrões utilizados para desenvolver
 os mesmos.
 
@@ -21,12 +23,13 @@ Teste automatizado é a prática de tornar os testes de software independentes d
 intervenção humana, criando scripts ou programas simples de computador que exercitam 
 o sistema em teste, capturam os efeitos colaterais e fazem verificações, tudo 
 automatica e dinamicamente~\cite{meszaros2007}.
-
-Os testes automatizados afetam diretamente a qualidade dos sistemas de software,
-portanto agregam valor  ao produto final, mesmo que os artefatos adicionais
-produzidos não sejam visíveis para os usuários finais do sistemas.
 %
-Estes testes podem ser divididos em diversos tipos, o que facilita a manutenção 
+Os testes automatizados afetam diretamente a qualidade dos sistemas de software,
+portanto, agregam valor  ao produto final, mesmo que os artefatos adicionais
+produzidos não sejam visíveis para os usuários finais do sistemas.
+%TODO: faltou referência aqui
+%
+Esses testes podem ser divididos em diversos tipos, o que facilita a manutenção 
 dos mesmos.
 
 \begin{enumerate}
@@ -37,42 +40,58 @@ nomeado.
 %
 Normalmente, ele é associado a funções para linguagens procedimentais e métodos em 
 linguagens orientadas a objetos.
+
 \item \textbf{Testes funcionais:} testes que tem como objetivo verificar a eficiência
 dos componentes de um sistema.~\cite{molinari2003}
+
 \item \textbf{Testes de integração:} denominação ampla que representa a busca de 
 erros de relacionamento entre quaisquer módulos de um software, incluindo desde 
 a integração de pequenas unidades até a integração de bibliotecas das quais um 
 sistema depende, servidores e gerenciadores de banco de dados.
+
 \item \textbf{Testes de interface de usuário} testes que verificam a correção 
-por meio da simulação de eventos de usuário. A partir destes eventos, são feitas 
+por meio da simulação de eventos de usuário. A partir desses eventos, são feitas 
 verificações na interface e em outras camadas.
+%TODO: explorar isso no TCC 2 para link com a parte de usabilidade
+
 \item \textbf{Testes de leiaute:} testes que buscam avaliar a beleza da interface 
 e verificar a presença de erros após a renderização, dificeis de indentificar 
-com testes comuns de interface
+com testes comuns de interface.
+%TODO: explorar isso no TCC 2 para link com a parte de usabilidade
+% Avaliar beleza?
+
 \item \textbf{Testes de aceitação:} são testes de correção e validação, idealmente 
 especificados por clientes ou usuários finais do sistema para verificar se um 
 módulo funciona como foi especificado~\cite{martin2005}.
-
+%
 Testes de aceitação devem utilizar linguagem proxima da natural para evitar 
 problemas de interpretação e de ambiguidades~\cite{cunningham2005}.
+
 \item \textbf{Testes de desempenho:} testes que executam trechos do sistema e 
 armazenam os tempos de duração obtidos, que ajudam a identificar gargalos que 
 precisam de otimização para diminuir o tempo de resposta  para o usuário~\cite{liu2009}.
+
 \item \textbf{Testes de carga:}  testes que exercitam o sistema sobre condições de uso 
 intenso para avaliar se a infraestrutura é adequada para a expectativa de uso do 
-sistema~\cite{avritze1994}.
+sistema\\~\cite{avritze1994}.
+
 \item \textbf{Testes de estresse:} teste que visa descobrir os limites do uso da 
 infraestrutura, isto é , qual a quantidade máxima de usuários e requisições que o 
 sistema consegue antender corretamente e em um tempo aceitável.
+
 \item \textbf{Testes de longevidade:} testes que tem por objetivo encontrar erros 
-somente visíveis com um longo tempo de execução do sistema, erros que podem ser de cache, replicação, 
-execução de serviços agendados ou vazamento de memória.
+somente visíveis com um longo tempo de execução do sistema, erros que podem ser de cache, replicação, execução de serviços agendados ou vazamento de memória.
+
 \item \textbf{Testes de segurança:} os testes de segurança servem para verificar se 
 os dados ou funcionalidades confidenciais de um sistema  estão protegidos de fraude 
 ou de usuários não autorizados. A segurança de um sofware pode envolver aspectos de 
 confidenciabilidade, integridade, autenticação, autorização, privacidade~\cite{whittaker2006}.
 
 \end{enumerate}
+
+%TODO: alguns conceitos de testes têm referência e outros não.
+%TODO: colocar as referências
+%TODO: pontuar ao final da lista quais testes iremos tratar neste trabalho.
 
 %------------------------------------------------------------------------------%
 \section{Técnicas de desenvolvimento de testes automatizados}
@@ -86,13 +105,13 @@ definidas e implementadas. Assim é importante conhecer boas práticas e técnic
 de de desenvolvimento de testes automatizados.    
 %
 Existem várias técnicas de desenvolvimento de software com testes que influenciam 
-diretamente na qualidade do sistema. Estas técnicas geralmente possuem um processo 
+diretamente na qualidade do sistema. Essas técnicas geralmente possuem um processo 
 de atividades pequeno e simples, como TDD e BDD.
 
 \subsection{TDD - Test Driven Development}
 
-Desenvolvimento dirigido por testes, também conhecido como TDD \textit{(Test-Driven Develepment)} 
-é uma técnica de desenvolvimento de software que se dá pela repetição dosciplinada 
+Desenvolvimento dirigido por testes, TDD \textit{(Test-Driven Develepment)}, 
+é uma técnica de desenvolvimento de software que se dá pela repetição disciplinada 
 de um ciclo curto de passos de implementação de testes e do sistema~\cite{koskela2007}.
 %
 O ciclo de TDD é definido pelos seguintes passos:
@@ -103,31 +122,29 @@ O ciclo de TDD é definido pelos seguintes passos:
 de tal modo que não quebre os testes previamente escritos;
 \item Se necessário, refatorar o código produzido para que ele fique mais organizado;
 \end{enumerate}
-%
-A técnica de desenvolvimento dirigido por testes foi definida por Kent Beck em seu 
-livro \textit{Test-Driven Development: By Example}~\citeonline{beck2002}. Os passos estão 
-representados na figura abaixo:
-%
+
 \begin{figure}[h]
     \centering
-    \includegraphics[keepaspectratio=true,scale=0.60]
+    \includegraphics[keepaspectratio=true,scale=0.50]
       {figuras/tdd_ciclo.eps}
     \caption{Ciclo de atividades TDD~\cite{beck2002}}
     \label{tdd_ciclo}
 \end{figure}
-%
 
-%------------------------------------------------------------------------------%
-\subsubsection {Benefícios do TDD}
+A técnica de desenvolvimento dirigido por testes foi definida por Kent Beck em seu 
+livro \textit{Test-Driven Development: By Example}~\citeonline{beck2002}, como
+representados na Figura~\ref{tdd_ciclo}.
 
 Uma boa prática do TDD é a bateria de testes, que ajuda o desenvolvedor a evitar 
 erros de regreção, quando o desenvolvimento de uma nova funcionalidade quebra uma 
-já existente. TDD também tende a contribuir com uma alta cobertura de código, uma 
+já existente.
+%
+TDD também tende a contribuir com uma alta cobertura de código, uma 
 fez que o desenvolvedor precisa escrever o testes antes da funcionalidade, 
 possibilitando a criação de um código mais preciso, coeso e menos acoplado. 
-%
-Para ~\citeonline{massol2003} “o objetivo de TDD é ‘código claro que 
-funciona’.
+
+Para ~\citeonline{massol2003}, o objetivo de TDD é código claro que 
+funciona.
 %
 TDD propõe o desenvolvimento sempre em pequenos passo, deve-se escrever testes sempre 
 para uma menor funcionalidade possível, escrever o código mais simples que faça o 
@@ -136,7 +153,8 @@ desenvolvedor se detém a criar soluções simples, sempre acompanhado de um con
 \textit{feedback} dos testes.
 %
 O ciclo curto de passos definidos por TDD cria uma dependência forte entre codificação 
-e testes, o que favorece e facilita a criação de sistemas com alta testabilidade~\citeonline{bernardo2011}. 
+e testes, o que favorece e facilita a criação de sistemas com alta testabilidade~\cite{bernardo2011}. 
+/%
 Índices altos de cobertura de código e testabilidade não garantem necessariamente 
 qualidade do sistema, mas são métricas bem vistas para sistemas bem desenvolvidos
 %
@@ -147,44 +165,52 @@ de um código funcional e limpo.
 %------------------------------------------------------------------------------%
 
 \subsection{BDD - Behavior Driven Development}
+
 Desenvolvimento dirido por comportamento \textit{(BDD - Behavior Driven Development)} 
 é uma prática que recomenda o mesmo ciclo de desenvolvimento de TDD, contudo, induzindo 
-a utilização de uma linguagem ubíqua entre cliente e equipe de desenvolvimento de acordo com~\citeonline{bernardo2011}, subistituindo termos como assert, \textit{assert, test case, test suite} por termos 
-mais comuns ao cliente, como \textit{should, context, specification}
+a utilização de uma linguagem ubíqua entre cliente e equipe de desenvolvimento, subistituindo termos como assert, \textit{assert, test case, test suite} por termos 
+mais comuns ao cliente, como \textit{should, context, specification}~\cite{bernardo2011}.
 
 O BDD é um processo de desenvolvimento de software baseado no TDD. Embora seja 
 principalmente uma ideia de como um processo de desenvolvimento de 
-software deve ser gerenciado. a prática do BDD assume a utilização de ferramentas 
-como suporte para o desenvolvimento de software, por ~\citeonline{haring2011}. O BDD utiliza 
-essas ferramentas para que os testes tenham como ponto de partida o compartemento 
+software deve ser gerenciado, a prática do BDD assume a utilização de ferramentas 
+como suporte para o desenvolvimento de software~\cite{haring2011}. O BDD utiliza 
+essas ferramentas para que os testes tenham como ponto de partida o compartamento 
 dos objetos.
+%TODO: confuso - "como ponto de partida o compartamento dos objetos"?
 
 O BDD coloca em foco o comportamento em vez da estrutura e faz isso em todos os 
 níveis de desenvolvimento. Uma vez que nós reconhecemos isso, ele muda a forma 
 como pensamos sobre desenvolvimento para fora do código e começamos a pensar mais 
-sobre as intereações sobre pessoas e sistemas, ou entre os objetos, do que sobre a 
+sobre as interações sobre pessoas e sistemas, ou entre os objetos, do que sobre a 
 estrutura do objeto~\cite{chelimsky2010}.
+%TODO: em que contexto você está falando de objetos?
 
 Para que o comportamento seja analisado, é necessário entender o ponto de vista do 
-cliente, entendendo o comportamento que o sistema deve ter a partir da visão do cliente. 
+cliente/usuário, entendendo o comportamento que o sistema deve ter a partir da
+visão do cliente/usuário. 
 %
-\subsubsection{Príncipios do BDD}
 De acordo com ~\citeonline{chelimsky2010}, estes são os três príncipios do BDD:
+
 \begin{enumerate}
 \item \textbf{O suficiente é suficiente:} parte da ideia de gerenciar o esfoço no 
 planejamento inicial do sistema, para não fazer menos nem mais do que o necessário 
 para começar, o que se aplica também ao processo de automação.
-\item \textbf{Agregar valor as partes interessadas:} Se você está fazendo algo que 
+
+\item \textbf{Agregar valor às partes interessadas:} Se você está fazendo algo que 
 não agrega valor ou que não aumenta a capacidade de agregar valor, pare e faça outra 
 coisa em seu lugar.
+
 \item \textbf{Tudo é comportamento:} Do código à aplicação, pode-se usar o mesmo 
 pensamento e as mesmas construções linguísticas para descrever o comportamento, em 
 qualquer nível de granularidade ~\cite{chelimsky2010}. 
 \end{enumerate}
+%TODO: parte da lista está referenciada e outra parte não...
 
 O comportamento do sistema é descrito em histórias de usuário, que são 
 escritas com a participação tanto de clientes como desemvolvedores do sistema. Assim 
 cada história de usuário deve seguir, de certa forma, a seguinte estrutura:
+%TODO: com não explicaram métodos ágeis de forma mais didática e prática, aqui o leitor não sabe o que é um histório de usuário...
 
 \textbf{Título:} do que se trata a história.
 
@@ -198,7 +224,9 @@ que ativam este cenário, finalizado pelos estados esperados ao final do cenári
 
 
 \subsection{Considerações Finais}
+
 Testes automatizados devem ser desenvolvidos com prioridade, buscando um rápido 
 \textit{feedback}, contribuindo assim com a melhoria do sistema. Para isso é 
 necessário que os cenários de testes estejam bem definidos junto à equipe.
 
+%TODO: até fez uma conclusão, mas não fez o link com o que vem pela frente.
