@@ -27,9 +27,10 @@ Logo em seguida o Wordpress, outro sistema de gerenciamento de contéudo, invest
 Entender o perfil do usuário é um dos principais pontos que devem ser levados em consideração pelos desenvolvedores de software em geral. Cada perfil de usuário tem suas particularidades e suas expectativas quanto a utilização do sistema. Quando falamos de usuários com experiência de uso de softwares semelhantes é preciso ter uma maior atenção na usabilidade para que possa ter uma boa aceitação e menor impacto com as mudanças.
 %TODO: apenas falou de software livre e não fez o link que com os métodos ágeis.
 %TODO: software livre é um método empírico de desenvolvimento assim como os métodos ágeis
-%TODO: não fizeram um link entre uma possível relação entre testes e usabilidade
+%Done: não fizeram um link entre uma possível relação entre testes e usabilidade
 
-Alguns estudos relatam a possibilidade de inserir as práticas de usabilidade em contextos de projetos ágeis
+A automação de testes é uma prática ágil, eficaz e de baixo custo para melhorar
+a qualidade dos sistemas de software~\cite{cotter1995}. O que este trabalho busca é encontrar um ponto de intersecção entre os testes automatizados utilizados no desenvolvimento ágil e a usabilidade de um sistema. 
 
 %------------------------------------------------------------------------------%
 \section{Problemas}
@@ -40,14 +41,14 @@ Os desenvolvedores de software livre possuem uma mentalidade mais voltada para a
 
 Outro problema do desenvolvimento de software atualmente está em garantir qualidade de software de forma prática e econômica.
 
-%TODO: não falaram da questão dos testes automatizados: quais os problemas relacionados com os testes
+%Done: não falaram da questão dos testes automatizados: quais os problemas relacionados com os testes
 
 \section{Objetivos}
 
 \subsection{Objetivos gerais}
 	 
-Este trabalho de conclusão de curso busca analisar técnicas e métodos de usabilidade, assim como técnicas de desenvolvimento e de testes de software no desenvolvimento empírico de software para verificarmos os possiveis efeitos de técnicas como TDD e BDD na usabilidade de um software, a partir de técnicas como testes de usabilidade, dentre outras.
-%TODO: descreva o que é TDD e BDD
+Este trabalho de conclusão de curso busca analisar técnicas e métodos de usabilidade, assim como técnicas de desenvolvimento e de testes de software no desenvolvimento empírico de software para verificarmos os possiveis efeitos de técnicas como TDD (desenvolvimento dirigido por testes) e BDD (desenvolvimento dirido por comportamento) na usabilidade de um software, a partir de técnicas como testes de usabilidade, dentre outras.
+%Done: descreva o que é TDD e BDD
 	 
 %------------------------------------------------------------------------------%
 	 
@@ -59,6 +60,7 @@ Para satisfazer os objetivos gerais do trabalho foram definidos objetivos specí
 \item Verificar aplicação das práticas do BDD e TDD no processo de desenvolvimento de software livre;
 \item Integração da Engenharia de Usabilidade no ciclo de vida de desenvolvimento de softwrare livre;
 \item Identificar quais as técnicas de \emph{design} e usabilidade  podem ser utilizadas em cada fase do processo ágil de desenvolvimento de software livre;
+\item Verificar como práticas de BDD e TDD podem influenciar a usabilidade de um software.
 
 %\item Analisar a usabilidade dos portais governamentais utilizando diferentes técnicas de avaliação, a fim de que a avaliação possa ser feita não somente pelo especialista de usabilidade, mas também para que os usuários avaliem a qualidade em uso dos portais;
 %TODO: acho que não faremos isso
@@ -70,7 +72,8 @@ Para satisfazer os objetivos gerais do trabalho foram definidos objetivos specí
 
 \section{Questões de pesquisa}
 
-%TODO:comentem algo sobre as questões de pesquisa
+Esta seção descreve as questões de pesquisa levantadas durante o trabalho.
+%Done:comentem algo sobre as questões de pesquisa
 
 \begin{enumerate}
 \item Como os testes automatizados são definidos e implementados em um ambiente de desenvolvimento de software empírico?
@@ -102,9 +105,11 @@ Além disso é necessário conhecer o ciclo de \emph{design} centrado no usuári
 
 \item[Coletas de dados:]
 %
-Os dados serão coletados através de questionários e entrevistas que serão feitas através de experimentos realizados em um estudo de caso no portal da participação social.
+Para avaliação de usabilidade, os dados serão coletados através de questionários e entrevistas que serão feitas através de experimentos realizados em um estudo de caso no portal da participação social.
+Para verificação do desenvolvimento de testes métricas de testes serão coletadas durante o processo de desenvolvimento em que este trabalho está baseado.
 %TODO: re-escrever... não faremos só isso e em nenhum momento até aqui no texto foi citado um portal de participação social
-%TODO: mais uma vez a parte de teste não foi contemplada
+%Done: mais uma vez a parte de teste não foi contemplada
+
 
 \end{description}
 
@@ -119,7 +124,7 @@ O terceiro capítulo aborda conceitualmente as técnicas de testes automatizados
 O quarto capítulo aborda os principais conceitos e as áreas referentes a usabilidade e a as técnicas existentes utilizadas na engenharia de usabilidade e áreas afins, além de a abordar os processos da engenharia de usabilidade e interação humano computador e as formas de como poder inserir as técnicas no ciclo de vida de desenvolvimento de software empírico.
 %
 O quinto capítulo aborda as observações feitas no planejamento da aplicação de técnicas de avaliação da usabilidade para o Portal da Participação Social \footnote{\url{www.participa.br}} e também aborda a plataforma do Noosfero, e as funcionalidades desenvolvidas para a Rede Comunidade UnB\footnote{\url{comunidade.unb.br}} e o Portal da FGA\footnote{\url{www.fga.unb.br}}, a partir desta plataforma.
-%TODO: isso deve ser introduzido e um pouco explicado na seção de metodologias
+%Done: isso deve ser introduzido e um pouco explicado na seção de metodologias
 
 O trabalho se encerra com os resultados parciais, assim como as análises obtidas de todo o processo do trabalho, aĺém de uma discussão para os próximos passos.
 
