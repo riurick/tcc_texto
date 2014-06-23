@@ -267,130 +267,16 @@ A avaliação dos resultados do experimento deve considerar o uso de técnicas e
 O processo de desenvolvimento de software, assim como o desenvolvimento de testes 
 deste trabalho de conclusão de curso teve seu enfoque na rede colaborativa baseada 
 no noosfero desenvolvida para a Universidade de Brasília (UnB)\footnote{\url{unb.br}}. Ao decorrer deste trabalho de graduação, foram desenvolvidos, juntamente com seus respectivos testes, alguns plugins que serão descritos nesta seção.
-%
-Alguns testes automatizados são realizados no noosfero para validação de novos 
-recursos de software, dentre eles estão: testes funcionais, testes de aceitação e 
-testes unitários, testes esses que são executados na própria plataforma do noosfero.
-
-%-------------------------------------------------------------------------------
-
-\begin{comment}
-%TODO: ir para o capítulo de teste
-
-\subsection{Testes de aceitação}
-Os testes de aceitação, que possuem uma visão mais voltada para o usuário, fazem 
-parte de uma fase do processo de teste em que um teste de caixa-preta é realizado 
-num sistema antes de sua disponibilização.
-%TODO: Não conceituar muito teste de aceitação, mas sim explicar o que é o cucumber
-Para isso utilizamos o cucumber, uma 
-ferramenta que pode executar documentação de funcionalidades escrita em texto puro. 
-Com base nesta especificações, o cucumber executa testes. O cucumber proporciona uma melhor comunicação entre equipe de desenvolvimento e cliente, por utilizar uma linguagem  em texto puro.
-%
-No cucumber, uma \textit{feature} é um requisito de alto nível 
-expressado da pespectiva de uma pessoa e possui uma estrutura similar as histórias 
-de usuário do XP~\citeonline{chelimsky2010}. Essa estrutura é proposta da seguinte forma:
-\begin{enumerate}
-\item \textbf{Título:} Palavra-chave ‘\textit{feature}’ e um título curto que representa o 
-objetivo da \textit{feature}.
-\item \textbf{Narrativa:} um texto curto que demonstre os cenários de execução, 
-exatamente como a narrativa de uma história de usuário:
-
-\begin{figure}[!h]
-    \centering
-    \includegraphics[keepaspectratio=true,scale=0.50]
-      {figuras/noosfero_feature2.eps}
-    \caption{Descrição do título (\textit{feature}) de um teste}
-    \label{nosfero_feature}
-\end{figure}
-
-\item \textbf{Pré condições:} representado pela palavra-chave \textit{'background'}, define os passos 
-precedem cada cenário de teste.
-
-\begin{figure}[!h]
-    \centering
-    \includegraphics[keepaspectratio=true,scale=0.50]
-      {figuras/noosfero_back.eps}
-    \caption{Descrição de pré condições (\textit{background}) de um teste}
-    \label{nosfero_feature}
-\end{figure}
-
-\item \textbf{Cenários:} representam parte concreta de como o software deve se 
-comportar, e sendo a parte essencial do teste realizado no 
-cucumber. Após a palavra-chave \textit{‘scenario’} define-se o nome do cenário em questão:
-\item \textbf{Passos:} Cada cenario possui uma série de passos que demontram o seu 
-comportamento, que são linhas simples iniciadas com as seguintes palavras-chaves: 
-\textit{Given, When, Then, And, But}.
-\item \textbf{Given:} Indica uma condição inicial para que o cenário seja executado, 
-trata-se das pré-condições do cenário.
-\item \textbf{When:} Indica o evento do cenário
-\item \textbf{Then:} Indica o que é esperado após o evento ocorrer.
-
-\begin{figure}[!h]
-    \centering
-    \includegraphics[keepaspectratio=true,scale=0.50]
-      {figuras/noosfero_scenario.eps}
-    \caption{Descrição do cenário (\textit{scenario}) de um teste}
-    \label{nosfero_scenario}
-\end{figure}
-
-\end{enumerate}
-
-Além do cucumber, também é utilizado um software chamado selenium, que é uma ferramenta
-usada para desenvolver casos de testes a partir de \textit{web browsers}, como o mozilla firefox. Estas duas ferramentas, cucumber e selenium, utilizadas em conjunto, proporciona ao desenvolvedor a facilidade ao escrever os casos de testes em linguagem pura simular a execução automática desses testes em um \textit{web browser}. Porém o cucumber não faz tudo em linguagem pura, é necessário que outro código seja desenvolvido, em Ruby, fazendo par por baixo dos panos com a linguagem pura e executando os testes~\cite{akita2011}.
-
-\subsection{Testes Funcionais e Unitários}
-%
-Os testes funcionais tem como objetivo no desenvolvimento na plataforma noosfero, verificara integraçao da aplicação desenvolvida. Os testes unitários são executados em conjunto com os testes funcionais, porém  com o objetivocde verificar trechos menores de códigos. Assim os testes funcionais e unitários são escritos da seguinte forma:
-
-\textbf{Setup:} indica as condições inciais dos testes, setando variáveis de ambiente e de configuração por exemplo.
-
-\begin{figure}[!h]
-    \centering
-    \includegraphics[keepaspectratio=true,scale=0.5]
-      {figuras/teste_setup.eps}
-    \caption{Descrição do setup de um teste}
-    \label{nosfero_setup}
-\end{figure}
-
-\textbf{Título:} título do teste iniciado com a palavra \textit{‘should’} e finalizado com \textit{‘do’}
-
-\textbf{Passos:} código que define o comportamento do teste
-
-\textbf{Verificação:} Assertiva que verifica se a ação foi realizada como esperada.
-
-\begin{figure}[!h]
-    \centering
-    \includegraphics[keepaspectratio=true,scale=0.55]
-      {figuras/teste_should.eps}
-    \caption{Código de teste}
-    \label{noosfero_should}
-\end{figure}
-
-\end{comment}
 
 \subsection{Plugin LDAP UnB}
-%
+
 Como rede colaborativa dos membros da Universidade de Brasília, o Comunidade UnB 
 necessita possuir restrição de acesso aos usuários, para que somente membros ativos 
 da universidade tenham acesso ao conteúdo da rede colaborativa. 
 %
-Para que esta necessidade fosse satisfeita foi desenvolvido um \textit{plugin} no noosfero, que efetuasse as restrições necessárias, utilizando o protocolo de autenticação da UnB, o LDAP.
+Para que esta necessidade fosse satisfeita foi desenvolvido um \textit{plugin} no noosfero, que efetuasse as restrições necessárias, utilizando o protocolo de autenticação da UnB, o LDAP (\textit{Lightweight Directory Access Protocol}).
 %
-\textit{Lightweight Directory Access Protocol} (LDAP) é um protocolo de aplicação 
-aberto para acesso e manutenção  de serviços de informação de diretório distribuídos 
-na internet~\cite{sermersheim2006}.
-%
-Os serviços de diretório desempenham um papel importante no desenvolvimento de aplicativos 
-de intranet e internet, permitindo o compartilhamento de informações sobre os usuários, 
-sistemas, redes, serviços e aplicações em toda a rede~\cite{oracle2000}.
-%
-Um cliente inicia uma sessão de LDAP através da ligação a um servidor LDAP, chamado 
-\textit{Directory System Agent} (DSA), por padrão, a porta TCP e UDP porta 389. Após 
-a conexão,é requerida ao servidor uma operação do cliente, e o servidor responde a 
-mesma. 
-%
-Para o usuário, o \textit{plugin} desenvolvido modifica a seção de cadastro de novos usuários e a seção de \textit{login} de usuários. Na seção de cadastro o usuário agora deve cadastrar a matrícula e senha que o mesmo usa no matrícula web da UnB\footnote{\url{matriculaweb.unb.br}}, além dos dados que já eram cadastrados anteriormente. Na seção de \textit{login} o usuário também pode entrar no Comunidade UnB através de sua matrícula e senha do matrícula web da UnB (além do \textit{email} e \textit{username} 
-- entradas normalmente utilizadas)
+Para o usuário, o \textit{plugin} desenvolvido modifica a seção de cadastro de novos usuários e a seção de \textit{login}. Na seção de cadastro o usuário agora deve cadastrar a matrícula e senha que o mesmo usa no Matrícula Web\footnote{\url{matriculaweb.unb.br}} da UnB, além dos dados que já eram cadastrados anteriormente. Na seção de \textit{login} o usuário também pode entrar no Comunidade UnB através de sua matrícula e senha do matrícula web da UnB (além do \textit{email} e \textit{username}, que são as entradas normalmente utilizadas)
 %
 Nas camadas mais inferiores, o \textit{plugin} é responsável por modificar o modelo de dados do sistema, para que o usuário possa assim cadastrar sua matrícula. Assim o \textit{plugin} também é responsável por configurar a conexão com o LDAP server da UnB e finalmente verificar se os dados do usuário estão corretos no momento do seu cadastro. Abaixo encontra-se descritas as histórias de usuário referente ao {plugin} Ldap UnB:
 \begin{enumerate}
@@ -436,14 +322,8 @@ Nas camadas mais inferiores, o \textit{plugin} é responsável por modificar o m
 
 \end{enumerate}
 
-%\subsubsection{Testes com \textit{plugin} LDAP}
-%
-Foram realizados os seguintes testes  com o plugin LDAP UnB: testes funcionais e testes 
-unitários. Os testes funcionais e unitários foram executados através 
-do próprio noosfero, já os testes de aceitação foram executados com auxílio das ferramentas cucumber e selenium.
-%
-%\subsubsection{Testes Funcionais}
-%
+Realizamos os seguintes testes  com o \textit{plugin} LDAP UnB: testes funcionais e testes unitários, que foram executados através do próprio noosfero.
+
 Os testes funcionais do \textit{plugin} LDAP foram divididos em duas categorias, sendo estas compostas por testes que não dependem do LDAP está configurado e os testes que dependem do LDAP configurado. Os testes independentes do LDAP são simples, basicamente verificando as possíveis mensagem de errro ou de notificações durante o \textit{login}. Os testes  que dependem do LDAP verificam os seguintes fatores:
 %
 \begin{enumerate}
@@ -456,7 +336,7 @@ Os testes funcionais do \textit{plugin} LDAP foram divididos em duas categorias,
 \item Criação e autenticação de um novo usuário a partir do plugin LDAP;
 \end{enumerate}
 %
-Também foram executados testes na interface de administrador do sistema, onde o usuário tem a opção de ativar o plugin e informar dados de configuração do mesmo, esses testes verificam os seguintes fatores:
+Também executamos testes na interface de administrador do sistema, onde o usuário tem a opção de ativar o plugin e informar dados de configuração do mesmo, esses testes verificam os seguintes fatores:
 %
 \begin{enumerate}
 \item Acesso à página de administrador;
@@ -473,10 +353,6 @@ Também foram executados testes na interface de administrador do sistema, onde o
 \item Atualização de TLS;
 \end{enumerate}
 
-%TODO: PENSAR EM IMAGENS
-
-%\subsubsection{Testes unitários}
-%
 Os testes unitários do \textit{plugin} verificam a definição dos parâmetros do LDAP, verificação esta que é realizada tanto na passagem dos parâmentros quanto na verificação dos valores de \textit{default}, outra verificação desses parâmetros que também é feita é a tentativa de criação de uma autenticação no LDAP. Dentre esses parâmetros estão os seguintes:
 
 \begin{itemize}
@@ -492,19 +368,17 @@ Os testes unitários do \textit{plugin} verificam a definição dos parâmetros 
 \item TLS do LDAP;
 \end{itemize}
 
-Não foram desenvolvidos testes de aceitação para o \textit{plugin} LDAP UnB, pelo fato de ser uma aplicação que opera a maior parte das suas funcionalidades nas camadas mais baixas do sistema, alterando muito pouco a percepção do usuário.
+Não desenvolvemos testes de aceitação para o \textit{plugin} LDAP UnB, pelo fato de ser uma aplicação que opera a maior parte das suas funcionalidades nas camadas mais baixas do sistema, alterando muito pouco a percepção do usuário.
 
-\subsubsection{Plugin para submissão de trabalho}
+\subsubsection{Plugin para envio de TCC}
 
-Este \textit{plugin} também foi desenvolvido para a plataforma Noosfero, porém em uma aplicãção diferente, o Portal da FGA. A ideia deste \textit{plugin} surgiu da necessidade de existir um ambiente virtual em que os trabalhos de conclusão de curso pudessem ser submetidos aos professores e compartilhados com a comunidade acadêmica, buscando assim manter uma forma de versionamento dos trabalhos desenvolvidos.
+Este \textit{plugin} também foi desenvolvido para a plataforma Noosfero, porém em uma aplicãção diferente, o Portal UnB Gama. A ideia deste \textit{plugin} surgiu da necessidade de existir um ambiente virtual em que os trabalhos de conclusão de curso pudessem ser submetidos aos professores e compartilhados com a comunidade acadêmica, buscando assim manter uma forma de versionamento dos trabalhos desenvolvidos e dispensando a necessidade de trabalhos de conclusão de curso impressos.
 %
-Este \textit{plugin} é responsável por criar uma atribuição de trabalhos, chamada de \textit{work assignment}. Atribuição que possui algumas funcionalidades específicas como possibilitar que os usuários envolvidos sejam notificados via \textit{email} sobre a submissão de um certo trabalho. Para tal foi necessário subir um servidor de \textit{email} para executar estas notificações, assim como criar uma página no Portal FGA\footnote{url{fga.unb.br}} para que o usuário pudesse submeter seu trabalho.
+Este \textit{plugin} é responsável por criar uma atribuição de trabalhos, chamada de \textit{work assignment}. Essa atribuição possui algumas funcionalidades específicas como possibilitar que os usuários envolvidos sejam notificados via \textit{email} sobre a submissão de um certo trabalho. Para tal foi necessário instanciar um servidor de \textit{email} para executar estas notificações, assim como criar uma página no Portal FGA\footnote{url{fga.unb.br}} para que o usuário pudesse submeter seu trabalho.
 %
-O processo de desenvolvimento deste \textit{plugin} ocorreu juntamente com uma transição da equipe de desenvolvimento, o que prejudicou o desenvolvimento de testes do mesmo.
-%
-Para validar o desenvolvimento desta funcionalidade foram desenvolvidos os seguintes tipos de testes: funcionais, unitário e de aceitação. Abaixo encontra-se descrita a história de usuário referente \textit{plugin} submissão de trabalho:
+Para validar o desenvolvimento desta funcionalidade desenvolvemos os seguintes tipos de testes: funcionais, unitário e de aceitação. Abaixo encontra-se descrita a história de usuário referente \textit{plugin} para envio de TCC:
 \begin{enumerate}
-\item  \textbf{Plugin submissão de trabalho}
+\item  \textbf{Plugin para envio de TCC}
 
 \textbf{Como} usuário
 
@@ -547,9 +421,7 @@ Para validar o desenvolvimento desta funcionalidade foram desenvolvidos os segui
 
 \end{enumerate}
 
-%\subsubsection{Testes Funcionais}
-
-Os testes funcionais do \textit{plugin} para submissão de trabalho são responsáveis por verificar os seguintes fatores:
+Os testes funcionais do \textit{plugin} para envio de TCC são responsáveis por verificar os seguintes fatores:
 
 \begin{itemize}
 \item Permissão para enviar trabalhos somente para usuários autorizados;
@@ -562,9 +434,7 @@ Os testes funcionais do \textit{plugin} para submissão de trabalho são respons
 \item Capacidade de carregar arquivos por usuários envolvidos;
 \end{itemize}
 
-%\subsubsection{Testes Unitários}
-
-Os testes unitários do \textit{plugin} para submissão de trabalho são responsáveis por verificar os seguintes parâmetros:
+Os testes unitários deste \textit{plugin} são responsáveis por verificar os seguintes parâmetros:
 
 \begin{itemize}
 \item Nome do \textit{plugin};
@@ -575,9 +445,7 @@ Os testes unitários do \textit{plugin} para submissão de trabalho são respons
 \item Autor do arquivo;
 \end{itemize}
 
-%\subsubsection{Testes de Aceitação}
-
-Os testes de aceitação do \textit{plugin} para submissão de trabalho são responsáveis por verificar os seguintes fatores:
+Por fim, os testes de aceitação do \textit{plugin} para envio de TCC são responsáveis por verificar os seguintes fatores:
 
 \begin{itemize}
 \item Capacidade de criar, editar e deletar uma atribuição de trabalhos (\textit{work assignment});
@@ -587,7 +455,7 @@ Os testes de aceitação do \textit{plugin} para submissão de trabalho são res
 \item Capacidade de reportar problemas;
 \end{itemize}
 
-Abaixo estão descritos os testes desenvolvidos para o \textit{plugin}:
+Abaixo está descrito um exemplo de teste desenvolvido para o \textit{plugin} (os demais testes estão descritos no apêndice \ref{chap:apendice2}):
 
 %TODO: deixar um cenário de exemplo e colocar os demais em um Apêndice
 
@@ -671,168 +539,7 @@ Abaixo estão descritos os testes desenvolvidos para o \textit{plugin}:
     
     \textbf{Then} I should see ``Contact sent successfully"
 
-\item \textbf{Scenario:} Create a work assignment and continue edition
 
-    \textbf{Given} I am logged in as ``joaosilva" 
-    
-    \textbf{When} I follow ``My Community"
-    
-    \textbf{When} I go to mycommunity's control panel
-    
-    \textbf{And} I follow ``Manage Content"
-    
-    \textbf{And} I follow ``New content"
-    
-    \textbf{And} I follow ``Work Assignment"
-
-    \textbf{Then} I should be on /myprofile/mycommunity/cms/new
-    
-    \textbf{When} I fill in ``Title" with ``test"
-    
-    \textbf{And} I press ``Save and continue"
-    
-    \textbf{Then} I should be on /myprofile/mycommunity/cms/edit/13
-
- 
-\item \textbf{Scenario:} Can't create work assignment without name
-    
-    \textbf{Given}  I am logged in as ``joaosilva" 
-    
-    \textbf{When} I follow ``My Community"
-    
-    \textbf{When} I go to mycommunity's control panel
-    
-    \textbf{And} I follow ``Manage Content"
-    
-    \textbf{And} I follow ``New content"
-    
-    \textbf{And} I follow ``Work Assignment"
-    
-    \textbf{Then} I should be on /myprofile/mycommunity/cms/new
-    
-    \textbf{When} I fill in ``Title" with ``"
-    
-    \textbf{And} I press ``Save"
-    
-    \textbf{Then} I should see ``There were problems with the following fields:"
-
-\item \textbf{Scenario:} Can't create work assignment without file
-   
-    \textbf{Given} I am logged in as ``joaosilva" 
-   
-    \textbf{When} I follow ``My Community"
-   
-    \textbf{When} I go to mycommunity's control panel
-   
-    \textbf{And} I follow ``Manage Content"
-   
-    \textbf{And} I follow ``New content"
-   
-    \textbf{And} I follow ``Work Assignment"
-   
-    \textbf{Then} I should be on /myprofile/mycommunity/cms/new
-   
-    \textbf{When} I fill in ``Title" with ``test"
-   
-    \textbf{And} I press ``Save"
-   
-    \textbf{Then} I should be on /mycommunity/test
-   
-    \textbf{When} I follow ``Upload files"
-   
-    \textbf{And} I press ``Upload"
-   
-    \textbf{Then} I should be on /myprofile/mycommunity/cms/uploadfiles
-
-\item \textbf{Scenario:} Cancel create work assignment
-    
-    \textbf{Given} I am logged in as ``joaosilva"
-    
-    \textbf{When} I follow ``My Community"
-    
-    \textbf{When} I go to mycommunity's control panel
-    
-    \textbf{And}  I follow ``Manage Content"
-    
-    \textbf{And}  I follow ``New content"
-    
-    \textbf{And}  I follow ``Work Assignment"
-    
-    \textbf{Then} I should be on /myprofile/mycommunity/cms/new
-    
-    \textbf{When} I fill in ``Title" with ``test"
-    
-    \textbf{And}  I press ``Save"
-    
-    \textbf{Then} I should be on /mycommunity/test
-    
-    \textbf{When} I follow ``Upload files"
-    
-    \textbf{And}  I follow ``Cancel"
-    
-    \textbf{Then} I should be on /mycommunity/test
-
-\item \textbf{Scenario:} Edit work assignment 
-    
-    \textbf{Given} I am logged in as ``joaosilva"
-    
-    \textbf{When} I follow ``My Community"
-    
-    \textbf{When} I go to mycommunity's control panel
-    
-    \textbf{And} I follow ``Manage Content"
-    
-    \textbf{And} I follow ``New content"
-    
-    \textbf{And} I follow ``Work Assignment"
-    
-    \textbf{Then} I should be on /myprofile/mycommunity/cms/new
-    
-    \textbf{When} I fill in ``Title" with ``test"
-    
-    \textbf{And} I press ``Save"
-    
-    \textbf{Then} I should be on /mycommunity/test
-    
-    \textbf{When} I follow ``Edit"
-    
-    \textbf{And} I fill in ``Title" with ``test2"
-    
-    \textbf{And} I press ``Save"
-    
-    \textbf{Then} I should be on /mycommunity/test2
-
-\item \textbf{Scenario:} Delete a work assignment  
-   
-    \textbf{Given} I am logged in as ``joaosilva"
-   
-    \textbf{When} I follow ``My Community"
-   
-    \textbf{When} I go to mycommunity's control panel
-   
-    \textbf{And} I follow ``Manage Content"
-   
-    \textbf{And} I follow ``New content"
-   
-    \textbf{And} I follow ``Work Assignment"
-   
-    \textbf{Then} I should be on /myprofile/mycommunity/cms/new
-   
-    \textbf{When} I fill in ``Title" with ``test"
-   
-    \textbf{And} I press ``Save"
-   
-    \textbf{Then} I should be on /mycommunity/test
-   
-    \textbf{When} I follow ``Edit"
-   
-    \textbf{And} I follow ``Delete"
-   
-    \textbf{And} I confirm the browser dialog
-   
-    \textbf{Then} I should see /``test" was removed./
-    
-\end{enumerate}
 
 \section{Considerações finais}
 
