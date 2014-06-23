@@ -1,28 +1,27 @@
-\chapter{Observações do Estudo}
+\chapter{Resultados Parciais}
 
-Durante este capítulo, será apresentada uma introdução sobre o ambiente de trabalho e a plataforma de desenvolvimento, chamada Noosfero. A partir desta introdução apresentaremos os a avaliação de usabildiade, assim como os testes e as funcionalidades desenvolvidas dentro do processo de colaboração com esta plataforma.
-
-\section{Estudo de Caso - Noosfero}
-
-Noosfero\footnote{\url{noosfero.org}} é uma plataforma desenvolvida pela Colivre (Cooperativa de Tecnologias Livre)\footnote{\url{colivre.coop.br}}, possui licença AGPL e é utilizado, principalmente em universidades públicas, para desenvolvimento de redes colaborativas. \footnote{\url{http://softwarelivre.org/colivre/blog/projeto-noosfero}}
+Durante este capítulo, apresentaremos os estudos iniciais com a plataforma livre para redes sociais Noosfero.
 %
-O noosfero foi desenvolvido na linguagem de programação Ruby, versão 1.8.7, e utiliza
-o framework Model-View-Controller (MVC) para aplicações web Ruby on Rails, versão 
-2.3.5. A escolha destas tecnologias, por parte dos criadores do Noosfero foi baseada 
-fato de que o Ruby possui sintaxe simples, elegante e de fácil leitura, o que aumenta
-a manutenibilidade do sistema, uma característica importante num projeto de software
-livre que visa atrair desenvolvedores externos~\cite{meirelles2013}.
+O Noosfero\footnote{\url{noosfero.org}} é uma plataforma desenvolvida pela Colivre (Cooperativa de Tecnologias Livre)\footnote{\url{colivre.coop.br}}, possui licença AGPL e é utilizado, principalmente em universidades públicas, para desenvolvimento de redes colaborativas\footnote{\url{http://softwarelivre.org/colivre/blog/projeto-noosfero}}.
+%
+A partir desta introdução apresentaremos os a avaliação de usabildiade, assim como os testes e as funcionalidades desenvolvidas dentro do processo de colaboração com essa plataforma.
 
-\subsection{Desenvolvimento no processo de colaboração ao noosfero}
+\section{Desenvolvimento no processo de colaboração ao Noosfero}
 
 Por tratar de um software livre, a plataforma Noosfero possui uma grande quantidade 
-de colaboradores, formado por equipes de desenvolvimento como na Universidade de 
-Brasília, ou por desenvolvedores independentes. Assim, para que haja sucesso na 
-colaboração, são feitas exigências durante o desenvolvimento, assim como testes 
-bem definidos para aprovar novas funcionalidade.
-
-Além da utilização da linguagem de programação \textit{Ruby}, o desenvolvimento da plataforma noosfero também se baseia em JavaScript, CSS, dentre outras linguagens, como pode-se ver na figura abaixo:
+de colaboradores, formado por equipes de desenvolvimento como na Colivre, Universidade de 
+Brasília e na Universidade de São Paulo, ou por desenvolvedores independentes.
 %
+Assim, para que haja sucesso na colaboração, são feitas exigências durante o desenvolvimento, assim como testes bem definidos para aprovar novas funcionalidade.
+%
+Além da utilização da linguagem de programação \textit{Ruby}, o desenvolvimento da plataforma noosfero também se baseia em JavaScript, CSS, dentre outras linguagens.
+%
+O desenvolvimento para a plataforma Noosfero é realizado em ciclos e
+possui as seguintes fases: desenvolvimento, release 1, release 2 e release final.
+
+
+%TODO: não precisa desta figura
+\begin{comment}
 \begin{figure}[!h]
     \centering
     \includegraphics[keepaspectratio=true,scale=0.60]
@@ -30,18 +29,19 @@ Além da utilização da linguagem de programação \textit{Ruby}, o desenvolvim
     \caption{Desenvolvimento noosfero}
     \label{noosfero}
 \end{figure}
+\end{comment}
 
-O desenvolvimento para a plataforma Noosfero é realizado em ciclos e, pela Colivre, 
-possui as seguintes fases: desenvolvimento, release 1, release 2 e release final.
+%TODO: não precisa
+%\subsubsection{Fase de Desenvolvimento}
 
-\subsubsection{Fase de Desenvolvimento}
-%
 Antes da fase de desenvolvimento for iniciada é necessário que seja feita a 
-documentação do que será desenvolvido. Os desenvolvedores responsáveis criam um 
-\textit{action item} (item de ação), contendo a história de usuário ou os requisitos do novo 
-recurso. Um \textit{action item} pode ser descrito como uma \textit{feature} (novo recurso) ou como 
-um \textit{bug} (defeito) encontrado, como demonstrado nas figuras abaixo:\footnote{\url{noosfero.org}}
+documentação do que será desenvolvido.
 %
+Os desenvolvedores responsáveis criam um 
+\textit{action item} (item de ação), contendo a história de usuário ou os requisitos do novo 
+recurso. Um \textit{action item} pode ser descrito como uma \textit{feature} (novo recurso) ou como um \textit{bug} (defeito) encontrado.
+
+\begin{comment}
 \begin{figure}[!h]
     \centering
     \includegraphics[keepaspectratio=true,scale=0.65]
@@ -57,13 +57,12 @@ um \textit{bug} (defeito) encontrado, como demonstrado nas figuras abaixo:\footn
     \caption{Descrição de \textit{bug} - noosfero}
     \label{noosfero_bug}
 \end{figure}
-
-%------------------------------------------------------------------------------%
+\end{comment}
 
 Além da documentação, é necessário o envio de um \textit{email} a comunidade descrevendo o 
-que será desenvolvido. A partir deste \textit{email}, a comunidade irá avaliar a funcionalidade 
+que será desenvolvido. A partir desse \textit{email}, a comunidade irá avaliar a funcionalidade 
 descrita e decidir se é um funcionalidade importante para se incorporar ou não. 
-Este processo de avaliação tem a duração de uma semana, geralmente.\footnote{\url{noosfero.org}}
+Esse processo de avaliação tem a duração de uma semana, geralmente.
 
 Com a aprovação da comunidade são feitas as revisões do ciclo de desenvolvimento, 
 que deve seguir os seguintes passos:
@@ -80,94 +79,83 @@ respondidas;
 \subsubitem Desenvolvedores revisam o que está errado;
 \item Código é incluido no código principal.
 \end{enumerate}
+
+
+A entrega da \textit{release} 1 consiste na instalação da nova versão do código no repositório de testes, assim como no código principal quando não houver mais defeitos, ou todos os defeitos encontrados forem tratados devidamente. Porém se algum erro crítico for encontrado e não for tratado a tempo da \textit{release} final, o lançamento pode ser adiado para a próxima \textit{release}.
+%
+Já a \textit{release} 2 não é obrigatória, apenas ocorre se houver muitas mudanças na \textit{release} 1 e requerer novos testes. Vale lembrar que os procedimentos realizados para aprovar a \textit{release} 2 são os mesmos da \textit{release} 1%Referenciar%
+%
+Por fim, a versão final do código é lançada após todos os testes serem aprovados nas \textit{releases} 1 e 2, assim o código pode ser atualizado para o código principal do noosfero, encerrando o ciclo de desenvolvimento.
+
 %------------------------------------------------------------------------------%
-\subsubsection{Fase de Release 1}
+
+\section {Estudos de Caso}
+
+O estudo deste trabalho, nesta primeira fase, foi baseado em dois ambientes de
+rede social que utilizam a plataforma noosfero:
 %
-A entrega da \textit{release} consiste na instalação da nova versão do código no repositório de testes, assim como no código principal quando não houver mais defeitos, ou todos os defeitos encontrados forem tratados devidamente. Porém se algum erro crítico for encontrado e não for tratado a tempo da \textit{release} final, o lançamento pode ser adiado para a próxima \textit{release}.
+o portal Participa.Br\footnote{participa.br}, para as observações sobre a usabilidade do Noosfero;
 %
-\subsubsection{Fase de Release 2}
+e a rede Comunidade.UnB\footnote{comunidade.unb.br}, para as observações sobre os testes automatizados no Noosfero.
+
+O Portal da participação Social (Participa.Br) é um portal que agrega informações sobre oportunidades de participação social no governo federal e estimula a formação de comunidades em torno de temas ligados à participação.
 %
-A \textit{release} 2 não é obrigatória, so ocorre se houver muitas mudanças na \textit{release} 1 e requerer novos testes. Vale lembrar que os procedimentos realizados para aprovar a \textit{release} 2 são os mesmos da \textit{release} 1%Referenciar%
+Informa sobre as consultas públicas, oferece ambientes para interação em vídeo e chat em eventos de governo. É um repositório das metodologias das conferências de políticas públicas. O Portal capta demandas da sociedade que não passem, necessariamente, pelos fluxos formais de participação. É uma plataforma para ampliar o debate entre a sociedade civil e o governo.
+
+A rede Comunidade UnB, que se encontra em ambiente de testes, porém disponível para acesso externo, contando com aproximadamente 160 usuários ativos.
 %
-\subsubsection{Release Final}
+A rede Comunidade UnB é uma instância do Noosfero instalada através de um pacote em um servidor do Centro de Difusão de Tecnologia e Conhecimetno (CDTC)\footnote{\url{www.cdtc.org.br}} da UnB. O propósito da rede Comunidade UnB é tornar-se um ambiente de colaboração entre os alunos da Universidade de Brasília, tanto de graduação quanto de pós-graduação, possibilitando criação comunidades e blogs para discussões, ou a disponibilização de artigos, trabalhos de graduação e pós-graduação onde qualquer membro da universidade tenha acesso.
+
+\subsection {Estudo sobre Usabilidade: Portal da Participação Social}
+
+%\subsection{Justificativa}		
+%TODO: verificar essa justificativa
+
+No ano 2000 foi criado o programa de Governo Eletrônico (e-GOV) \footnote{\url{governoeletronico.gov.br}} que têm como principais objetivos democratizar o acesso a informação e dinamizar a prestação de serviços públicos eletrônicos com foco em eficiência e efetividade das funções governamentais prestadas ao cidadão.
 %
-A versão final do código é lançada após todos os testes serem aprovados nas \textit{releases} 1 e 2, assim o código pode ser atualizado para o código principal do noosfero, encerrando o ciclo de desenvolvimento.\footnote{\url{noosfero.org}}
+O Governo Federal adotou várias práticas de padrões para melhorar o acesso e a divulgação das informações e dos serviços do governo eletrônico, respeitando as particularidades de cada cidadão. Por isso foi criado o Modelo de Acessibilidade do Governo Federal (e-MAG) \footnote{e-MAG: Cartilha de acessibilidade do governo eletrônico} que contém um conjunto de recomendações para tornar os sítios e portais acessíveis para uma maior quantidade de pessoas possíveis. 
 
-\subsection {Aplicações}
-
-O estudo deste trabalho é baseado em duas aplicações que utilizam a plataforma noosfero, o portal Participa Br e o Comunidade UnB.
-
-O Portal da participação Social é um portal que agrega informações sobre oportunidades de participação social no governo federal e estimula a formação de comunidades em torno de temas ligados à participação. Informa sobre as consultas públicas, oferece ambientes para interação em vídeo e chat em eventos de governo. É um repositório das metodologias das conferências de políticas públicas. O Portal capta demandas da sociedade que não passem, necessariamente, pelos fluxos formais de participação. É uma plataforma para ampliar o debate entre a sociedade civil e o governo. [Citar fonte]
-
-A rede Comunidade UnB, que se encontra em ambiente de testes, porém disponível para acesso externo, contando com aproximadamente 160 usuários ativos. A rede Comunidade UnB é uma instância do noosfero instalada através de um pacote em um servidor do Centro de Difusão de Tecnologia e Conhecimetno (CDTC)\footnote{\url{www.cdtc.org.br}} da UnB. O propósito da rede Comunidade UnB é tornar-se um ambiente de colaboração entre os alunos da Universidade de Brasília, tanto de graduação quanto de pós-graduação, possibilitando criação comunidades e blogs para discussões, ou a disponibilização de artigos, trabalhos de graduação e pós-graduação onde qualquer membro da universidade tenha acesso.
-
-\section {Estudo sobre Usabilidade - Portal da Participação Social}
-
-\subsection{Introdução}
-
-O Portal da Participação Social \footnote{\url{participa.br}} é um portal que agrega informações sobre oportunidades de participação social no governo federal e estimula a formação de comunidades em torno de temas ligados à participação. Informa sobre as consultas públicas, oferece ambientes para interação em vídeo e chat em eventos de governo. É um repositório das metodologias das conferências de políticas públicas. O Portal capta demandas da sociedade que não passem, necessariamente, pelos fluxos formais de participação. É uma plataforma para ampliar o debate entre a sociedade civil e o governo. % [Citar fonte]
-
-\subsection{Justificativa}		
-	
-	% verificar essa justificativa
-
-	No ano 2000 foi criado o programa de Governo Eletrônico (e-GOV) \footnote{\url{www.governoeletronico.gov.br}} que têm como principais objetivos democratizar o acesso a informação e dinamizar a prestação de serviços públicos eletrônicos com foco em eficiência e efetividade das funções governamentais prestadas ao cidadão.
-
-	O Governo Federal adotou várias práticas de padrões para melhorar o acesso e a divulgação das informações e dos serviços do governo eletrônico, respeitando as particularidades de cada cidadão. Por isso foi criado o Modelo de Acessibilidade do Governo Federal (e-MAG) \footnote{e-MAG: Cartilha de acessibilidade do governo eletrônico} que contém um conjunto de recomendações para tornar os sítios e portais acessíveis para uma maior quantidade de pessoas possíveis. 
-
-	O objetivo era de estabelecer padrões de qualidade de uso, desenho, arquitetura da informação e navegação, desenvolvimento e manutenção na gestão dos sítios governamentais. O e-PWG \footnote{e-PWG: Padrões web para o governo eletrônico}, como ficou conhecido, são padrões web para o Governo eletrônico.
-
-	Foi feita uma análise do sítio participa.br em parceria com o Instituto Federal do Rio Grande do Sul (IFRS) onde foi criado um relatório para orientar e sugerir correções que facilitarão o acesso ao seu conteúdo quanto as recomendações sobre o Modelo de Acessibilidade em Governo Eletrônico (e-MAG) e com os Padrões Web em governo Eletrônico (e-PWG). Essas recomendações buscam levantar problemas que impactarão na experiência de uso do portal pelo cidadão.
-
-	A ideia de fazer esse estudo experimental era de conhecer e aplicar as técnicas existentes na engenharia de usabilidade em um contexto real de uso para verificar como funcionam as técnicas utilizadas na engenharia de usabilidade para avaliação de um website.
-
-	Como já existia um estudo referente sobre a Acessibilidade do portal participa.br o nosso estudo se deu em avaliar a qualidade em uso do portal no sentido de verificar a satifação dos usuários ao utilizar o portal.
-
-	Primeiramente foi preciso realizar um \textit{checklist} de usabilidade para verificar os possíveis problemas no portal antes de realizar os testes com os usuários. Foi utilizado as heurísticas de Nielsen para identificação dos problemas de usabilidade.
+O objetivo era de estabelecer padrões de qualidade de uso, desenho, arquitetura da informação e navegação, desenvolvimento e manutenção na gestão dos sítios governamentais. O e-PWG \footnote{e-PWG: Padrões web para o governo eletrônico}, como ficou conhecido, são padrões web para o Governo eletrônico.
+%
+Foi feita uma análise do sítio participa.br em parceria com o Instituto Federal do Rio Grande do Sul (IFRS) onde foi criado um relatório para orientar e sugerir correções que facilitarão o acesso ao seu conteúdo quanto as recomendações sobre o Modelo de Acessibilidade em Governo Eletrônico (e-MAG) e com os Padrões Web em governo Eletrônico (e-PWG). Essas recomendações buscam levantar problemas que impactarão na experiência de uso do portal pelo cidadão.
+%
+A ideia de fazer esse estudo experimental era de conhecer e aplicar as técnicas existentes na engenharia de usabilidade em um contexto real de uso para verificar como funcionam as técnicas utilizadas na engenharia de usabilidade para avaliação de um website.
+%
+Como já existia um estudo referente sobre a acessibilidade do portal Participa.Br, o nosso estudo se deu em avaliar a qualidade em uso do portal no sentido de verificar a satifação dos usuários ao utilizar o portal.
+%
+Primeiramente foi preciso realizar um \textit{checklist} de usabilidade para verificar os possíveis problemas no portal antes de realizar os testes com os usuários. Foi utilizado as heurísticas de Nielsen para identificação dos problemas de usabilidade.
 
 \subsection{Definição do Estudo Experimental}
 
-\subsubsection{Objetivo Global}
-
-	Analisar a interação dos usuários com o portal participa.br a fim de avaliar a qualidade em uso dos usuários com este portal. 
-
-\subsubsection{Objetivos de Medição}
+O Objetivo Global é analisar a interação dos usuários com o portal participa.br a fim de avaliar a qualidade em uso dos usuários com esse portal. 
+%
+O Objetivos de Medição são:
 
 \begin{itemize}
-\item Conhecer quem são os usuários do Portal da Participação Social.
-\item Verificar problemas de usabilidade no Portal da Participação Social
-\item Avaliar de forma subjetiva o grau de satisfação dos usuários com a utilização do portal participa.br. 
+\item Conhecer quem são os usuários do Portal da Participação Social;
+\item Verificar problemas de usabilidade no Portal da Participação Social;
+\item Avaliar de forma subjetiva o grau de satisfação dos usuários com a utilização do portal Participa.Br. 
 \end{itemize}
 
+O Objetivo do Estudo em si é
+\textbf{analisar} o Portal da Participação Social,
+\textbf{com propósito de} avaliar qualidade em uso (ISO/IEC 9126-4),
+\textbf{com respeito à} satisfação do usuário,
+\textbf{do ponto de vista de} usuário,
+\textbf{no contexto de} portais governamentais.
 
-\subsubsection{Objetivo do Estudo}
-
-
-\begin{table}[h]
-\begin{tabular}{|l|l|}
-\hline
-Analisar             & Portal da Participação Social (participa.br) \\ \hline
-Com propósito de     & Avaliar Qualidade em Uso (ISO/IEC 9126-4)    \\ \hline
-Com respeito ao      & Satisfação do usuário                        \\ \hline
-Do ponto de vista de & Usuário                                      \\ \hline
-No contexto de       & Portais Governamentais                       \\ \hline
-\end{tabular}
-\caption {Objetivos do Estudo}
-\end{table}
-
-\subsubsection{Questões}
-
-A partir do objetivo de medição estabelecido no quadro 1  foram definidas questões sobre o que é preciso saber de forma a apoiá-la a entender se o objetivo específico foi alcançado, e para cada questão foram definidas as métricas relacionadas no quadro 2: 
+A partir do objetivo de medição estabelecido, foram definidas questões sobre o que é preciso saber de forma a apoiá-la a entender se o objetivo específico foi alcançado, e para cada questão foram definidas as métricas relacionadas na Tabela~\ref{tabela-questoes}: 
 
 \begin{table}[h]
 \begin{tabular}{|l|l|l|}
 \hline
 \textbf{Questões}  & Métricas    & \begin{tabular}[c]{@{}l@{}}Diretrizes para \\ interpretação \end{tabular}  \\ \hline
 \begin{tabular}[c]{@{}l@{}} Q1. Qual o perfil do usuário \\ que utiliza o portal participa.br?  \end{tabular} &                Perfil               & \begin{tabular}[c]{@{}l@{}} Análise de Dados Estatísticos,\\ criação de personas, análise \\ dos dados qualitativos. \end{tabular}\\ \hline
-\begin{tabular}[c]{@{}l@{}} Q2. Qual o grau de satisfação\\ do usuário que utiliza o portal \\ participa.br \end{tabular} &  \begin{tabular}[c]{@{}l@{}} Grau de satisfação \\ do usuário \end{tabular} & \begin{tabular}[c]{@{}l@{}} Escore da satisfação global\\ pelo usuário (OVERALL)   \end{tabular}                               \\ \hline
+\begin{tabular}[c]{@{	}l@{}} Q2. Qual o grau de satisfação\\ do usuário que utiliza o portal \\ participa.br \end{tabular} &  \begin{tabular}[c]{@{}l@{}} Grau de satisfação \\ do usuário \end{tabular} & \begin{tabular}[c]{@{}l@{}} Escore da satisfação global\\ pelo usuário (OVERALL)   \end{tabular}                               \\ \hline
 \begin{tabular}[c]{@{}l@{}} Q3. Quantidade de tempo gasto \\ para realizar as tarefas   \end{tabular}   &            Duração                   & Tempo gasto                       \\ \hline
 \end{tabular}
 \caption{Questões de Pesquisa}
+\label{tabela-questoes}
 \end{table}
 
 \subsection{Metodologia}
