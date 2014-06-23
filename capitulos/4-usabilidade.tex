@@ -5,7 +5,7 @@ Neste capítulo abordaremos os conceitos e as áreas que estão por trás do ter
 \section {Usabilidade}
 
 A usabilidade é um termo antigo que começou a ser utilizado pela Ciência Cognitiva e depois pela Psicologia e Ergonomia em substituição ao termo ``amigável'' ~\cite{dias2006}.
-%TODO: aspas as em latex é assim: `` ''
+%TODO: aspas as em latex é assim: `` '' 
 % 
 A usabilidade é um conjunto de propriedades de uma interface que reúne os seguintes componentes: fácil aprendizado, eficiência, capacidade de memorização, baixo índice de erros e satifação e prazer ao uso~\cite{nielsen1994}.
 %
@@ -118,10 +118,8 @@ A engenharia de usabilidade surgiu no final dos anos 80 com o esforço sistemát
 %
 Podemos fazer um paralelo da engenharia de usabilidade com a engenharia de software. A engenharia de software ocupa do desenvolvimento do núcleo funcional de um sistema interativo formado por estruturas de dados, algoritmos e recursos de processamento de dados. Esse núcleo é construído de forma que o sistema funcione bem, de forma correta, rápida e sem erros. Já a engenharia de usabilidade ocupa-se da interface com o usuário que interliga as funções do sistema com os usuários de forma que a interface do sistema seja agradável, intuitivo, eficiente e fácil de operar ~\cite{cybis2010}.
 %
-%\subsubsection{Ciclo de Engenharia de Usabilidade}
 %TODO: não precisa criar uma seção para algo que será descrito em um parágrafo.
 %
-Nesse contexto, temos Ciclo de Engenharia de Usabilidade, que foi definido sendo essencialmente evolutivo, interativo e baseado no envolvimento do usuário. A norma ISO 13407 (Projeto centrado no usuário) sugere quatro principais etapas desse ciclo (analisar e especificar o contexto de operação; especificar as exigências dos usuários e organizações; produzir soluções de projeto; avaliar o projeto contra as exigências)~\cite{cybis2010}.
 
 \item[Experiência do Usuário - UX]
 
@@ -200,7 +198,7 @@ Antes de definir as técnicas de avaliação ~\citeonline{preece2007} identifica
 %
 Em relação as técnicas de avaliação, ~\citeonline{preece2007} as divide em cinco técnicas de avaliação: (1) observação e monitoramento; (2) opinião dos usuários; (3) opiniões dos especialistas; (4) testes com os usuários e; (5) Predição. 
 %
-Já ~\citeonline{cybis2010} divide as técnicas de avaliação da usabilidade de interfaces em três grupos. Técnicas prospectivas; técnicas preditivas,diagnósticas,analíticas e inspecção e as objetivas, definitivas e empíricas.
+Já ~\citeonline{cybis2010} divide as técnicas de avaliação da usabilidade de interfaces em três grupos. Técnicas prospectivas; técnicas preditivas, diagnósticas, analíticas e inspecção e as objetivas, definitivas e empíricas.
 
 
 De acordo com ~\citeonline{preece2007} cada método de avaliação possui características e pode ser aplicado em diferentes situações.
@@ -225,29 +223,31 @@ De acordo com ~\citeonline{bervian2002metodologia} as técnicas são procediment
 
 	Os métodos de concepção são utilizados para implementar as especificações e os requisitos para a interface a usabilidade de um sistema.
 
-\subsubsection{Brainstorming}
+\begin{description}
+
+\item[Brainstorming:]
 
 	O brainstorming é bastante utilizado em ambientes ágeis para obter ideias, entrar em consenso sobre problemas ou novas propostas.
 
-\subsubsection{Storyboard}
+\item[Storyboard:]
 
 É uma representação das interações entre os usuários e o sistema em seu ambiente de trabalho. Corresponde ao detalhamento de um cenário de uso especificado para o sistema consistindo em uma sequência de desenhos representando não só os esboços de telas, mas também os elementos do contexto (usuários, equipamentos, móveis, telefones, colegas).
 
-\subsubsection{Card Sorting}
+\item[Card Sorting:]
 
-	É uma técnica usada para descobrir como o usuário classifica determinada informação em sua mente. O usuário recebe uma série de cartões embaralhados descrevendo conteúdos e agrupam os cartões que tenham alguma relação. Podem ser distribuidos cartões com nomes de categorias.
+	É uma técnica usada para descobrir como o usuário classifica determinada informação em sua mente. O usuário recebe uma série de cartões embaralhados descrevendo conteúdos e agrupam os cartões que tenham alguma relação. Podem ser distribuidos cartões com nomes de categorias. 
+%
+O \textit{card sorting} pode ser aberto ou fechado podendo ser aplicado tanto de forma presencial ou remota e aplicados para grupos ou para uma única pessoa. Recomenda-se no mínimo 15 testes e que cada teste tenha 2 pessoas.\footnote{\url{www.uxdesign.blog.br}}
 	
+\item[Diagramas de Afinidade:]
 
-	O \textit{card sorting} pode ser aberto ou fechado podendo ser aplicado tanto de forma presencial ou remota e aplicados para grupos ou para uma única pessoa. Recomenda-se no mínimo 15 testes e que cada teste tenha 2 pessoas.
-	
-\subsubsection{Diagramas de Afinidade}
+	São utilizados para organizar uma grande quantidade de itens em grupos lógicos. Diferente do \textit{card sorting}, nesta técnica os projetistas e usuários trabalham juntos para obter consenso sobre a organização dos itens. Essa técnica pode ser usada para analisar os resultados de estudos de campo e analisar as conclusões de uma avaliação de usabilidade.
 
-	Os diagramas de afinidade são utilizados para organizar uma grande quantidade de itens em grupos lógicos. Diferente do \textit{card sorting}, nesta técnica os projetistas e usuários trabalham juntos para obter consenso sobre a organização dos itens. Essa técnica pode ser usada para analisar os resultados de estudos de campo e analisar as conclusões de uma avaliação de usabilidade.
-
-\subsubsection{Protótipos}
+\item[Protótipos:]
 
 	Os protótipos de papel são úteis para detectar problemas de usabilidade logo no início do proceso de \emph{design}. São usados para esclarecer os requisitos específicos para o projeto da interface do sistema. São rápidos de construir, permitindo rápidas interações de projeto e necessitam de poucos recursos para serem criados. 
 	Existem também os protótipos de baixa, média e alta que simulam o sistema com mais fidelidade do que os protótipos em papel. 
+\end{description}
 
 %------------------------------------------------------------%%%
 
@@ -257,28 +257,28 @@ Estes métodos são utilizados para buscar informações sobre o contexto de uso
 
 As técnicas mencionadas à baixo visam apoiar os projetistas de interface na busca de informações sobre o contexto de uso e sobre a usabilidade de um sistema existente. Essas técnicas são empregadas de forma que se complementem-se umas as outras.
 
-\subsubsection{Observação}
+\begin{description}
 
-	Essa técnica caracteriza-se por um pesquisador observando o usuário e tomando notas, enquanto este trabalha em seu contexto usual. é uma técnica útil para obter dados quantitativos (tempo para as tarefas) e qualitativos (práticas e estratégias do usuário) ~\cite{cybis2010}.
+\item[Observação:]
 
-	No planejamento é importante definir os objetivos e as maneiras de como será registrada os acontecimentos. Deve-se levar em consideração o fato que muitos usuários por estarem sendo observados podem alterar seu comportamento ao utilizar a ferramenta. É importante que todos estejam cientes dos objetivos do estudo, deixando claro que não é ele que será avaliado e sim conhecer uma situação de uso.
+	Essa técnica caracteriza-se por um pesquisador observando o usuário e tomando notas, enquanto este trabalha em seu contexto usual. É uma técnica útil para obter dados quantitativos (tempo para as tarefas) e qualitativos (práticas e estratégias do usuário). No planejamento é importante definir os objetivos e as maneiras de como será registrada os acontecimentos. Deve-se levar em consideração o fato que muitos usuários por estarem sendo observados podem alterar seu comportamento ao utilizar a ferramenta. É importante que todos estejam cientes dos objetivos do estudo, deixando claro que não é ele que será avaliado e sim conhecer uma situação de uso ~\cite{cybis2010}.
 
-\subsubsection{Entrevistas Tradicionais}
+\item[Entrevistas Tradicionais:]
 
 Através de entrevistas podemos obter as opiniões tanto dos usuários atuais como dos futuros usuários dos sistemas. Primeiramente é importante identificar as necessidades das pessoas em acessar uma determinada informação.
 
-\subsubsection{Eyetracking}
+\item[Eyetracking:]
 
-Eyetracking é uma técnica que rastrea o movimento dos olhos e da cabeça para registrar a tomada de informações numa interface.
+É uma técnica que rastrea o movimento dos olhos e da cabeça para registrar a tomada de informações numa interface.
 
-\subsubsection{Questionários de Perfil de Uso}
+\item[Questionários de Perfil de Uso:]
  
 É utilizado para obter informações sobre as caracteristicas reais dos usuários de um sistema e saber como eles realmente utilizam tais ferramentas. É importante que ao utlizar os questionários de perfil de uso é preciso definir um foco para a sua pesquisa. Deve-se identificar as principais dúvidas da equipe de projeto em relação ao uso do sistema ~\cite{cybis2010}.
 
 Este tipo de questionário pode ser enviado para os emails dos usuários da ferramenta em análise. É importante definir o tamanho de sua amostra. De acordo com ~\citeonline{cybis2010}, de 20 a 30 por cento é a taxa de retorno dos questionários enviados. As respostas podem ser analisadas utilizando métodos estatísticos.
 
 
-\subsubsection{Questionários de Satisfação}
+\item[Questionários de Satisfação:]
 
 	A aplicação de questionários é um dos métodos mais utilizados para avaliação da satisfação do usuário. Eles resultam da avaliação subjetiva pelo usuário, o qual é influenciado pelos tipos de questões aplicadas.
 	
@@ -288,46 +288,48 @@ Este tipo de questionário pode ser enviado para os emails dos usuários da ferr
 
 	Um grande número de questionários foram desenvolvidos pela comunidade científica para a avaliação da usabilidade.  Alguns exemplos de questionários são: QUIS, SUMI,  WAMMI, SUS, ASQ, PSQ,PSSUQ, CSUQ. Os detalhes referentes a cada questionário estão detalhados no apêndice.
 
-\subsubsection{Grupos de Foco}
+\item[Grupos de Foco:]
 
-	Grupo focal é uma reunião informal de usuários que manifestam suas opiniões sobre o determinado assunto, que pode ser tanto uma oportunidade de novas uncionalidades ou algum problema específico.
+Grupo focal é uma reunião informal de usuários que manifestam suas opiniões sobre o determinado assunto, que pode ser tanto uma oportunidade de novas funcionalidades ou algum problema específico.
+%
+Um moderador deve preparar um roteiro  com uma lista de assuntos a serem tratados. É importantes que os participantes sejam de perfis diferentes para que possa ter uma maior diversidade de informações. Costuma-se ter em média de 6 a 12 usuários em uma mesa de reuniões. Os registros das informações podem ser através de vídeos ou blocos de anotações. O objetivo não é ter a obtenção do consenso em torno das ideias, mas sim ter uma boa quantidade de opiniões sobre o assunto a ser tratados ~\cite{cybis2010}.
 
-	Um moderador deve preparar um roteiro  com uma lista de assuntos a serem tratados. É importantes que os participantes sejam de perfis diferentes para que possa ter uma maior diversidade de informações. Costuma-se ter em média de 6 a 12 usuários em uma mesa de reuniões. Os registros das informações podem ser através de vídeos ou blocos de anotações. O objetivo não é ter a obtenção do consenso em torno das ideias, mas sim ter uma boa quantidade de opiniões sobre o assunto a ser tratados ~\cite{cybis2010}.
 
-
-\subsubsection{Diários}
+\item[Diários:]
 
 	É uma técnica útil quando a experiência do usuário é ampla e depende da utilização em multi lugares. Nessa técnica os usários carregam consigo um pequeno diário para nele anotar as informações do seu dia-a-dia na utilização do sistema ~\cite{cybis2010}.
 
-\subsubsection{Benchmarking de Usabilidade}
+\item[Benchmarking de Usabilidade:]
 
-	Benchmarking é definido como método sistemático e contínuo de avaliação de sistemas reconhecidos como representantes das melhores e mais eficazes pŕaticas com a finalidade de comparar desempenhos e identificar oportunidades de melhoria. ~\cite{spendolini1994}
+	Benchmarking é definido como método sistemático e contínuo de avaliação de sistemas reconhecidos como representantes das melhores e mais eficazes pŕaticas com a finalidade de comparar desempenhos e identificar oportunidades de melhoria ~\cite{spendolini1994}.
 
 	Este método parte da definição dos critérios de avaliação e seleção de representantes relevantes para criar uma listagem de caracterśisticas desejáveis para o futuro sistema, como também os aspectos que são desfavoráveis e que devem ser evitados.
 
-\subsubsection{Cenários de uso}
+\item[Cenários de uso:]
 
 	É uma técnica simples e eficaz para analisar e comunicar uma parte das especificações de requisitos produzidos para a usabilidade e a interface. São utilizados para comunicar os cenários atuais de uma tarefa (problema) e o cenário futuro (solução). Os cenários de solução deve descrever em linguagem natural, como determinados usuários realizarão tarefas específicas com o sistema em um determinado contexto. É preciso decompor os objetivos dos usuários segundo as operações necessárias para alcança-los, identificando as atividades que serão realizadas pelos usuários ~\cite{cybis2010}.
 
-\subsubsection{Personas}
+\item[Personas:]
 
-	A técnica de persona descreve o perfil de uma pessoa fictícia envolvida com o produto. Trata-se de inventar um conjunto de pessoas (três ou quatro) que estejam dentro da população de usuários pretendidos e descrevê-las em detalhes ~\cite{cybis2010}.
+	A técnica de persona descreve o perfil de uma pessoa fictícia envolvida com o produto. Trata-se de inventar um conjunto de pessoas (três ou quatro) que estejam dentro da população de usuários pretendidos e descrevê-las em detalhes.
+%
+	As informações devem ser qualitativas e coletadas por meio de entrevistas e questionários junto à população alvo do sistema. As personas permitem maiior entendimento dos usuários, colocando-os no centro das decisões do projeto. Essa técnica tem objetivos similares aos de cenários, porém ao invês do foco ser na tarefa, deve-se ter foco em uma pessoa que faça parte do público alvo do sistema ~\cite{cybis2010}.
 
-	As informações devem ser qualitativas e coletadas por meio de entrevistas e questionários junto à população alvo do sistema. As personas permitem maiior entendimento dos usuários, colocando-os no centro das decisões do projeto ~\cite{cybis2010}. Essa técnica tem objetivos similares aos de cenários, porém ao invês do foco ser na tarefa, deve-se ter foco em uma pessoa que faça parte do público alvo do sistema.
-
+\end{description}
 
 \subsection{Técnicas e Métodos de avaliação}
 
+\begin{description}
 
-\subsubsection{Checklists}
+\item[Checklists:]
 
-	\textit{Checklist} é uma técnica de inspeção qu oferece uma maneira de abordagem rápida, fácil e de baixo custo para a avaliação de uma interface. Permite com que usuários que não são especialistas em ergonomia identificarem problemas menores e repetitivos.~\cite{cybis2010} 
+	É uma técnica de inspeção que oferece uma maneira de abordagem rápida, fácil e de baixo custo para a avaliação de uma interface. Permite com que usuários que não são especialistas em ergonomia identificarem problemas menores e repetitivos ~\cite{cybis2010}.
+%
+Várias vantagens são encontradas na utilização dessa técnica como: redução de custos de avaliação por não precisar de especialistas; sistematização das avaliações; reduz a subjetividade dos processos de avaliação e fornece um conhecimento ergonômico sobre o que avaliar.
+%
+O Ergolist \footnote{\url{http://www.labiutil.inf.ufsc.br/ergolist/check.htm}} é um aplicativo que pode ser utilizado para realizar uma inspeção da qualidade ergonômica da interface com o usuário do sistema.
 
-	Várias vantagens são encontradas na utilização dessa técnica como: redução de custos de avaliação por não precisar de especialistas; sistematização das avaliações; reduz a subjetividade dos processos de avaliação e fornece um conhecimento ergonômico sobre o que avaliar.
-
-	O Ergolist \footnote{\url{http://www.labiutil.inf.ufsc.br/ergolist/check.htm}} é um aplicativo que pode ser utilizado para realizar uma inspeção da qualidade ergonômica da interface com o usuário do sistema.
-
-\subsubsection{Avaliação heurística}
+\item[Avaliação heurística:]
 
 	Representa um julgamento de valor sobre as qualidades ergonômicas das interfaces Humano-Computador. Essa avaliação é realizada por especialistas em ergonomia e usabilidade. Eles examinam o sistema interativo e diagnosticam os problemas ou as barreiras que os usuários provavelmente encontrarão durante a interação ~\cite{cybis2010}.
 
@@ -359,43 +361,48 @@ Este tipo de questionário pode ser enviado para os emails dos usuários da ferr
     \label{avaliadores}
 \end{figure}
 
-	A avaliação heurística requer pouco planejamento e pode fazer parte de um processo interativo de um projeto e aplicado em todas as fases de desenvolvimento da interface, mas é preciso que seja avaliado por especialistas de usabilidade com pleno conhecimento nas heurśiticas.
+	A avaliação heurística requer pouco planejamento e pode fazer parte de um processo interativo de um projeto e aplicado em todas as fases de desenvolvimento da interface, mas é preciso que seja avaliado por especialistas de usabilidade com pleno conhecimento nas heurísticas.
 	
 
-\subsubsection{Listas de Verificação}
+\item[Listas de Verificação:]
 
 	Permitem que profissionais que não necessariamente sejam especialistas em ergonomia identifiquem problemas menores e repetitivos das interfaces. As normas ISO 9241, partes 10 a 17, fornecem listas de verificação de ergonomia bem definidas, assim como as fornecidas pelo site Ergolist ~\cite{cybis2010}.
 	
 
-\subsubsection{Percurso Cognitivo}
+\item[Percurso Cognitivo:]
 
 Percurso cognitivo é um método de inspeção de usabilidade que tem como objetivo avaliar a interface considerando a facilidade da interface. A finalidade do percurso cognitivo é fazer com que o \emph{design} de interação seja fácil de aprender por meio da exploração. Os inspetores aplicam uma lista de verificação orientada à tarefa interativa, abordando os processos cognitivos que se estabelecem quando o usuário a realiza pela primeira vez ~\cite{cybis2010}
 
 
-\subsubsection{Teste de Usabilidade}
+\item[Teste de Usabilidade:]
 
-	É um dos métodos de teste de experiência do usuário (UX) mais frequentemente utilizado e conhecido entre aqueles que não são projetistas da UX. Realizar testes com usuários é o núcleo do \emph{design} Centrado no Usuário, pois é através destes que podemos saber se as reais expectativas dos usuários são atendidas ~\cite{santos2012}.
+É um dos métodos de teste de experiência do usuário (UX) mais frequentemente utilizado e conhecido entre aqueles que não são projetistas da UX. Realizar testes com usuários é o núcleo do \emph{Design} Centrado no Usuário, pois é através destes que podemos saber se as reais expectativas dos usuários são atendidas ~\cite{santos2012}.
+%
+O teste consiste em avaliar o desempenho dos usuários na execução de tarefas cuidadosamente preparadas, tarefas estas dentro do escopo do sistema. Esse desempenho pode ser avaliado no quesito, número de erros e tempo de execução da tarefa, questionários e entrevistas também podem ser utilizados ~\cite{preece2007}. Na próxima seção será detalhado os passos comuns que devem ser seguidos para a execução dos testes de usabilidade.
 
-	O teste consiste em avaliar o desempenho dos usuários na execução de tarefas cuidadosamente preparadas, tarefas estas dentro do escopo do sistema. Esse desempenho pode ser avaliado no quesito, número de erros e tempo de execução da tarefa, questionários e entrevistas também podem ser utilizados. ~\cite{preece2007}
 
-	Existe alguns passos comuns que devem ser seguidos para a execução dos testes de usabilidade:
+\end{description}
+
+
+\section{Testes de Usabilidade}
+
+	Existem vários tipos de testes de usabilidade, mas sabe-se que todos eles têm algo em comum, que é observar as pessoas utilizando algo.
 
 \begin{itemize}
 
 \item \textbf{Escolher abordagem}
 
-	Existem vários tipos de testes de usabilidade, mas sabe-se que todos eles têm algo em comum, que é observar as pessoas utilizando algo.As abordagens de pesquisa podem ser de dois tipos: quantitativa ou qualitativas. 
+As abordagens de pesquisa podem ser de dois tipos: quantitativa ou qualitativas. 
+%
+As pesquisas quantitativas são focadas nos dados numéricos e é voltada para fornecer alta confiança e resultados repetidos dentro de seus grupos de usuários. É preciso ter o envolvimento de um número maior de participantes para contar as variações que você encontrará de indivíduo para indíviduo ~\cite{unger2009}.
+%
+As pesquisas qualitativas não são focadas em níveis de segurança e da possibilidade de repetição, mas sim ganhar contexto e percepção considerando o comportamento do usuário. Ela depende da interpretação do projetista sobre as descobertas, a intuição e o senso comum ~\cite{unger2009}.
 
-	Pesquisas quantitativas são focadas nos dados numéricos e é voltada para fornecer alta confiança e resultados repetidos dentro de seus grupos de usuários.É preciso ter o envolvimento de um número maior de participantes para contar as variações que você encontrará de indivíduo para indíviduo ~\cite{unger2009}.
-
-	Os testes quantitativos são como experimentos cientificos que precisam ser rigorosos ou os resultados não serão confiáveis. Deve-se definir um protocolo de teste e segui-lo consistentemente para todos os participantes ~\cite{krug2010}.
-
-	As pesquisas qualitativas não são focadas em níveis de segurança e da possibilidade de repetição, mas sim ganhar contexto e percepção considerando o comportamento do usuário.Ela depende da interpretação do projetista sobre as descobertas, a intuição e o senso comum ~\cite{unger2009}.
-
-	Nos testes qualitativos você tenta minimizar a quantidade de interação com o participante para evitar a influência nos resultados ~\cite{krug2010}.
+Os testes quantitativos são como experimentos científicos que precisam ser rigorosos ou os resultados não serão confiáveis. Deve-se definir um protocolo de teste e segui-lo consistentemente para todos os participantes ~\cite{krug2010}.
+%
+Nos testes qualitativos você tenta minimizar a quantidade de interação com o participante para evitar a influência nos resultados ~\cite{krug2010}.
 
 	Para os testes de usabilidade é possível utilizar qualquer uma das abordagens, mas a qualitativa é a mais acessível para aqueles que não tiveram um treinamento em métodos científicos mais formais e oferece uma rica fonte de dados ~\cite{unger2009}.
-
 
 
 \item \textbf{Planejar a pesquisa}
@@ -462,11 +469,25 @@ Os seus materiais de teste deve incluir:
 
 \item Análise e apresentação dos resultados;
 \item Criação de recomendações.
+%falta informacoes
 
 \end{itemize}
 
 
+\subsection{Teste da Usabilidade vs. Teste de Aceitação do Usuário (UAT)}
+
+
+O teste de usabilidade e teste de aceitação do usuário muitas vezes são confundidos. O UAT pode trazer as questões de usabilidade, mas não é o único método para ser utilizado em um projeto. Por ser feito tardiamente as mudanças baseadas em UAT são muito mais caras. Já os testes de usabilidade foram projetados para oferecer informações verdadeiras de desempenho desde o início do processo.  
+%
+O principal objetivo do teste de aceitação do usuário é servir como uma verificação final de que a aplicação atendeu aos requisitos funcionais estabelecidos pelo cliente ~\citeonline{preece2007}.
+
+
+
+
 %------------------------------------------------------------%
+\begin{comment}
+
+TODO%isso foi inserido na introdução. Mas acho que talvez poderia criar uma seção, subseção sobre a usabilidade em software livre.
 
 \section {Usabilidade em Software Livre}
 
@@ -480,7 +501,7 @@ Atualmente, algumas comunidades de software livre vêm se atentando as questões
 	
 Entender o perfil do usuário é um dos principais pontos que devem ser levados em consideração pelos desenvolvedores de software em geral. Cada perfil de usuário tem suas particularidades e suas expectativas quanto a utilização do sistema. Quando falamos de usuários com experiência de uso de softwares semelhantes é preciso ter uma maior atenção na usabilidade para que possa ter uma boa aceitação e menor impacto com as mudanças.
 
-
+\end{comment}
 
 %---------------------------------------------------------%
 
@@ -522,20 +543,20 @@ Entender o perfil do usuário é um dos principais pontos que devem ser levados 
 
 \end{itemize}
 
-	Depois da análise dos requisitos é preciso especificar as metas de usabilidade do futuro sistema. A norma ISO 9241:11 orienta como podemos especificar essas metas.
+	Depois da análise dos requisitos é preciso especificar as metas de usabilidade do futuro sistema. A norma ~\citeonline{iso:9241} orienta como podemos especificar essas metas.
 
 	Na etapa de projetos, testes e implementação, Mayhew propôs que os ciclos devem se repetir de forma a tratar três nivéis de aspectos de uma interface: No primeiro nível sendo a interface definida conceitualmente; no segundo nível refere-se as definições em termos de estilo; e no terceiro nível as interações e componentes relacionados com os contextos das tarefas especiais. A última fase é a de instalação do sistema onde depois que o usuário já estiver acostumado com o sistema ele pode dar um \textit{feedback} sobre a usabilidade do produto de forma mais fidedigna por já ser um "especialista" da ferramenta como cita a autora. 
-
-	Uma das técnicas utilizadas para coletar \textit{feedback} são os testes de usabilidade no local do trabalho dos usuários ou utilizando métodos de análise como entrevistas, observações, questionários, grupos de discussões. Esses métodos serão detalhados no pŕoximo cápitulo.
+%
+	Uma das técnicas utilizadas para coletar \textit{feedback} são os testes de usabilidade no local do trabalho dos usuários ou utilizando métodos de análise como entrevistas, observações, questionários, grupos de discussões. 
 
 
 \subsection{Design Centrado no Usuário}
 
-O DCU surgiu da IHC e consiste em uma metodologia de \emph{design} de software para desenvolvedores e \emph{design}ers. Foi definida pela norma ISO 13407 (\textit{Human Centered \emph{design} Processes for Interactive Systems}) e tem como objetivo definir um processo necessário ao desenvolvimento de produtos fáceis de utilizar na qual deve envolver os usuários no processo de desenvolvimento e na avaliação dos produtos.
+O DCU surgiu da IHC e consiste em uma metodologia de \emph{design} de software para desenvolvedores e \emph{designers}. Foi definida pela norma ISO 13407 (\textit{Human Centered \emph{Design} Processes for Interactive Systems}) e tem como objetivo definir um processo necessário ao desenvolvimento de produtos fáceis de utilizar na qual deve envolver os usuários no processo de desenvolvimento e na avaliação dos produtos.
 
 Sabemos que a ciência experimental que utiliza-se dos métodos empíricos tradicionais para coletar dados e testar hipóteses sobre o comportamento humano aplicam-se de várias técnicas em nome de pessoas. Essa abordagem é preocupada com os usuários quando as representa mas ela não leva em conta diversos aspectos do usuário real, por não envolvê-los no processo. Não basta fazer para o usuário, é preciso fazer com o usuário ~\cite{eason1995}. 
 
-No \emph{design} Centrado no usuário (DCU) diferente dos métodos empíricos tradicionais que tem o usuário apenas como  referência, no DCU o usuário tem que ser o elemento central e é necessário envolvê-lo do início ao fim do projeto. Baseia-se nas necessidades, desejos e limitações das pessoas. Deve-se iniciar com usuários e suas necessidades em vez de começar com a tecnologia. ~\citeonline{travis2013} afirma que "para criar produtos que os usuário amem, é necessário incluir os usuários no processo de criação dos produtos". 
+No \emph{Design} Centrado no usuário (DCU) diferente dos métodos empíricos tradicionais que tem o usuário apenas como  referência, no DCU o usuário tem que ser o elemento central e é necessário envolvê-lo do início ao fim do projeto. Baseia-se nas necessidades, desejos e limitações das pessoas. Deve-se iniciar com usuários e suas necessidades em vez de começar com a tecnologia. ~\citeonline{travis2013} afirma que "para criar produtos que os usuário amem, é necessário incluir os usuários no processo de criação dos produtos". 
 
 ~\citeonline{gould1985designing} estabeleceram alguns princípios para o desenvolvimento centrado no usuário na decada 70 que são utilizados até hoje que são: Foco desde o inicio nos usuários e nas tarefas, medidas empiricas e \emph{design} interativo. O processo do \emph{design} centrado no usuário pode ser dividido em 3 fases: análise, desenvolvimento e pós-liberação. 
 
@@ -543,10 +564,10 @@ No \emph{design} Centrado no usuário (DCU) diferente dos métodos empíricos tr
 \subsubsection{ISO 13407 e 9241-210}
 	
 A ISO 13407 define um processo geral para incluir atividades centradas em humano através do ciclo de vida de desenvolvimento sem especificar métodos exatos ~\cite{santos2012}.
-
-A norma é caracterizada por quatro princípios: Ativo envolvimento do usuário; alocação apropriada de funções entre usuários e tecnologia; Testes de solução de \emph{design}; \emph{design} multidisciplinar.Em 2010 essa ISO foi revista e renomeada para a ISO 9241-210.
-
-Existem quatro atividades de \emph{design} Centrado no Usuário que devem estar presentes no inicío do projeto:
+%
+A norma é caracterizada por quatro princípios: Ativo envolvimento do usuário; alocação apropriada de funções entre usuários e tecnologia; Testes de solução de \emph{design}; \emph{design} multidisciplinar. Em 2010 essa ISO foi revista e renomeada para a ISO 9241-210.
+%
+Existem quatro atividades de \emph{Design} Centrado no Usuário que devem estar presentes no inicío do projeto:
 
 \begin{itemize}
 \item Entender e especificar o contexto de uso;
@@ -582,7 +603,7 @@ A ISO 13407 propõe que o envolvimento do usuário seja uma prática frequente e
 
 	Segundo ~\citeonline{barbosa2010} é preciso ter cuidado em relação à qualidade no uso, pois raramente a comunidade ágil cita usuários ou a distinção entre usuário e cliente.
 
-	~\citeonline{hodgetts2005experiences} afirma que os métodos ágeis são quase sempre apresentados sob a visão dos programadores, deixando de lado outras disciplinas como a UED (User Experience \emph{design}). Ele discute em seu artigo as experiências na integração de práticas do Desig da experiência do usuário em iniciativas de processos ágeis em organizações que utilizam XP e Scrum. Ele registrou os eforços da equipe com abordagem centrada apenas em métodos ágeis e depois com a integração das melhores práticas de experiência do usuário.
+	~\citeonline{hodgetts2005experiences} afirma que os métodos ágeis são quase sempre apresentados sob a visão dos programadores, deixando de lado outras disciplinas como a UED (User Experience \emph{design}). Ele discute em seu artigo as experiências na integração de práticas do Desig da experiência do usuário em iniciativas de processos ágeis em organizações que utilizam XP e Scrum. Ele registrou os esforços da equipe com abordagem centrada apenas em métodos ágeis e depois com a integração das melhores práticas de experiência do usuário.
 
 \subsection{Estudos correlatos}
 
@@ -631,7 +652,7 @@ Alguns estudos foram feitos tentando fazer essa integração da usabilidade em m
 
 	O processo de usabilidade ágil é integrar os instrumentos de IHC dentro dos processos clássico de XP. ~\citeonline{wolkerstorfer2008probing} usam o dcu ágil desde 2007 e que até hoje não houve nenhum problema entre as culturas e que tanto os especialistas de usabilidade quanto os desenvolvedores estão bem integrados.Pode-se encontrar vantagens na combinação das duas abordagens. 
 
-	Em 2008 foi proposto uma metodologia revisional institulada XPlus que insere as técnicas de \emph{design} e de usabilidade em determinadas fases do ciclo de desenvolvimento de software.O XPlus agrega algumas práticas de User Experience às práticas tradicionais de XP. A figura mostra uma visão geral do processo de desenvolvimento de software de XPlus.~\cite{guimaraesxplus}
+	Em 2008 foi proposto uma metodologia revisional institulada XPlus que insere as técnicas de \emph{design} e de usabilidade em determinadas fases do ciclo de desenvolvimento de software.O XPlus agrega algumas práticas de User Experience às práticas tradicionais de XP. A figura mostra uma visão geral do processo de desenvolvimento de software de XPlus ~\cite{guimaraesxplus}.
 
 \begin{figure}[h]
     \centering
@@ -652,7 +673,7 @@ Alguns estudos foram feitos tentando fazer essa integração da usabilidade em m
 	O XPU serve para guiar o time de desenvolvimento, passo a passo em todo o projeto, seguindo técnicas e artefatos simplificados afim de não se ter apenas sistemas portáteis reutilizaveis ou acoplados, mas sim com uma interface que refletiam as características e as necessidades dos usuários. Um problema encontrado é na sustentação do processo de desenvolvimento baseado em técnicas bem definidas, oq eu contraria o manifesto ágil.
 
 
-\section{Princípios ágeis aplicados ao DCU}
+\section{Princípios ágeis aplicados ao \emph{Design centrado no usuário}}
 
 	Alguns princípios e boas práticas de métodos ágeis foram levantadas para a aplicação no \emph{design} de sistemas centrado no usuário.
 
@@ -660,14 +681,14 @@ Alguns estudos foram feitos tentando fazer essa integração da usabilidade em m
 
 \item Coompreender e identificar as necessidades reais dos usuários
 
-	O Objetivo dessa etapa é conhecer o usuário alvo. Deve-se projetar ferramentas que irão dar suporte aos objetivos e atividades das pessoas.
-
-	Algumas técnicas são utilizadas para identificar as necessidades dos usuários como a observação natural que serve para responder a questão do tipo: o que e como as pessoas fazem? E as entrevistas que responde o que as pessoas pensam e dizem. Os resultados da pesquisa devem ser comunicados para a equipe.
+O Objetivo dessa etapa é conhecer o usuário alvo. Deve-se projetar ferramentas que irão dar suporte aos objetivos e atividades das pessoas.
+%
+Algumas técnicas são utilizadas para identificar as necessidades dos usuários como a observação natural que serve para responder a questão do tipo: o que e como as pessoas fazem? E as entrevistas que responde o que as pessoas pensam e dizem. Os resultados da pesquisa devem ser comunicados para a equipe.
 
 \item Focar na essência
 
-	 O foco na essência ajuda a desenvolver soluções que atendem às reais necessidades dos usuários diminuindo os riscos de desenvolvimento de funcionalidades com pouco ou nenhum uso.
-
+O foco na essência ajuda a desenvolver soluções que atendem às reais necessidades dos usuários diminuindo os riscos de desenvolvimento de funcionalidades com pouco ou nenhum uso.
+%
 	A ideia desse princípio é que deve-se começar a desenvolver apenas pelo que é essencial, começando pela menor unidade de um sistem sem perder a visão de um todo.
 
 \item Iterar mais rápido
@@ -682,11 +703,9 @@ Alguns estudos foram feitos tentando fazer essa integração da usabilidade em m
 
 \item Prototipar em baixa resolução
 
-	Os protótipos de baixa resolução permite visualizar uma solução de forma mais rápida e concreta economizando tempo de \emph{design} e desenvolvimento. Esses prótotipos ajuda a comunicar e entender idéias e serve para validar uma solução. Eles são úteis pois tendem a ser simples, baratos e de rápida produção.
-
-	Um exemplo de prótotipo de baixa fidelidade são os storyboard que serão detalhados no próximo cápitulo. 
-
-	A prototipação aumenta a comunicação entre a equipe de desenvolvimento e os usuários finais, funcionando como uma alternativa ``barata" para explorar alternativas de desenho.
+	Os protótipos de baixa resolução permite visualizar uma solução de forma mais rápida e concreta economizando tempo de \emph{design} e desenvolvimento. Esses prótotipos ajuda a comunicar e entender idéias e serve para validar uma solução. Eles são úteis pois tendem a ser simples, baratos e de rápida produção. 
+%
+	A prototipação aumenta a comunicação entre a equipe de desenvolvimento e os usuários finais, funcionando como uma alternativa ``barata" para explorar alternativas de desenho. Um exemplo de prótotipo de baixa fidelidade seria os storyboards que foi detalhado na seção de técnicas de usabilidade.
 	
 \item Menos documentação, mais comunicação
 
@@ -699,23 +718,13 @@ Alguns estudos foram feitos tentando fazer essa integração da usabilidade em m
 
 	Os testes de usabilidade devem ser feitos em todos os ciclos do projeto. Recomenda-se que os testes sejam feitos mais vezes e que seja menos formal como são feitos atualmente. Os resultados encontrados nos testes deve ser comunicado à equipe para que possa corrigir os erros  graves rapidamente.
 
-	No próximo capítulo detalharemos como funciona um teste de usabilidade, os tipos existentes e as práticas identicadas pela comunidade de arquitetura da informação e áreas correlatas.
+%	No próximo capítulo detalharemos como funciona um teste de usabilidade, os tipos existentes e as práticas identicadas pela comunidade de arquitetura da informação e áreas correlatas.
 
 \item O fim não é o lançamento
 
 	No fim de cada ciclo lança-se o mínimo adequado às necessidades reais dos usuários. Ao observar o uso real identificamos que existem novas formas para usar a ferramenta e podemos propor novas melhorias para o sistema. 
 	
 \end{enumerate}
-
-
-
-\section{Teste da Usabilidade vs. Teste de Aceitação do Usuário (UAT)}
-
-
-	Para ~\citeonline{preece2007} teste de usabilidade e teste de aceitação do usuário muitas vezes são confundidos. O UAT pode trazer as questões de usabilidade, mas não é o único método para ser utilizado em um projeto. Por ser feito tardiamente as mudanças baseadas em UAT são muito mais caras. Já os testes de usabilidade foram projetados para oferecer informações verdadeiras de desempenho desde o início do processo.  
-	
-	O principal objetivo do teste de aceitação do usuário é servir como uma verificação final de que a aplicação atendeu aos requisitos funcionais estabelecidos pelo cliente. 
-
 
 
 \section{Considerações finais}
