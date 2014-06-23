@@ -37,6 +37,7 @@ programa.
 %
 Para ~\citeonline{stallman2001}, a partir do momento em que os custos de desenvolvimento de um software são pagos, não há motivos para restrição de acesso, pois a disseminação de conhecimento é muito mais benéfica do que potenciais lucros para o produtor.
 
+\begin{comment}
 Umas das grandes conquistas de Stallman e da \emph{Fre Software Foudation} (FSF), 
 principal organização dedicada a produção e à divulgação do software livre, 
 foram o projeto GNU\footnote{\url{www.gnu.org}} e a licença de software General Public License (GPL).
@@ -53,6 +54,66 @@ Em paralelo ao desenvolvimento do GNU, sem relação alguma com o projeto da FSF
 o finlandês Linus Torvalds iniciou o desenvolvimento de um núcleo de sistema operacional também baseado no Unix e deu o nome do núcleo Linux (\emph{Linux Kernel}), disponibilizando-o pela licença GNU GPL.
 %
 Assim, como o fato do projeto GNU ainda não ter seu núcleo pronto, foi promovida a integração entre GNU e Linux, resultando no sistema operacional GNU/Linux, amplamente utilizado até os dias de hoje, configurando o sucesso do processo empírico e colaborativo dos projetos de software livre.
+
+\end{comment}
+
+\subsection{Desenvolvimento de um projeto de software livre}
+\label{sec:dev-noosfero}
+
+%TODO: para o TCC 2, deixar mais coeso com o capítulo e ter uma definição genérica do desenvolvimento de software live em si (podendo aproveitar o texto acima)
+
+Para exemplificar o processo de desenvolvimento de um software livre,
+nesta seção, explicaremos com está definida a colaboração no código do Noosfero,
+que é o estudo de caso deste trabalho.
+%
+O Noosfero\footnote{\url{noosfero.org}} é uma plataforma desenvolvida pela Colivre (Cooperativa de Tecnologias Livre)\footnote{\url{colivre.coop.br}}, possui licença AGPL e é utilizado, principalmente em universidades públicas, para desenvolvimento de redes colaborativas\footnote{\url{http://softwarelivre.org/colivre/blog/projeto-noosfero}}.
+
+
+Por tratar de um software livre, a plataforma Noosfero possui uma grande quantidade 
+de colaboradores, formado por equipes de desenvolvimento como na Colivre, Universidade de 
+Brasília e na Universidade de São Paulo, ou por desenvolvedores independentes.
+%
+Assim, para que haja sucesso na colaboração, são feitas exigências durante o desenvolvimento, assim como testes bem definidos para aprovar novas funcionalidade.
+%
+Além da utilização da linguagem de programação \textit{Ruby}, o desenvolvimento da plataforma noosfero também se baseia em JavaScript, CSS, dentre outras linguagens.
+%
+O desenvolvimento para a plataforma Noosfero é realizado em ciclos e
+possui as seguintes fases: desenvolvimento, release 1, release 2 e release final.
+
+Antes da fase de desenvolvimento for iniciada é necessário que seja feita a 
+documentação do que será desenvolvido.
+%
+Os desenvolvedores responsáveis criam um 
+\textit{action item} (item de ação), contendo a história de usuário ou os requisitos do novo 
+recurso. Um \textit{action item} pode ser descrito como uma \textit{feature} (novo recurso) ou como um \textit{bug} (defeito) encontrado.
+
+
+Além da documentação, é necessário o envio de um \textit{email} a comunidade descrevendo o 
+que será desenvolvido. A partir desse \textit{email}, a comunidade irá avaliar a funcionalidade 
+descrita e decidir se é um funcionalidade importante para se incorporar ou não. 
+Esse processo de avaliação tem a duração de uma semana, geralmente.
+
+Com a aprovação da comunidade são feitas as revisões do ciclo de desenvolvimento, 
+que deve seguir os seguintes passos:
+%
+\begin{enumerate}
+\item Criar um \textit{‘merge request’} juntamente com o código;
+\item Código é revisado pela comunidade;
+\item Código é bom? 
+\subitem Se sim:
+\subsubitem Vá para o passo 4;
+\subitem Se não:
+\subsubitem \textit{‘Merge request’} é rejeitado e as razões por tal são comentadas e 
+respondidas;
+\subsubitem Desenvolvedores revisam o que está errado;
+\item Código é incluido no código principal.
+\end{enumerate}
+
+A entrega da \textit{release} 1 consiste na instalação da nova versão do código no repositório de testes, assim como no código principal quando não houver mais defeitos, ou todos os defeitos encontrados forem tratados devidamente. Porém se algum erro crítico for encontrado e não for tratado a tempo da \textit{release} final, o lançamento pode ser adiado para a próxima \textit{release}.
+%
+Já a \textit{release} 2 não é obrigatória, apenas ocorre se houver muitas mudanças na \textit{release} 1 e requerer novos testes. Vale lembrar que os procedimentos realizados para aprovar a \textit{release} 2 são os mesmos da \textit{release} 1%Referenciar%
+%
+Por fim, a versão final do código é lançada após todos os testes serem aprovados nas \textit{releases} 1 e 2, assim o código pode ser atualizado para o código principal do noosfero, encerrando o ciclo de desenvolvimento.
 
 
 %------------------------------------------------------------------------------%
