@@ -5,13 +5,9 @@ O Empirismo baseia-se na aquisição de sabedoria através da percepção do mun
 externo, ou então do exame da atividade da nossa mente, que abstrai a realidade 
 que nos é exterior e as modifica internamente~\cite{chaui2003}.
 %
-Mecanismos do controle de processo empírico, onde ciclos de \emph{feedback} constituem o
-núcleo da técnica de gerenciamento que são usadas em oposição ao tradicional 
-gerenciamento de comando e controle.
+Mecanismos do controle de processo empírico, onde ciclos de \emph{feedback} são a base da técnica de gerenciamento de projetos.
 %
-É uma forma de planejar e gerenciar projetos 
-trazendo a autoridade da tomada de decisão a níveis de propriedade de operação e 
-certeza~\cite{Schwaber2004}.
+É uma forma de planejar e gerenciar projetos trazendo a autoridade da tomada de decisão a níveis de propriedade de operação e certeza~\cite{Schwaber2004}.
 %
 Neste capítulo será abordado algumas ideias e práticas de processo de desenvolvimento
 de software que utilizam métodos empíricos, como os métodos ágeis e o processo
@@ -58,19 +54,20 @@ o finlandês Linus Torvalds iniciou o desenvolvimento de um núcleo de sistema o
 %
 Assim, como o fato do projeto GNU ainda não ter seu núcleo pronto, foi promovida a integração entre GNU e Linux, resultando no sistema operacional GNU/Linux, amplamente utilizado até os dias de hoje, configurando o sucesso do processo empírico e colaborativo dos projetos de software livre.
 
+
 %------------------------------------------------------------------------------%
 
 \section{Métodos ágeis}
 \label{metodos-ageis}
 
-A utilização de métodos ágeis no desenvolvimento de software tem como caracteristicas 
+A utilização de métodos ágeis no desenvolvimento de software tem como características 
 intrínsecas a flexibilidade e rapidez nas respostas a mudanças. 
 %
 A agilidade, para uma organização de desenvolvimento de software, é a habilidade 
 de adotar e reagir rapidamente e apropriadamente a mudanças no seu ambiente e por 
 exigências impostas pelos ``clientes''~\cite{nerur2005}.
  	
-Os métodos ágeis compartilham valores como comunicação, \emph{feedback} constante, colaboração com o cliente e constante adaptação são baseados no manifesto ágil. Os quatro princípios básicos do manifesto ágil mostra o que se espera de qualquer método de desenvolvimento desta categoria:
+Os métodos ágeis compartilham valores como comunicação, \emph{feedback} constante, colaboração com o cliente e constante adaptação são baseados no manifesto ágil\footnote{\url{http://manifestoagil.com.br}}. Os quatro princípios básicos do manifesto ágil mostra o que se espera de qualquer método de desenvolvimento desta categoria:
 %
 \begin{enumerate}
 \item Indivíduos  e interações sobre processos e ferramentas;
@@ -78,45 +75,40 @@ Os métodos ágeis compartilham valores como comunicação, \emph{feedback} cons
 \item Colaboração com o cliente sobre negocioação de contrato;
 \item Responder às  mudanças sobre seguir um planejamento;
 \end{enumerate}
-%TODO: nota de rodapé para o manifesto ágil
+%Done: nota de rodapé para o manifesto ágil
 
-Em projetos ágeis, o cliente/usuário é mais ativo durante o processo de desenvolvimento, 
-determinando em conjunto com a equipe de desenvolvimento o que será desenvolvido, 
-além de participar da validação do o que foi desenvolvido.
-%
-Os projetos ágeis também buscam estabelecer um 
-tempo determinado e curto para entrega de novas versões do sistema, com o objetivo 
-de trazer mais satisfação ao cliente/usuário.
-%
+Existe uma relação em as práticas ágeis e o desenvolvimento baseado em software livre. ~\citeonline{corbucci2011} fala que o desenvolvimento baseado em software livre vem crescendo, porém a essência da comunidade ao redor do programa é de manter indivíduos que interajam de forma a produzir o que é mais importante. As ferramentas apenas possibilitam isso. 
+
+Quanto à documentação ~\citeonline{corbucci2011} sugere que documentação completa e detalhada cresce com a comunidade ao redor do software funcionando, de acordo com a frequência que usuários vão encontrando problemas.
+
+Em relação à colaboração com o cliente, de acordo com ~\citeonline{corbucci2011} clientes podem colaborar com projetos baseados em software livre, porém não são induzidos a fazê-lo, por conta da pouca experiência das comunidades em relacionamento com o cliente. No entanto vários projetos dependem da habilidade do projeto prover respostas rápidas às requisições dos clientes.
+
+Em projetos ágeis, o cliente/usuário é mais ativo durante o processo de desenvolvimento, determinando em conjunto com a equipe de desenvolvimento o que será desenvolvido, além de participar da validação do o que foi desenvolvido.
+
+Sobre mudanças ~\citeonline{corbucci2011} fala que a habilidade de responder às mudanças é crucial para determinar os projetos que sobrevivem, pois existe um ambiente extremamente competitivo no universo de software livre.
+
+Os projetos ágeis também buscam estabelecer um tempo determinado e curto para entrega de novas versões do sistema, com o objetivo de trazer mais satisfação ao cliente/usuário.
+
 A partir desses curtos ciclos, que são as interações, a equipe de desenvolvimento 
 deve se preocupar mais com a evolução dos requisitos, que pode gerar mudanças, porém 
 mantém o projetoatualizados e diminui o riscos de grandes mudanças a medida que o 
 projeto chega ao final.
-%
-Da perspectiva do produto, métodos ágeis são mais adequados quando os requisitos 
-estão emergindo e mudando rapidamente, embora não exista um consenso completo 
-nesse ponto.
-%TODO: eu discordo
-De uma perspectiva organizacional, a aplicabilidade pode ser expressa 
-examinando três dimensões chaves da organização: cultura, pessoal e comunicação. 
-Em relação a essas áreas, inúmeros fatores chave do sucesso podem ser identificados 
-~\cite{cohen2004}.
-%TODO: Vocês escreveram isso baseado na Wikipédia:
-%http://pt.wikipedia.org/wiki/Desenvolvimento_%C3%A1gil_de_software
-%tem um bom percentual de ctrl C + V
 
 Um método ágil conhecido como programação extrema (\emph{Extreme Programming} - XP), 
 tornou-se bastante popular por utilizar práticas focadas em codificação.
 %
 O objetivo principal do XP é a excelência no desenvolvimento de software, visando 
-um baixo custo, poucos defeitos, alta produtividade e alto retorno de investimento,
-de acordo com ~\citeonline{sato2007}. O XP conta com algumas práticas de desenvolvimento para dar suporte à busca pelos objetivos citados, essas práticas são: refatoração, integração contínua, testes automatizados, código coletivo e programação em pares.
+um baixo custo e poucos defeitos de acordo com ~\citeonline{sato2007}. O XP conta com algumas práticas de desenvolvimento para dar suporte à busca pelos objetivos citados, essas práticas são: refatoração, integração contínua, testes automatizados, código coletivo e programação em pares.
 
-%TODO: Está incompleto este capítulo. Não relacionou métodos ágeis e software livre. A ideia não é usar métodos ágeis para desenvolvimento de software livre: software livre é um método empírico de desenvolvimento de software, assim como métodos ágeis. Eles têm várias práticas em comum.
-%TODO: porque SL e MA são métodos empíricos? Quais as vantagens? Por que estamos trabalhando neste contexto?
-%TODO: tem algumas parte que foram simplesmente copiada: deve-se ter cuidado com isso para não caracterizar plágio.
+Em suma, o ambiente de desenvolvimento que este trabalho está inserido é baseado em métodos de desenvolvimento empíricos de software, como XP e Software Livre, buscando seguir os princípios ágeis para o desenvolvimento de software livre, que será especificado no capítulo 5.
+
+%Done: Está incompleto este capítulo. Não relacionou métodos ágeis e software livre. A ideia não é usar métodos ágeis para desenvolvimento de software livre: software livre é um método empírico de desenvolvimento de software, assim como métodos ágeis. Eles têm várias práticas em comum.
+%Done: porque SL e MA são métodos empíricos? Quais as vantagens? Por que estamos trabalhando neste contexto?
+%Done: tem algumas parte que foram simplesmente copiada: deve-se ter cuidado com isso para não caracterizar plágio.
 
 \section{Considerações finais}
-O ambiente de desenvolvimento que este trabalho está inserido é baseado em métodos empíricos de desenvolvimento de software, com XP e Software Livre, buscando seguir os princípios ágeis para o desenvolvimento de software livre, que será especificado no capítulo 5.
 
-%TODO: essas considerãções deveriam ter uma conclusão/arremate do mesmo, fazendo um link com o próximo capítulo.
+O desenvolvimento baseado em software livre e as práticas ágeis compartilham os mesmos valores, pois ambos são métodos empíricos, que buscam tomar decisões rápidas de acordo com a percepção do mundo externo. Nos próximos capítulos abordaremos como o desenvolvimento de testes é abordado no desenvolvimento empírico e como a usabilidade é inserida neste contexto.
+
+%Done: essas considerãções deveriam ter uma conclusão/arremate do mesmo, fazendo um link com o próximo capítulo.
+
