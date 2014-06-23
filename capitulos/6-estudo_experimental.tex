@@ -368,9 +368,30 @@ Os testes unitários do \textit{plugin} verificam a definição dos parâmetros 
 \item TLS do LDAP;
 \end{itemize}
 
+ Com o auxílio de uma ferramenta de análise de código para \textit{Ruby} chamada Rcov, foi obtida a taxa de cobertura de código do plugin desenvolvido, além de alguns dados sobre a execução dos testes funcionais e unitários que seguem abaixo:
+
+\begin{itemize}
+\item Quantidade de testes executados: \textbf{96 testes;}
+\item Quantidade de assertivas executadas: \textbf{111 assertivas;}
+\item Quantiadde de falhas obtidas: \textbf{0 falhas;}
+\item Tempo de execução dos testes: \textbf{7.8 segundos;}
+\end{itemize}
+
+Na imagem \ref{consideracoes_cobertura1} existem dois gráficos de cobertura de código, o primeiro definido como \textit{'total coverage'} representa a contagem realizada com as linhas em branco e os comentários do código, já o \textit{'code coverage'} representa a contagem realizada sem as linhas em branco e os comentários do código.
+
+
+\begin{figure}[!h]
+    \centering
+    \includegraphics[keepaspectratio=false,scale=0.45]
+      {figuras/cobertura_teste.eps}
+    \caption{Cobertura de código do plugin LdapUnb}
+    \label{consideracoes_cobertura1}
+\end{figure}
+
+
 Não desenvolvemos testes de aceitação para o \textit{plugin} LDAP UnB, pelo fato de ser uma aplicação que opera a maior parte das suas funcionalidades nas camadas mais baixas do sistema, alterando muito pouco a percepção do usuário.
 
-\subsubsection{Plugin para envio de TCC}
+\subsection{Plugin para envio de TCC}
 
 Este \textit{plugin} também foi desenvolvido para a plataforma Noosfero, porém em uma aplicãção diferente, o Portal UnB Gama. A ideia deste \textit{plugin} surgiu da necessidade de existir um ambiente virtual em que os trabalhos de conclusão de curso pudessem ser submetidos aos professores e compartilhados com a comunidade acadêmica, buscando assim manter uma forma de versionamento dos trabalhos desenvolvidos e dispensando a necessidade de trabalhos de conclusão de curso impressos.
 %
@@ -445,6 +466,25 @@ Os testes unitários deste \textit{plugin} são responsáveis por verificar os s
 \item Autor do arquivo;
 \end{itemize}
 
+A ferramenta Rcov também foi utilizada para dimensionar a taxa de cobertura de código do \textit{plugin} para envio de TCC, segue os dados sobre a execução dos testes funcionais e unitários:
+
+\begin{itemize}
+\item Quantidade de testes executados: \textbf{28 testes};
+\item Quantidade de assertivas executadas: \textbf{84 assertivas};
+\item Quantiadde de falhas obtidas: \textbf{0 falhas};
+\item Tempo de execução dos testes: \textbf{10,5 segundos};
+\end{itemize}
+
+Na imagem \ref{consideracoes_cobertura2} está representado a cobertura de código, extraída da ferramenta Rcov:
+
+\begin{figure}[!h]
+    \centering
+    \includegraphics[keepaspectratio=false,scale=0.45]
+      {figuras/cobertura_tcc.eps}
+    \caption{Cobertura de código do plugin para submissão de trabalho}
+    \label{consideracoes_cobertura2}
+\end{figure}
+
 Por fim, os testes de aceitação do \textit{plugin} para envio de TCC são responsáveis por verificar os seguintes fatores:
 
 \begin{itemize}
@@ -456,8 +496,7 @@ Por fim, os testes de aceitação do \textit{plugin} para envio de TCC são resp
 \end{itemize}
 
 Abaixo está descrito um exemplo de teste desenvolvido para o \textit{plugin} (os demais testes estão descritos no apêndice \ref{chap:apendice2}):
-
-%TODO: deixar um cenário de exemplo e colocar os demais em um Apêndice
+%Done: deixar um cenário de exemplo e colocar os demais em um Apêndice
 
 \textbf{Feature: send work plugin}
 
@@ -539,6 +578,57 @@ Abaixo está descrito um exemplo de teste desenvolvido para o \textit{plugin} (o
     
     \textbf{Then} I should see ``Contact sent successfully"
 
+Após a execução dos testes desenvolvidos, obtivemos os seguintes dados:
+
+\begin{itemize}
+\item Quantidade de cenários executados: \textbf{6 cenários};
+\item Quantidade de passos executadas: \textbf{130 passos};
+\item Quantiadde de falhas obtidas: \textbf{0 falhas};
+\item Tempo de execução dos testes: \textbf{7 minutos e 18 segundos};
+\end{itemize}
+
+\subsection{Observações obtidas}
+
+O \textit{plugin} LDAP UnB encontra-se ainda em fase de testes na rede Comunidade.UnB. 
+%
+O \textit{plugin} para envio de TCC também encontra-se em fase de testes, com um piloto já disponível para utilização pelos alunos de graduação do curso de engenharia de software da FGA.
+
+A partir da cobertura dos testes do \textit{plugin} de envio de TCC, foi verificado que existe uma necessidade de refatoração desta funcionalidade, considerando alguns aspectos que dificultaram o desenvolvimento de testes desta funcionalidade, como a duplicação de código.
+%
+Porém estes resultados preliminares foram considerados satisfatórios, considerando que outros \textit{plugins} desenvolvidos pela comunidade do Noosfero e já homolagados apresentam métricas semelhantes.
+
+\begin{itemize}
+\item Plugin Stoa: \textit{Plugin} que inclui funcionalidades ao Stoa, rede colaborativa da USP (Universidade de São Paulo)
+
+\begin{figure}[!h]
+    \centering
+    \includegraphics[keepaspectratio=false,scale=0.45]
+      {figuras/stoa.eps}
+    \caption{Cobertura de código do plugin Stoa}
+    \label{consideracoes_cobertura3}
+\end{figure}
+
+\item Plugin Ldap: \textit{Plugin} que permite autenticação via Ldap;
+
+\begin{figure}[!h]
+    \centering
+    \includegraphics[keepaspectratio=false,scale=0.45]
+      {figuras/ldap.eps}
+    \caption{Cobertura de código do plugin Ldap}
+    \label{consideracoes_cobertura4}
+\end{figure}
+
+\item plugin Statistics: \textit{Plugin} que permite adicionar um bloco de estatísticas ao perfil do usuário
+
+\begin{figure}[!h]
+    \centering
+    \includegraphics[keepaspectratio=false,scale=0.45]
+      {figuras/statistics.eps}
+    \caption{Cobertura de código do plugin Statistics}
+    \label{consideracoes_cobertura3}
+\end{figure}
+
+\end{itemize}
 
 
 \section{Considerações finais}

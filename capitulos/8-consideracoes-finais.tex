@@ -3,96 +3,10 @@
 
 Durante esta primeira parte do trabalho de conclusão de curso estudamos o desenvolvimento de software empírico e suas características, assim como a forma que este desenvolvimento está ligado com testes automatizados e como as práticas de testes podem ser aplicadas ou não em um ambiente real de desenvolvimento que já se encontra estabelecido.
 
-\section{Resultados Prelimirares}
-\label{results}
+\begin{comment}
 
-Com o estudo sobre testes, usabilidade e o desenvolvimento dos \textit{plugins}, chegamos a alguns resultados iniciais que serão descritos nesta seção.
-
-\subsection{Plugins}
-
-O \textit{plugin} que faz comunicação com o Ldap da UnB encontra-se em fase de homolagação. Com o auxílio de uma ferramenta de análise de código para \textit{Ruby} chamada Rcov, foi obtida a taxa de cobertura de código do plugin desenvolvido, além de alguns dados sobre a execução dos testes funcionais e unitários que seguem abaixo:
-
-\begin{itemize}
-\item Quantidade de testes executados: \textbf{96 testes;}
-\item Quantidade de assertivas executadas: \textbf{111 assertivas;}
-\item Quantiadde de falhas obtidas: \textbf{0 falhas;}
-\item Tempo de execução dos testes: \textbf{7.8 segundos;}
-\end{itemize}
-
-Na imagem abaixo existem dois gráficos de cobertura de código, o primeiro definido como \textit{'total coverage'} representa a contagem realizada com as linhas em branco e os comentários do código, já o \textit{'code coverage'} representa a contagem realizada sem as linhas em branco e os comentários do código.
-
-%
-\begin{figure}[!h]
-    \centering
-    \includegraphics[keepaspectratio=false,scale=0.45]
-      {figuras/cobertura_teste.eps}
-    \caption{Cobertura de código do plugin LdapUnb}
-    \label{consideracoes_cobertura1}
-\end{figure}
-%
-
-
-A ferramenta Rcov também foi utilizada para dimensionar a taxa de cobertura de código do \textit{plugin} para submissão de trabalho, segue os dados sobre a execução dos testes funcionais e unitários:
-\begin{itemize}
-\item Quantidade de testes executados: \textbf{28 testes};
-\item Quantidade de assertivas executadas: \textbf{84 assertivas};
-\item Quantiadde de falhas obtidas: \textbf{0 falhas};
-\item Tempo de execução dos testes: \textbf{10,5 segundos};
-\end{itemize}
-
-Na imagem abaixo está representado a cobertura de código, extraída da ferramenta Rcov:
-
-\begin{figure}[!h]
-    \centering
-    \includegraphics[keepaspectratio=false,scale=0.45]
-      {figuras/cobertura_tcc.eps}
-    \caption{Cobertura de código do plugin para submissão de trabalho}
-    \label{consideracoes_cobertura2}
-\end{figure}
-
-Para este \textit{plugin} também foram desenvolvidos testes automáticos de aceitação, afim de validar a experiência do usuário em diferentes cenários possiveis:
-\begin{itemize}
-\item Quantidade de cenários executados: \textbf{6 cenários};
-\item Quantidade de passos executadas: \textbf{130 passos};
-\item Quantiadde de falhas obtidas: \textbf{0 falhas};
-\item Tempo de execução dos testes: \textbf{7 minutos e 18 segundos};
-\end{itemize}
-
-A partir da cobertura dos testes do \textit{plugin} de submissão de trabalho, foi verificado que existe uma necessidade de refatoração desta funcionalidade, considerando alguns aspectos que dificultaram o desenvolvimento de testes desta funcionalidade, como a duplicação de código.
-
-Porém estes resultados preliminares foram considerados satisfatórios, considerando que outros \textit{plugins} desenvolvidos pela comunidade do Noosfero e já homolagados apresentam métricas semelhantes.
-\begin{itemize}
-\item Plugin Stoa: \textit{Plugin} que inclui funcionalidades ao Stoa, rede colaborativa da USP (Universidade de São Paulo)
-
-\begin{figure}[!h]
-    \centering
-    \includegraphics[keepaspectratio=false,scale=0.45]
-      {figuras/stoa.eps}
-    \caption{Cobertura de código do plugin Stoa}
-    \label{consideracoes_cobertura3}
-\end{figure}
-
-\item Plugin Ldap: \textit{Plugin} que permite autenticação via Ldap;
-
-\begin{figure}[!h]
-    \centering
-    \includegraphics[keepaspectratio=false,scale=0.45]
-      {figuras/ldap.eps}
-    \caption{Cobertura de código do plugin Ldap}
-    \label{consideracoes_cobertura4}
-\end{figure}
-
-\item plugin Statistics: \textit{Plugin} que permite adicionar um bloco de estatísticas ao perfil do usuário
-
-\begin{figure}[!h]
-    \centering
-    \includegraphics[keepaspectratio=false,scale=0.45]
-      {figuras/statistics.eps}
-    \caption{Cobertura de código do plugin Statistics}
-    \label{consideracoes_cobertura3}
-\end{figure}
-
-\end{itemize}
+%TODO: Colocar resultados no capitulo de estudo_experimental. Avaliar o que deve ficar em considerações finais
+%\section{Resultados Prelimirares}
 
 \subsection{Usabilidade no desenvolvimento de software empírico}
 
@@ -113,7 +27,6 @@ Segundo ~\citeonline{siegel2010} para ser defensor de UX você não precisa cria
 	No desenvolvimento de software livre uma das vantagens na apresentação dos resultados de forma rápida e sem a necessidade de elaborar um relatório um uma apresentação. A comunicação pode ser feita diretamente com os desenvolvedores sobre os problemas encontrados e fazer iterações rápidas com base em sugestões ~\cite{borchardt2011}.
 
 
-
 \subsection{Portal da Participação Social} 
 
 	A ideia do estudo de caso proposto era conhecer como funciona algumas técnicas de avaliação da usabilidade. Foi escolhido o Portal da Participação Social por ser um dos projetos apoiados pela faculdade.
@@ -129,6 +42,8 @@ Segundo ~\citeonline{siegel2010} para ser defensor de UX você não precisa cria
 	Para analisar o grau de satisfação do usuário foi feito uma pesquisa com os principais questionários existentes e escolhemos o PSSUQ por acharmos que era o questionário que possuia maior grau de confiabilidade e que retornava quatra fatores (Satisfação Geral, Qualidade da Interface, qualidade da informação e utilidade do sistema).
 
 	Também foi escolhido o questionário ASQ que é aplicado depois de cada tarefa executada. Além disso ao aplicar o teste de usabilidade é preciso observar atentamente os passos que os usuário está realizando para concluir cada tarefa.
+
+\end{comment}
 
 \section{Próximos Passos}
 
