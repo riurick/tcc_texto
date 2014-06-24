@@ -3,7 +3,7 @@
 \label{cap:testes}
 
 Testar é uma pratica intrínseca ao desenvolvimento e é antiga a necessidade de
-criar programas para testar cenários específicos por ~\citeonline{everett2007}.
+criar programas para testar cenários específicos, de acordo com ~\citeonline{everett2007}.
 %
 Testes de software serão abordados neste cápítulo, iniciando com uma visão geral de testes 
 automatizados e conhecendo algumas práticas e padrões utilizados para desenvolver
@@ -26,9 +26,9 @@ automatica e dinamicamente~\cite{meszaros2007}.
 %
 Os testes automatizados afetam diretamente a qualidade dos sistemas de software,
 portanto, agregam valor  ao produto final, mesmo que os artefatos adicionais
-produzidos não sejam visíveis para os usuários finais do sistemas\cite{bernardo2011}.
+produzidos não sejam visíveis para os usuários finais dos sistemas~\cite{bernardo2011}.
 Esses testes podem ser divididos em diversos tipos, o que facilita a manutenção 
-dos mesmos.
+dos mesmos:
 
 \begin{enumerate}
 
@@ -36,8 +36,7 @@ dos mesmos.
 menores trechos de código de um sistema que possui um comportamento definido e 
 nomeado~\cite{bernardo2011}.
 %
-Normalmente, ele é associado a funções para linguagens procedimentais e métodos em 
-linguagens orientadas a objetos.
+Normalmente, esse teste é associado a funções para linguagens procedimentais e métodos em linguagens orientadas a objetos.
 
 \item \textbf{Testes funcionais:} testes que tem como objetivo verificar a eficiência
 dos componentes de um sistema~\cite{molinari2003}.
@@ -47,7 +46,7 @@ erros de relacionamento entre quaisquer módulos de um software, incluindo desde
 a integração de pequenas unidades até a integração de bibliotecas das quais um 
 sistema depende, servidores e gerenciadores de banco de dados~\cite{bernardo2011}.
 
-\item \textbf{Testes de interface de usuário} testes que verificam a correção 
+\item \textbf{Testes de interface de usuário:} testes que verificam a correção 
 por meio da simulação de eventos de usuário. A partir desses eventos, são feitas 
 verificações na interface e em outras camadas~\cite{bernardo2011}.
 %TODO: explorar isso no TCC 2 para link com a parte de usabilidade
@@ -91,10 +90,10 @@ Neste trabalho utilizaremos testes funcionais e testes de unidade para avaliar a
 \subsection{Testes de aceitação}
 
 Os testes de aceitação, que possuem uma visão mais voltada para o usuário, fazem 
-parte de uma fase do processo de teste em que um teste de caixa-preta é realizado 
+parte de uma fase do processo em que um teste de caixa-preta é realizado 
 num sistema antes de sua disponibilização.
 %TODO: Não conceituar muito teste de aceitação, mas sim explicar o que é o cucumber
-Para isso utilizamos o cucumber, uma ferramenta que pode executar documentação de funcionalidades escrita em texto puro.Com base nesta especificações, o cucumber executa testes. O cucumber proporciona uma melhor comunicação entre equipe de desenvolvimento e cliente, por utilizar uma linguagem  em texto puro.
+Para isso utilizamos o cucumber, uma ferramenta que pode executar uma funcionalidades escrita em texto puro. Com base nas especificações da funcionalidade, o cucumber executa testes. O cucumber proporciona uma melhor comunicação entre equipe de desenvolvimento e cliente, por utilizar uma linguagem  em texto puro.
 %
 No cucumber, uma \textit{feature} é um requisito de alto nível 
 expressado da pespectiva de uma pessoa e possui uma estrutura similar as histórias 
@@ -147,11 +146,11 @@ trata-se das pré-condições do cenário.
 \end{enumerate}
 
 Além do cucumber, também é utilizado um software chamado selenium, que é uma ferramenta
-usada para desenvolver casos de testes a partir de \textit{web browsers}, como o mozilla firefox. Estas duas ferramentas, cucumber e selenium, utilizadas em conjunto, proporciona ao desenvolvedor a facilidade ao escrever os casos de testes em linguagem pura simular a execução automática desses testes em um \textit{web browser}. Porém o cucumber não faz tudo em linguagem pura, é necessário que outro código seja desenvolvido, em Ruby, fazendo par por baixo dos panos com a linguagem pura e executando os testes~\cite{akita2011}.
+usada para desenvolver casos de testes a partir de \textit{web browsers}, como o mozilla firefox. Estas duas ferramentas, cucumber e selenium, utilizadas em conjunto, proporcionam ao desenvolvedor a facilidade ao escrever os casos de testes em linguagem pura simular a execução automática desses testes em um \textit{web browser}. Porém o cucumber não faz tudo em linguagem pura, é necessário que outro código seja desenvolvido, em Ruby, fazendo par por baixo dos panos com a linguagem pura e executando os testes~\cite{akita2011}.
 
 \subsection{Testes Funcionais e Unitários}
 %
-Os testes funcionais tem como objetivo no desenvolvimento na plataforma noosfero, verificara integraçao da aplicação desenvolvida. Os testes unitários são executados em conjunto com os testes funcionais, porém  com o objetivocde verificar trechos menores de códigos. Assim os testes funcionais e unitários são escritos da seguinte forma:
+Os testes funcionais tem como objetivo no desenvolvimento na plataforma noosfero, verificar a integração da aplicação desenvolvida. Os testes unitários são executados em conjunto com os testes funcionais, porém  com o objetivo de verificar trechos menores de códigos. Assim, os testes funcionais e unitários são escritos da seguinte forma:
 
 \textbf{Setup:} indica as condições inciais dos testes, setando variáveis de ambiente e de configuração por exemplo.
 
@@ -188,8 +187,8 @@ qualidade dos sistemas de software.
 %
 No processo de desenvolvimento de software é fundamental controlar o custo do 
 processo de testes, para isso baterias de testes automatizados devem ser bem 
-definidas e implementadas. Assim é importante conhecer boas práticas e técnicas 
-de de desenvolvimento de testes automatizados.    
+definidas e implementadas. Assim, é importante conhecer boas práticas e técnicas 
+de desenvolvimento de testes automatizados.    
 %
 Existem várias técnicas de desenvolvimento de software com testes que influenciam 
 diretamente na qualidade do sistema. Essas técnicas geralmente possuem um processo 
@@ -218,8 +217,8 @@ de tal modo que não quebre os testes previamente escritos;
     \label{tdd_ciclo}
 \end{figure}
 
-A técnica de desenvolvimento dirigido por testes foi definida por Kent Beck em seu 
-livro \textit{Test-Driven Development: By Example}~\citeonline{beck2002}, como
+A técnica de desenvolvimento dirigido por testes foi definida no 
+livro \textit{Test-Driven Development: By Example} por~\citeonline{beck2002}, como
 representados na Figura~\ref{tdd_ciclo}.
 
 Uma boa prática do TDD é a bateria de testes, que ajuda o desenvolvedor a evitar 
@@ -235,20 +234,15 @@ funciona.
 %
 TDD propõe o desenvolvimento sempre em pequenos passo, deve-se escrever testes sempre 
 para uma menor funcionalidade possível, escrever o código mais simples que faça o 
-teste passar e fazer sempre apenas uma refatoração por vez~\citeonline{beck2002}. Assim o 
+teste passar e fazer sempre apenas uma refatoração por vez~\cite{beck2002}. Assim o 
 desenvolvedor se detém a criar soluções simples, sempre acompanhado de um constante 
 \textit{feedback} dos testes.
 %
 O ciclo curto de passos definidos por TDD cria uma dependência forte entre codificação 
 e testes, o que favorece e facilita a criação de sistemas com alta testabilidade~\cite{bernardo2011}. 
-/%
+%
 Índices altos de cobertura de código e testabilidade não garantem necessariamente 
-qualidade do sistema, mas são métricas bem vistas para sistemas bem desenvolvidos
-%
-Além de uma técnica de testes automatizados, TDD também é uma prática de desenvolvimento 
-de software, pois muda a natureza do processo de codificação, auxiliando na produção 
-de um código funcional e limpo.
-%
+qualidade do sistema, mas são métricas bem vistas para sistemas bem desenvolvidos.
 %------------------------------------------------------------------------------%
 
 \subsection{BDD - Behavior Driven Development}
@@ -258,8 +252,7 @@ Desenvolvimento dirido por comportamento \textit{(BDD - Behavior Driven Developm
 a utilização de uma linguagem ubíqua entre cliente e equipe de desenvolvimento, subistituindo termos como assert, \textit{assert, test case, test suite} por termos 
 mais comuns ao cliente, como \textit{should, context, specification}~\cite{bernardo2011}.
 
-O BDD é um processo de desenvolvimento de software baseado no TDD. Embora seja 
-principalmente uma ideia de como um processo de desenvolvimento de 
+Embora seja principalmente uma ideia de como um processo de desenvolvimento de 
 software deve ser gerenciado, a prática do BDD assume a utilização de ferramentas 
 como suporte para o desenvolvimento de software~\cite{haring2011}. O BDD utiliza 
 essas ferramentas para que os testes tenham como ponto de partida o compartamento 
