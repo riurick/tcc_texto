@@ -1,21 +1,20 @@
 \chapter{Considerações finais}
 \label{consideracoes-finais}
 
-Durante esta primeira parte do trabalho de conclusão de curso estudamos o desenvolvimento de software empírico e suas características, assim como a forma que este desenvolvimento está ligado com testes automatizados e como as práticas de testes podem ser aplicadas ou não em um ambiente real de desenvolvimento que já se encontra estabelecido.
+Durante esta primeira parte do trabalho de conclusão de curso estudamos o desenvolvimento de software empírico e suas características, assim como a forma que este desenvolvimento está ligado com testes automatizados e como as práticas de testes podem ser aplicadas ou não em um ambiente real de desenvolvimento que já se encontra estabelecido. Sobre o desevolvimento de testes automatizados, verificamos que é possível aplicar grande parte das práticas de BDD e TDD no desenvolvimento de uma nova funcionalidade para a plataforma Noosfero, quando esse desenvolvimento está ainda no levantamento da história, pois observamos dificuldades de desenvolver testes quando o desenvolvimento de uma nova funcionalidade já foi iniciado, o que aconteceu no plugin para o envio de TCC, resultando num desempenho menor dos testes executados. Também observamos que é necessário conhecer a estrutura da funcionalidade que será desenvolvida para saber que tipo de testes terão mais influência no desenvolvimento, como no caso dos testes para o plugin LDAP UnB, onde decidimos não utilizar os testes de aceitação, por se tratar de uma funcionalidade com requisitos de mudanças mais técnicas, que alteraria pouco o sistema pela visão do usuário.
 
-\begin{comment}
-
-%TODO: Colocar resultados no capitulo de estudo_experimental. Avaliar o que deve ficar em considerações finais
-%\section{Resultados Prelimirares}
-
-\subsection{Usabilidade no desenvolvimento de software empírico}
-
-Com as pesquisas realizadas podemos notar que existe estudos na área onde foram criadas metodologias que unem tanto as abordagem ágeis com a abordagem centrada no usuário.
-
-De acordo com os autores pesquisados é possível fazer a integração das abordagens, mas é necessário que tenha algumas adaptações.
+Com as pesquisas realizadas sobre usabilidade de software, podemos notar que existe estudos na área onde foram criadas metodologias que unem tanto as abordagem ágeis com a abordagem centrada no usuário. É possível fazer a integração das abordagens, mas é necessário que tenha algumas adaptações.
 
 Os testes de usabilidade clássico, no qual observa-se uma pessoa enquanto utiliza o software, naturalmente é uma das melhores maneiras de avaliar a usabilidade. Mas, especialmente em ambientes de software livre muitos outros métodos são mais viáveis ~\cite{borchardt2011}. Cada técnica e método servem como padrões e sua utilidade depende da estrutura do projeto que a pessoa responsável pelo teste se encontra. 
 
+Assim, considerando o que levantamos neste trabalho, chegamos a algumas hipóteses que serão respondidas na segunda fase deste trabalho.
+
+\begin{itemize}
+\item É possível inserir os princípios de usabilidade dentro do processo ágil de desenvolvimento de software.
+\item É possível alcançar melhores resultados em testes de usabilidade utilizando práticas do BDD e TDD, durante o desenvolvimento de software.
+\end{itemize}
+
+\begin{comment}
 Segundo ~\citeonline{siegel2010} para ser defensor de UX você não precisa criar  \textit{mockups} perfeitos no Inkscape \footnote{Inkscape - Aplicativo de edição de imagens} e nem ter um bom conhecimento de HCI. Para ele tudo que você precisa é de amor por um projeto open source e as pessoas que a usam, sendo paciente, persistente e persuasivo.É útil ter alguém com conhecimento em experiência do usuário mas muitas vezes é desnecessário. É melhor para um projeto open source ter um defensor UX novato do que nenhum.
 
 	Os defensores em usabilidade não precisam ser desenvolvedores e nem sequer precisa ser um especialista em usabilidade. É preciso tempo, energia e diposição para obter uma boa experiência do usuário. O defensor de UX pode filtrar e priorizar erros UX, pesquisar problemas de design e realizar testes com os usuário ~\cite{day2010}.
@@ -25,43 +24,41 @@ Segundo ~\citeonline{siegel2010} para ser defensor de UX você não precisa cria
 	Gravação de testes de usabilidade ou entrevistas para ter citações de usuários para apresentação é uma prática comum em agências de usabilidade no qual é necessário assinar um formulário de concessão de uso da imagem. Para ~\citeonline{borchardt2011} em projetos de software livre independentes, as gravações de participantes são bastante inúteis, pois criam muito trabalho apenas para apresentação, além de que rever as gravações levaria o dobro de tempo.
 
 	No desenvolvimento de software livre uma das vantagens na apresentação dos resultados de forma rápida e sem a necessidade de elaborar um relatório um uma apresentação. A comunicação pode ser feita diretamente com os desenvolvedores sobre os problemas encontrados e fazer iterações rápidas com base em sugestões ~\cite{borchardt2011}.
-
+\end{comment}
+%Não sei se esse é o lugar correto dessa parte... Você citou várias opiniões de vários caras, não concluiu e não fez suas consideraçẽs
 
 \subsection{Portal da Participação Social} 
 
-	A ideia do estudo de caso proposto era conhecer como funciona algumas técnicas de avaliação da usabilidade. Foi escolhido o Portal da Participação Social por ser um dos projetos apoiados pela faculdade.
+A ideia do estudo de caso proposto era conhecer como funciona algumas técnicas de avaliação da usabilidade. Foi escolhido o Portal da Participação Social por ser um dos projetos apoiados pela faculdade.
+%
+Propomos algumas técnicas para análise do perfil do usuário: como aplicação de questionário de perfil de uso, análise de dados estatísticos e criação de persona do usuário.
+%
+A Persona foi criada analisando alguns usuários e através de informações no perfil do portal.
+%
+Com a persona identificada criamos alguns cenários de uso do sistema, na qual as tarefas levantadas farão parte do teste de usabilidade.
 
-	Primeiramente precisou conhecer quem são os usuários do portal e quais são seus interesses. Para isso foi proposto algumas técnicas para análise do perfil do usuário: como aplicação de questionário de perfil de uso, análise de dados estatísticos e criação de persona do usuário.
+Antes de realizar o teste de usabilidade com o usuário é importante que sejam verificadas as tarefas que serão executadas pelos participantes.Essas tarefas podem ser encontradas através da avaliação por heurísticas de usabilidade onde podemos descobrir antecipadamente os principais problemas na interface do sistema.
 
-	A Persona foi criada analisando alguns usuários cadastrados no portal e através de informações tanto no perfil do portal, como de informações em redes sociais e sites pessoais conseguimos captar algumas informações de um determinado público do site.
+Para analisar o grau de satisfação do usuário foi feito uma pesquisa com os principais questionários existentes e escolhemos o PSSUQ por ser um questionário que possui maior grau de confiabilidade e que retorna quatro fatores, sendo esses: Satisfação Geral, Qualidade da Interface, qualidade da informação e utilidade do sistema.
+%
+Também foi escolhido o questionário ASQ que é aplicado depois de cada tarefa executada. Além disso ao aplicar o teste de usabilidade é preciso observar atentamente os passos que os usuário está realizando para concluir cada tarefa.
 
-	Com a persona identificada é possível criar alguns cenários de uso do sistema, na qual as tarefas levantadas farão parte do teste de usabilidade.
-
-	Antes de realizar o teste de usabilidade com o usuário é importante que sejam verificadas as tarefas que serão executadas pelos participantes.Essas tarefas podem ser encontradas através da avaliação por heurísticas de usabilidade onde podemos descobrir antecipadamente os principais problemas na interface do sistema.
-
-	Para analisar o grau de satisfação do usuário foi feito uma pesquisa com os principais questionários existentes e escolhemos o PSSUQ por acharmos que era o questionário que possuia maior grau de confiabilidade e que retornava quatra fatores (Satisfação Geral, Qualidade da Interface, qualidade da informação e utilidade do sistema).
-
-	Também foi escolhido o questionário ASQ que é aplicado depois de cada tarefa executada. Além disso ao aplicar o teste de usabilidade é preciso observar atentamente os passos que os usuário está realizando para concluir cada tarefa.
-
-\end{comment}
 
 \section{Próximos Passos}
 
-A partir da pesquisa realizada e do processo iniciado neste trabalho, chegamos nas seguintes hipóteses, que serão respondidas próximo trabalho: 
-\begin{itemize}
-\item É possível inserir os princípios de usabilidade dentro do processo ágil de desenvolvimento de software.
-\item É possível alcançar melhores resultados em testes de usabilidade utilizando práticas do BDD e TDD, durante o desenvolvimento de software.
-\end{itemize}
-
-Nesta seção está descrita suscitamente a proposta dos próximos passos deste trabalho de conclusão de curso. Basicamente, buscamos aplicar as técnicas de usabilidade pesquisadas durante o trabalho, em um processo baseado em BDD e TDD, a fim de verificar problemas de usabilidade, e satisfação e uso em um estudo de caso específico, no caso plataforma Noosfero. Para isso utilizaremos os testes abordados neste trabalho, assim como alguns testes automatizados como de interface de usuário e de leiaute.
-
-Outro passo a ser realizado é verificar os padrões de design e usabilidade adotados pelo Noosfero, propor  e implementar possíveis melhorias.
+Nesta seção está descrita suscitamente a proposta dos próximos passos deste trabalho de conclusão de curso. Basicamente, buscamos aplicar as técnicas de usabilidade pesquisadas durante o trabalho, em um processo baseado em BDD e TDD, a fim de verificar problemas de usabilidade, e satisfação e uso em um estudo de caso específico, no caso plataforma Noosfero. 
+%
+Para concluir este estudo finalizaremos  o processo de  homologação as funcionalidades desenvolvidas (\textit{plugins}) e as mesmas serão disponibilizadas para produção.
+%
+Além disso, os questionários levantados (PSSUQ e ASQ) serão aplicados ao Participa.Br, para sabermos o grau de satisfação do usuário. 
+%
+Assim, partiremos para a segunda fase do trabalho, que será aplicar o estudo realizado  no Portal do Software Público, a fim de verificar a influência de testes automatizados na usabilidade do sistema, buscando responder as hipóteses levantadas no início deste capítulo. Outro passo a ser realizado é verificar os padrões de design e usabilidade adotados pelo Noosfero, propor e implementar possíveis melhorias.
 
 \subsection{Portal do Software Público}
 
-Criado em 12 de abril de 2007, o portal do SPB já conta com mais de 60 soluções voltadas para diversos setores. Para a SLTI (Secretaria de Logística e Tecnologia da Informação), o portal já se consolidou como um ambiente de compartilhamento de softwares. Isso resulta em uma gestão de recursos e gastos de informática mais racionalizada, ampliação de parcerias e reforço da política de software livre no setor público~\footnote{\url{www.softwarepublico.gov.br}}. 
+Criado em 12 de abril de 2007, o portal do SPB já conta com mais de 60 soluções voltadas para diversos setores. Para a SLTI (Secretaria de Logística e Tecnologia da Informação), o portal já se consolidou como um ambiente de compartilhamento de softwares. Isso resulta em uma gestão de recursos e gastos de informática mais racionalizada, ampliação de parcerias e reforço da política de software livre no setor público~\footnote{\url{softwarepublico.gov.br}}. 
 
-As tecnologias de informação e comunicação estão se consolidando como meios de expressão do conhecimento, de expressão cultural e de transações econômicas. Na sociedade em rede, baseada em comunicação feita através de computadores, não é possível aceitar que as linguagens usadas nessa comunicação fiquem sob o poder de apenas alguns gigantes. No desenvolvimento de software que apresenta código aberto, como o SPB, as inovações são compartilhadas entre todos, permitindo que as melhorias sejam adotadas por qualquer um, assim o conhecimento passa a ser sempre disseminado, ajudando principalmente as pequenas e médias empresas~\footnote{www.softwarepublico.gov.br}.
+As tecnologias de informação e comunicação estão se consolidando como meios de expressão do conhecimento, de expressão cultural e de transações econômicas. Na sociedade em rede, baseada em comunicação feita através de computadores, não é possível aceitar que as linguagens usadas nessa comunicação fiquem sob o poder de apenas alguns gigantes. No desenvolvimento de software que apresenta código aberto, como o SPB, as inovações são compartilhadas entre todos, permitindo que as melhorias sejam adotadas por qualquer um, assim o conhecimento passa a ser sempre disseminado, ajudando principalmente as pequenas e médias empresas
 
 A evolução do software público ja passou por três etapas de desenvolvimento e está na sua quarta etapa, contando com seus usuários para desenvolver novas funcionalidades e melhorias, a partir de sugestões dadas pelos mesmos.
 
