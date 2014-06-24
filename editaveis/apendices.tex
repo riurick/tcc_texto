@@ -93,27 +93,6 @@ A primeira parte do questionário mostra perguntas gerais referentes ao perfil s
     \label{acessoportal}
 \end{figure}
 
-\section{Cenários para teste de usabilidade no Participa.Br}
-
-Levantamos algumas tarefas que devem ser executadas para a realização do teste de usabilidade. As tarefas foram pensadas levando em consideração as necessidades dos usuários do portal da participação social. Tarefas que os usuários-alvo executariam mais frequentemente e tarefas que poderiam apresentar problemas para a compreensão e execução do usuário. 
-
-\begin{enumerate}
-	\item Faça seu cadastro no portal Participa.Br e ative sua conta.
-	\item Personalize o seu perfil inserindo uma foto, escolha 5 categorias de interesse.
-	\item Localize e adicione Jônatas Medeiros de Mendonça à sua rede.
-	\item Localize e ingresse na comunidade Participação Social. Informe a quantidade de membros.
-	\item Localize a pessoa Henrique Parra Filho e infome a quantidade de amigos, nº de comunidades.
-	\item José deseja criar um artigo para seu blog. Ele possui o texto já criado em doc, mas precisa inserir alguns outros detalhes em seu artigo como: links, imagens, tamanhos de fonte e subtítulos e inserir a licença de uso.
-	\item João necessita criar um outro artigo e inserir a mesma imagem.
-	\item Visualizar galeria de imagens, remova a imagem adicionada e adicione novas imagens.
-	\item Entre no portal e acesse o painel de controle e modifique a aparência de seu perfil.
-	\item Escreva uma descrição para o seu blog e inseria uma imagem.
-	\item Crie um conteúdo para sua página e adicione um item de menu para esse novo conteúdo.
-	\item Adicione um novo bloco na página de seu perfil.
-	\item Crie um questionário \textit{Pairwise}.
-\end{enumerate}
-
-
 \section{Questionário de Satisfação}
 
 	Levantamos informações sobre alguns questionários de satisfação de uso existentes na literatura e foi feito uma comparação entre cada um deles.
@@ -223,11 +202,94 @@ QUIS                                                                            
 \end{table}
 
  
-\section{Cenários}
+\section{Portal da Participação Social}
 
-	Os cenários foram levantados através de uma análise do que era permitido de realizar no portal e quais seriam mais importantes para as principais atividades de um usuário.
+
+\subsection{Persona}
+
+	A estrutura da persona foi feita seguindo o modelo criado por Edu Agni, autor do blog uxdesign.blog.br para o curso de UX Design na qual ele ministra em várias cidades do país.
+
+\begin{itemize}
+
+\item Persona 1
+
+Nome: Leo Silva
+
+Idade: 27 anos
+
+Localidade: São Paulo
+
+Citação: "Minha vida é andar por este país"
+
+Interesses e motivações: Comunismo, culinária e política
+
+Frustações: Problemas sociais do Brasil
+
+Background: Estudou Serviço Social
+
+Objetivos do usuário: Informas às pessoas sobre as lutas sociais propostas pelo seu grupo.
+
+\item Persona 2
+
+Nome: José Teixeira
+
+Localidade: Bahia
+
+Background: Líder de movimentos sociais, sindicatos e associações
+
+Objetivos do usuário: Debater leis, projetos e emendas participativas
+
+\end{itemize}
+
+
+\subsection{Cenários}
+
+	Os cenários foram levantados através de uma análise do que era permitido de realizar no portal e quais seriam mais importantes para as principais atividades de um usuário. Foram pensadas levando em consideração as necessidades dos usuários do portal da participação social. Tarefas que os usuários-alvo executariam mais frequentemente e tarefas que poderiam apresentar problemas para a compreensão e execução do usuário. 
 
 	Através das redes sociais e do perfil do usuário no portal da participação social foi identificado que uma das atividades mais realizadas pelos usuários são de edição de textos no blog do perfil, além da criação de mecanismos de participação social como a votação em pares (parwise).
 	
 	Entender o perfil do usuário é um dos principais pontos que devem ser levados em consideração pelos desenvolvedores de software em geral. Cada perfil de usuário tem suas particularidades e suas expectativas quanto a utilização do sistema.
 
+\begin{enumerate}
+	\item Faça seu cadastro no portal Participa.Br e ative sua conta.
+	\item Personalize o seu perfil inserindo uma foto, escolha 5 categorias de interesse.
+	\item Localize e adicione Jônatas Medeiros de Mendonça à sua rede.
+	\item Localize e ingresse na comunidade Participação Social. Informe a quantidade de membros.
+	\item Localize a pessoa Henrique Parra Filho e infome a quantidade de amigos, nº de comunidades.
+	\item José deseja criar um artigo para seu blog. Ele possui o texto já criado em doc, mas precisa inserir alguns outros detalhes em seu artigo como: links, imagens, tamanhos de fonte e subtítulos e inserir a licença de uso.
+	\item João necessita criar um outro artigo e inserir a mesma imagem.
+	\item Visualizar galeria de imagens, remova a imagem adicionada e adicione novas imagens.
+	\item Entre no portal e acesse o painel de controle e modifique a aparência de seu perfil.
+	\item Escreva uma descrição para o seu blog e inseria uma imagem.
+	\item Crie um conteúdo para sua página e adicione um item de menu para esse novo conteúdo.
+	\item Adicione um novo bloco na página de seu perfil.
+	\item Crie um questionário \textit{Pairwise}.
+\end{enumerate}
+
+
+\subsection{Problemas levantados com as questões}
+
+Ao realizar uma verificação das tarefas levantadas foram analisados alguns problemas de usabilidade que o portal apresentava: 
+
+\begin{enumerate}
+
+\item Ao editar um texto, apenas voltando no navegador e tentar salvar novamente não será mais possível devido o sistema considerar como um novo artigo e aparece uma mensagem de erro. O problema encontrado nessa mensagem de erro se dá pelo fato da mensagem vir em inglês, dificultando a leitura por muitas pessoas. 
+
+\item Ao colocar o item como justificado não funcionava, então não é possível saber se o texto realmente ficaria justificado. 
+
+\item No começo, uma das dúvidas era aonde inserir a imagem, a primeira tentativa foi pelo ícone de imagem do próprio editor de texto, que ao
+abrir o pop up precisava ser redimensionado. Utilizando essa função do editor o usuário precisaria saber do link da imagem o que inviabilizaria. Essa opção então deve ser usada apenas para redimensionar a imagem.
+
+\item Ao inserir uma imagem não é informado ao usuário quais as mídias podem ser inseridas e nem o tamanho permitido.
+
+\item Na inserção de uma imagem, quando arrasta o nome da mídia para o texto, aparece um link escrito (adicionar Artigo) ao invés da imagem;
+
+\item Na busca da imagem, caso o usuário não lembre o nome da imagem será impossível adiciona-la. Se o usuário escolher inserir mídia e escolher a mesma imagem acontecerá um erro e não será possível adicionar a imagem devido que ela já existe na pasta. Mas não é informado o por que não conseguiu inserir a imagem.
+
+\item Na galeria de imagens existe um botão chamado remover que pode confundir o usuário pensando que serviria para remover a imagem, e ao clicar era removido toda a galeria. O navegador deu aviso, mas veio em inglês.
+
+\item  Outro problema encontrado nao se refere a questão de usabilidade em si, mas de aparência no tema Conferênce na qual os ícones dos menus não estão formatados.
+
+\item Na criação do questionário pairwise, o problema encontrado é que não há explicação do que seria esse tipo de questionário.
+
+\end{enumerate}
