@@ -50,12 +50,12 @@ sistema depende, servidores e gerenciadores de banco de dados~\cite{bernardo2011
 \item \textbf{Testes de interface de usuário} testes que verificam a correção 
 por meio da simulação de eventos de usuário. A partir desses eventos, são feitas 
 verificações na interface e em outras camadas~\cite{bernardo2011}.
-%Done: explorar isso no TCC 2 para link com a parte de usabilidade
+%TODO: explorar isso no TCC 2 para link com a parte de usabilidade
 
 \item \textbf{Testes de leiaute:} testes que buscam avaliar a interface 
 e verificar a presença de erros após a renderização, difíceis de indentificar 
-com testes comuns de interface.
-%Done: explorar isso no TCC 2 para link com a parte de usabilidade
+com testes comuns de interface~\cite{bernardo2011}.
+%TODO: explorar isso no TCC 2 para link com a parte de usabilidade
 
 \item \textbf{Testes de aceitação:} são testes de correção e validação, idealmente 
 especificados por clientes ou usuários finais do sistema para verificar se um 
@@ -86,8 +86,96 @@ confidenciabilidade, integridade, autenticação, autorização, privacidade~\ci
 
 \end{enumerate}
 
-Neste trabalho utilizaremos testes funcionais e testes de unidade para avaliar a qualidade de software utilizando as práticas ágeis. Também será abordado neste trabalho o desenvolvimento de testes de aceitação para verificar uma possível relação com a usabilidade dos sistemas estudados. Além destes testes planejamos utilizar os testes de interface de usuário e de leiaute para avaliar usabilidade em trabalhos futuros
+Neste trabalho utilizaremos testes funcionais e testes de unidade para avaliar a qualidade de software utilizando as práticas ágeis. Também será abordado neste trabalho o desenvolvimento de testes de aceitação para verificar uma possível relação com a usabilidade dos sistemas estudados. 
 
+\subsection{Testes de aceitação}
+
+Os testes de aceitação, que possuem uma visão mais voltada para o usuário, fazem 
+parte de uma fase do processo de teste em que um teste de caixa-preta é realizado 
+num sistema antes de sua disponibilização.
+%TODO: Não conceituar muito teste de aceitação, mas sim explicar o que é o cucumber
+Para isso utilizamos o cucumber, uma ferramenta que pode executar documentação de funcionalidades escrita em texto puro.Com base nesta especificações, o cucumber executa testes. O cucumber proporciona uma melhor comunicação entre equipe de desenvolvimento e cliente, por utilizar uma linguagem  em texto puro.
+%
+No cucumber, uma \textit{feature} é um requisito de alto nível 
+expressado da pespectiva de uma pessoa e possui uma estrutura similar as histórias 
+de usuário do XP~\citeonline{chelimsky2010}. Essa estrutura é proposta da seguinte forma:
+
+\begin{enumerate}
+\item \textbf{Título:} Palavra-chave ‘\textit{feature}’ e um título curto que representa o 
+objetivo da \textit{feature}.
+\item \textbf{Narrativa:} um texto curto que demonstre os cenários de execução, 
+exatamente como a narrativa de uma história de usuário:
+
+\begin{figure}[!h]
+    \centering
+    \includegraphics[keepaspectratio=true,scale=0.50]
+      {figuras/noosfero_feature2.eps}
+    \caption{Descrição do título (\textit{feature}) de um teste}
+    \label{nosfero_feature}
+\end{figure}
+
+\item \textbf{Pré condições:} representado pela palavra-chave \textit{'background'}, define os passos 
+precedem cada cenário de teste.
+
+\begin{figure}[!h]
+    \centering
+    \includegraphics[keepaspectratio=true,scale=0.50]
+      {figuras/noosfero_back.eps}
+    \caption{Descrição de pré condições (\textit{background}) de um teste}
+    \label{nosfero_feature}
+\end{figure}
+
+\item \textbf{Cenários:} representam parte concreta de como o software deve se 
+comportar, e sendo a parte essencial do teste realizado no 
+cucumber. Após a palavra-chave \textit{‘scenario’} define-se o nome do cenário em questão:
+\item \textbf{Passos:} Cada cenario possui uma série de passos que demontram o seu 
+comportamento, que são linhas simples iniciadas com as seguintes palavras-chaves: 
+\textit{Given, When, Then, And, But}.
+\item \textbf{Given:} Indica uma condição inicial para que o cenário seja executado, 
+trata-se das pré-condições do cenário.
+\item \textbf{When:} Indica o evento do cenário
+\item \textbf{Then:} Indica o que é esperado após o evento ocorrer.
+
+\begin{figure}[!h]
+    \centering
+    \includegraphics[keepaspectratio=true,scale=0.50]
+      {figuras/noosfero_scenario.eps}
+    \caption{Descrição do cenário (\textit{scenario}) de um teste}
+    \label{nosfero_scenario}
+\end{figure}
+
+\end{enumerate}
+
+Além do cucumber, também é utilizado um software chamado selenium, que é uma ferramenta
+usada para desenvolver casos de testes a partir de \textit{web browsers}, como o mozilla firefox. Estas duas ferramentas, cucumber e selenium, utilizadas em conjunto, proporciona ao desenvolvedor a facilidade ao escrever os casos de testes em linguagem pura simular a execução automática desses testes em um \textit{web browser}. Porém o cucumber não faz tudo em linguagem pura, é necessário que outro código seja desenvolvido, em Ruby, fazendo par por baixo dos panos com a linguagem pura e executando os testes~\cite{akita2011}.
+
+\subsection{Testes Funcionais e Unitários}
+%
+Os testes funcionais tem como objetivo no desenvolvimento na plataforma noosfero, verificara integraçao da aplicação desenvolvida. Os testes unitários são executados em conjunto com os testes funcionais, porém  com o objetivocde verificar trechos menores de códigos. Assim os testes funcionais e unitários são escritos da seguinte forma:
+
+\textbf{Setup:} indica as condições inciais dos testes, setando variáveis de ambiente e de configuração por exemplo.
+
+\begin{figure}[!h]
+    \centering
+    \includegraphics[keepaspectratio=true,scale=0.5]
+      {figuras/teste_setup.eps}
+    \caption{Descrição do setup de um teste}
+    \label{nosfero_setup}
+\end{figure}
+
+\textbf{Título:} título do teste iniciado com a palavra \textit{‘should’} e finalizado com \textit{‘do’}
+
+\textbf{Passos:} código que define o comportamento do teste
+
+\textbf{Verificação:} Assertiva que verifica se a ação foi realizada como esperada.
+
+\begin{figure}[!h]
+    \centering
+    \includegraphics[keepaspectratio=true,scale=0.55]
+      {figuras/teste_should.eps}
+    \caption{Código de teste}
+    \label{noosfero_should}
+\end{figure}
 %Done: alguns conceitos de testes têm referência e outros não.
 %Done: colocar as referências
 %Done: pontuar ao final da lista quais testes iremos tratar neste trabalho.
