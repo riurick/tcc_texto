@@ -1,19 +1,25 @@
 \chapter{Considerações finais}
 \label{consideracoes-finais}
 
-Durante esta primeira parte do trabalho de conclusão de curso estudamos o desenvolvimento de software empírico e suas características, assim como a forma que este desenvolvimento está ligado com testes automatizados e como as práticas de testes podem ser aplicadas ou não em um ambiente real de desenvolvimento que já se encontra estabelecido. Sobre o desevolvimento de testes automatizados, verificamos que é possível aplicar grande parte das práticas de BDD e TDD no desenvolvimento de uma nova funcionalidade para a plataforma Noosfero, quando esse desenvolvimento está ainda no levantamento da história, pois observamos dificuldades de desenvolver testes quando o desenvolvimento de uma nova funcionalidade já foi iniciado, o que aconteceu no plugin para o envio de TCC, resultando num desempenho menor dos testes executados. Também observamos que é necessário conhecer a estrutura da funcionalidade que será desenvolvida para saber que tipo de testes terão mais influência no desenvolvimento, como no caso dos testes para o plugin LDAP UnB, onde decidimos não utilizar os testes de aceitação, por se tratar de uma funcionalidade com requisitos de mudanças mais técnicas, que alteraria pouco o sistema pela visão do usuário.
+Durante esta primeira parte do trabalho de conclusão de curso, estudamos o desenvolvimento de software empírico e suas características, assim como a forma que esse desenvolvimento está ligado com testes automatizados e como as práticas de testes podem ser aplicadas ou não em um ambiente real de desenvolvimento que já se encontra estabelecido.
+%
+Sobre o desevolvimento de testes automatizados, verificamos que é possível aplicar grande parte das práticas de BDD e TDD no desenvolvimento de uma nova funcionalidade para a plataforma Noosfero, quando esse desenvolvimento está ainda no levantamento da história, pois observamos dificuldades de desenvolver testes quando o desenvolvimento de uma nova funcionalidade já foi iniciado, o que aconteceu no plugin para o envio de TCC, resultando num desempenho menor dos testes executados.
+%
+Também observamos que é necessário conhecer a estrutura da funcionalidade que será desenvolvida para saber que tipo de testes terão mais influência no desenvolvimento, como no caso dos testes para o plugin LDAP UnB, onde decidimos não utilizar os testes de aceitação, por se tratar de uma funcionalidade com requisitos de mudanças mais técnicas, que alteraria pouco o sistema pela visão do usuário.
 
 Com as pesquisas realizadas sobre usabilidade de software, podemos notar que existe estudos na área onde foram criadas metodologias que unem tanto as abordagem ágeis com a abordagem centrada no usuário. É possível fazer a integração das abordagens, mas é necessário que tenha algumas adaptações.
 %
-Os testes de usabilidade clássico, no qual observa-se uma pessoa enquanto utiliza o software, naturalmente é uma das melhores maneiras de avaliar a usabilidade. Mas, especialmente em ambientes de software livre muitos outros métodos são mais viáveis ~\cite{borchardt2011}. Cada técnica e método servem como padrões e sua utilidade depende da estrutura do projeto que a pessoa responsável pelo teste se encontra. 
+Os testes de usabilidade clássico, no qual observa-se uma pessoa enquanto utiliza o software, naturalmente é uma das melhores maneiras de avaliar a usabilidade. Mas, especialmente em ambientes de software livre muitos outros métodos são mais viáveis ~\cite{borchardt2011}.
+%
+Cada técnica e método servem como padrões e sua utilidade depende da estrutura do projeto que a pessoa responsável pelo teste se encontra. 
 
 Muitos desenvolvedores de software livre já sabem da importância da usabilidade, mas não sabem como melhorá-la e para que as práticas possam ser integradas ao ciclo de desenvolvimento de software é preciso comunicar abertamente suas descobertas e métodos a todos os integrantes da equipe.
-
+%
 Assim, considerando o que levantamos neste trabalho, chegamos a algumas hipóteses que serão respondidas na segunda fase deste trabalho.
 
 \begin{itemize}
-\item É possível inserir os princípios de usabilidade dentro do processo ágil de desenvolvimento de software.
-\item É possível alcançar melhores resultados em testes de usabilidade utilizando práticas do BDD e TDD, durante o desenvolvimento de software.
+\item Como inserir os princípios de usabilidade dentro do processo desenvolvimento empírico de software?
+\item É possível alcançar melhores resultados em testes de usabilidade utilizando práticas do BDD e TDD, durante o desenvolvimento de software?
 \end{itemize}
 
 \begin{comment}
@@ -29,9 +35,9 @@ Segundo ~\citeonline{siegel2010} para ser defensor de UX você não precisa cria
 \end{comment}
 %Não sei se esse é o lugar correto dessa parte... Você citou várias opiniões de vários caras, não concluiu e não fez suas consideraçẽs
 
-\subsection{Portal da Participação Social} 
+%\subsection{Portal da Participação Social} 
 
-A ideia do estudo de caso proposto era conhecer como funciona algumas técnicas de avaliação da usabilidade. Foi escolhido o Portal da Participação Social por ser um dos projetos apoiados pela faculdade.
+Nesse contexto, a ideia do estudo de caso inicial sobre projeto Participa.Br foi conhecer como funciona algumas técnicas de avaliação da usabilidade. Foi escolhido o Portal da Participação Social por ser um dos projetos apoiados pela faculdade.
 %
 Propomos algumas técnicas para análise do perfil do usuário: como aplicação de questionário de perfil de uso, análise de dados estatísticos e criação de persona do usuário.
 %
@@ -48,13 +54,17 @@ Também foi escolhido o questionário ASQ que é aplicado depois de cada tarefa 
 
 \section{Próximos Passos}
 
-Nesta seção está descrita suscitamente a proposta dos próximos passos deste trabalho de conclusão de curso. Basicamente, buscamos aplicar as técnicas de usabilidade pesquisadas durante o trabalho, em um processo baseado em BDD e TDD, a fim de verificar problemas de usabilidade, e satisfação e uso em um estudo de caso específico, no caso plataforma Noosfero. 
+Aplicamos as técnicas de usabilidade pesquisadas durante o trabalho, em um processo baseado em BDD e TDD, a fim de verificar problemas de usabilidade, e satisfação e uso em um estudo de caso específico, no caso plataforma Noosfero. 
 %
-Para concluir este estudo finalizaremos  o processo de  homologação as funcionalidades desenvolvidas (\textit{plugins}) e as mesmas serão disponibilizadas para produção.
+Para concluir este estudo, finalizaremos o processo de  homologação as funcionalidades desenvolvidas (\textit{plugins}) e as mesmas serão disponibilizadas para produção.
 %
 Além disso, os questionários levantados (PSSUQ e ASQ) serão aplicados ao Participa.Br, para sabermos o grau de satisfação do usuário. 
 %
 Assim, partiremos para a segunda fase do trabalho, que será aplicar o estudo realizado  no Portal do Software Público, a fim de verificar a influência de testes automatizados na usabilidade do sistema, buscando responder as hipóteses levantadas no início deste capítulo. Outro passo a ser realizado é verificar os padrões de design e usabilidade adotados pelo Noosfero, propor e implementar possíveis melhorias.
+
+
+\begin{comment}
+%TODO: vocês não estão conseguindo ser objetivos
 
 \subsection{Portal do Software Público}
 
@@ -66,9 +76,30 @@ A evolução do software público ja passou por três etapas de desenvolvimento 
 
 o portal foi desenvolvido baseado na plataforma Noosfero, e a partir disso planejamos aplicar no Portal os estudos que foram desenvolvidos neste trabalho, a avaliação de usabilidade a partir do desenvolvimento baseado em testes automatizados, a fim de responder se o processo de desenvolvimento utilizando práticas do BDD e TDD apresentam melhores resultados em testes de usabilidade.
 
+\end{comment}
+
 \subsection{Cronograma}
 
 Esta seção descreve o planejamento inicial dos próximos passos a serem realizados no trabalho de conclusão de curso 2. Abaixo estão descritas as atividades planejadas:
+
+\begin{table}[h]
+\centering
+\begin{tabular}{|l|l|l|}
+\hline
+\textbf{Fase}            & \textbf{Atividade}             & \textbf{Prazo} \\ \hline
+Planejamento             & Estudar o plugin               & (21 de julho)          \\ \hline
+                         & Levantar testes                & (28 de julho)          \\ \hline
+Execução                 & Aplicar estudo de usabilidade  & (4 de agosto)          \\ \hline
+Relatos                  & Levantar problemas             & (11 de agosto)          \\ \hline
+Planejamento             & Propor melhorias               & (18 de agosto)          \\ \hline
+Execução                 & Executar melhorias             & (1 de setembro)          \\ \hline
+Relatos                  & Relatar resultados             & (8 de setembro)          \\ \hline
+Planejamento             & Iniciar novo plugin            & (29 de setembro)          \\ \hline
+Execução                 & Inserir práticas               & (27 de outubro)          \\ \hline
+Relatos                  & Avaliar práticas bem sucedidas & (10 de novembro)          \\ \hline
+\end{tabular}
+\end{table}
+
 
 \begin{enumerate}
 \item \textbf{Estudar o plugin:} Será realizado um estudo sobre o plugin \textbf{assets} do portal do software público, que já encontra-se em desenvolvimento.
@@ -85,21 +116,4 @@ Esta seção descreve o planejamento inicial dos próximos passos a serem realiz
 
 \end{enumerate}
 
-\begin{table}[h]
-\begin{tabular}{|l|l|l|}
-\hline
-\textbf{Fase}            & \textbf{Atividade}             & \textbf{Prazo} \\ \hline
-Planejamento             & Estudar o plugin               & (21 de julho)          \\ \hline
-                         & Levantar testes                & (28 de julho)          \\ \hline
-Execução                 & Aplicar estudo de usabilidade  & (4 de agosto)          \\ \hline
-Relatos                  & Levantar problemas             & (11 de agosto)          \\ \hline
-Planejamento             & Propor melhorias               & (18 de agosto)          \\ \hline
-Execução                 & Executar melhorias             & (1 de setembro)          \\ \hline
-Relatos                  & Relatar resultados             & (8 de setembro)          \\ \hline
-Planejamento             & Iniciar novo plugin            & (29 de setembro)          \\ \hline
-Execução                 & Inserir práticas               & (27 de outubro)          \\ \hline
-Relatos                  & Avaliar práticas bem sucedidas & (10 de novembro)          \\ \hline
-
-\end{tabular}
-\end{table}
 
