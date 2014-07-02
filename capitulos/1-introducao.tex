@@ -11,13 +11,13 @@ Um dos grandes problemas encontrados em projetos software livre, por exemplo, é
 %
 Segundo ~\citeonline{preece2007}, uma das causas da baixa adoção de softwares livres em mercados de larga escala é a baixa qualidade dos estilos de interação implementados nas interfaces dos produtos. Uma maioria não se preocupam com bons elementos de interface com usuário (UI). 
 
-Atualmente, algumas comunidades de software livre vêm se atentando as questões de usabilidade como forma de se manter no mercado. Um dos casos que conhecemos foi do Joomla que é um CMS (Content Manager System) ou em português, sistema de gerenciamento de conteúdo, que nessas últimas versões investiram em questões de usabilidade, sendo o primeiro CMS a ser 100 por cento adaptado a dispositivos móveis tanto no conteúdo como na área administrativa. \footnote{\url{http://joomla.org/3/pt_br}}
+Atualmente, algumas comunidades de software livre vêm se atentando as questões de usabilidade como forma de se manter no mercado. Um dos casos que conhecemos foi do Joomla que é um CMS (\textit{Content Manager System}) ou em português, sistema de gerenciamento de conteúdo, que nessas últimas versões investiram em questões de usabilidade, sendo o primeiro CMS a ser 100 por cento adaptado a dispositivos móveis tanto no conteúdo como na área administrativa. \footnote{\url{http://joomla.org/3/pt_br}}
 %done: o que é ser responsivo? Sejam mais didáticos com o Leitor
 %done: quero uma nota de rodapé para a notícia sobre esta funcionalidade no Joomla
-Foi criada uma frente de desenvolvimento focado na experência do usuário que trouxe melhorias significativas a partir da versão 3.0 do CMS \footnote{\url{http://ux.joomla.org/}}. A partir dessa nova versão foi adotado o framework Twitter Bootstrap \footnote{\url{http://getbootstrap.com/}} que proporciona um conjunto padrão de \textit{widgets} de interface de usuário que irão permitir aos desenvolvedores de extensões e templates  trabalharem com o mesmo conjunto de normas de marcação, permitindo que os desenvolvedores de extensões se concentrem na funcionalidade e que desenvolvedores de templates desenvolvam templates que funcionem sem modificação das extensões. 
+Foi criada uma frente de desenvolvimento focado na experiência do usuário que trouxe melhorias significativas a partir da versão 3.0 do CMS \footnote{\url{http://ux.joomla.org/}}. A partir dessa nova versão foi adotado o \textit{framework} Twitter Bootstrap \footnote{\url{http://getbootstrap.com/}} que proporciona um conjunto padrão de \textit{widgets} de interface de usuário que irão permitir aos desenvolvedores de extensões e \textit{templates}  trabalharem com o mesmo conjunto de normas de marcação, permitindo que os desenvolvedores de extensões se concentrem na funcionalidade e que desenvolvedores de \textit{templates} desenvolvam \textit{templates} que funcionem sem modificação das extensões. 
 %done: descrever sigla CMS
 %done: quais melhorias?
-Logo em seguida o Wordpress, outro sistema de gerenciamento de contéudo, investiu em melhorias da interface se atentando aos novos padrões adotados na web. A partir da versão 3.5 adaptaram o painel para as telas de retina e na versão 3.8 refizeram toda a interface da área administrativa.
+Logo em seguida o Wordpress, outro sistema de gerenciamento de conteúdo, investiu em melhorias da interface se atentando aos novos padrões adotados na web. A partir da versão 3.5 adaptaram o painel para as telas de retina e na versão 3.8 refizeram toda a interface da área administrativa.
 %done: Quais melhorias?
 O Noosfero, um sistema para desenvolvimento de redes sociais na qual faz parte do nosso estudo, tem tido algumas iniciativas por parte dos desenvolvedores e usuários da plataforma para a melhoria da usabilidade da ferramenta. 
 %done: falou do Joomla, falou do Wordpress... e o Noosfero?
@@ -27,20 +27,13 @@ Entender o perfil do usuário é um dos principais pontos que devem ser levados 
 A adoção das práticas de usabilidade no contexto de métodos ágeis vêm sendo estudada por vários autores no qual afirmam que é possível a integração visto que tanto os métodos ágeis como os processo de usabilidade têm em comum características que colocam o foco do desenvolvimento nas necessidades e anseios dos usuários finais, na interação entre os \textit{stakeholders} envolvidos e na qualidade final do produto a ser desenvolvido.
 
 %TODO: apenas falou de software livre e não fez o link que com os métodos ágeis.
-<<<<<<< HEAD
-%TODO: software livre é um método empírico de desenvolvimento assim como os métodos ágeis
-%Done: não fizeram um link entre uma possível relação entre testes e usabilidade
 
-A automação de testes é uma prática ágil, eficaz e de baixo custo para melhorar
-a qualidade dos sistemas de software~\cite{cotter1995}. O que este trabalho busca é encontrar um ponto de intersecção entre os testes automatizados utilizados no desenvolvimento ágil e a usabilidade de um sistema. 
-=======
 %Done: software livre é um método empírico de desenvolvimento assim como os métodos ágeis
 %Done: não fizeram um link entre uma possível relação entre testes e usabilidade
 
 A automação de testes é uma prática ágil, eficaz e de baixo custo que também busca melhorar a qualidade dos sistemas de software~\cite{cotter1995}. O que este trabalho busca é encontrar um ponto de intersecção entre os testes automatizados utilizados no desenvolvimento ágil e a usabilidade de um sistema.
 
  
->>>>>>> rev-paulo
 
 %------------------------------------------------------------------------------%
 \section{Problemas}
@@ -61,7 +54,7 @@ Outro problema do desenvolvimento de software atualmente está em garantir quali
 
 \subsection{Objetivos gerais}
 	 
-Este trabalho de conclusão de curso busca analisar técnicas e métodos de usabilidade, assim como técnicas de desenvolvimento e de testes de software no desenvolvimento empírico de software para verificarmos os possiveis efeitos de técnicas como TDD (desenvolvimento dirigido por testes) e BDD (desenvolvimento dirido por comportamento) na usabilidade de um software, a partir de técnicas como testes de usabilidade, dentre outras.
+Este trabalho de conclusão de curso busca analisar técnicas e métodos de usabilidade, assim como técnicas de desenvolvimento e de testes de software no desenvolvimento empírico de software para verificarmos os possíveis efeitos de técnicas como TDD (desenvolvimento dirigido por testes) e BDD (desenvolvimento dirigido por comportamento) na usabilidade de um software, a partir de técnicas como testes de usabilidade, dentre outras.
 %Done: descreva o que é TDD e BDD
 	 
 %------------------------------------------------------------------------------%
@@ -72,18 +65,10 @@ Para satisfazer os objetivos gerais do trabalho foram definidos objetivos espec�
 
 \begin{enumerate}
 \item Verificar aplicação das práticas do BDD e TDD no processo de desenvolvimento de software livre;
-<<<<<<< HEAD
-\item Integração da Engenharia de Usabilidade no ciclo de vida de desenvolvimento de softwrare livre;
-\item Identificar quais as técnicas de \emph{design} e usabilidade  podem ser utilizadas em cada fase do processo ágil de desenvolvimento de software livre;
-\item Verificar como práticas de BDD e TDD podem influenciar a usabilidade de um software.
 
-%\item Analisar a usabilidade dos portais governamentais utilizando diferentes técnicas de avaliação, a fim de que a avaliação possa ser feita não somente pelo especialista de usabilidade, mas também para que os usuários avaliem a qualidade em uso dos portais;
-%TODO: acho que não faremos isso
-=======
 \item Integração da Engenharia de Usabilidade no ciclo de vida de desenvolvimento de software livre;
 \item Identificar quais técnicas de \emph{design} e usabilidade  podem ser utilizadas em cada fase do processo ágil de desenvolvimento de software livre;
 \item Verificar como práticas de BDD e TDD podem influenciar a usabilidade de um software.
->>>>>>> rev-paulo
 
 
 \end{enumerate}
@@ -113,7 +98,7 @@ Neste trabalho, a coleta e análise dos dados serão realizadas com base em  mat
 \begin{description}
 \item[Estudo bibliográfico]
 
-Levando em consideração os objetivos de pesquisa, o estudo bibligráfico  aborda a usabilidade e sua relação com o desenvolvimento de testes, tentando entender como a usabilidade está presente em nosso meio. As áreas pesquisadas são Arquitetura de Informação, Automação de Testes, Design, Ergonomia, Desenvolvimento Empírico, Interação Humano Computador, Engenharia de Usabilidade, Experiência do Usuário, entre outras.
+Levando em consideração os objetivos de pesquisa, o estudo bibliográfico  aborda a usabilidade e sua relação com o desenvolvimento de testes, tentando entender como a usabilidade está presente em nosso meio. As áreas pesquisadas são Arquitetura de Informação, Automação de Testes, Design, Ergonomia, Desenvolvimento Empírico, Interação Humano Computador, Engenharia de Usabilidade, Experiência do Usuário, entre outras.
 
 %
 Estamos estudando os métodos ágeis de desenvolvimento e o software livre como métodos de desenvolvimento de software, aplicando este trabalho em um cenário real de desenvolvimento da plataforma de redes colaborativas Noosfero, realizando um planejamento de avaliação de usabilidade no Portal da Portal da Participação Social \footnote{\url{www.participa.br}}, além de avaliar testes durante o desenvolvimento de funcionalidades para as aplicações Rede Comunidade UnB\footnote{\url{comunidade.unb.br}} e o Portal da FGA\footnote{\url{www.fga.unb.br}}, também baseados na plataforma Noosfero.
@@ -147,13 +132,13 @@ Nesta seção está apresentada a organização deste trabalho, e o que se refer
 O estudo inicia-se no segundo capítulo, em que se aborda o desenvolvimento empírico, onde dissertamos sobre software livre assim como uma breve base conceitual sobre metodologias ágeis de desenvolvimento.
 
 %
-O terceiro capítulo aborda conceitualmente as técnicas de testes automatizados que geralmente são utilizadas no processo empírico, além dos tipos de testes que podem ser aplicados. Nesta seção são destacados o TDD (Test Driven Development) e o BDD (Behavior Driven Development).
+O terceiro capítulo aborda conceitualmente as técnicas de testes automatizados que geralmente são utilizadas no processo empírico, além dos tipos de testes que podem ser aplicados. Nesta seção são destacados o TDD (\textit{Test Driven Development}) e o BDD (\textit{Behavior Driven Development}).
 
 %
 O quarto capítulo aborda os principais conceitos e as áreas referentes à usabilidade, além de a abordar os processos da engenharia de usabilidade e interação humano computador e as formas de como poder inserir as técnicas no ciclo de vida de desenvolvimento empírico.
 
 %
-O quinto capítulo aborda os resultados prelimirares durante o planejamento da aplicação de técnicas de avaliação da usabilidade para o Portal da Participação Social \footnote{\url{www.participa.br}}, além do desenvolvimento das funcionalidades para a Rede Comunidade UnB\footnote{\url{comunidade.unb.br}} e o Portal da FGA\footnote{\url{www.fga.unb.br}}, a partir da plataforma Noosfero.
+O quinto capítulo aborda os resultados preliminares durante o planejamento da aplicação de técnicas de avaliação da usabilidade para o Portal da Participação Social \footnote{\url{www.participa.br}}, além do desenvolvimento das funcionalidades para a Rede Comunidade UnB\footnote{\url{comunidade.unb.br}} e o Portal da FGA\footnote{\url{www.fga.unb.br}}, a partir da plataforma Noosfero.
 %Done: isso deve ser introduzido e um pouco explicado na seção de metodologias
 
 O trabalho se encerra com as considerações finais, assim como as análises obtidas de todo o processo do trabalho, aĺém de uma discussão para os próximos passos.

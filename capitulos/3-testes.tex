@@ -5,7 +5,7 @@
 Testar é uma pratica intrínseca ao desenvolvimento e é antiga a necessidade de
 criar programas para testar cenários específicos, de acordo com ~\citeonline{everett2007}.
 %
-Testes de software serão abordados neste cápítulo, iniciando com uma visão geral de testes 
+Testes de software serão abordados neste capítulo, iniciando com uma visão geral de testes 
 automatizados e conhecendo algumas práticas e padrões utilizados para desenvolver
 os mesmos.
 
@@ -20,9 +20,9 @@ de desenvolvimento.
 \section{Testes Automatizados}
 
 Teste automatizado é a prática de tornar os testes de software independentes da
-intervenção humana, criando scripts ou programas simples de computador que exercitam 
+intervenção humana, criando \textit{scripts} ou programas simples de computador que exercitam 
 o sistema em teste, capturam os efeitos colaterais e fazem verificações, tudo 
-automatica e dinamicamente~\cite{meszaros2007}.
+automática e dinamicamente~\cite{meszaros2007}.
 %
 Os testes automatizados afetam diretamente a qualidade dos sistemas de software,
 portanto, agregam valor  ao produto final, mesmo que os artefatos adicionais
@@ -52,7 +52,7 @@ verificações na interface e em outras camadas~\cite{bernardo2011}.
 %TODO: explorar isso no TCC 2 para link com a parte de usabilidade
 
 \item \textbf{Testes de leiaute:} testes que buscam avaliar a interface 
-e verificar a presença de erros após a renderização, difíceis de indentificar 
+e verificar a presença de erros após a renderização, difíceis de identificar 
 com testes comuns de interface~\cite{bernardo2011}.
 %TODO: explorar isso no TCC 2 para link com a parte de usabilidade
 
@@ -60,7 +60,7 @@ com testes comuns de interface~\cite{bernardo2011}.
 especificados por clientes ou usuários finais do sistema para verificar se um 
 módulo funciona como foi especificado~\cite{martin2005}.
 %
-Testes de aceitação devem utilizar linguagem proxima da natural para evitar 
+Testes de aceitação devem utilizar linguagem próxima da natural para evitar 
 problemas de interpretação e de ambiguidades~\cite{cunningham2005}.
 
 \item \textbf{Testes de desempenho:} testes que executam trechos do sistema e 
@@ -73,14 +73,14 @@ sistema\\~\cite{avritze1994}.
 
 \item \textbf{Testes de estresse:} teste que visa descobrir os limites do uso da 
 infraestrutura, isto é , qual a quantidade máxima de usuários e requisições que o 
-sistema consegue antender corretamente e em um tempo aceitável.
+sistema consegue anteder corretamente e em um tempo aceitável.
 
 \item \textbf{Testes de longevidade:} testes que tem por objetivo encontrar erros 
 somente visíveis com um longo tempo de execução do sistema, erros que podem ser de cache, replicação, execução de serviços agendados ou vazamento de memória~\cite{bernardo2011}.
 
 \item \textbf{Testes de segurança:} os testes de segurança servem para verificar se 
 os dados ou funcionalidades confidenciais de um sistema  estão protegidos de fraude 
-ou de usuários não autorizados. A segurança de um sofware pode envolver aspectos de 
+ou de usuários não autorizados. A segurança de um software pode envolver aspectos de 
 confidenciabilidade, integridade, autenticação, autorização, privacidade~\cite{whittaker2006}.
 
 \end{enumerate}
@@ -96,7 +96,7 @@ num sistema antes de sua disponibilização.
 Para isso utilizamos o cucumber, uma ferramenta que pode executar uma funcionalidades escrita em texto puro. Com base nas especificações da funcionalidade, o cucumber executa testes. O cucumber proporciona uma melhor comunicação entre equipe de desenvolvimento e cliente, por utilizar uma linguagem  em texto puro.
 %
 No cucumber, uma \textit{feature} é um requisito de alto nível 
-expressado da pespectiva de uma pessoa e possui uma estrutura similar as histórias 
+expressado da perspectiva de uma pessoa e possui uma estrutura similar as histórias 
 de usuário do XP~\citeonline{chelimsky2010}. Essa estrutura é proposta da seguinte forma:
 
 \begin{enumerate}
@@ -127,7 +127,7 @@ precedem cada cenário de teste.
 \item \textbf{Cenários:} representam parte concreta de como o software deve se 
 comportar, e sendo a parte essencial do teste realizado no 
 cucumber. Após a palavra-chave \textit{‘scenario’} define-se o nome do cenário em questão:
-\item \textbf{Passos:} Cada cenario possui uma série de passos que demontram o seu 
+\item \textbf{Passos:} Cada cenário possui uma série de passos que demonstram o seu 
 comportamento, que são linhas simples iniciadas com as seguintes palavras-chaves: 
 \textit{Given, When, Then, And, But}.
 \item \textbf{Given:} Indica uma condição inicial para que o cenário seja executado, 
@@ -222,7 +222,7 @@ livro \textit{Test-Driven Development: By Example} por~\citeonline{beck2002}, co
 representados na Figura~\ref{tdd_ciclo}.
 
 Uma boa prática do TDD é a bateria de testes, que ajuda o desenvolvedor a evitar 
-erros de regreção, quando o desenvolvimento de uma nova funcionalidade quebra uma 
+erros de regressão, quando o desenvolvimento de uma nova funcionalidade quebra uma 
 já existente.
 %
 TDD também tende a contribuir com uma alta cobertura de código, uma 
@@ -247,15 +247,15 @@ qualidade do sistema, mas são métricas bem vistas para sistemas bem desenvolvi
 
 \subsection{BDD - Behavior Driven Development}
 
-Desenvolvimento dirido por comportamento \textit{(BDD - Behavior Driven Development)} 
+Desenvolvimento dirigido por comportamento \textit{(BDD - Behavior Driven Development)} 
 é uma prática que recomenda o mesmo ciclo de desenvolvimento de TDD, contudo, induzindo 
-a utilização de uma linguagem ubíqua entre cliente e equipe de desenvolvimento, subistituindo termos como assert, \textit{assert, test case, test suite} por termos 
+a utilização de uma linguagem ubíqua entre cliente e equipe de desenvolvimento, substituindo termos como assert, \textit{assert, test case, test suite} por termos 
 mais comuns ao cliente, como \textit{should, context, specification}~\cite{bernardo2011}.
 
 Embora seja principalmente uma ideia de como um processo de desenvolvimento de 
 software deve ser gerenciado, a prática do BDD assume a utilização de ferramentas 
 como suporte para o desenvolvimento de software~\cite{haring2011}. O BDD utiliza 
-essas ferramentas para que os testes tenham como ponto de partida o compartamento 
+essas ferramentas para que os testes tenham como ponto de partida o comportamento 
 das funcionalidade do sistema
 %Done: confuso - "como ponto de partida o compartamento dos objetos"?
 
@@ -267,10 +267,10 @@ Para que o comportamento seja analisado, é necessário entender o ponto de vist
 cliente/usuário, entendendo o comportamento que o sistema deve ter a partir da
 visão do cliente/usuário. 
 %
-De acordo com ~\citeonline{chelimsky2010}, estes são os três príncipios do BDD:
+De acordo com ~\citeonline{chelimsky2010}, estes são os três princípios do BDD:
 
 \begin{enumerate}
-\item \textbf{O suficiente é suficiente:} parte da ideia de gerenciar o esfoço no 
+\item \textbf{O suficiente é suficiente:} parte da ideia de gerenciar o esforço no 
 planejamento inicial do sistema, para não fazer menos nem mais do que o necessário 
 para começar, o que se aplica também ao processo de automação.
 
@@ -285,7 +285,7 @@ qualquer nível de granularidade.
 %Done: parte da lista está referenciada e outra parte não...
 
 O comportamento do sistema é descrito em histórias de usuário, que são 
-escritas com a participação tanto de clientes como desemvolvedores do sistema. Assim 
+escritas com a participação tanto de clientes como desenvolvedores do sistema. Assim 
 cada história de usuário deve seguir, de certa forma, a seguinte estrutura:
 %Done: com não explicaram métodos ágeis de forma mais didática e prática, aqui o leitor não sabe o que é um histório de usuário...
 
