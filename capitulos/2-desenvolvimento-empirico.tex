@@ -5,17 +5,13 @@ O Empirismo baseia-se na aquisição de sabedoria através da percepção do mun
 externo, ou então do exame da atividade da nossa mente, que abstrai a realidade 
 que nos é exterior e as modifica internamente~\cite{chaui2003}.
 %
-Mecanismos do controle de processo empírico, onde ciclos de \emph{feedback} constituem o
-núcleo da técnica de gerenciamento que são usadas em oposição ao tradicional 
-gerenciamento de comando e controle.
+Mecanismos do controle de processo empírico, onde ciclos de \emph{feedback} são a base da técnica de gerenciamento de projetos.
 %
-É uma forma de planejar e gerenciar projetos 
-trazendo a autoridade da tomada de decisão a níveis de propriedade de operação e 
-certeza~\cite{Schwaber2004}.
+É uma forma de planejar e gerenciar projetos trazendo a autoridade da tomada de decisão a níveis de propriedade de operação e certeza~\cite{Schwaber2004}.
 %
-Neste capítulo será abordado algumas ideias e práticas de processo de desenvolvimento
+Neste capítulo serão abordadas algumas ideias e práticas de processo de desenvolvimento
 de software que utilizam métodos empíricos, como os métodos ágeis e o processo
-de desenvolvimento usado pelas comunidade de sofware livre.
+de desenvolvimento de sofware livre.
 %
 \section{Software Livre}
 
@@ -41,6 +37,7 @@ programa.
 %
 Para ~\citeonline{stallman2001}, a partir do momento em que os custos de desenvolvimento de um software são pagos, não há motivos para restrição de acesso, pois a disseminação de conhecimento é muito mais benéfica do que potenciais lucros para o produtor.
 
+\begin{comment}
 Umas das grandes conquistas de Stallman e da \emph{Fre Software Foudation} (FSF), 
 principal organização dedicada a produção e à divulgação do software livre, 
 foram o projeto GNU\footnote{\url{www.gnu.org}} e a licença de software General Public License (GPL).
@@ -58,19 +55,72 @@ o finlandês Linus Torvalds iniciou o desenvolvimento de um núcleo de sistema o
 %
 Assim, como o fato do projeto GNU ainda não ter seu núcleo pronto, foi promovida a integração entre GNU e Linux, resultando no sistema operacional GNU/Linux, amplamente utilizado até os dias de hoje, configurando o sucesso do processo empírico e colaborativo dos projetos de software livre.
 
+\end{comment}
+
+\subsection{Desenvolvimento de um projeto de software livre}
+\label{sec:dev-noosfero}
+
+%TODO: para o TCC 2, deixar mais coeso com o capítulo e ter uma definição genérica do desenvolvimento de software live em si (podendo aproveitar o texto acima)
+
+Para exemplificar o processo de desenvolvimento de um software livre,
+nesta seção, explicaremos como está definida no guia de desenvolvimento\footnote{\url{http://noosfero.org/Development}} a colaboração no código do Noosfero, que é o estudo de caso deste trabalho.
+%
+O Noosfero\footnote{\url{noosfero.org}} é uma plataforma desenvolvida pela Colivre (Cooperativa de Tecnologias Livre)\footnote{\url{colivre.coop.br}}, utilizado em universidades públicas, para desenvolvimento de redes colaborativas\footnote{\url{http://softwarelivre.org/colivre/blog/projeto-noosfero}}.
+
+Por tratar de um software livre, a plataforma Noosfero possui uma grande quantidade 
+de colaboradores, formado por equipes de desenvolvimento como na Colivre, Universidade de Brasília e na Universidade de São Paulo, ou por desenvolvedores independentes.
+%
+Assim, para que haja sucesso na colaboração, são feitas exigências durante o desenvolvimento, como testes bem definidos para aprovar novas funcionalidade.
+%
+Além da utilização da linguagem de programação \textit{Ruby}, o desenvolvimento da plataforma noosfero também se baseia em JavaScript, CSS, dentre outras linguagens.
+%
+O desenvolvimento para a plataforma Noosfero é realizado em ciclos e
+possui as seguintes fases: desenvolvimento, release 1, release 2 e release final.
+
+Antes da fase de desenvolvimento for iniciada é necessário que seja feita a 
+documentação do que será desenvolvido.
+%
+Os desenvolvedores responsáveis criam um \textit{action item} (item de ação), contendo a história de usuário ou os requisitos da nova funcionalidade. Um \textit{action item} pode ser descrito como uma \textit{feature} (nova funcionalidade) ou como um \textit{bug} (defeito) encontrado.
+
+
+Além da documentação, é necessário o envio de um \textit{email} descrevendo o que será desenvolvido, para que a comunidade possa avaliar a funcionalidade descrita e decidir se é uma funcionalidade importante para ser incorporada à plataforma.
+
+Com a aprovação da comunidade são feitas as revisões do ciclo de desenvolvimento, 
+que deve seguir os seguintes passos:
+%
+\begin{enumerate}
+\item Criar um \textit{‘merge request’} juntamente com o código;
+\item Código é revisado pela comunidade;
+\item Código é bom? 
+\subitem Se sim:
+\subsubitem Vá para o passo 4;
+\subitem Se não:
+\subsubitem \textit{‘Merge request’} é rejeitado e as razões por tal são comentadas e 
+respondidas;
+\subsubitem Desenvolvedores revisam o que está errado;
+\item Código é incluido no código principal.
+\end{enumerate}
+
+A entrega da \textit{release} 1 consiste na instalação da nova versão do código no repositório de testes, assim como no código principal quando não houver mais defeitos, ou todos os defeitos encontrados forem tratados devidamente. Porém se algum erro crítico for encontrado e não for tratado a tempo da \textit{release} final, o lançamento pode ser adiado para a próxima \textit{release}.
+%
+Já a \textit{release} 2 não é obrigatória, apenas ocorre se houver muitas mudanças na \textit{release} 1 e requerer novos testes. Vale lembrar que os procedimentos realizados para aprovar a \textit{release} 2 são os mesmos da \textit{release} 1
+%
+Por fim, a versão final do código é lançada após todos os testes serem aprovados nas \textit{releases} 1 e 2, assim o código pode ser atualizado para o código principal do noosfero, encerrando o ciclo de desenvolvimento.
+
+
 %------------------------------------------------------------------------------%
 
 \section{Métodos ágeis}
 \label{metodos-ageis}
 
-A utilização de métodos ágeis no desenvolvimento de software tem como caracteristicas 
+A utilização de métodos ágeis no desenvolvimento de software tem como características 
 intrínsecas a flexibilidade e rapidez nas respostas a mudanças. 
 %
 A agilidade, para uma organização de desenvolvimento de software, é a habilidade 
 de adotar e reagir rapidamente e apropriadamente a mudanças no seu ambiente e por 
 exigências impostas pelos ``clientes''~\cite{nerur2005}.
  	
-Os métodos ágeis compartilham valores como comunicação, \emph{feedback} constante, colaboração com o cliente e constante adaptação são baseados no manifesto ágil. Os quatro princípios básicos do manifesto ágil mostra o que se espera de qualquer método de desenvolvimento desta categoria:
+Os métodos ágeis compartilham valores como comunicação, \emph{feedback} constante, colaboração com o cliente e constante adaptação são baseados no manifesto ágil\footnote{\url{http://manifestoagil.com.br}}. Os quatro princípios básicos do manifesto ágil mostram o que se espera de qualquer método de desenvolvimento dessa categoria:
 %
 \begin{enumerate}
 \item Indivíduos  e interações sobre processos e ferramentas;
@@ -78,49 +128,41 @@ Os métodos ágeis compartilham valores como comunicação, \emph{feedback} cons
 \item Colaboração com o cliente sobre negocioação de contrato;
 \item Responder às  mudanças sobre seguir um planejamento;
 \end{enumerate}
-%TODO: nota de rodapé para o manifesto ágil
+%Done: nota de rodapé para o manifesto ágil
 
-Em projetos ágeis, o cliente/usuário é mais ativo durante o processo de desenvolvimento, 
-determinando em conjunto com a equipe de desenvolvimento o que será desenvolvido, 
-além de participar da validação do o que foi desenvolvido.
-%
-Os projetos ágeis também buscam estabelecer um 
-tempo determinado e curto para entrega de novas versões do sistema, com o objetivo 
-de trazer mais satisfação ao cliente/usuário.
-%
-A partir desses curtos ciclos, que são as interações, a equipe de desenvolvimento 
+Existe uma relação em as práticas ágeis e o desenvolvimento baseado em software livre. ~\citeonline{corbucci2011} fala que o desenvolvimento baseado em software livre vem crescendo, porém a essência da comunidade ao redor do programa é de manter indivíduos que interajam de forma a produzir o que é mais importante. As ferramentas apenas possibilitam isso. 
+
+Quanto à documentação ~\citeonline{corbucci2011} sugere que documentação completa e detalhada cresce com a comunidade ao redor do software funcionando, de acordo com a frequência que usuários vão encontrando problemas.
+
+Em relação à colaboração com o cliente, de acordo com ~\citeonline{corbucci2011} clientes podem colaborar com projetos baseados em software livre, porém não são induzidos a fazê-lo, por conta da pouca experiência das comunidades em relacionamento com o cliente. No entanto vários projetos dependem da habilidade do projeto prover respostas rápidas às requisições dos clientes.
+
+Em projetos ágeis, o cliente/usuário é mais ativo durante o processo de desenvolvimento, determinando em conjunto com a equipe de desenvolvimento o que será desenvolvido, além de participar da validação do o que foi desenvolvido.
+
+Sobre mudanças ~\citeonline{corbucci2011} fala que a habilidade de responder às mudanças é crucial para determinar os projetos que sobrevivem, pois existe um ambiente extremamente competitivo no universo de software livre.
+
+Os projetos ágeis também buscam estabelecer um tempo determinado e curto para entrega de novas versões do sistema, com o objetivo de trazer mais satisfação ao cliente/usuário.
+
+A partir desses curtos ciclos, que são as iterações, a equipe de desenvolvimento 
 deve se preocupar mais com a evolução dos requisitos, que pode gerar mudanças, porém 
-mantém o projetoatualizados e diminui o riscos de grandes mudanças a medida que o 
+mantém o projeto atualizado e diminui o riscos de grandes mudanças a medida que o 
 projeto chega ao final.
-%
-Da perspectiva do produto, métodos ágeis são mais adequados quando os requisitos 
-estão emergindo e mudando rapidamente, embora não exista um consenso completo 
-nesse ponto.
-%TODO: eu discordo
-De uma perspectiva organizacional, a aplicabilidade pode ser expressa 
-examinando três dimensões chaves da organização: cultura, pessoal e comunicação. 
-Em relação a essas áreas, inúmeros fatores chave do sucesso podem ser identificados 
-~\cite{cohen2004}.
-%TODO: Vocês escreveram isso baseado na Wikipédia:
-%http://pt.wikipedia.org/wiki/Desenvolvimento_%C3%A1gil_de_software
-%tem um bom percentual de ctrl C + V
 
 Um método ágil conhecido como programação extrema (\emph{Extreme Programming} - XP), 
 tornou-se bastante popular por utilizar práticas focadas em codificação.
 %
 O objetivo principal do XP é a excelência no desenvolvimento de software, visando 
-um baixo custo, poucos defeitos, alta produtividade e alto retorno de investimento,
-de acordo com ~\citeonline{sato2007}. O XP conta com algumas práticas de desenvolvimento para dar suporte à busca pelos objetivos citados, essas práticas são: refatoração, integração contínua, testes automatizados, código coletivo e programação em pares.
 
-Em suma, o ambiente de desenvolvimento que este trabalho está inserido é baseado em métodos empíricos de desenvolvimento de software, com XP e Software Livre, buscando seguir os princípios ágeis para o desenvolvimento de software livre, que será especificado no capítulo 5.
+um baixo custo e poucos defeitos, de acordo com ~\citeonline{sato2007}. O XP conta com algumas práticas de desenvolvimento para dar suporte à busca pelos objetivos citados, essas práticas são: refatoração, integração contínua, testes automatizados, código coletivo e programação em pares.
 
-%TODO: Está incompleto este capítulo. Não relacionou métodos ágeis e software livre. A ideia não é usar métodos ágeis para desenvolvimento de software livre: software livre é um método empírico de desenvolvimento de software, assim como métodos ágeis. Eles têm várias práticas em comum.
-%TODO: porque SL e MA são métodos empíricos? Quais as vantagens? Por que estamos trabalhando neste contexto?
-%TODO: tem algumas parte que foram simplesmente copiada: deve-se ter cuidado com isso para não caracterizar plágio.
+Em suma, o ambiente de desenvolvimento que este trabalho está inserido é baseado em métodos de desenvolvimento empíricos de software, como XP e Software Livre, buscando seguir os princípios ágeis para o desenvolvimento de software livre, que será especificado no capítulo 5.
 
+%Done: Está incompleto este capítulo. Não relacionou métodos ágeis e software livre. A ideia não é usar métodos ágeis para desenvolvimento de software livre: software livre é um método empírico de desenvolvimento de software, assim como métodos ágeis. Eles têm várias práticas em comum.
+%Done: porque SL e MA são métodos empíricos? Quais as vantagens? Por que estamos trabalhando neste contexto?
+%Done: tem algumas parte que foram simplesmente copiada: deve-se ter cuidado com isso para não caracterizar plágio.
 
 \section{Considerações finais}
-O ambiente de desenvolvimento que este trabalho está inserido é baseado em métodos empíricos de desenvolvimento de software, com XP e Software Livre, buscando seguir os princípios ágeis para o desenvolvimento de software livre, que será especificado no capítulo 5.
 
-%TODO: essas considerãções deveriam ter uma conclusão/arremate do mesmo, fazendo um link com o próximo capítulo.
->>>>>>> ed26aaa603e18aa47085b6e4be8e0714b01b5658
+O desenvolvimento baseado em software livre e as práticas ágeis compartilham os mesmos valores, pois ambos são métodos empíricos, que buscam tomar decisões rápidas de acordo com a percepção do mundo externo. Nos próximos capítulos abordaremos como o desenvolvimento de testes é abordado no desenvolvimento empírico e como a usabilidade é inserida neste contexto.
+
+%Done: essas considerãções deveriam ter uma conclusão/arremate do mesmo, fazendo um link com o próximo capítulo.
+
