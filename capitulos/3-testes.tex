@@ -61,9 +61,6 @@ com testes comuns de interface~\cite{bernardo2011}.
 \item \textbf{Testes de aceitação:} são testes de correção e validação, idealmente 
 especificados por clientes ou usuários finais do sistema para verificar se um 
 módulo funciona como foi especificado~\cite{martin2005}.
-%
-Testes de aceitação devem utilizar linguagem próxima da natural para evitar 
-problemas de interpretação e de ambiguidades~\cite{cunningham2005}.
 
 \item \textbf{Testes de desempenho:} testes que executam trechos do sistema e 
 armazenam os tempos de duração obtidos, que ajudam a identificar gargalos que 
@@ -87,15 +84,14 @@ confidenciabilidade, integridade, autenticação, autorização, privacidade~\ci
 
 \end{enumerate}
 
-Neste trabalho utilizaremos testes funcionais e testes de unidade para avaliar a qualidade de software utilizando as práticas ágeis. Também será abordado neste trabalho o desenvolvimento de testes de aceitação para verificar uma possível relação com a usabilidade dos sistemas estudados. 
+Será abordado neste trabalho o desenvolvimento de testes de aceitação para verificar uma possível relação com a usabilidade dos sistemas estudados. Também utilizaremos testes funcionais e testes de unidade para verificar essa relação.
 
 \subsection{Testes de aceitação}
 
 Os testes de aceitação, que possuem uma visão mais voltada para o usuário, fazem 
 parte de uma fase do processo em que um teste de caixa-preta é realizado 
 num sistema antes de sua disponibilização.
-%TODO: Não conceituar muito teste de aceitação, mas sim explicar o que é o cucumber
-Para isso utilizamos o cucumber, uma ferramenta que pode executar uma funcionalidades escrita em texto puro. Com base nas especificações da funcionalidade, o cucumber executa testes. O cucumber proporciona uma melhor comunicação entre equipe de desenvolvimento e cliente, por utilizar uma linguagem  em texto puro.
+Para isso utilizamos o cucumber, uma ferramenta que pode executar uma funcionalidades escrita em texto puro. Com base nas especificações da funcionalidade, o cucumber executa testes, proporcionando uma melhor comunicação entre equipe de desenvolvimento e cliente.
 %
 No cucumber, uma \textit{feature} é um requisito de alto nível 
 expressado da perspectiva de uma pessoa e possui uma estrutura similar as histórias 
@@ -147,8 +143,6 @@ trata-se das pré-condições do cenário.
 
 \end{enumerate}
 
-Além do cucumber, também é utilizado um software chamado selenium, que é uma ferramenta
-usada para desenvolver casos de testes a partir de \textit{web browsers}, como o mozilla firefox. Estas duas ferramentas, cucumber e selenium, utilizadas em conjunto, proporcionam ao desenvolvedor a facilidade ao escrever os casos de testes em linguagem pura simular a execução automática desses testes em um \textit{web browser}. Porém o cucumber não faz tudo em linguagem pura, é necessário que outro código seja desenvolvido, em Ruby, fazendo par por baixo dos panos com a linguagem pura e executando os testes~\cite{akita2011}.
 
 \subsection{Testes Funcionais e Unitários}
 %
@@ -177,11 +171,7 @@ Os testes funcionais tem como objetivo no desenvolvimento na plataforma noosfero
     \caption{Código de teste}
     \label{noosfero_should}
 \end{figure}
-%Done: alguns conceitos de testes têm referência e outros não.
-%Done: colocar as referências
-%Done: pontuar ao final da lista quais testes iremos tratar neste trabalho.
 
-%------------------------------------------------------------------------------%
 \section{Técnicas de desenvolvimento de testes automatizados}
 
 Automação de testes é uma técnica voltada principalmente para a melhoria de 
@@ -256,14 +246,10 @@ mais comuns ao cliente, como \textit{should, context, specification}~\cite{berna
 
 Embora seja principalmente uma ideia de como um processo de desenvolvimento de 
 software deve ser gerenciado, a prática do BDD assume a utilização de ferramentas 
-como suporte para o desenvolvimento de software~\cite{haring2011}. O BDD utiliza 
-essas ferramentas para que os testes tenham como ponto de partida o comportamento 
-das funcionalidade do sistema
-%Done: confuso - "como ponto de partida o compartamento dos objetos"?
+como suporte para o desenvolvimento de software~\cite{haring2011}. 
 
-O BDD coloca em foco o comportamento em vez da estrutura de uma funcionalidade e faz isso em todos os níveis de desenvolvimento. Uma vez que nós reconhecemos isso, muda-se a forma como pensamos sobre desenvolvimento para fora do código. Assim começamos a pensar mais sobre as interações, sobre as pessoas e o sistema, do que sobre a 
+O BDD coloca em foco o comportamento em vez da estrutura de uma funcionalidade e faz isso em todos os níveis de desenvolvimento. Uma vez reconhecido isso, muda-se a forma de pensar sobre desenvolvimento para fora do código. Assim o foco parte para as interações, as pessoas e o sistema, sobre a 
 estrutura do próprio sistema~\cite{chelimsky2010}.
-%Done: em que contexto você está falando de objetos?
 
 Para que o comportamento seja analisado, é necessário entender o ponto de vista do 
 cliente/usuário, entendendo o comportamento que o sistema deve ter a partir da
@@ -284,22 +270,9 @@ coisa em seu lugar.
 pensamento e as mesmas construções linguísticas para descrever o comportamento, em 
 qualquer nível de granularidade. 
 \end{enumerate}
-%Done: parte da lista está referenciada e outra parte não...
 
 O comportamento do sistema é descrito em histórias de usuário, que são 
-escritas com a participação tanto de clientes como desenvolvedores do sistema. Assim 
-cada história de usuário deve seguir, de certa forma, a seguinte estrutura:
-%Done: com não explicaram métodos ágeis de forma mais didática e prática, aqui o leitor não sabe o que é um histório de usuário...
-
-\textbf{Título:} do que se trata a história.
-
-\textbf{Narrativa:} deve identificar as partes interessadas para essa história, as 
-funcionalidades requeridas, e o benefício deste comportamento. A narrativa de uma 
-história pode ter vários formatos.
-
-\textbf{Critério de aceitação:} descrição de cada caso específico da narrativa, 
-iniciado pela especificação da condição inicial do cenário, seguidos pelos estados 
-que ativam este cenário, finalizado pelos estados esperados ao final do cenário.
+escritas com a participação tanto de clientes como desenvolvedores do sistema. 
 
 
 \subsection{Considerações Finais}
@@ -310,4 +283,3 @@ necessário que os cenários de testes estejam bem definidos junto à equipe.
 
 No próximo capítulo abordaremos um estudo sobre usabilidade e como esta área é inserida no processo de desenvolvimento empírico.
 
-%Done: até fez uma conclusão, mas não fez o link com o que vem pela frente.
