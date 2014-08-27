@@ -6,13 +6,11 @@ Adicionalmente, as áreas relacionadas a usabilidade vem sendo estudadas para se
 
 Um dos grandes problemas encontrados em projetos software livre, por exemplo, é a pouca atenção dada aos aspectos referentes a usabilidade e acessibilidade das aplicações. Para ~\citeonline{moreira} enfatizar na criação, melhoria e teste do código fonte pode ser um dos principais problemas que contribui para a falta de usabilidade dos softwares livres.
 
-%done: faltou referência aqui... possivelmente também o texto da Ana Paula  
 %
 Segundo ~\citeonline{preece2007}, uma das causas da baixa adoção de softwares livres em mercados de larga escala é a baixa qualidade dos estilos de interação implementados nas interfaces dos produtos. Uma maioria não se preocupa com bons elementos de interface com usuário (UI). 
 
-Atualmente, algumas comunidades de software livre vêm se atentando as questões de usabilidade como forma de se manter no mercado. Um dos casos que conhecemos foi do Joomla que é um CMS (\textit{Content Manager System}) ou em português, sistema de gerenciamento de conteúdo, que nessas últimas versões investiram em questões de usabilidade, sendo o primeiro CMS a ser 100 por cento adaptado a dispositivos móveis tanto no conteúdo como na área administrativa. \footnote{\url{http://joomla.org/3/pt_br}}
-%done: o que é ser responsivo? Sejam mais didáticos com o Leitor
-%done: quero uma nota de rodapé para a notícia sobre esta funcionalidade no Joomla
+Atualmente, algumas comunidades de software livre vêm se atentando as questões de usabilidade como forma de se manter no mercado. Um dos casos que conhecemos foi do Joomla que é um CMS (\textit{Content Manager System}) ou em português, sistema de gerenciamento de conteúdo, que nessas últimas versões investiram em questões de usabilidade, sendo o primeiro CMS a ser 100 por cento adaptado a dispositivos móveis tanto no conteúdo como na área administrativa. \footnote{\url{http://joomla.org/3/pt_br}}.
+%
 Foi criada uma frente de desenvolvimento focado na experiência do usuário que trouxe melhorias significativas a partir da versão 3.0 do CMS \footnote{\url{http://ux.joomla.org/}}. A partir dessa nova versão foi adotado o \textit{framework} Twitter Bootstrap \footnote{\url{http://getbootstrap.com/}} que proporciona um conjunto padrão de \textit{widgets} de interface de usuário que irão permitir aos desenvolvedores de extensões e \textit{templates}  trabalharem com o mesmo conjunto de normas de marcação, permitindo que os desenvolvedores de extensões se concentrem na funcionalidade e que desenvolvedores de \textit{templates} desenvolvam \textit{templates} que funcionem sem modificação das extensões. 
 
 Logo em seguida o Wordpress, outro sistema de gerenciamento de conteúdo, investiu em melhorias da interface se atentando aos novos padrões adotados na web. A partir da versão 3.5 adaptaram o painel para as telas de retina e na versão 3.8 refizeram toda a interface da área administrativa.
@@ -21,9 +19,6 @@ O Noosfero, um sistema para desenvolvimento de redes sociais na qual faz parte d
 Entender o perfil do usuário é um dos principais pontos que devem ser levados em consideração pelos desenvolvedores de software em geral. Cada perfil de usuário tem suas particularidades e suas expectativas quanto a utilização do sistema. %Quando falamos de usuários com experiência de uso de softwares semelhantes é preciso ter uma maior atenção na usabilidade para que possa ter uma boa aceitação e menor impacto com as mudanças.
 
 A adoção das práticas de usabilidade no contexto de métodos ágeis vêm sendo estudada por vários autores no qual afirmam que é possível a integração visto que tanto os métodos ágeis como os processo de usabilidade têm em comum características que colocam o foco do desenvolvimento nas necessidades e anseios dos usuários finais, na interação entre os \textit{stakeholders} envolvidos e na qualidade final do produto a ser desenvolvido.
-
-%TODO: apenas falou de software livre e não fez o link que com os métodos ágeis.
-
 
 A automação de testes é uma prática ágil, eficaz e de baixo custo que também busca melhorar a qualidade dos sistemas de software~\cite{cotter1995}. O que este trabalho busca é encontrar um ponto de intersecção entre os testes automatizados utilizados no desenvolvimento ágil e a usabilidade de um sistema.
 
@@ -37,7 +32,6 @@ Um dos problemas encontrados nos softwares livres é a baixa usabilidade de suas
 Os desenvolvedores de software livre possuem uma mentalidade mais voltada para a funcionalidade do que para os usuários do sistema. Possuem código de qualidade, com algarismos eficientes e de bom desempenho e são produzidos por desenvolvedores motivados e voluntários~\cite{santos2012}. 
 
 Outro problema do desenvolvimento de software atualmente está em garantir qualidade de software de forma prática e econômica e testes podem interferir nestas características se não forem bem planejados.
-
 
 \section{Objetivos}
 
@@ -64,8 +58,7 @@ Para satisfazer os objetivos gerais do trabalho foram definidos objetivos espec�
 \section{Questões de pesquisa}
 %TODO: TIRAR QUESTOES DE PESQUISA E COLOCAR PROBLEMAS
 Esta seção descreve as questões de pesquisa levantadas durante o trabalho.
-%Done:comentem algo sobre as questões de pesquisa
-
+	
 \begin{enumerate}
 \item Como os testes automatizados são definidos e implementados em um ambiente de desenvolvimento de software empírico?
 \item É possível inserir os princípios de usabilidade dentro do processo ágil de desenvolvimento de software?
@@ -89,9 +82,8 @@ Neste trabalho, a coleta e análise dos dados serão realizadas com base em  mat
 Levando em consideração os objetivos de pesquisa, o estudo bibliográfico  aborda a usabilidade e sua relação com o desenvolvimento de testes, tentando entender como a usabilidade está presente em nosso meio. As áreas pesquisadas são Arquitetura de Informação, Automação de Testes, Design, Ergonomia, Desenvolvimento Empírico, Interação Humano Computador, Engenharia de Usabilidade, Experiência do Usuário, entre outras.
 
 %
-Estamos estudando os métodos ágeis de desenvolvimento e o software livre como métodos de desenvolvimento de software, aplicando este trabalho em um cenário real de desenvolvimento da plataforma de redes colaborativas Noosfero.% realizando um planejamento de avaliação de usabilidade no Portal da Portal da Participação Social \footnote{\url{www.participa.br}}, além de avaliar testes durante o desenvolvimento de funcionalidades para as aplicações Rede Comunidade UnB\footnote{\url{comunidade.unb.br}} e o Portal da FGA\footnote{\url{www.fga.unb.br}}, também baseados na plataforma Noosfero.
+Estamos estudando os métodos ágeis de desenvolvimento e o software livre como métodos de desenvolvimento de software, aplicando este trabalho em um cenário real de desenvolvimento da plataforma de redes colaborativas Noosfero.
 
-%
 Além disso é necessário conhecer o ciclo de \emph{design} centrado no usuário. Encontrar maneiras de como inserir os métodos de usabilidade utilizando uma abordagem ágil em um contexto de software livre, e verificar como as técnicas já utilizadas atacam as características de usabilidade de um software.
 %
 
@@ -105,11 +97,5 @@ Para verificação do desenvolvimento de testes métricas de testes serão colet
 
 \section{Organização do trabalho}
 
-%Nesta seção está apresentada a organização deste trabalho, e o que se refere cada capítulo.
-%O estudo inicia-se no segundo capítulo, em que se aborda o desenvolvimento empírico, onde dissertamos sobre software livre assim como uma breve base conceitual sobre metodologias ágeis de desenvolvimento.
-% terceiro capítulo aborda conceitualmente as técnicas de testes automatizados que geralmente são utilizadas no processo empírico, além dos tipos de testes que podem ser aplicados. Nesta seção são destacados o TDD (\textit{Test Driven Development}) e o BDD (\textit{Behavior Driven Development}).
-%O quarto capítulo aborda os principais conceitos e as áreas referentes à usabilidade, além de a abordar os processos da engenharia de usabilidade e interação humano computador e as formas de como poder inserir as técnicas no ciclo de vida de desenvolvimento empírico.
-%O quinto capítulo aborda os resultados preliminares durante o planejamento da aplicação de técnicas de avaliação da usabilidade para o Portal da Participação Social \footnote{\url{www.participa.br}}, além do desenvolvimento das funcionalidades para a Rede Comunidade UnB\footnote{\url{comunidade.unb.br}} e o Portal da FGA\footnote{\url{www.fga.unb.br}}, a partir da plataforma Noosfero.
 
-%O trabalho se encerra com as considerações finais, assim como as análises obtidas de todo o processo do trabalho, aĺém de uma discussão para os próximos passos.
 
