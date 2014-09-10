@@ -672,6 +672,71 @@ A natureza iterativa de desenvolvimento XP necessário que os \emph{designers} d
 
 O XPU serve para guiar o time de desenvolvimento, passo a passo em todo o projeto, seguindo técnicas e artefatos simplificados afim de não se ter apenas sistemas portáteis reutilizáveis ou acoplados, mas sim com uma interface que refletiam as características e as necessidades dos usuários. Um problema encontrado é na sustentação do processo de desenvolvimento baseado em técnicas bem definidas, o que contraria o manifesto ágil.
 
+O método XPU foi definido a partir do processo de usabilidade Praxis-u (Padua, 2006). As atividades no XPu estão divididas em atividades técnicas e gerenciais. As atividades técnicas estão relacionadas à execução correta do processo de usabilidade, já as atividades gerenciais garantem o controle do andamento e execução dessas práticas.
+
+Na tabela abaixo é apresentado as atividades técnicas e gerenciais de cada visão (projeto, iteração e desenvolvimento) estabelecidas pelo XP e adaptadas pelo método XPu:
+
+\begin{itemize}
+
+\item {Visão de Projeto}
+
+\begin{itemize}
+
+\item {Atividades Técnicas}
+
+\begin{table}[h]
+\begin{tabular}{|l|l|l|}
+\hline
+\textbf{Atividade}                                                                       & \textbf{Técnica}                                                    & \textbf{Descrição}                                                                                                                                                                                  \\ \hline
+Análise de Usuários                                                                      & Personas                                                            & \begin{tabular}[c]{@{}l@{}}Caracterizar grupos de usuários finais. \\ Descrever hábitos, a proficiência e a \\ expectativa de um usuário em relação \\ ao que vai ser desenvolvido.\end{tabular}    \\ \hline
+Análise de Tarefas                                                                       & Roteiros                                                            & \begin{tabular}[c]{@{}l@{}}Propõe uma narrativa textual real,\\ concreta e rica em detalhes contextuais\\ para descrever a execução de uma tarefa \\ por um usuário típico.\end{tabular}            \\ \hline
+\begin{tabular}[c]{@{}l@{}}Análise de Contexto \\ de uso\end{tabular}                    & \begin{tabular}[c]{@{}l@{}}Histórias de \\ usabilidade\end{tabular} & \begin{tabular}[c]{@{}l@{}}São formadas pela descrição do fluxo de \\ uma tarefa (Roteiro) sendo realizada por\\ um usuário típico (Persona).\end{tabular}                                          \\ \hline
+\begin{tabular}[c]{@{}l@{}}Definição de requisitos\\ e metas de usabilidade\end{tabular} & Benchmarks                                                          & \begin{tabular}[c]{@{}l@{}}Servem de balizadores para avaliar a \\ qualidade da usabilidade entregue e cada\\ iteração. Benchmarks são gerados a partir\\ dos atributos de usabilidade\end{tabular} \\ \hline
+\begin{tabular}[c]{@{}l@{}}Avaliação da \\ Usabilidade\end{tabular}                      & \begin{tabular}[c]{@{}l@{}}Cenários de\\ Testes\end{tabular}        & escrever                                                                                                                                                                                            \\ \hline
+\begin{tabular}[c]{@{}l@{}}Avaliação da \\ Usabilidade\end{tabular}                      & \begin{tabular}[c]{@{}l@{}}Testes de \\ Usabilidade\end{tabular}    & \begin{tabular}[c]{@{}l@{}}Estes testes podem ser feitos através de\\ avaliações preditivas, experimentais,\end{tabular}                                                                            \\ \hline
+\end{tabular}
+\end{table}
+
+\newpage
+
+\item{Atividades Gerenciais}
+
+\begin{table}[h]
+\begin{tabular}{|l|l|l|l|l|l|}
+\hline
+\textbf{Atividade}                                                     & \textbf{Técnica}                                          & \textbf{Descrição}                                                                                                                                                                                                                        & Atores                                                                                            & Insumos                                                                                               & Saídas                                                                                             \\ \hline
+\begin{tabular}[c]{@{}l@{}}Planejamento \\ de usabilidade\end{tabular} & \begin{tabular}[c]{@{}l@{}}Planning \\ Poker\end{tabular} & \begin{tabular}[c]{@{}l@{}}Essa atividade ocorre simultaneamente \\ do planejamento da release. O Projetista \\ de interação contribui com o seu parecer \\ sobre as estimativas de tamanho das \\ histórias de usabilidade.\end{tabular} & \begin{tabular}[c]{@{}l@{}}Todos os \\ stakeholders + \\ o projetista de\\ interação\end{tabular} & \begin{tabular}[c]{@{}l@{}}Histórias de \\ usabilidade e\\ Planejamento\\ das avaliações\end{tabular} & \begin{tabular}[c]{@{}l@{}}Estimativas \\ de Recursos\\ (Tempo e\\ Custo)\end{tabular}             \\ \hline
+\begin{tabular}[c]{@{}l@{}}Controle de \\ Usabilidade\end{tabular}     & Velocity                                                  & \begin{tabular}[c]{@{}l@{}}Acompanhamento das tarefas relativas à\\ usabilidade, comparando o esforço previ-\\ sto com o realizado.\end{tabular}                                                                                          & \begin{tabular}[c]{@{}l@{}}Projetista de \\ Interação e o\\ Tracker do XP\end{tabular}            & \begin{tabular}[c]{@{}l@{}}Estimativas de\\ recursos,\end{tabular}                                    & \begin{tabular}[c]{@{}l@{}}Refinamento \\ de estimativas \\ e Velocidade\\ do projeto\end{tabular} \\ \hline
+\end{tabular}
+\end{table}
+
+\end{itemize}
+
+\item{Visão de Iteração}
+
+\begin{table}[h]
+\begin{tabular}{|l|l|l|l|l|}
+\hline
+\textbf{Atividade}                                                           & \textbf{Técnica}                                           & \textbf{Descrição}                                                                                                                                                                                                     & Insumos                                                              & Saídas                                                                  \\ \hline
+\begin{tabular}[c]{@{}l@{}}Definição de estilos\\ de interação.\end{tabular} & Template                                                   & \begin{tabular}[c]{@{}l@{}}São modelos estruturados de interface que \\ permite definir um guia de estilo padrão.\\ O guia de estilo descreve diretrizes e padrões \\ para o desenvolvimento de software.\end{tabular} & \begin{tabular}[c]{@{}l@{}}Requisitos de \\ Usabilidade\end{tabular} & \begin{tabular}[c]{@{}l@{}}Guia de\\ estilos\\ (Templates)\end{tabular} \\ \hline
+Desenho de Interação                                                         & \begin{tabular}[c]{@{}l@{}}Interface \\ Final\end{tabular} & \begin{tabular}[c]{@{}l@{}}As interfaces geradas devem estar em \\ conformidade com os templates definidos\\ pelo projeto.\end{tabular}                                                                                & Templates                                                            & \begin{tabular}[c]{@{}l@{}}Interfaces\\ finais\end{tabular}             \\ \hline
+\end{tabular}
+\end{table}
+
+\item{Visão de Desenvolvimento}
+
+\begin{table}[h]
+\begin{tabular}{|l|l|l|l|l|}
+\hline
+\textbf{Atividade}                                                  & \textbf{Técnica}                                                                 & \textbf{Descrição}                                                                                                                                                                                                                               & Insumos                                                       & Saídas                                                           \\ \hline
+\begin{tabular}[c]{@{}l@{}}Prototipação de\\ Interface\end{tabular} & \begin{tabular}[c]{@{}l@{}}Protótipação\\ Rápida\end{tabular}                    & \begin{tabular}[c]{@{}l@{}}É feita através de protótipos de baixa fidelidade\\ em papel. São feitos pelos projetistas de interação\\ e apresentados aos usuários com objetivo de \\ avaliá-los e discutir alternativas de desenhos.\end{tabular} & Templates                                                     & \begin{tabular}[c]{@{}l@{}}Protótipo\\ Simplificado\end{tabular} \\ \hline
+\begin{tabular}[c]{@{}l@{}}Avaliação de\\ Usabilidade\end{tabular}  & \begin{tabular}[c]{@{}l@{}}Podem ser\\ utilizadas várias\\ técnicas\end{tabular} & \begin{tabular}[c]{@{}l@{}}Diversas avaliações podem ser utilizadas \\ durante o ciclo de desenvolvimento.\end{tabular}                                                                                                                          & \begin{tabular}[c]{@{}l@{}}Cenários \\ de Testes\end{tabular} &                                                                  \\ \hline
+\end{tabular}
+\end{table}
+
+\end{itemize}
+
+\newpage
 
 \section{Princípios ágeis aplicados ao \emph{Design centrado no usuário}}
 
@@ -725,6 +790,8 @@ A prototipação aumenta a comunicação entre a equipe de desenvolvimento e os 
 	No fim de cada ciclo lança-se o mínimo adequado às necessidades reais dos usuários. Ao observar o uso real identificamos que existem novas formas para usar a ferramenta e podemos propor novas melhorias para o sistema. 
 	
 \end{enumerate}
+
+
 
 
 \section{Considerações finais}
