@@ -1,26 +1,21 @@
 \chapter{Introdução}
 
-O desenvolvimento de software usando métodos empíricos, como software livre e métodos ágeis, é uma realidade. A prática básica desses métodos são os testes automatizados, preocupando-se com as aplicações de testes em sistemas cada vez mais dinâmicos e reutilizáveis com propostas para aumento de qualidade e produtividade de software~\cite{vicente2010}.
+O desenvolvimento de software usando métodos empíricos, como software livre e métodos ágeis, é uma realidade. Uma prática básica de métodos ágeis são os testes automatizados, preocupando-se com as aplicações de testes em sistemas cada vez mais dinâmicos, com propostas para aumento de qualidade e produtividade de software~\cite{vicente2010}.
 %
-Adicionalmente, as áreas relacionadas a usabilidade vem sendo estudadas para serem aplicadas no contexto de desenvolvimento empírico de software. Criar software que seja útil e fácil de usar é fator importante para a evolução dos sistemas ~\cite{santos2012}.
+Adicionalmente, as áreas relacionadas a usabilidade vem sendo estudadas para serem aplicadas no contexto de desenvolvimento empírico de software. Criar software que seja útil e fácil de usar é um fator importante para a evolução dos sistemas ~\cite{santos2012}.
 
-Um dos grandes problemas encontrados em projetos software livre, por exemplo, é a pouca atenção dada aos aspectos referentes a usabilidade e acessibilidade das aplicações. Para ~\citeonline{moreira} enfatizar na criação, melhoria e teste do código fonte pode ser um dos principais problemas que contribui para a falta de usabilidade dos softwares livres.
+Um dos grandes problemas encontrados em projetos de software livre é a pouca atenção dada aos aspectos referentes a usabilidade das aplicações. Para ~\citeonline{moreira} enfatizar na criação, melhoria e teste do código fonte pode ser um dos principais problemas que contribui para a falta de usabilidade dos softwares livres.
 
 %
 Segundo ~\citeonline{preece2007}, uma das causas da baixa adoção de softwares livres em mercados de larga escala é a baixa qualidade dos estilos de interação implementados nas interfaces dos produtos. Uma maioria não se preocupa com bons elementos de interface com usuário (UI). 
 
-Atualmente, algumas comunidades de software livre vêm se atentando as questões de usabilidade como forma de se manter no mercado. Um dos casos que conhecemos foi do Joomla que é um CMS (\textit{Content Manager System}) ou em português, sistema de gerenciamento de conteúdo, que nessas últimas versões investiram em questões de usabilidade, sendo o primeiro CMS a ser 100 por cento adaptado a dispositivos móveis tanto no conteúdo como na área administrativa. \footnote{\url{http://joomla.org/3/pt_br}}.
+Atualmente, algumas comunidades de software livre vêm se atentando as questões de usabilidade como forma de se manter no mercado. 
 %
-Foi criada uma frente de desenvolvimento focado na experiência do usuário que trouxe melhorias significativas a partir da versão 3.0 do CMS \footnote{\url{http://ux.joomla.org/}}. A partir dessa nova versão foi adotado o \textit{framework} Twitter Bootstrap \footnote{\url{http://getbootstrap.com/}} que proporciona um conjunto padrão de \textit{widgets} de interface de usuário que irão permitir aos desenvolvedores de extensões e \textit{templates}  trabalharem com o mesmo conjunto de normas de marcação, permitindo que os desenvolvedores de extensões se concentrem na funcionalidade e que desenvolvedores de \textit{templates} desenvolvam \textit{templates} que funcionem sem modificação das extensões. 
-
-Logo em seguida o Wordpress, outro sistema de gerenciamento de conteúdo, investiu em melhorias da interface se atentando aos novos padrões adotados na web. A partir da versão 3.5 adaptaram o painel para as telas de retina e na versão 3.8 refizeram toda a interface da área administrativa.
-O Noosfero, um sistema para desenvolvimento de redes sociais na qual faz parte do nosso estudo, tem tido algumas iniciativas por parte dos desenvolvedores e usuários da plataforma para a melhoria da usabilidade da ferramenta. 
-
-Entender o perfil do usuário é um dos principais pontos que devem ser levados em consideração pelos desenvolvedores de software em geral. Cada perfil de usuário tem suas particularidades e suas expectativas quanto a utilização do sistema. %Quando falamos de usuários com experiência de uso de softwares semelhantes é preciso ter uma maior atenção na usabilidade para que possa ter uma boa aceitação e menor impacto com as mudanças.
+O Noosfero, um sistema para desenvolvimento de redes sociais na qual faz parte este estudo, tem tido algumas iniciativas por parte dos desenvolvedores da plataforma para a melhoria da usabilidade da ferramenta. 
 
 A adoção das práticas de usabilidade no contexto de métodos ágeis vêm sendo estudada por vários autores no qual afirmam que é possível a integração visto que tanto os métodos ágeis como os processo de usabilidade têm em comum características que colocam o foco do desenvolvimento nas necessidades e anseios dos usuários finais, na interação entre os \textit{stakeholders} envolvidos e na qualidade final do produto a ser desenvolvido.
 
-A automação de testes é uma prática ágil, eficaz e de baixo custo que também busca melhorar a qualidade dos sistemas de software~\cite{cotter1995}. O que este trabalho busca é encontrar um ponto de intersecção entre os testes automatizados utilizados no desenvolvimento ágil e a usabilidade de um sistema.
+A automação de testes é uma prática ágil, eficaz e de baixo custo que também busca melhorar a qualidade dos sistemas de software~\cite{cotter1995}. O que este trabalho busca é encontrar um ponto de intersecção entre os testes automatizados e a usabildiade, utilizados no desenvolvimento ágil.
 
  
 
@@ -35,11 +30,10 @@ Outro problema do desenvolvimento de software atualmente está em garantir quali
 
 \section{Objetivos}
 
-\subsection{Objetivos gerais}
+\subsection{Objetivo geral}
 	 
 Este trabalho de conclusão de curso busca analisar técnicas e métodos de usabilidade, assim como técnicas de desenvolvimento e de testes de software no desenvolvimento empírico de software para verificarmos os possíveis efeitos de técnicas como TDD (desenvolvimento dirigido por testes) e BDD (desenvolvimento dirigido por comportamento) na usabilidade de um software, a partir de técnicas como testes de usabilidade, dentre outras.
-	 
-%------------------------------------------------------------------------------%
+
 	 
 \subsection{Objetivos específicos}
 
@@ -61,11 +55,12 @@ Esta seção descreve as questões de pesquisa levantadas durante o trabalho.
 	
 \begin{enumerate}
 \item Como os testes automatizados são definidos e implementados em um ambiente de desenvolvimento de software empírico?
-\item É possível inserir os princípios de usabilidade dentro do processo ágil de desenvolvimento de software?
-\item O processo de desenvolvimento utilizando práticas do BDD e TDD apresentam melhores resultados em testes de usabilidade?
+\item Como inserir os princípios de usabilidade dentro do processo ágil de desenvolvimento de software?
+\item Como o processo de desenvolvimento utilizando práticas do BDD e TDD podem influenciar os testes de usabilidade?
 \item Projetos de software centrados no usuário que possuem avaliação de usabilidade desde o seu início apresentam melhores resultados no teste aceitação?
 \end{enumerate}
 %------------------------------------------------------------------------------%
+%-------------------  CONTINUAR REVISAO TCC2 ------------------------%
 	 
 \section{Metodologia}
 
