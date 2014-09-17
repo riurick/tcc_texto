@@ -4,6 +4,11 @@
 
 Este capítulo apresenta a parte de projeto do estudo de caso desenvolvido no trabalho, compondo os objetivos, global e específicos, do estudo, além das questões de pesquisa, questões específicas e métricas que serão utilizadas.
 
+%TODO Definir o que é estudo de caso e basear em um autor para condução do nosso estudo. (Travassos et.al , Basili et al., Wohlin).
+%TODO Classificação do estudo: Exploratório, descritivo;
+
+Este estudo de caso é classificado como exploratório, pois não esperamos obter uma resposta definitiva para o problema proposto......
+
 \section{Definição}
 Neste trabalho foi apresentado um estudo teórico relacionado à integração das técnicas de usabilidade ao longo do ciclo de vida ágil de desenvolvimento de software livre juntamente com um estudo dos testes de softwares existentes e como estes testes podem impactar a usabilidade de um sistema.
 
@@ -11,41 +16,105 @@ Assim, a proposta deste trabalho consiste na investigação, coleta, análise e 
 
 \subsection{Objetivo Global}
 
-O objetivo global desse estudo é analisar o impacto da adoção de práticas e técnicas de testes automatizados na usabilidade, durante o processo de desenvolvimento empírico de software.
-%analisar
+O objetivo global desse estudo é analisar possíveis efeitos da adoção de práticas e técnicas de testes automatizados na usabilidade, durante o processo de desenvolvimento empírico de software.
 
 \subsection{Objetivo de Medição}
 
-Tendo em vista a utilização de várias técnicas de usabilidade e de testes de software em um projeto de desenvolvimento empírico, os objetivos de medição foram definidos à fim de avaliar:
+Tendo em vista a utilização de várias técnicas de usabilidade e de testes de software em um projeto de desenvolvimento empírico, os objetivos de medição foram definidos à fim de:
 
 \begin{enumerate}
-\item A influência de práticas de BDD e TDD na usabilidade de um software. 
+\item Avaliar a influência de práticas de BDD e TDD na usabilidade de um software. 
 
-\item Impacto da adoção de técnicas de usabilidade em um contexto específico de desenvolvimento de software.
+\item Avaliar o impacto da adoção de técnicas de usabilidade em um contexto específico de desenvolvimento empírico de software.
 \end{enumerate}
 
-A partir dos objetivos de medição estabelecidos, foram definidas questões especificas de pesquisa:
-%Verificar uma forma melhor de escrever as questões
+A partir dos objetivos de medição estabelecidos, foram definidas questões de pesquisa:
+
 \begin{enumerate}
-%\item A utilização de práticas de usabilidade no ciclo de vida de desenvolvimento de software apresentaram melhores resultados no teste de aceitação?
-
-\item O processo de desenvolvimento utilizando práticas de BDD e TDD apresentam melhores resultados nos testes de usabilidade?
-
+\item Como os testes automatizados são definidos e implementados em um ambiente de desenvolvimento de software empírico?
+\item Como inserir os princípios e técnicas de usabilidade dentro do processo ágil de desenvolvimento de software?
+\item Como o processo de desenvolvimento utilizando práticas do BDD e TDD podem influenciar os testes de usabilidade?
 \end{enumerate}
-%TODO: As questoes sao redundantes, reescrever. 
-%Definir melhor isso
-%TODO: Defini as questoes especificas a partir das nossas questoes
-%TODO Defini as metricas a partir das questoes especificas
+
+A partir das questões de pesquisa, foram definidas questões especificas e para cada questão, foram definidas métricas:
+
+=======
+%TODO: Definir as questoes especificas a partir das nossas questoes
+
+\begin{enumerate}
+\item \textbf{Questão 01: }Qual a estimativa de esforço gasto com testes?
+
+	\textbf{Métrica: } Pontos de história / horas gastas com testes por sprint.
+
+\item \textbf{Questão 02: }Qual a cobertura de testes apresentada?
+
+	\textbf{Métrica: } Porcentagem de cobertura de testes.
+
+\item \textbf{Questão 03: }Qual a viabilidade da adoção de práticas de usabilidade em conjunto com as metodologias ágeis utilizadas no projeto?
+
+	\textbf{Métrica: } Observar a integração das atividades ao longo do ciclo de vida do projeto e realizar entrevista com os participantes sobre as principais dificuldades encontradas na integração das duas metodologias.
+	%isso da questão 3 é uma estrategia de medição e não métrica em si.
+\end{enumerate}
+
+%TODO Definir as metricas a partir das questoes especificas
+
+
+\section{Planejamento}
+
+Nessa seção são apresentados a seleção dos contextos, a formulação das hipóteses, a seleção das variáveis, a seleção dos participantes.
 
 \subsection{Definição de Hipóteses}
+%TODO Definir hipóteses e verificar como iremos fazer
 
+\textbf{Hipótese nula (H0)} A integração das práticas de usabilidade e de testes de software no ciclo de vida de desenvolvimento ágil de software é possível e acrescenta melhorias na usabilidade do sistema?
+%Verificar
 
+\textbf{Hipótese} A utilização de práticas de BDD/TDD influencia nos testes de usabilidade...
 
-\section{Coleta de Dados}
+Obs: Falta definir as hipóteses de forma correta.
+
+\subsection{Seleção do Contexto}
+
+O contexto selecionado para o estudo de caso é o desenvolvimento do novo Portal do Software Público, que vem sendo desenvolvido no LAPPIS a partir das metodologias ágeis Scrum e XP.		
+
+%TODO Qual o objetivo do sistema
+%TODO Explicar o ambiente na qual está sendo inserido o estudo (lappis, ministerio, etc)? A linguagem, métodos, ferramentas nas quais estão utilizando.
+
+\subsection{Seleção dos Indivíduos}
+
+%TODO Organizar melhor esse tópico
+O projeto do portal do software público envolve a equipe de desenvolvimento do LAPPIS, coordenados pelos professores responsáveis, envolve também a SLTI (Secretaria de Logística e Tecnologia da Informação) e sua direção.
+
+\begin{itemize}
+
+\item Secretária Executiva: responsável pelo financiamento dos projetos do ministério.
+
+\item Diretor: responsável estratégico pelos projetos do ministério, seria o ``Product Owner'' do projeto.
+
+\item Equipe SLTI: responsável pelo levantamento e validação dos requisitos do projeto.
+
+\item Coordenadores: responsáveis estratégicos pela equipe de desenvolvimento do projeto (LAPPIS).
+
+\item Equipe de desenvolvimento: responsável pelo desenvolvimento do portal do software público, que é dividida em duas equipes, uma responsável pelo Colab e outra pelo Noosfero, cada equipe com seu \textbf{coach}.
+
+\end{itemize}
+
+\section{Fonte e Método de Coleta de Dados}
 %TODO Explicar como será coletado os dados
+
+Os dados foram coletados por meio de entrevistas informais, observações, questionários .....
 
 %Explicar como será realizado os testes de usabilidade
 
+\section{Validade}
+
+As principais ameaças aplicáveis aos estudos de caso são mencionadas por Yin (2010). Dentre elas, estão a validade do constructo, validade interna, validade externa e confiabilidade. %Aline
+
+\section{Estudo de Campo}
+%verificar se precisa (TCC Aline)
+
 \section{Análise}
 
-\section{Considerações finais}
+\section{Considerações finais do capítulo}
+
+Este capítulo apresentou o planejamento do estudo de caso....
