@@ -17,26 +17,41 @@ O processo de desenvolvimento é feito a partir de sprints de duas semanas, em q
 
 \section{Execução do estudo de caso}
 
+\subsection{Problemas encontrados}
+
+	%No acompanhamento do projeto podemos identificar inicialmente os seguintes problemas relacionados ao desenvolvimento focado na usabilidade do sistema.
+	
 
 \subsection{Guia de usabilidade}
 %TODO não sei se aplica nesse item (seria o protocolo)
 %Melhorar a escrita
 
-	Seguindo as pesquisas realizadas sobre as técnicas de usabilidade e as metodologias existentes propostas por vários autores sobre a integração de tais técnicas em um contexto de dedesnvolvimento empírico de software, propomos  para este estudo de caso o seguinte guia que deve ser executado nas sprints de desenvolvimento do Portal do Software Público:
+	Seguindo as pesquisas realizadas sobre as técnicas de usabilidade e as metodologias existentes propostas por vários autores sobre a integração de tais técnicas em um contexto de desenvolvimento empírico de software, propomos  para este estudo de caso o seguinte guia que deve ser executado nas sprints de desenvolvimento do Portal do Software Público:
 	
 \begin{enumerate}
 
 
 \item Análise de Usuários
 	
-	No ínicio de qualquer projeto é importante conhecer quem são os usuários que irão utilizar o sistema à ser desenvolvido. Para isso existe algumas técnicas que foram criadas para conhecer melhor quem são os usuários:
+	No ínicio de qualquer projeto é importante conhecer quem são os usuários que irão utilizar o sistema à ser desenvolvido. Para isso existem algumas técnicas que foram identificadas para conhecer melhor quem são os usuários.
+	
+	A metodologia XPU propõe a criação de Personas e Roteiros para a análise dos usuários, mas além dessas existem outras importantes que podem ser utilizadas no projeto como a utilização de questionário de perfil dos usuários e a análise estatísticas de dados.
 	
 	\begin{itemize}
-		\item Persona
-		\item Roteiros		
+		\item \textbf{Personas:} Para a definição de usuários podemos utilizar a técnica de “Persona” que são personagens fictícios criados com base em dados reais. As Personas atuam como representantes dos usuários reais e representam as necessidades de um grupo maior. 
+%
+A utilização de Personas permite ter um maior foco no usuário, deixando o projeto centrado no usuário. É utilizado para a identificação de requisitos, criação de cenários e \textit{user stories}. 
+		\item \textbf{Roteiros:}		
+		
+		\item \textbf{Questionários de perfil do usuário} Para identificar o perfil dos usuários do Portal do Software Público é necessário realizar uma pesquisa qualitativa para levantamento das principais características contextuais dos usuários típicos, de modo a compreender quem são, qual o conhecimento e experiência com a internet e como utilizam para realizar seu trabalho acadêmico ou profissional. A realização dessa pesquisa será feita com os usuários do antigo Portal do Software Público.
+%
+A análise do questionário servirá para entender o perfil dos usuários do Portal do Software Público, através da investigação de seus interesses. 
+
+\item \textbf{Dados Estatísticos} Através dos dados estatísticos com ferramentas de análise estatística (\textit{Google analytcs, Piwiki}, entre outros) é possível identificar algumas informações sobre o perfil dos usuários que acessam ao portal. Nas pesquisas quantitativas não são necessários o contato direto com o usuário. Esses dados estatísticos podem ser coletados de base de dados, redes sociais ou sistemas de análises de sites. No caso do portal do software público não foi levado em consideração as questões estatítiscas do portal por se tratar de um novo portal. %TODO Análisar melhor esse paragráfo.
+
 	\end{itemize}
 		% acho que é importante colocar um exemplo aqui ou apenas colocar o que será feito no estudo de caso em resultados.?
-		%A metodologia XPU propõe a criação de Personas e Roteiros 
+			
 		
 \item Análise do contexto de uso
 
@@ -63,14 +78,36 @@ O processo de desenvolvimento é feito a partir de sprints de duas semanas, em q
 	\begin{itemize}
 		\item Avaliação Heurística
 		
-		Antes de executar um teste de usabilidade é importante primeiro fazer uma avaliação heurística para identificar possíveis problemas que possam ser encontrados pelos usuários.
+		Antes de executar um teste de usabilidade é importante primeiro fazer uma avaliação heurística para identificar possíveis problemas que possam ser encontrados pelos usuários. Através das Heurísticas de Usabilidade de Nielsen e das listas de verificação, são verificados os problemas inerentes ao Portal do Software Público.
 		
+%TODO Ver como sera feito no portal do software público.  %Levantamos algumas tarefas/cenários que devem ser executadas para a realização do teste de usabilidade com o objetivo de medir a satisfação relativa a cada tarefa. As tarefas foram pensadas levando em consideração as necessidades dos usuários do Participa.Br. Tarefas que os usuários-alvo executariam mais frequentemente e tarefas que poderiam apresentar problemas para a compreensão e execução do usuário. 
+	
 		\item Testes com usuários
 		
 		Em nosso estudo vamos propor que ao final de cada release seja feito um teste de usabilidade com 5 usuários, como é proposto por Nielsen.
 				
 	\end{itemize} 
-	.
+	
+	As medidas de usabilidade neste estudo foram obtidas considerando-se três fatores: eficácia, eficiência e satisfação de uso.
+%
+Adotamos como paradigma de avaliação o teste de usabilidade, que consiste em avaliar o desempenho dos usuários na execução de tarefas cuidadosamente preparadas, dentro do escopo do sistema. Esse desempenho pode ser avaliado nos quesitos: número de erros e tempo de execução da tarefa. %Com essa avaliação será coletado tantos dados subjetivos em um cenário real como dados objetivos. Os dados subjetivos serão coletados através de opiniões dos participantes, comentários em relação ao uso do portal da participação social. 
+Os dados obtidos consistem em medidas de tempo e desempenho dos participantes.
+
+Elencamos algumas técnicas para avaliar a usabilidade do portal do Software Público:
+
+\begin{table}[h]
+\begin{tabular}{|l| p{10cm} |}
+\hline
+Técnica & Descrição \\ \hline
+Observar Usuários & Um observador irá registrar o tempo 
+gasto por cada participante para concluir o estudo de caso, 
+avaliar a ferramenta e se necessitou de alguma ajuda    \\ \hline
+Perguntar aos usuários & Os questionários ASQ e PSSUQ 
+de satisfação dos usuários será utilizado 
+para coletar as opiniões dos participantes.\\ \hline
+\end{tabular}
+\caption{Técnicas de avaliação para os testes com usuários}
+\end{table}
 	
 \item Controle de Usabilidade
 	
@@ -82,10 +119,19 @@ Esse protocolo foi extraído do estudo de várias metodologias criadas para a in
  
  %TODO Obs: No TCC 1 tinhamos escrito um protocolo de como seria feito á avaliação de usabilidade, algumas coisas podem ser utilizadas e readaptadas para o nosso contexto atual e inserindo as melhorias encontradas por outros métodos.
  
-\subsection{}
-
 \section{Execução}
 
+\subsection{Práticas adotadas pela equipe}
+
+\textbf{Questionário Online}
+
+Inicialmente à equipe de design realizou um planejamento para definir o instrumento de pesquisa dos usuários. Foi definido que o principal objetivo do estudo seria medir a percepção dos usuários quanto a qualidade de uso do portal atual sob uma perspectiva global. Nesse sentido foi proposto uma abordagem de pesquisa de levantamento aplicada e quantitativa. A qualidade de uso foi compreendida a partir dos parâmetros propostos pela ISO 9241-10 a 17, como a qualidade da interface de proporcionar eficácia, eficiência e satisfação no uso do portal (APPOLINÁRIO, 2004). 
+
+Na definição do delineamento da pesquisa foi selecionada a técnica de aplicação de questionário on-line para se produzir os dados de opinião dos participantes. Entende-se que a dimensão atitudinal dos usuários do portal com relação a sua experiência de uso só podem ser obtidos por meio do registro de suas verbalizações (MARTINS E THEOPHILO, 2009). No mesmo sentido, a avaliação proposta não permite uma compreensão direta e completa a cerca da usabilidade do portal em si, compreendendo-se que a efetividade do portal só pode ser analisada 
+diretamente por meio do uso de outras técnicas de pesquisa, como as observações globais ou sistemáticas da interação entre os participantes e a sua interface % (MARTINS e THEÓPHILO, 2009; ABRAHÃO et al., 2009).
+
+\textbf{Protótipos}
+	A equipe utiliza-se de protótipos para 
 %Especificar as datas, as atividades realizadas.
 
 O estudo de caso
