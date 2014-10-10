@@ -19,7 +19,10 @@ O processo de desenvolvimento é feito a partir de sprints de duas semanas, em q
 
 \subsection{Problemas encontrados}
 
-	%No acompanhamento do projeto podemos identificar inicialmente os seguintes problemas relacionados ao desenvolvimento focado na usabilidade do sistema.
+No acompanhamento do projeto podemos identificar inicialmente os seguintes problemas relacionados à usabilidade no desenvolvimento de software:
+
+%descrever problemas
+
 	
 
 \subsection{Guia de usabilidade}
@@ -131,10 +134,75 @@ Na definição do delineamento da pesquisa foi selecionada a técnica de aplica�
 diretamente por meio do uso de outras técnicas de pesquisa, como as observações globais ou sistemáticas da interação entre os participantes e a sua interface % (MARTINS e THEÓPHILO, 2009; ABRAHÃO et al., 2009).
 
 \textbf{Protótipos}
-	A equipe utiliza-se de protótipos para 
+	A equipe utiliza-se de protótipos para determinar os cenários de uso do software, baseando-se nos requisitos definidos pelos clientes. 
+
+\textbf{Cenários de Uso}
+	Para cada funcionalidade desenvolvida é determinado um cenário de uso, base para a implementação dos testes de aceitação e consequentemente o desenvolvimento da funcionalidade propriamente dita.
+	Durante a primeira release (release 0) foram desenvolvidas algumas histórias, dentre estas, a história de ``Cadastro de Usuário", que possui os seguintes cenários de sucesso:
+
+	\textbf{Cenário 01:} Cadastro com sucesso de apenas campos obrigatórios
+	\textbf{[Dado]} que não existe nenhum usuário com o nome de usuário josesilva 
+	\textbf{[Quando]} eu clicar em cadastrar novo usuário
+	\textbf{[E]} eu preencho os seguintes campos: 
+  		nome de usuário: josesilva
+  		e-mail: jose@gmail.com
+  		senha: 123456
+  		confirmação da senha: 123456
+  		nome completo: José da Silva 
+  		país: Brasil
+  		estado: Distrito Federal
+  		cidade: Brasília
+	\textbf{[E]} eu clico em cadastrar
+	\textbf{[Então]} eu recebo uma confirmação de cadastro realizado com sucesso
+
+	\textbf{Cenário 02:} Cadastro com sucesso de apenas campos obrigatórios de usuário governamental
+	\textbf{[Dado]} que não existe nenhum usuário com o nome de usuário josesilva 
+	\textbf{[Quando]} eu clicar em cadastrar novo usuário
+	\textbf{[E]} eu preencho os seguintes campos: 
+  		nome de usuário: josesilva
+  		e-mail: jose@serpro.gov.br
+  		e-mail secundário: jose@gmail.com
+  		senha: 123456
+		  confirmação da senha: 123456
+		  nome completo: José da Silva 
+		  cargo: analista de TI
+		  país: Brasil
+		  estado: Distrito Federal
+		  cidade: Brasília
+	\textbf{[E]} eu seleciono ``SERPRO" como instituição
+	\textbf{[E]} eu seleciono ``????" como unidade  
+	\textbf{[E]} eu clico em cadastrar
+	\textbf{[Então]}eu recebo uma confirmação de cadastro realizado com sucesso
+
+\textbf{Cenário 3:} Cadastro com sucesso com todos os campos preenchidos, mesmo não obrigatórios
+	\textbf{[Dado]} que não existe um usuário cujo email primário ou email secundário é maria@gmail.com
+	\textbf{[Quando]} eu clicar em cadastrar novo usuário
+	\textbf{[E]} eu preencho os seguintes campos: 
+  		nome de usuário: mariasilva
+		  e-mail: maria@gmail.com
+		  e-mail secundário: maria@yahoo.com
+		  senha: 123456
+		  confirmação da senha: 123456
+		  nome completo: Maria da Silva
+		  cargo: analista de TI
+		  áreas de interesse: Engenharia de Software;
+		  país: Brasil
+		  estado: Distrito Federal
+		  cidade: Brasília
+	\textbf{[E]} eu seleciono "Outro" como instituição 
+	\textbf{[E]} eu clico em cadastrar
+	\textbf{[Então]} eu recebo uma notificação de cadastro realizado com sucesso.
+
+	Os cenários de falha ocorrem nas seguintes situações:
+	\begin{itemize}
+	\item Email proposto exisitir como email de outro usuário;
+	\item Email secundário propostro exisitir como email de outro usuário;
+	\item Email secundário ser um email governamental e ao email primário não ser um email governamental;
+	\item Não preenchimento de campos obrigatórios para usuário governamental 
+	\end{itemize}
 %Especificar as datas, as atividades realizadas.
 
-O estudo de caso
+
 
 
 
