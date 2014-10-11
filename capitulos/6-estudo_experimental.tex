@@ -189,7 +189,7 @@ diretamente por meio do uso de outras técnicas de pesquisa, como as observaçõ
 		  país: Brasil
 		  estado: Distrito Federal
 		  cidade: Brasília
-	\textbf{[E]} eu seleciono "Outro" como instituição 
+	\textbf{[E]} eu seleciono ``Outro" como instituição 
 	\textbf{[E]} eu clico em cadastrar
 	\textbf{[Então]} eu recebo uma notificação de cadastro realizado com sucesso.
 
@@ -203,7 +203,38 @@ diretamente por meio do uso de outras técnicas de pesquisa, como as observaçõ
 %Especificar as datas, as atividades realizadas.
 
 
+Outra funcionalidade desenvolvida foi a história chamada ``Manter Instituição", que possui os seguintes cenários:
 
+\textbf{Cenário 01:} Cadastro de nova instituição com sucesso
+\textbf{[Dado]} que eu estou na página de cadastro de usuário
+\textbf{[E]} que a seguinte instituição não existe:
+  	nome: Ministério do Planejamento, Orçamento e Gestão
+  	sigla: MP
+ 	poder: executivo
+ 	esfera: federal
+  	tipo: pública
+  	cnpj: 00.489.828/0002-36
+\textbf{[Quando]} eu clicar em ``Cadastrar nova instituição" 
+\textbf{[E]} eu preencher os seguintes campos:
+  	sigla: MP
+  	poder: executivo
+  	esfera: federal
+  	tipo: pública
+  	cnpj: 00.489.828/0002-36
+\textbf{[Então]} eu devo visualizar a mensagem ``Instituição cadastrada com sucesso!"
+
+\textbf{Cenário 02:} Busca de instituição inexistente
+\textbf{[Dado]} que eu estou na página de cadastro de usuário
+\textbf{[E]} que a seguinte instituição não existe:
+  nome: Ministério do Planejamento, Orçamento e Gestão
+  sigla: MP
+  poder: executivo
+  esfera: federal
+  tipo: pública
+  cnpj: 00.489.828/0002-36
+\textbf{[Quando]} eu buscar MP
+\textbf{[Então]} eu devo visualizar a mensagem ``cInstituição não cadastrada" 
+\textbf{[E]}eu devo visualizar a opção de cadastrar nova instituição
 
 
 \section{Análise e Interpretação dos Resultados}
