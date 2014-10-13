@@ -21,6 +21,11 @@ O processo de desenvolvimento é feito a partir de sprints de duas semanas, em q
 
 	%No acompanhamento do projeto podemos identificar inicialmente os seguintes problemas relacionados ao desenvolvimento focado na usabilidade do sistema.
 	% Ainda no o envolvimento do usuario no processo de desenvolvimento do software. 
+=======
+No acompanhamento do projeto podemos identificar inicialmente os seguintes problemas relacionados à usabilidade no desenvolvimento de software:
+
+%descrever problemas
+
 
 \subsection{Guia de usabilidade}
 %TODO não sei se aplica nesse item (seria o protocolo)
@@ -130,12 +135,124 @@ Inicialmente à equipe de design realizou um planejamento para definir o instrum
 Na definição do delineamento da pesquisa foi selecionada a técnica de aplicação de questionário on-line para se produzir os dados de opinião dos participantes. Entende-se que a dimensão atitudinal dos usuários do portal com relação a sua experiência de uso só podem ser obtidos por meio do registro de suas verbalizações (MARTINS E THEOPHILO, 2009). No mesmo sentido, a avaliação proposta não permite uma compreensão direta e completa a cerca da usabilidade do portal em si, compreendendo-se que a efetividade do portal só pode ser analisada 
 diretamente por meio do uso de outras técnicas de pesquisa, como as observações globais ou sistemáticas da interação entre os participantes e a sua interface % (MARTINS e THEÓPHILO, 2009; ABRAHÃO et al., 2009).
 
+\textbf{Personas}
+
+\begin{itemize}
+
+\item Persona 1
+
+José da Silva tem 43 anos, é funcionário do Ministerio do Teste. Costuma utilizar a internet na maior parte do tempo com atividades relacionadas ao trabalho, acessar e-mails e ler blogs, além de utilizar sites de busca para saber mais sobre assuntos diversos.
+Francisco acabou de passar no concurso público no Ministerio do Teste e necessita realizar o cadastro no portal do Software Público para conhecer os softwares existentes no Portal.
+Este é o primeiro contato do Francisco com o Portal do Software Público e desconhece o processo de registro. Ele precisa preencher corretamente todos os campos obrigatórios para complementar suas informações cadastrais. 
+
+\item Persona 2
+
+Maria Silva, 32 anos, é coordenador de uma comunidade de software livre e descobriu a existência do Portal do Software Público e deseja cadastrar seu software no portal. Ele entra no portal, faz seu cadastro e logo em seguida deseja realizar o registro do software e comunidade à qual participa.
+
+\end{itemize}
+
 \textbf{Protótipos}
-	A equipe utiliza-se de protótipos para 
+	A equipe utiliza-se de protótipos para determinar os cenários de uso do software, baseando-se nos requisitos definidos pelos clientes. 
+
+\textbf{Cenários de Uso}
+	Para cada funcionalidade desenvolvida é determinado um cenário de uso, base para a implementação dos testes de aceitação e consequentemente o desenvolvimento da funcionalidade propriamente dita.
+	Durante a primeira release (release 0) foram desenvolvidas algumas histórias, dentre estas, a história de ``Cadastro de Usuário", que possui os seguintes cenários de sucesso:
+
+	\textbf{Cenário 01:} Cadastro com sucesso de apenas campos obrigatórios
+	\textbf{[Dado]} que não existe nenhum usuário com o nome de usuário josesilva 
+	\textbf{[Quando]} eu clicar em cadastrar novo usuário
+	\textbf{[E]} eu preencho os seguintes campos: 
+  		nome de usuário: josesilva
+  		e-mail: jose@gmail.com
+  		senha: 123456
+  		confirmação da senha: 123456
+  		nome completo: José da Silva 
+  		país: Brasil
+  		estado: Distrito Federal
+  		cidade: Brasília
+	\textbf{[E]} eu clico em cadastrar
+	\textbf{[Então]} eu recebo uma confirmação de cadastro realizado com sucesso
+
+	\textbf{Cenário 02:} Cadastro com sucesso de apenas campos obrigatórios de usuário governamental
+	\textbf{[Dado]} que não existe nenhum usuário com o nome de usuário josesilva 
+	\textbf{[Quando]} eu clicar em cadastrar novo usuário
+	\textbf{[E]} eu preencho os seguintes campos: 
+  		nome de usuário: josesilva
+  		e-mail: jose@serpro.gov.br
+  		e-mail secundário: jose@gmail.com
+  		senha: 123456
+		  confirmação da senha: 123456
+		  nome completo: José da Silva 
+		  cargo: analista de TI
+		  país: Brasil
+		  estado: Distrito Federal
+		  cidade: Brasília
+	\textbf{[E]} eu seleciono ``SERPRO" como instituição
+	\textbf{[E]} eu seleciono ``????" como unidade  
+	\textbf{[E]} eu clico em cadastrar
+	\textbf{[Então]}eu recebo uma confirmação de cadastro realizado com sucesso
+
+\textbf{Cenário 3:} Cadastro com sucesso com todos os campos preenchidos, mesmo não obrigatórios
+	\textbf{[Dado]} que não existe um usuário cujo email primário ou email secundário é maria@gmail.com
+	\textbf{[Quando]} eu clicar em cadastrar novo usuário
+	\textbf{[E]} eu preencho os seguintes campos: 
+  		nome de usuário: mariasilva
+		  e-mail: maria@gmail.com
+		  e-mail secundário: maria@yahoo.com
+		  senha: 123456
+		  confirmação da senha: 123456
+		  nome completo: Maria da Silva
+		  cargo: analista de TI
+		  áreas de interesse: Engenharia de Software;
+		  país: Brasil
+		  estado: Distrito Federal
+		  cidade: Brasília
+	\textbf{[E]} eu seleciono ``Outro" como instituição 
+	\textbf{[E]} eu clico em cadastrar
+	\textbf{[Então]} eu recebo uma notificação de cadastro realizado com sucesso.
+
+	Os cenários de falha ocorrem nas seguintes situações:
+	\begin{itemize}
+	\item Email proposto exisitir como email de outro usuário;
+	\item Email secundário propostro exisitir como email de outro usuário;
+	\item Email secundário ser um email governamental e ao email primário não ser um email governamental;
+	\item Não preenchimento de campos obrigatórios para usuário governamental 
+	\end{itemize}
 %Especificar as datas, as atividades realizadas.
 
-O estudo de caso
 
+Outra funcionalidade desenvolvida foi a história chamada ``Manter Instituição", que possui os seguintes cenários:
+
+\textbf{Cenário 01:} Cadastro de nova instituição com sucesso
+\textbf{[Dado]} que eu estou na página de cadastro de usuário
+\textbf{[E]} que a seguinte instituição não existe:
+  	nome: Ministério do Planejamento, Orçamento e Gestão
+  	sigla: MP
+ 	poder: executivo
+ 	esfera: federal
+  	tipo: pública
+  	cnpj: 00.489.828/0002-36
+\textbf{[Quando]} eu clicar em ``Cadastrar nova instituição" 
+\textbf{[E]} eu preencher os seguintes campos:
+  	sigla: MP
+  	poder: executivo
+  	esfera: federal
+  	tipo: pública
+  	cnpj: 00.489.828/0002-36
+\textbf{[Então]} eu devo visualizar a mensagem ``Instituição cadastrada com sucesso!"
+
+\textbf{Cenário 02:} Busca de instituição inexistente
+\textbf{[Dado]} que eu estou na página de cadastro de usuário
+\textbf{[E]} que a seguinte instituição não existe:
+  nome: Ministério do Planejamento, Orçamento e Gestão
+  sigla: MP
+  poder: executivo
+  esfera: federal
+  tipo: pública
+  cnpj: 00.489.828/0002-36
+\textbf{[Quando]} eu buscar MP
+\textbf{[Então]} eu devo visualizar a mensagem ``cInstituição não cadastrada" 
+\textbf{[E]}eu devo visualizar a opção de cadastrar nova instituição
 
 
 \section{Análise e Interpretação dos Resultados}
