@@ -19,13 +19,11 @@ O processo de desenvolvimento é feito a partir de sprints de duas semanas, em q
 
 \subsection{Problemas encontrados}
 
-	%No acompanhamento do projeto podemos identificar inicialmente os seguintes problemas relacionados ao desenvolvimento focado na usabilidade do sistema.
-	% Ainda no o envolvimento do usuario no processo de desenvolvimento do software. 
-=======
 No acompanhamento do projeto podemos identificar inicialmente os seguintes problemas relacionados à usabilidade no desenvolvimento de software:
 
 %descrever problemas
 
+	
 
 \subsection{Guia de usabilidade}
 %TODO não sei se aplica nesse item (seria o protocolo)
@@ -81,25 +79,15 @@ A análise do questionário servirá para entender o perfil dos usuários do Por
 	
 		
 	\begin{itemize}
-		\item \textbf{Avaliação Heurística}
+		\item Avaliação Heurística
 		
 		Antes de executar um teste de usabilidade é importante primeiro fazer uma avaliação heurística para identificar possíveis problemas que possam ser encontrados pelos usuários. Através das Heurísticas de Usabilidade de Nielsen e das listas de verificação, são verificados os problemas inerentes ao Portal do Software Público.
 		
 %TODO Ver como sera feito no portal do software público.  %Levantamos algumas tarefas/cenários que devem ser executadas para a realização do teste de usabilidade com o objetivo de medir a satisfação relativa a cada tarefa. As tarefas foram pensadas levando em consideração as necessidades dos usuários do Participa.Br. Tarefas que os usuários-alvo executariam mais frequentemente e tarefas que poderiam apresentar problemas para a compreensão e execução do usuário. 
 	
-		\item \textbf{Testes com usuários}
+		\item Testes com usuários
 		
-		Em nosso estudo vamos propor que ao final de cada release seja feito um teste de usabilidade com 5 usuários, como é proposto por Nielsen. No fim de cada ciclo de desenvolvimento deve-se consultar o usuário através de um Teste de Usabilidade. Esse teste não precisa seguir um protocolo muito rebuscado da Engenharia de Software Experimental, apenas escolher alguns usuários, de preferência usuários reais que realizará o teste da seguinte maneira:
-
-Elabore um cenário de uso com tarefas à serem executadas.
-O usuário irá testar o sistema de acordo com o cenário
-Uma pessoa deve observar o que o usuário está fazendo e anotando a sua reação ao utilizar a ferramenta.
-Ao final o usuário deve responder algumas perguntas referente as tarefas executadas: a) Facilidade na execução da tarefa; b)Tempo gasto para executar a tarefa e etc.
-Também pode ser utilizado outro questionário para medir alguns outros fatores de usabilidade (Questionário PSSUQ)
-	
-Se o teste é apenas para receber um feedback sobre o que está sendo desenvolvido, ele deve começar o mais rápido possível com as funcionalidades já existentes.
-Algumas métricas que podem ser coletadas como: Tempo de execução da tarefa, Número de erros, Taxa de finalização da tarefa, Satisfação subjetiva. 
-
+		Em nosso estudo vamos propor que ao final de cada release seja feito um teste de usabilidade com 5 usuários, como é proposto por Nielsen.
 				
 	\end{itemize} 
 	
@@ -145,26 +133,9 @@ Inicialmente à equipe de design realizou um planejamento para definir o instrum
 Na definição do delineamento da pesquisa foi selecionada a técnica de aplicação de questionário on-line para se produzir os dados de opinião dos participantes. Entende-se que a dimensão atitudinal dos usuários do portal com relação a sua experiência de uso só podem ser obtidos por meio do registro de suas verbalizações (MARTINS E THEOPHILO, 2009). No mesmo sentido, a avaliação proposta não permite uma compreensão direta e completa a cerca da usabilidade do portal em si, compreendendo-se que a efetividade do portal só pode ser analisada 
 diretamente por meio do uso de outras técnicas de pesquisa, como as observações globais ou sistemáticas da interação entre os participantes e a sua interface % (MARTINS e THEÓPHILO, 2009; ABRAHÃO et al., 2009).
 
-\textbf{Personas}
-
-\begin{itemize}
-
-\item Persona 1
-
-José da Silva tem 43 anos, é funcionário do Ministerio do Teste. Costuma utilizar a internet na maior parte do tempo com atividades relacionadas ao trabalho, acessar e-mails e ler blogs, além de utilizar sites de busca para saber mais sobre assuntos diversos.
-Francisco acabou de passar no concurso público no Ministerio do Teste e necessita realizar o cadastro no portal do Software Público para conhecer os softwares existentes no Portal.
-Este é o primeiro contato do Francisco com o Portal do Software Público e desconhece o processo de registro. Ele precisa preencher corretamente todos os campos obrigatórios para complementar suas informações cadastrais. 
-
-\item Persona 2
-
-Maria Silva, 32 anos, é coordenador de uma comunidade de software livre e descobriu a existência do Portal do Software Público e deseja cadastrar seu software no portal. Ele entra no portal, faz seu cadastro e logo em seguida deseja realizar o registro do software e comunidade à qual participa.
-
-\end{itemize}
-
 \textbf{Protótipos}
 	A equipe utiliza-se de protótipos para determinar os cenários de uso do software, baseando-se nos requisitos definidos pelos clientes. 
-	A equipe criou protótipos iniciais da interface de alguns componentes de software  (Cadastro de Software). Esses protótipos iniciais servem como base para a criação da funcionalidade pelos desenvolvedores. No processo de desenvolvimento do componente de cadastro de Software, alguns membros da equipe de desenvolvimento através de um "Brainstorming" criou no quadro e no papel protótipos na qual definiram a interface dessa funcionalidade. Depois, através de um novo "Brainstorming" refinaram o protótipo utilizando uma ferrameta computacional de prototipação. Para avaliar esse protótipo propomos a utilização da técnica de Inspeção de usabilidade  que não envolve usuários podendo ser usado em qualquer fase do desenvolvimento de um sistema (implementado ou não).
-	
+
 \textbf{Cenários de Uso}
 	Para cada funcionalidade desenvolvida é determinado um cenário de uso, base para a implementação dos testes de aceitação e consequentemente o desenvolvimento da funcionalidade propriamente dita.
 	Durante a primeira release (release 0) foram desenvolvidas algumas histórias, dentre estas, a história de ``Cadastro de Usuário", que possui os seguintes cenários de sucesso:
@@ -267,49 +238,28 @@ Outra funcionalidade desenvolvida foi a história chamada ``Manter Instituição
 
 Estes cenários apresentam alguns problemas de usabilidade analisando-os de acordo com as heurísticas de Nielsen, e após o processo de desenvolvimento ter uma melhoria na visão de usabilidade após a incorporação de profissionais da área, os cenários apresentaram melhoras em relação às heurísticas de Nielsen. 
 
+Durante a segunda release (release 1) as histórias de ``Cadastro de Usuário", e ``Manter Instituição" foram desenvolvidas novamente com os seguintes cenários:
+
+\textbf{Cenário 01:} Cadastro com sucesso de apenas campos obrigatórios
+	\textbf{[Dado]} que não existe nenhum usuário com o nome de usuário josesilva 
+	\textbf{[Quando]} eu clicar em ``Cadastre-se"
+	\textbf{[E]} eu preencho os seguintes campos: 
+  		primeiro nome: José
+  		ultimo nome: Silva
+  		endereço de e-mail: jose@gmail.com
+  		usuário: josesilva
+  		
+	\textbf{[E]} eu clico em ``Cadastre-se"
+	\textbf{[Então]} eu recebo uma confirmação de cadastro realizado com sucesso, com a seguinte mensgamte: 
+	``Você deve se logar para seu perfil. Perfis não validados serão deletados em 24h."
 
 
 Para dar continuidade a este processo este estudo de caso avaliou os cenários estabelecidos e suas evoluções, verificando e propondo melhorias.
-
-\textbf{Heurísticas de Usabilidade}
 
 
 \section{Análise e Interpretação dos Resultados}
 
 Esta seção apresenta a discussão e a interpretação dos resultados observados durante a execução do estudo de caso descrito.
-
-\subsection{Observações sobre a aplicação de técnicas e métodologias}
-
-\textbf{Avaliação Heurística}
-
-Um dos problemas encontrados na utilização da técnica de avaliação heurística dentro de uma equipe de desenvolvimento de software, muitas vezes é devido que nem sempre há especialistas em usabilidade integrantes na equipe para realizar uma avaliação sistemática do sistema à ser desenvolvido.
-
-\textbf{Checklist}
-
-	A utilização de inspeções de ergonomia por meio de listas de verificação no contexto de uma equipe de desenvolvimento de software é mais fácil a aplicação nesse contexto, pois não exige necessariamente de especialistas em ergonomia pois identificam problemas menores e repetitivos das interfaces. (CYBIS, 2007, p.187)
-	Nessa técnica, ao contrário das avaliações heurísticas que exigem um conhecimento maior dos avaliadores sobre a técnica e sobre as heurísticas.  O checklist permite uma maior facilidade na aplicação pois existem ferramentas que auxiliam na condução de um checklist de usabilidade, como por exemplo o Ergolist.
-	
-\textbf{Design Centrado no usuário}
-
-Para que um projeto seja centrado no usuário, é importante que o usuário seja inserido do início ao fim do processo, caso contrário a produção do sistema deixa de se apoiar na metodologia do design centrado no usuário e passa a ser “centrado no desenvolvedor”. O desenvolvedor ao comportar-se como usuário não quer dizer que a metodologia utilizada é centrada no usuário e nem mesmo a participação de um Product Owner deixa a produção centrada no usuário.
-
-No item 4.4.3 do TCC 1 de acordo com o relato de (EASON, 2005) não basta fazer para o usuário, é preciso fazer com o usuário. 
-
-No Projeto do Portal do Software Público, a equipe começou com a tecnologia e não com o usuário. A utilização dos métodos empíricos tradicionais tem o usuário apenas como referência, já no DCU o usuário é elemento central de todo projeto e deve envolvê-lo do inicio ao fim. A ciência experimental é preocupada com os usuários quando as representa mas ela não leva em conta os diversos aspectos do usuário real.
-
-\textbf{Questionário de Perfil de Usuário}
-	
-	A aplicação de questionários de perfil de usuário antes da produção do sistema é importante para entender as principais necessidades do público alvo. Se um questionário for aplicado e não for utilizado como insumo para o desenvolvimento do sistema, ele perde o sentido de ter sido realizado, pois apenas servirá como arcabouço teórico para futuras avaliações, deixando de lado a questão do design centrado no usuário.
-
-\textbf{Histórias de Usabilidade}
-
-	No contexto do desenvolvimento ágil, as histórias de usabilidade apoiadas pela criação de Persona e Roteiros são umas das melhores técnicas para inserir práticas de usabilidade no inicio do ciclo de desenvolvimento ágil de software pois são comparadas com as histórias de usuário utilizadas pela propria metodologia de desenvolvimento ágil XP e SCRUM. Essas histórias de usabilidade dependendo da forma que for utilizada pode ser centrada no usuário ou não. Para que seja centrada no usuário, deve-se consultar usuários reais para a criação da Persona e roteiros.
-
-\textbf{Perfil do Usuário}
-
-	A determinação do perfil do usuário é extremamente importante para o sucesso 
-do projeto e do teste, pois um mesmo sistema pode ser excelente para algumas pessoas e 
-inadequado ou inaceitável para outras. Para se criar um cenário de teste é importante ter em mente quem é os possíveis usuários.
 
 \subsection{Análise dos Dados}
 
