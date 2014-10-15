@@ -256,6 +256,73 @@ Durante a segunda release (release 1) as histórias de ``Cadastro de Usuário", 
 
 Para dar continuidade a este processo este estudo de caso avaliou os cenários estabelecidos e suas evoluções, verificando e propondo melhorias.
 
+Durante a segunda release (release 2) a história de ``Cadastro de Software" foi desenvolvida com os seguintes cenários:
+
+\textbf{Cenário 01:} Cadastro com sucesso de software
+	\textbf{[Dado]} que não existe nenhum software com o localhost ``software"
+	\textbf{[Quando]} eu clicar em ``Novo Software"
+	\textbf{[E]} eu preencho os seguintes campos: 
+  		localhost: software 
+  		finalidade: Finalidade do software
+  		licenca: licença
+  		
+  		
+	\textbf{[E]} eu clico em ``Salvar"
+	\textbf{[Então]} eu recebo uma confirmação de cadastro realizado com sucesso, e encontro a pagina de edição de software
+
+
+Outros cenáriod de ``Cadastro de Software" são: edição de um software já cadastrado e edição de dados específicos de um software.
+
+\textbf{Cenário 02:} Edição de software
+	\textbf{[Dado]} que ``software" está cadastrado
+	\textbf{[Quando]} eu clicar em ``Cadastre-se"
+	\textbf{[E]} eu preencho os seguintes campos: 
+  		descricao: Descricao do software 
+  		tags: software
+  		categorias: categoria1
+ 
+	\textbf{[E]} eu clico em ``Salvar"
+	\textbf{[Então]} eu recebo uma confirmação de cadastro salvo com sucesso
+
+
+\textbf{Cenário 03:} Edição de dados especificos de software
+	\textbf{[Dado]} que ``software" está cadastrado e estou em Edição de software
+	\textbf{[Quando]} eu clicar em ``Especifico"
+	\textbf{[E]} eu preencho os seguintes campos: 
+  		Sigla: teste 
+  		sistema operacional: teste os
+  		funcioanalidades: testes
+  		categorias: categoria1
+ 	
+ 	\textbf{[E]} eu clico em ``Nova Biblioteca"
+ 	\textbf{[E]} eu preencho os seguintes campos: 
+
+ 		nome: teste
+ 		versao: teste
+ 		licenca: teste
+
+ 	\textbf{[E]} eu clico em ``Novo Sistema Operacional"
+ 	\textbf{[E]} eu preencho os seguintes campos: 
+
+ 		nome: Debian
+ 		versão: teste
+
+ 	\textbf{[E]} eu clico em ``Nova linguagem"
+ 	\textbf{[E]} eu preencho os seguintes campos: 
+
+ 		nome: C++
+ 		versão: teste
+ 		sistema operacional: Debian
+
+ 	\textbf{[E]} eu clico em ``Novo Banco de Dados"
+ 	\textbf{[E]} eu preencho os seguintes campos: 
+
+ 		nome: apache
+ 		versão: teste
+ 		sistema operacional: Debian
+	\textbf{[E]} eu clico em ``Salvar"
+	\textbf{[Então]} eu recebo uma confirmação de cadastro salvo com sucesso
+
 
 \section{Análise e Interpretação dos Resultados}
 
