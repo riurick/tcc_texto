@@ -110,6 +110,105 @@ O projeto do portal do software público envolve a equipe de desenvolvimento do 
 
 \section{Metodologia}
 %TODO Verificar se é esse nome mesmo.
+	
+
+\subsection{Guia de usabilidade}
+%TODO não sei se aplica nesse item (seria o protocolo)
+%Melhorar a escrita
+
+	Seguindo as pesquisas realizadas sobre as técnicas de usabilidade e as metodologias existentes propostas por vários autores sobre a integração de tais técnicas em um contexto de desenvolvimento empírico de software, propomos  para este estudo de caso o seguinte guia que deve ser executado nas sprints de desenvolvimento do Portal do Software Público:
+	
+\begin{enumerate}
+
+
+\item Análise de Usuários
+	
+	No ínicio de qualquer projeto é importante conhecer quem são os usuários que irão utilizar o sistema à ser desenvolvido. Para isso existem algumas técnicas que foram identificadas para conhecer melhor quem são os usuários.
+	
+	A metodologia XPU propõe a criação de Personas e Roteiros para a análise dos usuários, mas além dessas existem outras importantes que podem ser utilizadas no projeto como a utilização de questionário de perfil dos usuários e a análise estatísticas de dados.
+	
+	\begin{itemize}
+		\item \textbf{Personas:} Para a definição de usuários podemos utilizar a técnica de “Persona” que são personagens fictícios criados com base em dados reais. As Personas atuam como representantes dos usuários reais e representam as necessidades de um grupo maior. 
+%
+A utilização de Personas permite ter um maior foco no usuário, deixando o projeto centrado no usuário. É utilizado para a identificação de requisitos, criação de cenários e \textit{user stories}. 
+		\item \textbf{Roteiros:}		
+		
+		\item \textbf{Questionários de perfil do usuário} Para identificar o perfil dos usuários do Portal do Software Público é necessário realizar uma pesquisa qualitativa para levantamento das principais características contextuais dos usuários típicos, de modo a compreender quem são, qual o conhecimento e experiência com a internet e como utilizam para realizar seu trabalho acadêmico ou profissional. A realização dessa pesquisa será feita com os usuários do antigo Portal do Software Público.
+%
+A análise do questionário servirá para entender o perfil dos usuários do Portal do Software Público, através da investigação de seus interesses. 
+
+\item \textbf{Dados Estatísticos} Através dos dados estatísticos com ferramentas de análise estatística (\textit{Google analytcs, Piwiki}, entre outros) é possível identificar algumas informações sobre o perfil dos usuários que acessam ao portal. Nas pesquisas quantitativas não são necessários o contato direto com o usuário. Esses dados estatísticos podem ser coletados de base de dados, redes sociais ou sistemas de análises de sites. No caso do portal do software público não foi levado em consideração as questões estatítiscas do portal por se tratar de um novo portal. %TODO Análisar melhor esse paragráfo.
+
+	\end{itemize}
+		% acho que é importante colocar um exemplo aqui ou apenas colocar o que será feito no estudo de caso em resultados.?
+			
+		
+\item Análise do contexto de uso
+
+		As Personas e os Roteiros geram as Histórias de usabilidade.
+
+\item Definição de Requisitos e Metas de usabilidade
+
+	Criação de Benchmarks pelos projetistas de interação e usuários para servir como balizadores para avaliar a qualidade da usabilidade que está sendo entregue ao final de cada iteração.
+	Baseado nos atributos de usabilidade são estabelecidos instrumentos de medida para se obter valores quantitativos 	para cada atributo.
+	Esses benchmarks são utilizados para planejar a avaliação de usabilidade e para realizar os testes que irão compor cada avaliação. % esse paragrafo deve ir pro capitulo de usabilidade onde fala de benchmarks.
+	
+		
+\item Planejamento de Usabilidade
+
+	Estimar os recursos relativos à usabilidade que serão utilizados ao longo do desenvolvimento. Previsões de tempo e custo no planejamento da release.
+	 No planejamento da Release do projeto deve-se pensar também em estimativas de tamanho para as histórias de usabilidade e para o planejamento das avaliações de usabilidade.
+
+
+\item Avaliação da usabilidade
+
+	Ao longo do ciclo de vida diversas avaliações podem ser realizadas:
+	
+		
+	\begin{itemize}
+		\item Avaliação Heurística
+		
+		Antes de executar um teste de usabilidade é importante primeiro fazer uma avaliação heurística para identificar possíveis problemas que possam ser encontrados pelos usuários. Através das Heurísticas de Usabilidade de Nielsen e das listas de verificação, são verificados os problemas inerentes ao Portal do Software Público.
+		
+%TODO Ver como sera feito no portal do software público.  %Levantamos algumas tarefas/cenários que devem ser executadas para a realização do teste de usabilidade com o objetivo de medir a satisfação relativa a cada tarefa. As tarefas foram pensadas levando em consideração as necessidades dos usuários do Participa.Br. Tarefas que os usuários-alvo executariam mais frequentemente e tarefas que poderiam apresentar problemas para a compreensão e execução do usuário. 
+	
+		\item Testes com usuários
+		
+		Em nosso estudo vamos propor que ao final de cada release seja feito um teste de usabilidade com 5 usuários, como é proposto por Nielsen.
+				
+	\end{itemize} 
+	
+	As medidas de usabilidade neste estudo foram obtidas considerando-se três fatores: eficácia, eficiência e satisfação de uso.
+%
+Adotamos como paradigma de avaliação o teste de usabilidade, que consiste em avaliar o desempenho dos usuários na execução de tarefas cuidadosamente preparadas, dentro do escopo do sistema. Esse desempenho pode ser avaliado nos quesitos: número de erros e tempo de execução da tarefa. %Com essa avaliação será coletado tantos dados subjetivos em um cenário real como dados objetivos. Os dados subjetivos serão coletados através de opiniões dos participantes, comentários em relação ao uso do portal da participação social. 
+Os dados obtidos consistem em medidas de tempo e desempenho dos participantes.
+
+Elencamos algumas técnicas para avaliar a usabilidade do portal do Software Público:
+
+\begin{table}[h]
+\begin{tabular}{|l| p{10cm} |}
+\hline
+Técnica & Descrição \\ \hline
+Observar Usuários & Um observador irá registrar o tempo 
+gasto por cada participante para concluir o estudo de caso, 
+avaliar a ferramenta e se necessitou de alguma ajuda    \\ \hline
+Perguntar aos usuários & Os questionários ASQ e PSSUQ 
+de satisfação dos usuários será utilizado 
+para coletar as opiniões dos participantes.\\ \hline
+\end{tabular}
+\caption{Técnicas de avaliação para os testes com usuários}
+\end{table}
+	
+\item Controle de Usabilidade
+	
+	Ao final de cada interação a velocidade do projeto é avaliada. Deve-se acompanhar as tarefas relativas à usabilidade comparando o esforço previsto com o realizado.
+	
+\end{enumerate}
+Esse protocolo foi extraído do estudo de várias metodologias criadas para a integração das técnicas de usabilidade no contexto de desenvolvimento ágil de software, são elas XPu e XPlus.
+ 
+ 
+ %TODO Obs: No TCC 1 tinhamos escrito um protocolo de como seria feito á avaliação de usabilidade, algumas coisas podem ser utilizadas e readaptadas para o nosso contexto atual e inserindo as melhorias encontradas por outros métodos.
+
 
 	
 
@@ -124,10 +223,9 @@ Os dados foram coletados por meio de entrevistas informais, observações, quest
 
 As principais ameaças aplicáveis aos estudos de caso são mencionadas por Yin (2010). Dentre elas, estão a validade do constructo, validade interna, validade externa e confiabilidade. %Aline
 
-\section{Estudo de Campo}
-%verificar se precisa (TCC Aline)
 
 \section{Cronograma}
+
 \section{Análise}
 
 \section{Considerações finais do capítulo}
