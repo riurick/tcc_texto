@@ -124,7 +124,7 @@ Esse protocolo foi extraído do estudo de várias metodologias criadas para a in
  
 \section{Execução}
 
-\subsection{Práticas adotadas pela equipe}
+%\subsection{Práticas adotadas pela equipe}
 
 \textbf{Questionário Online}
 
@@ -134,7 +134,25 @@ Na definição do delineamento da pesquisa foi selecionada a técnica de aplica�
 diretamente por meio do uso de outras técnicas de pesquisa, como as observações globais ou sistemáticas da interação entre os participantes e a sua interface % (MARTINS e THEÓPHILO, 2009; ABRAHÃO et al., 2009).
 
 \textbf{Protótipos}
-	A equipe utiliza-se de protótipos para determinar os cenários de uso do software, baseando-se nos requisitos definidos pelos clientes. 
+	A equipe utiliza-se de protótipos para determinar os cenários de uso do software, baseando-se nos requisitos definidos pelos clientes. Abaixo estão os protótipos de cadastro de usuário e cadastro de software:
+
+	\begin{figure}[h!]
+    	\centering
+    	\includegraphics[keepaspectratio=true,scale=0.32]
+      		{figuras/CadastroEdicaoUser.eps}
+    	\caption{Protótipos de cadastro de usuário}
+    	\label{cadastro_user}
+	\end{figure}
+
+	\begin{figure}[h!]
+    	\centering
+    	\includegraphics[keepaspectratio=true,scale=0.25]
+      		{figuras/CadastroEdicaoSoftware.eps}
+    	\caption{Protótipos de cadastro de software}
+    	\label{cadastro_software}
+	\end{figure}
+
+\newpage
 
 \textbf{Cenários de Uso}
 	Para cada funcionalidade desenvolvida é determinado um cenário de uso, base para a implementação dos testes de aceitação e consequentemente o desenvolvimento da funcionalidade propriamente dita.
@@ -256,9 +274,9 @@ Durante a segunda release (release 1) as histórias de ``Cadastro de Usuário", 
 
 Para dar continuidade a este processo este estudo de caso avaliou os cenários estabelecidos e suas evoluções, verificando e propondo melhorias.
 
-Durante a segunda release (release 2) a história de ``Cadastro de Software" foi desenvolvida com os seguintes cenários:
+Durante a segunda release (release 2) a história de ``Novo Software" foi desenvolvida com os seguintes cenários:
 
-\textbf{Cenário 01:} Cadastro com sucesso de software
+\textbf{Cenário 01:} Novo Software
 	\textbf{[Dado]} que não existe nenhum software com o localhost ``software"
 	\textbf{[Quando]} eu clicar em ``Novo Software"
 	\textbf{[E]} eu preencho os seguintes campos: 
@@ -271,9 +289,9 @@ Durante a segunda release (release 2) a história de ``Cadastro de Software" foi
 	\textbf{[Então]} eu recebo uma confirmação de cadastro realizado com sucesso, e encontro a pagina de edição de software
 
 
-Outros cenáriod de ``Cadastro de Software" são: edição de um software já cadastrado e edição de dados específicos de um software.
+Outros cenários de edição de software são: ``Informações de Comunidade" e ``Informações de Software".
 
-\textbf{Cenário 02:} Edição de software
+\textbf{Cenário 02:} Informações de Comunidade
 	\textbf{[Dado]} que ``software" está cadastrado
 	\textbf{[Quando]} eu clicar em ``Cadastre-se"
 	\textbf{[E]} eu preencho os seguintes campos: 
@@ -285,7 +303,7 @@ Outros cenáriod de ``Cadastro de Software" são: edição de um software já ca
 	\textbf{[Então]} eu recebo uma confirmação de cadastro salvo com sucesso
 
 
-\textbf{Cenário 03:} Edição de dados especificos de software
+\textbf{Cenário 03:} Informações de Software
 	\textbf{[Dado]} que ``software" está cadastrado e estou em Edição de software
 	\textbf{[Quando]} eu clicar em ``Especifico"
 	\textbf{[E]} eu preencho os seguintes campos: 
