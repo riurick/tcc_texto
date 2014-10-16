@@ -58,60 +58,109 @@ diretamente por meio do uso de outras técnicas de pesquisa, como as observaçõ
 
 \textbf{Cenários de Uso}
 	Para cada funcionalidade desenvolvida é determinado um cenário de uso, base para a implementação dos testes de aceitação e consequentemente o desenvolvimento da funcionalidade propriamente dita.
-	Durante a primeira release (release 0) foram desenvolvidas algumas histórias, dentre estas, a história de ``Cadastro de Usuário", que possui os seguintes cenários de sucesso:
+	Durante a primeira release (release 0) foram desenvolvidas algumas histórias, dentre estas, a história de ``Cadastro de Usuário'', que possui os seguintes cenários de sucesso:
 
-	\textbf{Cenário 01:} Cadastro com sucesso de apenas campos obrigatórios
-	\textbf{[Dado]} que não existe nenhum usuário com o nome de usuário josesilva 
+	\begin{itemize}
+	\item\textbf{Cenário 01:} Cadastro com sucesso de apenas campos obrigatórios
+
+	\textbf{[Dado]} que não existe nenhum usuário com o nome de usuário ``josesilva''
+
 	\textbf{[Quando]} eu clicar em cadastrar novo usuário
+
 	\textbf{[E]} eu preencho os seguintes campos: 
-  		nome de usuário: josesilva
-  		e-mail: jose@gmail.com
-  		senha: 123456
-  		confirmação da senha: 123456
-  		nome completo: José da Silva 
-  		país: Brasil
-  		estado: Distrito Federal
-  		cidade: Brasília
+
+  		\subitem nome de usuário: ``josesilva''
+
+  		\subitem e-mail: ``jose@gmail.com''
+
+  		\subitem senha: ``123456''
+
+  		\subitem confirmação da senha: ``123456''
+
+  		\subitem nome completo: ``José da Silva''
+
+  		\subitem país: ``Brasil''
+
+  		\subitem estado: ``Distrito Federal''
+
+  		\subitem cidade: ``Brasília''
+
 	\textbf{[E]} eu clico em cadastrar
+
 	\textbf{[Então]} eu recebo uma confirmação de cadastro realizado com sucesso
 
-	\textbf{Cenário 02:} Cadastro com sucesso de apenas campos obrigatórios de usuário governamental
-	\textbf{[Dado]} que não existe nenhum usuário com o nome de usuário josesilva 
+
+	\item\textbf{Cenário 02:} Cadastro com sucesso de apenas campos obrigatórios de usuário governamental
+	
+	\textbf{[Dado]} que não existe nenhum usuário com o nome de usuário ``josesilva''
+	
 	\textbf{[Quando]} eu clicar em cadastrar novo usuário
+	
 	\textbf{[E]} eu preencho os seguintes campos: 
-  		nome de usuário: josesilva
-  		e-mail: jose@serpro.gov.br
-  		e-mail secundário: jose@gmail.com
-  		senha: 123456
-		  confirmação da senha: 123456
-		  nome completo: José da Silva 
-		  cargo: analista de TI
-		  país: Brasil
-		  estado: Distrito Federal
-		  cidade: Brasília
-	\textbf{[E]} eu seleciono ``SERPRO" como instituição
-	\textbf{[E]} eu seleciono ``????" como unidade  
+  		\subitem nome de usuário: ``josesilva''
+
+  		\subitem e-mail: ``jose@serpro.gov.br''
+
+  		\subitem e-mail secundário: ``jose@gmail.com''
+
+  		\subitem senha: ``123456''
+
+		\subitem confirmação da senha: ``123456''
+
+		\subitem nome completo: ``José da Silva''
+
+		\subitem cargo: ``analista de TI''
+
+		\subitem país: ``Brasil''
+
+		 \subitem estado: ``Distrito Federal''
+
+		\subitem cidade: ``Brasília''
+
+	\textbf{[E]} eu seleciono ``SERPRO'' como instituição
+
+	\textbf{[E]} eu seleciono ``????'' como unidade  
+
 	\textbf{[E]} eu clico em cadastrar
+
 	\textbf{[Então]}eu recebo uma confirmação de cadastro realizado com sucesso
 
-\textbf{Cenário 3:} Cadastro com sucesso com todos os campos preenchidos, mesmo não obrigatórios
-	\textbf{[Dado]} que não existe um usuário cujo email primário ou email secundário é maria@gmail.com
+\item\textbf{Cenário 3:} Cadastro com sucesso com todos os campos preenchidos, mesmo não obrigatórios
+
+	\textbf{[Dado]} que não existe um usuário cujo email primário ou email secundário é ``maria@gmail.com''
+
 	\textbf{[Quando]} eu clicar em cadastrar novo usuário
+
 	\textbf{[E]} eu preencho os seguintes campos: 
-  		nome de usuário: mariasilva
-		  e-mail: maria@gmail.com
-		  e-mail secundário: maria@yahoo.com
-		  senha: 123456
-		  confirmação da senha: 123456
-		  nome completo: Maria da Silva
-		  cargo: analista de TI
-		  áreas de interesse: Engenharia de Software;
-		  país: Brasil
-		  estado: Distrito Federal
-		  cidade: Brasília
-	\textbf{[E]} eu seleciono ``Outro" como instituição 
+
+  		\subitem nome de usuário: ``mariasilva''
+
+		  \subitem e-mail: ``maria@gmail.com''
+
+		  \subitem e-mail secundário: ``maria@yahoo.com''
+
+		  \subitem senha: ``123456''
+
+		  \subitem confirmação da senha: ``123456''
+
+		  \subitem nome completo: ``Maria da Silva''
+
+		  \subitem cargo: ``analista de TI''
+
+		  \subitem áreas de interesse: ``Engenharia de Software''
+
+		  \subitem país: ``Brasil''
+
+		  \subitem estado: ``Distrito Federal''
+
+		  \subitem cidade: ``Brasília''
+
+	\textbf{[E]} eu seleciono ``Outro'' como instituição 
+
 	\textbf{[E]} eu clico em cadastrar
+
 	\textbf{[Então]} eu recebo uma notificação de cadastro realizado com sucesso.
+	\end{itemize}
 
 	Os cenários de falha ocorrem nas seguintes situações:
 	\begin{itemize}
@@ -123,125 +172,199 @@ diretamente por meio do uso de outras técnicas de pesquisa, como as observaçõ
 %Especificar as datas, as atividades realizadas.
 
 
-Outra funcionalidade desenvolvida foi a história chamada ``Manter Instituição", que possui os seguintes cenários:
+Outra funcionalidade desenvolvida foi a história chamada ``Manter Instituição'', que possui os seguintes cenários:
+\begin{itemize}
+\item\textbf{Cenário 01:} Cadastro de nova instituição com sucesso
 
-\textbf{Cenário 01:} Cadastro de nova instituição com sucesso
 \textbf{[Dado]} que eu estou na página de cadastro de usuário
+
 \textbf{[E]} que a seguinte instituição não existe:
-  	nome: Ministério do Planejamento, Orçamento e Gestão
-  	sigla: MP
- 	poder: executivo
- 	esfera: federal
-  	tipo: pública
-  	cnpj: 00.489.828/0002-36
-\textbf{[Quando]} eu clicar em ``Cadastrar nova instituição" 
+
+  	\subitem nome: ``Ministério do Planejamento, Orçamento e Gestão''
+
+  	\subitem sigla: ``MP''
+
+ 	\subitem poder: ``executivo''
+
+ 	\subitem esfera: ``federal''
+
+  	\subitem tipo: ``pública''
+
+  	\subitem cnpj: ``00.489.828/0002-36''
+
+\textbf{[Quando]} eu clicar em ``Cadastrar nova instituição''
+
 \textbf{[E]} eu preencher os seguintes campos:
-  	sigla: MP
-  	poder: executivo
-  	esfera: federal
-  	tipo: pública
-  	cnpj: 00.489.828/0002-36
-\textbf{[Então]} eu devo visualizar a mensagem ``Instituição cadastrada com sucesso!"
 
-\textbf{Cenário 02:} Busca de instituição inexistente
+  	\subitem sigla: ``MP''
+
+  	\subitem poder: ``executivo''
+
+  	\subitem esfera: ``federal''
+
+  	\subitem tipo: ``pública''
+
+  	\subitem cnpj: ``00.489.828/0002-36''
+
+\textbf{[Então]} eu devo visualizar a mensagem ``Instituição cadastrada com sucesso!''
+
+\item\textbf{Cenário 02:} Busca de instituição inexistente
+
 \textbf{[Dado]} que eu estou na página de cadastro de usuário
+
 \textbf{[E]} que a seguinte instituição não existe:
-  nome: Ministério do Planejamento, Orçamento e Gestão
-  sigla: MP
-  poder: executivo
-  esfera: federal
-  tipo: pública
-  cnpj: 00.489.828/0002-36
+
+ \subitem nome: ``Ministério do Planejamento, Orçamento e Gestão''
+
+  \subitem sigla: ``MP''
+
+  \subitem poder: ``executivo''
+
+  \subitem esfera: ``federal''
+
+  \subitem tipo: ``pública''
+  
+  \subitem cnpj: ``00.489.828/0002-36''
+
 \textbf{[Quando]} eu buscar MP
-\textbf{[Então]} eu devo visualizar a mensagem ``Instituição não cadastrada" 
+
+\textbf{[Então]} eu devo visualizar a mensagem ``Instituição não cadastrada''
+
 \textbf{[E]}eu devo visualizar a opção de cadastrar nova instituição
+\end{itemize}
 
 Estes cenários apresentam alguns problemas de usabilidade analisando-os de acordo com as heurísticas de Nielsen, e após o processo de desenvolvimento ter uma melhoria na visão de usabilidade após a incorporação de profissionais da área, os cenários apresentaram melhoras em relação às heurísticas de Nielsen. 
 
-Durante a segunda release (release 1) as histórias de ``Cadastro de Usuário", e ``Manter Instituição" foram desenvolvidas novamente com os seguintes cenários:
+Durante a segunda release (release 1) as histórias de ``Cadastro de Usuário'', e ``Manter Instituição'' foram desenvolvidas novamente com os seguintes cenários:
 
-\textbf{Cenário 01:} Cadastro com sucesso de apenas campos obrigatórios
-	\textbf{[Dado]} que não existe nenhum usuário com o nome de usuário josesilva 
-	\textbf{[Quando]} eu clicar em ``Cadastre-se"
+\begin{itemize}
+\item\textbf{Cenário 01:} Cadastro com sucesso de apenas campos obrigatórios
+
+	\textbf{[Dado]} que não existe nenhum usuário com o nome de usuário ``josesilva''
+
+	\textbf{[Quando]} eu clicar em ``Cadastre-se''
+
 	\textbf{[E]} eu preencho os seguintes campos: 
-  		primeiro nome: José
-  		ultimo nome: Silva
-  		endereço de e-mail: jose@gmail.com
-  		usuário: josesilva
-  		
-	\textbf{[E]} eu clico em ``Cadastre-se"
-	\textbf{[Então]} eu recebo uma confirmação de cadastro realizado com sucesso, com a seguinte mensgamte: 
-	``Você deve se logar para seu perfil. Perfis não validados serão deletados em 24h."
 
+  		\subitem primeiro nome: ``José''
+
+  		\subitem ultimo nome: ``Silva''
+
+  		\subitem endereço de e-mail: ``jose@gmail.com''
+
+  		\subitem usuário: ``josesilva''
+  		
+	\textbf{[E]} eu clico em ``Cadastre-se''
+
+	\textbf{[Então]} eu recebo uma confirmação de cadastro realizado com sucesso, com a seguinte mensgamte: 
+	``Você deve se logar para seu perfil. Perfis não validados serão deletados em 24h.''
+\end{itemize}
 
 Para dar continuidade a este processo este estudo de caso avaliou os cenários estabelecidos e suas evoluções, verificando e propondo melhorias.
 
-Durante a segunda release (release 2) a história de ``Novo Software" foi desenvolvida com os seguintes cenários:
+Durante a segunda release (release 2) a história de ``Novo Software'' foi desenvolvida com os seguintes cenários:
 
-\textbf{Cenário 01:} Novo Software
-	\textbf{[Dado]} que não existe nenhum software com o localhost ``software"
-	\textbf{[Quando]} eu clicar em ``Novo Software"
+\begin{itemize}
+\item\textbf{Cenário 01:} Novo Software
+
+	\textbf{[Dado]} que não existe nenhum software com o localhost ``software''
+
+	\textbf{[Quando]} eu clicar em ``Novo Software''
+
 	\textbf{[E]} eu preencho os seguintes campos: 
-  		localhost: software 
-  		finalidade: Finalidade do software
-  		licenca: licença
+
+  		\subitem localhost: ``software''
+
+  		\subitem finalidade: ``Finalidade do software''
+
+  		\subitem licenca: ``licença''
   		
   		
-	\textbf{[E]} eu clico em ``Salvar"
+	\textbf{[E]} eu clico em ``Salvar''
+
 	\textbf{[Então]} eu recebo uma confirmação de cadastro realizado com sucesso, e encontro a pagina de edição de software
 
 
-Outros cenários de edição de software são: ``Informações de Comunidade" e ``Informações de Software".
+Outros cenários de edição de software são: ``Informações de Comunidade'' e ``Informações de Software''.
 
-\textbf{Cenário 02:} Informações de Comunidade
-	\textbf{[Dado]} que ``software" está cadastrado
-	\textbf{[Quando]} eu clicar em ``Cadastre-se"
+\item\textbf{Cenário 02:} Informações de Comunidade
+
+	\textbf{[Dado]} que ``software'' está cadastrado
+
+	\textbf{[Quando]} eu clicar em ``Cadastre-se''
+
 	\textbf{[E]} eu preencho os seguintes campos: 
-  		descricao: Descricao do software 
-  		tags: software
-  		categorias: categoria1
+
+  		\subitem descricao: ``Descricao do software''
+
+  		\subitem tags: ``software''
+
+  		\subitem categorias: ``categoria1''
  
-	\textbf{[E]} eu clico em ``Salvar"
+	\textbf{[E]} eu clico em ``Salvar''
+
 	\textbf{[Então]} eu recebo uma confirmação de cadastro salvo com sucesso
 
 
-\textbf{Cenário 03:} Informações de Software
-	\textbf{[Dado]} que ``software" está cadastrado e estou em Edição de software
-	\textbf{[Quando]} eu clicar em ``Especifico"
+\item\textbf{Cenário 03:} Informações de Software
+
+	\textbf{[Dado]} que ``software'' está cadastrado e estou em Edição de software
+
+	\textbf{[Quando]} eu clicar em ``Especifico''
+
 	\textbf{[E]} eu preencho os seguintes campos: 
-  		Sigla: teste 
-  		sistema operacional: teste os
-  		funcioanalidades: testes
-  		categorias: categoria1
+
+  		\subitem Sigla: ``teste''
+
+  		\subitem sistema operacional: ``teste os''
+
+  		\subitem funcioanalidades: ``testes''
+
+  		\subitem categorias: ``categoria1''
  	
- 	\textbf{[E]} eu clico em ``Nova Biblioteca"
+ 	\textbf{[E]} eu clico em ``Nova Biblioteca''
+
  	\textbf{[E]} eu preencho os seguintes campos: 
 
- 		nome: teste
- 		versao: teste
- 		licenca: teste
+ 		\subitem nome: ``teste''
 
- 	\textbf{[E]} eu clico em ``Novo Sistema Operacional"
+ 		\subitem versao: ``teste''
+
+ 		\subitem icenca: ``teste''
+
+ 	\textbf{[E]} eu clico em ``Novo Sistema Operacional''
+
  	\textbf{[E]} eu preencho os seguintes campos: 
 
- 		nome: Debian
- 		versão: teste
- 	\textbf{[E]} eu clico em ``Nova linguagem"
+ 		\subitem nome: ``Debian''
+
+ 		\subitem versão: ``teste''
+
+ 	\textbf{[E]} eu clico em ``Nova linguagem''
+
  	\textbf{[E]} eu preencho os seguintes campos: 
 
- 		nome: C++
- 		versão: teste
- 		sistema operacional: Debian
- 	\textbf{[E]} eu clico em ``Novo Banco de Dados"
+ 		\subitem nome: ``C++''
+
+ 		\subitem versão: ``teste''
+
+ 		\subitem sistema operacional: ``Debian''
+
+ 	\textbf{[E]} eu clico em ``Novo Banco de Dados''
+
  	\textbf{[E]} eu preencho os seguintes campos: 
 
- 		nome: apache
- 		versão: teste
- 		sistema operacional: Debian
-	\textbf{[E]} eu clico em ``Salvar"
+ 		\subitem nome: ``apache''
+
+ 		\subitem versão: ``teste''
+
+ 		\subitem sistema operacional: ``Debian''
+
+	\textbf{[E]} eu clico em ``Salvar''
+
 	\textbf{[Então]} eu recebo uma confirmação de cadastro salvo com sucesso
 
-
+\end{itemize}
 \section{Análise e Interpretação dos Resultados}
 
 Esta seção apresenta a discussão e a interpretação dos resultados observados durante a execução do estudo de caso descrito.
@@ -250,8 +373,21 @@ Analisando os protótipos e os cenários de uso desenvolvidos, de acordo com as 
 
 \subsection{Análise dos Dados}
 
-Baseado nos objetivos do estudo de caso, os dados a serem levantados dizem respeito à ???
+A partir dos protótipos e dos cenários de uso desenvolvidos durante as releases 0 e 1, realizamos análises dos cenários em busca de problemas de usabilidade, com base nas heurísticas de Nielsem. A tabela abaixo descreve os problemas encontrados nas primeiras análises
 
+\begin{table}[h]
+\begin{tabular}{|l|p{3cm}|p{7cm}|p{3cm}|l|}
+\hline
+\textbf{ID} & \textbf{Local} & \textbf{Descrição do Problema}                                                                                     & \textbf{Heurística Desobedecida} & \textbf{Criticidade} \\ \hline
+1           & Protótipo - Novo Software                 & Ao escolher um nome para o software, não há evidência do que aconteceria caso o nome fosse igual a outro existente & Prevenção de erros               & Média                \\ \hline
+2           & Protótipo - Novo Software                 & Não há informação para o usuário do que seria o ``Link''                                                             & Ajuda e documentação             & Média                \\ \hline
+3           & Protótipo - Nova Comundiade               & Palavras em inglês e português                                                                                     & Liguagem Clara                   & Baixa                \\ \hline
+4           & Protótipo - Nova Comundiade               & Falta de informação sobre as tags e as categorias do noosfero                                                      & Ajuda e documentação             & Baixa                \\ \hline
+5           & Protótipo - Novo Software                 & Campos obrigatórios não são definidos                                                                              & Prevenção de erros               & Média                \\ \hline
+6           & Protótipo - Novo Software    & Mensagens de ajuda ao preenchimentos dos campos                                                                    & Prevenção de erros               & Baixa                \\ \hline
+7           & Protótipo - Nova Comundiade               & Botao de Save e Continue altera estrutura da pagina de software                                                    & Consistência                     & Baixa                \\ \hline
+\end{tabular}
+\end{table}
 \subsection{Análise dos Resultados de Medição}
 
 Analisa os resultados alcançados no estudo de caso, baseado ...
