@@ -15,18 +15,14 @@ O processo de desenvolvimento é feito a partir de sprints de duas semanas, em q
 %Explicar a dinâmica de trabalho, a equipe, reuniões
 %verificar aonde vai entrar essa seção. Talvex dentro do contexto?
 
-\section{Execução do estudo de caso}
-
-\subsection{Problemas encontrados}
-
-No acompanhamento do projeto podemos identificar inicialmente os seguintes problemas relacionados à usabilidade no desenvolvimento de software:
-
-%descrever problemas
 
  
 \section{Execução}
 
 %\subsection{Práticas adotadas pela equipe}
+\subsection{Problemas encontrados}
+
+No acompanhamento do projeto podemos identificar inicialmente os seguintes problemas relacionados à usabilidade no desenvolvimento de software:
 
 \textbf{Questionário Online}
 
@@ -374,7 +370,9 @@ Analisando os protótipos e os cenários de uso desenvolvidos, de acordo com as 
 \subsection{Análise dos Dados}
 
 A partir dos protótipos e dos cenários de uso desenvolvidos durante as releases 0 e 1, realizamos análises dos cenários em busca de problemas de usabilidade, com base nas heurísticas de Nielsem. A tabela abaixo descreve os problemas encontrados nas primeiras análises.
+
 A partir do levantamento desses problemas foram propostas tarefas durante o planejamento de atividades da equipe de desenvolvimento, para que assim cada problema pudesse ser discutido e resolvido.
+
 
 
 \begin{table}[d]
@@ -390,6 +388,50 @@ A partir do levantamento desses problemas foram propostas tarefas durante o plan
 7           & Protótipo - Nova Comundiade               & Botao de Save e Continue altera estrutura da pagina de software                                                    & Consistência                     & Baixa                \\ \hline
 \end{tabular}
 \end{table}
+
+
+
+\begin{table}[d]
+\begin{tabular}{|l|p{3cm}|p{6cm}|p{3cm}|l|}
+\hline
+\textbf{ID} & \textbf{Local} & \textbf{Descrição do Problema}                                                                                     & \textbf{Heurística Desobedecida} & \textbf{Criticidade} \\ \hline
+1           & Cadastro de Usuário                 & Linguagens estrangeiras e avisos em outros idiomas & Diálogos simples  & Média                \\ \hline
+2           & Cadastro de Usuário      & Botão de adicionar nova instituição não é claro para o usuário.  & Minimizar a sobrecarga de memória do usuário;           & Alta                \\ \hline
+3           & Cadastro de Usuário               & Diferença entre botão adicionar nova instituição e criar nova instituição para o usuário  & Minimizar a sobrecarga de memória do usuário & Media                \\ \hline
+4           & Cadastro de Instituição             & Seleção de País deve ter Brasil como default  & Diálogos simples e naturais    & Baixa                \\ \hline
+5           & Cadastro de Instituição      & Opção de escolha do estado: Random button não posicionado e não funciona no primeiro clique. & Diálogos simples e naturais  & Baixa                \\ \hline
+6           & Cadastro de Usuário  & Caso você não preencha o email secundario ele informa a seguinte mensagem: E-mail or secondary e-mail already taken & Boas mensagens de erros                & Média                \\ \hline
+7           & Cadastro de Usuário  & Opção recaptcha só aparece na segunda vez & Consistência                     & Alta                \\ \hline
+8           & Perfil de Usuário  & Ao clicar em hide no bloco de progresso de perfil ele some e não foi encontrada uma opção fácil para reverter a situação.
+ & Prevenção de erros                     & Baixa                \\ \hline
+9           & Cadastro de Usuário  & Caso se tenha uma infinidade de grupos, fica inviável a opção de checkbox. Ou será utilizada apenas para grupos mais ``conhecidos''? & Atalhos & Média                \\ \hline
+10           & Cadastro de Usuário  & Mensagem de erro um pouco confusa: Usuário com este Usuário já existe.  & Consistência                     & Baixa                \\ \hline
+\end{tabular}
+\end{table}
+
+
+Analisando os dados das primeiras releases, que comporam as primeiras rodadas de avalições pelas heurísticas temos em ``Cadastro de Usuário'':
+\begin{itemize}
+	\item 2 problemas de criticidade baixa;
+	\item 4 problemas de criticidade média;
+	\item 2 problemas de criticidade alta;
+\end{itemize}
+
+Já em ``Cadastro de Instiuição'', temos:
+\begin{itemize}
+	\item 2 problemas de criticidade baixa;
+	\item 0 problemas de criticidade média;
+	\item 0 problemas de criticidade alta;
+\end{itemize}
+
+Quanto à história de ``Cadastro de  Software'', temos:
+\begin{itemize}
+	\item 4 problemas de criticidade baixa;
+	\item 3 problemas de criticidade média;
+	\item 0 problemas de criticidade alta;
+\end{itemize}
+
+ 
 
 
 
