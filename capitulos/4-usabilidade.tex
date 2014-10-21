@@ -2,7 +2,7 @@
 
 Neste capítulo abordaremos os conceitos e as áreas que estão por trás do termo usabilidade e as relações entre cada uma delas, entender a importância e os benefícios que a usabilidade trás para os sistemas de software, apresentar os modelos de ciclo de vida utilizados na interação humano computador e mostrar como podemos inserir a usabilidade no ciclo de desenvolvimento de software empírico.
 
-\section {Usabilidade}
+\section{Conceitos de Usabilidade}
 
 A usabilidade é um termo que começou a ser utilizado pela Ciência Cognitiva e depois pela Psicologia e Ergonomia em substituição ao termo ``amigável'' ~\cite{dias2006}.
 %TODO: aspas as em latex é assim: `` '' 
@@ -299,138 +299,18 @@ No estudo de caso detalhado e planejado no próximo capítulo, separamos algumas
 
 %TODO Aonde vai ser inserido as técnicas que estamos detalhando melhor
 
-\section{Testes de Usabilidade}
-
-	Existem vários tipos de testes de usabilidade, mas sabe-se que todos eles têm algo em comum, que é observar as pessoas utilizando algo.
-
-\begin{itemize}
-
-\item \textbf{Escolher abordagem}
-
-As abordagens de pesquisa podem ser de dois tipos: quantitativa ou qualitativas. 
-%
-As pesquisas quantitativas são focadas nos dados numéricos e é voltada para fornecer alta confiança e resultados repetidos dentro de seus grupos de usuários. É preciso ter o envolvimento de um número maior de participantes para contar as variações que você encontrará de indivíduo para indivíduo ~\cite{unger2009}.
-%
-As pesquisas qualitativas não são focadas em níveis de segurança e da possibilidade de repetição, mas sim ganhar contexto e percepção considerando o comportamento do usuário. Ela depende da interpretação do projetista sobre as descobertas, a intuição e o senso comum ~\cite{unger2009}.
-
-Os testes quantitativos são como experimentos científicos que precisam ser rigorosos ou os resultados não serão confiáveis. Deve-se definir um protocolo de teste e segui-lo consistentemente para todos os participantes ~\cite{krug2010}.
-%
-Nos testes qualitativos você tenta minimizar a quantidade de interação com o participante para evitar a influência nos resultados ~\cite{krug2010}.
-
-	Para os testes de usabilidade é possível utilizar qualquer uma das abordagens, mas a qualitativa é a mais acessível para aqueles que não tiveram um treinamento em métodos científicos mais formais e oferece uma rica fonte de dados ~\cite{unger2009}.
-
-
-\item \textbf{Planejar a pesquisa}
-
-Algumas questões devem ser respondidas ao criar o teste de usabilidade: Estas questões te ajudam a oferecer foco e escopo. Abaixo algumas perguntas que devem ser respondidas no planejamento de sua pesquisa:
-
-\begin{itemize}
-\item Defina seu objetivo: Por que você está testando? %Cap2
-\item Defina Usuários: Quem você está testando? %Cap6e7
-\item Defina o método para representar sua aplicação: O que você está testando?
-\item Quais informações você está reunindo? 
-\end{itemize}
-
-Nas pesquisas qualitativas geralmente queremos compreender as questões que os usuários podem encontrar, os níveis de frustrações que eles podem experimentar e a gravidade de um problema em particular. Para os testes qualitativos devem se pensar em medidas que serão possíveis de ser respondidas com cinco usuários ~\cite{unger2009}. 
-
-	\begin{itemize}
-		\item Taxa de Sucesso: O grau em que o usuário foi capaz de completar a tarefa?
-		%Pode-se detalhar com mais informações sobre o que seria a taxa de sucesso, e o que é considerado o sucesso.
-		\item Satisfação do usuário
-	\end{itemize}
-
-\item \textbf{Usuários}
-
-Existem algumas diretrizes que podem ser adotadas para a definição da quantidade de usuários. ~\citeonline{nielsen1994} definiu algumas dessas diretrizes:
-
-\begin{itemize}
-\item No teste quantitativo planeje uma quantidade maior de participantes. Em média 20 por rodada de pesquisa.
-\item No teste qualitativo é suficiente ter entre 5 e 8 participantes.
-\end{itemize}
-
-	 ~\citeonline{krug2010} defende a ideia de que três usuários são ideais para realização de testes de usabilidade para quem está realizando o teste por conta própria. Ele afirma que é mais fácil encontrar três participantes do que uma quantidade maior e que é bem provável que eles já encontrem muitos dos problemas significativos relacionados as tarefas que você está testando.
-
-	Em equipes ágeis, o teste com o usuário é realizado com o cliente do projeto e envolve o especialista em usabilidade como mediador do teste ~\cite{santos2012}.
-
-\item \textbf{Recrutamento e logística}
-
-Depois de ter feito o plano de pesquisa e definido os tipos de usuários que podem ser inseridos na pesquisa é hora de recrutar os participantes.
-Para o recrutamento de participantes é interessante gerar uma lista com os potenciais participantes do teste. Essa lista pode vir de usuários registrados do site da empresa relacionada; informações de contatos do cliente; \textit{e-mails} para conhecidos que tenha relação com o assunto do teste; requisições em pequenas pesquisas que pré-qualificam os participantes, e etc.~\cite{unger2009}.
-
-Você pode realizar uma filtragem com os participantes potenciais antes de seleciona-los. As perguntas do questionário de filtragem devem ser voltadas para:
-
-	\begin{itemize}
-	\item Garantir que o participante seja um usuário das funções em que você está testando.
-	\item Determinar se ele se encaixa em um dos seus grupos de usuários.
-	\item Ajudar a ter uma boa mistura de participantes.
-	\end{itemize}
-
-O questionário de perfil de usuário pode ser utilizado para realizar essa filtragem de participantes.
-
-
-\item \textbf{Criação de guias de discussão}
-
-Para a execução do teste de usabilidade é preciso que as instruções estejam claras aos participantes, contendo todas as informações específicas que ele precisará para completar as tarefas com sucesso.
-
-Os seus materiais de teste deve incluir:
-
-	\begin{itemize}
-		\item Formulário de consentimento para gravação de vídeo
-		\item Guia de discussão para o participante, com tarefas detalhadas e perguntas sobre a satisfação do usuário.
-		\item Questionários
-	\end{itemize}
-
-\begin{comment}
-\item \textbf{Facilitação}
-
-\item Análise e apresentação dos resultados; 
-
-\item Criação de recomendações.
-
-%TODO detalhar melhor depois como é feito um teste de usabilidade.
-\end{comment}
-
-\end{itemize}
-
-
-\subsection{Teste da Usabilidade vs. Teste de Aceitação do Usuário (UAT)}
-
-
-O teste de usabilidade e teste de aceitação do usuário muitas vezes são confundidos. O UAT pode trazer as questões de usabilidade, mas não é o único método para ser utilizado em um projeto. Por ser feito tardiamente as mudanças baseadas em UAT são muito mais caras. Já os testes de usabilidade foram projetados para oferecer informações verdadeiras de desempenho desde o início do processo.  
-%
-O principal objetivo do teste de aceitação do usuário é servir como uma verificação final de que a aplicação atendeu aos requisitos funcionais estabelecidos pelo cliente ~\cite{preece2007}.
-
-
+%TODO isso foi inserido na introdução. Mas acho que talvez poderia criar uma seção, subseção sobre a usabilidade em software livre.
+%TODO escrever outras coisas referente sobre software livre e usabilidade
 
 
 %------------------------------------------------------------%
-\begin{comment}
-
-%TODO isso foi inserido na introdução. Mas acho que talvez poderia criar uma seção, subseção sobre a usabilidade em software livre.
-
-\section{Usabilidade em Software Livre}
-
-	Um dos grandes problemas encontrados em softwares livres é a pouca atenção dada aos aspectos referentes a usabilidade e acessibilidade das aplicações. Acredita-se que um dos principais problemas que contribui para a falta de usabilidade de software livre é sua própria comunidade que apenas enfatiza na criação, melhoria e teste do código fonte.  
-
-Segundo ~\citeonline{preece2007}, uma das causas da baixa adoção de softwares livres em mercados de larga escala é a baixa qualidade dos estilos de interação implementados nas interfaces dos produtos. Uma grande maioria não se preocupa com bons elementos de interface com usuário (UI). 
-
-Atualmente, algumas comunidades de software livre vêm se atentando as questões de usabilidade como forma de se manter no mercado. Um dos casos que conhecemos foi do Joomla que é um sistema de gerenciamento de conteúdo  que nessas últimas versões investiram em questões de usabilidade, sendo o primeiro CMS a ser totalmente responsivo. Foi criada uma frente de desenvolvimento focado na experiência do usuário que trouxe melhorias significativas a partir da versão 3.0 do CMS. Logo em seguida o Wordpress, outro sistema de gerenciamento de conteúdo investiu em melhorias da interface se atentando aos novos padrões adotados na web.
-
-	Uma grande dificuldade encontrada por parte de usuários com pouca experiência se encontra na instalação de softwares livres o que acaba por desencorajar esses usuários na utilização desses softwares.
-	
-Entender o perfil do usuário é um dos principais pontos que devem ser levados em consideração pelos desenvolvedores de software em geral. Cada perfil de usuário tem suas particularidades e suas expectativas quanto a utilização do sistema. Quando falamos de usuários com experiência de uso de softwares semelhantes é preciso ter uma maior atenção na usabilidade para que possa ter uma boa aceitação e menor impacto com as mudanças.
-
-\end{comment}
-
-%---------------------------------------------------------%
-
 \section{Processos de Usabilidade}
 
 
 	O termo modelo de ciclo de vida é utilizado para representar um modelo que capta um conjunto de atividades e a maneira como elas se relacionam ~\cite{preece2007}. Alguns autores como ~\citeonline{mayhew1999} e ~\citeonline{hix1993} proposeram modelos de processo baseados em ciclo de vidas bem definidos para as atividades de usabilidade. O modelo estrela e o de Engenharia de Usabilidade propostos pelos autores estão definidos no apêndice 1. 
 	Outro modelo muito utilizado para descrever processos de usabilidade é o proposto pela norma ISO/IEC-13407 (1999), que define o Design Centrado no Usuário.
 
-%TODO Uma parte foi inserido no apêndice (Modelo Estrela e o de Mayhew)S
+%TODO Uma parte foi inserido no apêndice (Modelo Estrela e o de Mayhew)
 
 \subsection{Design Centrado no Usuário}
 
@@ -441,9 +321,6 @@ Sabemos que a ciência experimental que utiliza-se dos métodos empíricos tradi
 No \emph{Design} Centrado no usuário (DCU) diferente dos métodos empíricos tradicionais que tem o usuário apenas como  referência, no DCU o usuário tem que ser o elemento central e é necessário envolvê-lo do início ao fim do projeto. Baseia-se nas necessidades, desejos e limitações das pessoas. Deve-se iniciar com usuários e suas necessidades em vez de começar com a tecnologia. ~\citeonline{travis2013} afirma que ``para criar produtos que os usuário amem, é necessário incluir os usuários no processo de criação dos produtos". 
 
 ~\citeonline{gould1985designing} estabeleceram alguns princípios para o desenvolvimento centrado no usuário na década 70 que são utilizados até hoje que são: Foco desde o inicio nos usuários e nas tarefas, medidas empíricas e \emph{design} interativo. O processo do \emph{design} centrado no usuário pode ser dividido em 3 fases: análise, desenvolvimento e pós-liberação. 
-
-
-\subsubsection{ISO 13407 e 9241-210}
 	
 A ISO 13407 define um processo geral para incluir atividades centradas em humano através do ciclo de vida de desenvolvimento sem especificar métodos exatos ~\cite{santos2012}.
 %
@@ -469,6 +346,24 @@ A ISO 13407 propõe que o envolvimento do usuário seja uma prática frequente e
 \end{figure}
 
 
+\section{Usabilidade em Software Livre}
+
+	Um dos grandes problemas encontrados em softwares livres é a pouca atenção dada aos aspectos referentes a usabilidade e acessibilidade das aplicações. Acredita-se que um dos principais problemas que contribui para a falta de usabilidade de software livre é sua própria comunidade que apenas enfatiza na criação, melhoria e teste do código fonte.  
+
+Segundo ~\citeonline{preece2007}, uma das causas da baixa adoção de softwares livres em mercados de larga escala é a baixa qualidade dos estilos de interação implementados nas interfaces dos produtos. Uma grande maioria não se preocupa com bons elementos de interface com usuário (UI). 
+
+Atualmente, algumas comunidades de software livre vêm se atentando as questões de usabilidade como forma de se manter no mercado. Um dos casos que conhecemos foi do Joomla que é um sistema de gerenciamento de conteúdo  que nessas últimas versões investiram em questões de usabilidade, sendo o primeiro CMS a ser totalmente responsivo. Foi criada uma frente de desenvolvimento focado na experiência do usuário que trouxe melhorias significativas a partir da versão 3.0 do CMS. Logo em seguida o Wordpress, outro sistema de gerenciamento de conteúdo investiu em melhorias da interface se atentando aos novos padrões adotados na web.
+
+	Uma grande dificuldade encontrada por parte de usuários com pouca experiência se encontra na instalação de softwares livres o que acaba por desencorajar esses usuários na utilização desses softwares. Entender o perfil do usuário é um dos principais pontos que devem ser levados em consideração pelos desenvolvedores de software em geral. Cada perfil de usuário tem suas particularidades e suas expectativas quanto a utilização do sistema. Quando falamos de usuários com experiência de uso de softwares semelhantes é preciso ter uma maior atenção na usabilidade para que possa ter uma boa aceitação e menor impacto com as mudanças.
+
+No modo geral, os projetistas sabem da importância de desenvolver com enfoque no usuário e na usabilidade, mas normalmente os projetos são desenvolvidos sem que tenham sido realizadas pesquisas e aplicados métodos e técnicas de usabilidade.
+%	
+O tempo e os recursos limitados são as principais razões que impede a implantação dos testes de usabilidade nas equipes de software livre. Também há o desconhecimento por parte da equipe de desenvolvimento das técnicas a serem empregadas.
+%
+
+%---------------------------------------------------------%
+
+
 %------------------------------------------------------------------------------%
 
 % Inicio da Seção sobre métodos ágeis e o \emph{design} centrdo no usuário
@@ -487,8 +382,6 @@ A ISO 13407 propõe que o envolvimento do usuário seja uma prática frequente e
 
 	~\citeonline{hodgetts2005experiences} afirma que os métodos ágeis são quase sempre apresentados sob a visão dos programadores, deixando de lado outras disciplinas como a UED (User Experience \emph{design}). Ele discute em seu artigo as experiências na integração de práticas do design da experiência do usuário em iniciativas de processos ágeis em organizações que utilizam XP e Scrum. %Ele registrou os esforços da equipe com abordagem centrada apenas em métodos ágeis e depois com a integração das melhores práticas de experiência do usuário.
 
-\subsection{Estudos correlatos}
-
 Alguns estudos foram feitos tentando fazer essa integração da usabilidade em métodos ágeis.
 
 ~\citeonline{constantine2002process} foi um dos primeiros a iniciar a discussão sobre o tema. Sua proposta é mostrar que o DCU está prontamente integrado aos métodos ditos ``leves". Ele afirma que XP e os demais métodos ágeis compartilham das mesmas fraquezas apresentadas por processos tradicionais como o processo unificado quando se refere à usabilidade e ao desenho de interface do usuário.
@@ -497,6 +390,7 @@ Alguns estudos foram feitos tentando fazer essa integração da usabilidade em m
 
 ~\citeonline{memmel2007} mostram que é possível unir IHC e engenharia de software sob a perspectiva ágil com a utilização de um ciclo de vida de interface de usuário multidisciplinar e de Engenharia de software chamado CRUISER.
 
+Segundo ~\citeonline{mcinerney2005ucd} métodos ágeis e \emph{design} centrado no usuário possuem uma cultura distinta mas eles mostraram que é possível unir essas duas abordagens.
 %~\citeonline{barbosa2008estrategia} propõem uma estratégia para institucionalização da usabilidade com base em conceitos de desenvolvimento e gestão ágil. Ele realizou um workshop para reflexão sobre a importância em aplicar as novas práticas.
 
 %~\citeonline{nielsen2012} relatam um estudo na qual realizaram entrevistas com 12 especialistas em usabilidade de diferentes países no intuito de analisar a influência dos métodos ágeis nos testes de usabilidade. 
@@ -511,7 +405,7 @@ Alguns estudos foram feitos tentando fazer essa integração da usabilidade em m
 
 \subsection{DCU Ágil}
 
-Pode ser definido o DCU ágil como a prática de \emph{design} centrado no usuário quando conduzida dentro de uma metodologia ou filosofia de desenvolvimento ágil de software ~\cite{santos2012}.
+Pode ser definido o DCU ágil como a prática de \emph{design} centrado no usuário quando conduzida dentro de uma metodologia ou filosofia de desenvolvimento ágil de software ~\cite{santos2012}. 
 %
 O ciclo de DCU ágil foi proposto por ~\citeonline{sy2007adapting} e integra tantos as atividades de DCU como as de desenvolvimento em um único ciclo, trabalhando nas mesmas características e garantindo que as investigações de usabilidade serão tratadas durante a interação.
 %
@@ -527,13 +421,13 @@ O termo experiência do usuário é utilizado na comunidade ágil para qualquer 
 Segundo ~\citeonline{dickinson2010} a chave para a integração de DCU com métodos ágeis é assegurar que os resultados da pesquisa de usuário são comunicados e entendidos de forma eficaz dentro de uma equipe ágil.
 
 
-\subsection {IHC e XP}
+\subsection{A integração de práticas do IHC com o XP}
 
-Foram encontrados alguns estudos que descrevem a integração do IHC com as práticas de Programação Extrema (XP). Segundo ~\citeonline{mcinerney2005ucd} métodos ágeis e \emph{design} centrado no usuário possuem uma cultura distinta mas eles mostraram que é possível unir essas duas abordagens.
+Foram encontrados alguns estudos que descrevem a integração do IHC com as práticas de Programação Extrema (XP). O processo de usabilidade ágil é integrar os instrumentos de IHC dentro dos processos clássico de XP. 
 
-O processo de usabilidade ágil é integrar os instrumentos de IHC dentro dos processos clássico de XP. %~\citeonline{wolkerstorfer2008probing} usam o dcu ágil desde 2007 e que até hoje não houve nenhum problema entre as culturas e que tanto os especialistas de usabilidade quanto os desenvolvedores estão bem integrados.Pode-se encontrar vantagens na combinação das duas abordagens. 
+%~\citeonline{wolkerstorfer2008probing} usam o dcu ágil desde 2007 e que até hoje não houve nenhum problema entre as culturas e que tanto os especialistas de usabilidade quanto os desenvolvedores estão bem integrados.Pode-se encontrar vantagens na combinação das duas abordagens. 
 %
-Em 2008 foi proposto uma metodologia revisional intitulada XPlus que insere as técnicas de \emph{design} e de usabilidade em determinadas fases do ciclo de desenvolvimento de software.O XPlus agrega algumas práticas de User Experience às práticas tradicionais de XP. A figura mostra uma visão geral do processo de desenvolvimento de software de XPlus ~\cite{guimaraesxplus}.
+Em 2008 foi proposto uma metodologia revisional intitulada XPlus que insere as técnicas de \emph{design} e de usabilidade em determinadas fases do ciclo de desenvolvimento de software. O XPlus agrega algumas práticas de User Experience às práticas tradicionais de XP. A figura mostra uma visão geral do processo de desenvolvimento de software de XPlus ~\cite{guimaraesxplus}.
 
 \begin{figure}[h]
     \centering
@@ -543,12 +437,13 @@ Em 2008 foi proposto uma metodologia revisional intitulada XPlus que insere as t
     \label{ciclo_xplus}
 \end{figure}
 
-Essa metodologia considera a interface um dos aspectos mais importantes de um software.Ela envolve as novas praticas de UX no processo natural de XP.
+Essa metodologia considera a interface um dos aspectos mais importantes de um software. Ela envolve as novas praticas de UX no processo natural de XP.
 
 O papel de \emph{designer} de interação não é reconhecido no núcleo XP da equipe e o XP não tem nenhum processo explícito para lidar com o \emph{design} de interação.Em seu estudo ~\citeonline{ferreira2007interaction} relatam como as equipes combinaram as atividades de \emph{design} de interação com o XP. 
 %
 A natureza iterativa de desenvolvimento XP necessário que os \emph{designers} de interação tem envolvimento contínuo com o desenvolvimento do produto influenciou a natureza da relação entre os \emph{designers} de interação e os desenvolvedores.
 %
+
 ~\citeonline{vasconcelos2003integrando} descreveram um processo ágil centrado em usabilidade chamado XPU no qual tinha como objetivo prover à equipe de desenvolvimento um modelo para a construção de sistemas de software centrado no usuário que valorizasse a usabilidade como característica fundamental da qualidade. 
 
 O XPU serve para guiar o time de desenvolvimento, passo a passo em todo o projeto, seguindo técnicas e artefatos simplificados afim de não se ter apenas sistemas portáteis reutilizáveis ou acoplados, mas sim com uma interface que refletiam as características e as necessidades dos usuários. Um problema encontrado é na sustentação do processo de desenvolvimento baseado em técnicas bem definidas, o que contraria o manifesto ágil.
@@ -619,7 +514,7 @@ Desenho de Interação                                                         &
 
 \newpage
 
-\section{Princípios ágeis aplicados ao \emph{Design centrado no usuário}}
+\subsection{Princípios ágeis aplicados ao \emph{Design centrado no usuário}}
 
 	Alguns princípios e boas práticas de métodos ágeis foram levantadas para a aplicação no \emph{design} de sistemas centrado no usuário.
 

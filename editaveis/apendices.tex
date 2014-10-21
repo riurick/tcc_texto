@@ -218,12 +218,113 @@ Percurso cognitivo é um método de inspeção de usabilidade que tem como objet
 %
 O teste consiste em avaliar o desempenho dos usuários na execução de tarefas cuidadosamente preparadas, tarefas estas dentro do escopo do sistema. Esse desempenho pode ser avaliado no quesito, número de erros e tempo de execução da tarefa, questionários e entrevistas também podem ser utilizados ~\cite{preece2007}. Na próxima seção será detalhado os passos comuns que devem ser seguidos para a execução dos testes de usabilidade.
 
-
 \end{description}
 
 	As técnicas descritas nesse capítulo podem ser associadas com várias outras técnicas e para a escolha de cada técnica é importante examinar as possibilidades dos recursos necessários e os disponíveis e as expectativas de resultados da avaliação da usabilidade. Cada técnica apresentam qualidades diferentes em relação à quantidade de problemas que as identificam, sistematização dos resultados, à facilidade da aplicação. 
 %
 No estudo de caso detalhado e planejado no próximo capítulo, separamos algumas técnicas que podem ser utilizadas na avaliação da usabilidade e na identificação dos usuários. 
+
+\section{Testes de Usabilidade}
+
+	Existem vários tipos de testes de usabilidade, mas sabe-se que todos eles têm algo em comum, que é observar as pessoas utilizando algo.
+
+\begin{itemize}
+
+\item \textbf{Escolher abordagem}
+
+As abordagens de pesquisa podem ser de dois tipos: quantitativa ou qualitativas. 
+%
+As pesquisas quantitativas são focadas nos dados numéricos e é voltada para fornecer alta confiança e resultados repetidos dentro de seus grupos de usuários. É preciso ter o envolvimento de um número maior de participantes para contar as variações que você encontrará de indivíduo para indivíduo ~\cite{unger2009}.
+%
+As pesquisas qualitativas não são focadas em níveis de segurança e da possibilidade de repetição, mas sim ganhar contexto e percepção considerando o comportamento do usuário. Ela depende da interpretação do projetista sobre as descobertas, a intuição e o senso comum ~\cite{unger2009}.
+
+Os testes quantitativos são como experimentos científicos que precisam ser rigorosos ou os resultados não serão confiáveis. Deve-se definir um protocolo de teste e segui-lo consistentemente para todos os participantes ~\cite{krug2010}.
+%
+Nos testes qualitativos você tenta minimizar a quantidade de interação com o participante para evitar a influência nos resultados ~\cite{krug2010}.
+
+	Para os testes de usabilidade é possível utilizar qualquer uma das abordagens, mas a qualitativa é a mais acessível para aqueles que não tiveram um treinamento em métodos científicos mais formais e oferece uma rica fonte de dados ~\cite{unger2009}.
+
+
+\item \textbf{Planejar a pesquisa}
+
+Algumas questões devem ser respondidas ao criar o teste de usabilidade: Estas questões te ajudam a oferecer foco e escopo. Abaixo algumas perguntas que devem ser respondidas no planejamento de sua pesquisa:
+
+\begin{itemize}
+\item Defina seu objetivo: Por que você está testando? %Cap2
+\item Defina Usuários: Quem você está testando? %Cap6e7
+\item Defina o método para representar sua aplicação: O que você está testando?
+\item Quais informações você está reunindo? 
+\end{itemize}
+
+Nas pesquisas qualitativas geralmente queremos compreender as questões que os usuários podem encontrar, os níveis de frustrações que eles podem experimentar e a gravidade de um problema em particular. Para os testes qualitativos devem se pensar em medidas que serão possíveis de ser respondidas com cinco usuários ~\cite{unger2009}. 
+
+	\begin{itemize}
+		\item Taxa de Sucesso: O grau em que o usuário foi capaz de completar a tarefa?
+		%Pode-se detalhar com mais informações sobre o que seria a taxa de sucesso, e o que é considerado o sucesso.
+		\item Satisfação do usuário
+	\end{itemize}
+
+\item \textbf{Usuários}
+
+Existem algumas diretrizes que podem ser adotadas para a definição da quantidade de usuários. ~\citeonline{nielsen1994} definiu algumas dessas diretrizes:
+
+\begin{itemize}
+\item No teste quantitativo planeje uma quantidade maior de participantes. Em média 20 por rodada de pesquisa.
+\item No teste qualitativo é suficiente ter entre 5 e 8 participantes.
+\end{itemize}
+
+	 ~\citeonline{krug2010} defende a ideia de que três usuários são ideais para realização de testes de usabilidade para quem está realizando o teste por conta própria. Ele afirma que é mais fácil encontrar três participantes do que uma quantidade maior e que é bem provável que eles já encontrem muitos dos problemas significativos relacionados as tarefas que você está testando.
+
+	Em equipes ágeis, o teste com o usuário é realizado com o cliente do projeto e envolve o especialista em usabilidade como mediador do teste ~\cite{santos2012}.
+
+\item \textbf{Recrutamento e logística}
+
+Depois de ter feito o plano de pesquisa e definido os tipos de usuários que podem ser inseridos na pesquisa é hora de recrutar os participantes.
+Para o recrutamento de participantes é interessante gerar uma lista com os potenciais participantes do teste. Essa lista pode vir de usuários registrados do site da empresa relacionada; informações de contatos do cliente; \textit{e-mails} para conhecidos que tenha relação com o assunto do teste; requisições em pequenas pesquisas que pré-qualificam os participantes, e etc.~\cite{unger2009}.
+
+Você pode realizar uma filtragem com os participantes potenciais antes de seleciona-los. As perguntas do questionário de filtragem devem ser voltadas para:
+
+	\begin{itemize}
+	\item Garantir que o participante seja um usuário das funções em que você está testando.
+	\item Determinar se ele se encaixa em um dos seus grupos de usuários.
+	\item Ajudar a ter uma boa mistura de participantes.
+	\end{itemize}
+
+O questionário de perfil de usuário pode ser utilizado para realizar essa filtragem de participantes.
+
+
+\item \textbf{Criação de guias de discussão}
+
+Para a execução do teste de usabilidade é preciso que as instruções estejam claras aos participantes, contendo todas as informações específicas que ele precisará para completar as tarefas com sucesso.
+
+Os seus materiais de teste deve incluir:
+
+	\begin{itemize}
+		\item Formulário de consentimento para gravação de vídeo
+		\item Guia de discussão para o participante, com tarefas detalhadas e perguntas sobre a satisfação do usuário.
+		\item Questionários
+	\end{itemize}
+
+\begin{comment}
+\item \textbf{Facilitação}
+
+\item Análise e apresentação dos resultados; 
+
+\item Criação de recomendações.
+
+%TODO detalhar melhor depois como é feito um teste de usabilidade.
+\end{comment}
+
+\end{itemize}
+
+
+\subsection{Teste da Usabilidade vs. Teste de Aceitação do Usuário (UAT)}
+
+
+O teste de usabilidade e teste de aceitação do usuário muitas vezes são confundidos. O UAT pode trazer as questões de usabilidade, mas não é o único método para ser utilizado em um projeto. Por ser feito tardiamente as mudanças baseadas em UAT são muito mais caras. Já os testes de usabilidade foram projetados para oferecer informações verdadeiras de desempenho desde o início do processo.  
+%
+O principal objetivo do teste de aceitação do usuário é servir como uma verificação final de que a aplicação atendeu aos requisitos funcionais estabelecidos pelo cliente ~\cite{preece2007}.
+
 
 
 
