@@ -39,7 +39,7 @@ diretamente por meio do uso de outras técnicas de pesquisa, como as observaçõ
     	\includegraphics[keepaspectratio=true,scale=0.32]
       		{figuras/CadastroEdicaoUser.eps}
     	\caption{Protótipos de cadastro de usuário}
-    	\label{cadastro_user}
+    	\label{cadastro user}
 	\end{figure}
 
 	\begin{figure}[h!]
@@ -47,7 +47,7 @@ diretamente por meio do uso de outras técnicas de pesquisa, como as observaçõ
     	\includegraphics[keepaspectratio=true,scale=0.25]
       		{figuras/CadastroEdicaoSoftware.eps}
     	\caption{Protótipos de cadastro de software}
-    	\label{cadastro_software}
+    	\label{cadastro software}
 	\end{figure}
 
 \newpage
@@ -375,7 +375,7 @@ Os testes de aceitação software público são responsáveis por verificar os s
 \end{itemize}
 
 
-Segue abaixo os testes desenvolvidos para e edição de software:
+Segue abaixo os testes de aceitação desenvolvidos para e edição de software:
 
 \textbf{Feature:} software registration
   As a user
@@ -383,54 +383,245 @@ Segue abaixo os testes desenvolvidos para e edição de software:
   So that I can have software communities on my network
 
   \textbf{Background:}
+
     \textbf{Given} ``MpogSoftwarePlugin'' plugin is enabled
+  
     \textbf{And} SoftwareInfo has initial default values on database
+  
     \textbf{And} I am logged in as admin
+  
     \textbf{And} I go to /admin/plugins
+  
     \textbf{And} I check ``MpogSoftwarePlugin''
+  
     \textbf{And} I press ``Save changes''
 
   \textbf{Scenario:} Show library fields when click in New Library
+  
     \textbf{Given} I go to admin user's control panel
+  
     \textbf{And} I follow ``Manage my groups''
+  
     \textbf{And} I follow ``Create a new software''
+  
     \textbf{And} I follow ``New Library''
+  
     \textbf{Then} I should see ``Name''
+  
     \textbf{Then} I should see ``Version''
+  
     \textbf{Then} I should see ``License''
 
   
   \textbf{Scenario:} Show SoftwareLangue fields when click in New Language
+  
     \textbf{Given} I go to admin user's control panel
+  
     \textbf{And} I follow ``Manage my groups''
+  
     \textbf{And} I follow ``Create a new software''
+  
     \textbf{And} I follow ``New language''
+  
     \textbf{And} I should see ``3'' of this selector ``.software-language-table''
+  
     \textbf{And} I follow ``Delete''
+  
     \textbf{Then} I should see ``2'' of this selector ``.software-language-table''
     
 
  
   \textbf{Scenario:} Show databasefields when click in New database
+  
     \textbf{Given} I go to admin user's control panel
+  
      \textbf{And} I follow ``Create a new software''
+  
      \textbf{And} I follow ``Manage my groups''
+  
      \textbf{And} I follow ``New Database''
+  
      \textbf{And} I should see ``3'' of this selector ``.database-table''
+  
      \textbf{And} I follow ``Delete''
+  
     \textbf{Then} I should see ``2'' of this selector ``.database-table''
    
 
   
   \textbf{Scenario}: Delete software libraries
+  
     \textbf{Given} I go to admin user's control panel
+  
     \textbf{And} I follow ``Manage my groups''
+  
     \textbf{And} I follow ``Create a new software''
+  
     \textbf{And} I follow ``New Library''
+  
     \textbf{And} I should see ``2'' of this selector ``.library-table''
+  
     \textbf{And} I follow ``Delete''
+  
    \textbf{Then} I should see ``1'' of this selector ``.library-table''
 
+Além dos testes de registro de software, também temos os testes de aceitação de registro de instituição:
+
+Feature: Institution Field
+  As a user
+  I want to sign up resgistring my institution
+  So others users can use it
+
+  Background:
+    \textbf{Given} ``MpogSoftwarePlugin'' plugin is enabled
+    
+    \textbf{And} I am logged in as admin
+    
+    \textbf{And} I go to /admin/plugins
+    
+    \textbf{And} I check ``MpogSoftwarePlugin''
+    
+    \textbf{And} I press ``Save changes''
+    
+    \textbf{And} I go to /account/logout
+    
+    \textbf{And} Institutions has initial default values on database
+
+  
+   \textbf{Scenario:} Show new institution fields when private institution is selected
+    
+    \textbf{Given} I go to /account/signup
+    
+    \textbf{When} I follow ``Create new institution''
+    
+    \textbf{And }I should see ``New Institution''
+    
+    \textbf{And }I should see ``Name''
+    
+    \textbf{And }I should see ``State''
+    
+    \textbf{And }I should see ``City''
+    
+    \textbf{And }I should see ``Country''
+    
+    \textbf{And }I should see ``CNPJ''
+    
+    \textbf{And }I should see ``Private Institution''
+
+    \textbf{And }I choose ``Private Institution''
+    
+    \textbf{Then} I should see ``Fantasy name''
+
+
+  
+  \textbf{Scenario:} Create new public institution when all required fields are filled.
+
+    \textbf{Given} I go to /account/signup
+
+    \textbf{When} I follow ``Create new institution''
+
+    \textbf{And }I fill in ``community name'' with ``Institution Name''
+
+    \textbf{And }I fill in ``institutions cnpj'' with ``00.000.000/0001-00''
+
+    \textbf{And }I select ``Brazil'' from ``community country''
+
+    \textbf{And }I fill in ``community state'' with ``DF''
+
+    \textbf{And }I fill in ``community city'' with ``Brasilia''
+
+    \textbf{And }I choose ``Public Institution''
+
+    \textbf{And }I select ``Executivo'' from ``institutions governmental power''
+
+    \textbf{And }I select ``Federal'' from ``institutions governmental sphere''
+
+    \textbf{And }I select ``Autarquia'' from ``institutions juridical nature''
+
+    \textbf{And }I follow ``Save''
+
+    \textbf{Then} I should see ``Institution Name''
+
+
+  
+  \textbf{Scenario:} Create new private institution when all required fields are filled
+
+    \textbf{Given} I go to /account/signup
+
+    \textbf{When} I follow ``Create new institution''
+
+    \textbf{And }I fill in ``community name'' with ``Institution Name''
+
+    \textbf{And }I fill in ``institutions cnpj'' with ``00.000.000/0001-00''
+
+    \textbf{And }I select ``Brazil'' from ``community country''
+
+    \textbf{And }I fill in ``community state'' with ``DF''
+
+    \textbf{And }I fill in ``community city'' with ``Brasilia''
+
+    \textbf{And }I choose ``Private Institution''
+
+    \textbf{And }I follow ``Save''
+
+    \textbf{Then} I should see ``Institution Name''
+
+      
+  
+  \textbf{Scenario:} Don't create an institution when name and cpnj are not filled
+
+    \textbf{Given} I go to /account/signup
+
+    \textbf{When} I follow ``Create new institution''
+
+    \textbf{And }I choose ``Private Institution''
+
+    \textbf{And }I fill in ``institutions acronym'' with ``Teste''
+
+    \textbf{And }I select ``Brazil'' from ``community country''
+
+    \textbf{And }I fill in ``community state'' with ``DF''
+
+    \textbf{And }I fill in ``community city'' with ``Brasilia''
+
+    \textbf{And }I follow ``Save''
+
+    \textbf{Then} I should see ``Institution could not be created!''
+
+    \textbf{And }I should see ``Name can't be blank''
+
+    \textbf{And }I should see ``CNPJ can't be blank''
+
+
+
+  \textbf{Scenario:} Don't Create new institution when a governamental field is not filled
+
+    \textbf{Given} I go to /account/signup
+
+    \textbf{When} I follow ``Create new institution''
+
+    \textbf{And }I fill in ``community name'' with ``Institution Name''
+
+    \textbf{And }I fill in ``institutions cnpj'' with ``00.000.000/0001-00''
+
+    \textbf{And }I select ``Brazil'' from ``community country''
+
+    \textbf{And }I fill in ``community state'' with ``DF''
+
+    \textbf{And }I fill in ``community city'' with ``Brasilia''
+
+    \textbf{And }I choose ``Public Institution"
+
+    \textbf{And }I follow ``Save''
+
+    \textbf{Then} I should see ``Governmental power can't be blank''
+
+    \textbf{And }I should see ``Governmental sphere can't be blank''
+
+    \textbf{And }I should see ``Juridical nature can't be blank''
+
+
+  
 
 \section{Análise e Interpretação dos Resultados}
 
