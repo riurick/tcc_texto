@@ -391,7 +391,7 @@ Segue abaixo os testes desenvolvidos para e edição de software:
     \textbf{And} I press ``Save changes''
 
   \textbf{Scenario:} Show library fields when click in New Library
-    \textbf{Given} I go to admin_user's control panel
+    \textbf{Given} I go to admin user's control panel
     \textbf{And} I follow ``Manage my groups''
     \textbf{And} I follow ``Create a new software''
     \textbf{And} I follow ``New Library''
@@ -401,7 +401,7 @@ Segue abaixo os testes desenvolvidos para e edição de software:
 
   
   \textbf{Scenario:} Show SoftwareLangue fields when click in New Language
-    \textbf{Given} I go to admin_user's control panel
+    \textbf{Given} I go to admin user's control panel
     \textbf{And} I follow ``Manage my groups''
     \textbf{And} I follow ``Create a new software''
     \textbf{And} I follow ``New language''
@@ -412,18 +412,18 @@ Segue abaixo os testes desenvolvidos para e edição de software:
 
  
   \textbf{Scenario:} Show databasefields when click in New database
-    \textbf{Given} I go to admin_user's control panel
-     \tetxbf{And} I follow ``Create a new software''
-     \tetxbf{And} I follow ``Manage my groups''
-     \tetxbf{And} I follow ``New Database''
-     \tetxbf{And} I should see ``3'' of this selector ``.database-table''
-     \tetxbf{And} I follow ``Delete''
+    \textbf{Given} I go to admin user's control panel
+     \textbf{And} I follow ``Create a new software''
+     \textbf{And} I follow ``Manage my groups''
+     \textbf{And} I follow ``New Database''
+     \textbf{And} I should see ``3'' of this selector ``.database-table''
+     \textbf{And} I follow ``Delete''
     \textbf{Then} I should see ``2'' of this selector ``.database-table''
-    #3 because one is always hidden
+   
 
   
   \textbf{Scenario}: Delete software libraries
-    \textbf{Given} I go to admin_user's control panel
+    \textbf{Given} I go to admin user's control panel
     \textbf{And} I follow ``Manage my groups''
     \textbf{And} I follow ``Create a new software''
     \textbf{And} I follow ``New Library''
