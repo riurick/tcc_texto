@@ -19,8 +19,8 @@ O processo de desenvolvimento é feito a partir de sprints de duas semanas, em q
  
 \section{Execução}
 
-%\subsection{Práticas adotadas pela equipe}
-\subsection{Problemas encontrados}
+\subsection{Práticas adotadas}
+
 
 No acompanhamento do projeto podemos identificar inicialmente os seguintes problemas relacionados à usabilidade no desenvolvimento de software:
 
@@ -361,6 +361,77 @@ Outros cenários de edição de software são: ``Informações de Comunidade'' e
 	\textbf{[Então]} eu recebo uma confirmação de cadastro salvo com sucesso
 
 \end{itemize}
+
+
+\textbf{Testes de Aceitação}
+
+Os testes de aceitação software público são responsáveis por verificar os seguintes fatores:
+
+\begin{itemize}
+	\item Capacidade de registrar e editar informações de usuário e instituição;
+	\item Capacidade de registrar e editar informações de software;
+	\item Capacidade de desativar usuário;
+	\item Capacidade de desativar software;
+\end{itemize}
+
+
+Segue abaixo os testes desenvolvidos para e edição de software:
+
+\textbf{Feature:} software registration
+  As a user
+  I want to create a new software
+  So that I can have software communities on my network
+
+  \textbf{Background:}
+    \textbf{Given} ``MpogSoftwarePlugin'' plugin is enabled
+    \textbf{And} SoftwareInfo has initial default values on database
+    \textbf{And} I am logged in as admin
+    \textbf{And} I go to /admin/plugins
+    \textbf{And} I check ``MpogSoftwarePlugin''
+    \textbf{And} I press ``Save changes''
+
+  \textbf{Scenario:} Show library fields when click in New Library
+    \textbf{Given} I go to admin_user's control panel
+    \textbf{And} I follow ``Manage my groups''
+    \textbf{And} I follow ``Create a new software''
+    \textbf{And} I follow ``New Library''
+    \textbf{Then} I should see ``Name''
+    \textbf{Then} I should see ``Version''
+    \textbf{Then} I should see ``License''
+
+  
+  \textbf{Scenario:} Show SoftwareLangue fields when click in New Language
+    \textbf{Given} I go to admin_user's control panel
+    \textbf{And} I follow ``Manage my groups''
+    \textbf{And} I follow ``Create a new software''
+    \textbf{And} I follow ``New language''
+    \textbf{And} I should see ``3'' of this selector ``.software-language-table''
+    \textbf{And} I follow ``Delete''
+    \textbf{Then} I should see ``2'' of this selector ``.software-language-table''
+    
+
+ 
+  \textbf{Scenario:} Show databasefields when click in New database
+    \textbf{Given} I go to admin_user's control panel
+     \tetxbf{And} I follow ``Create a new software''
+     \tetxbf{And} I follow ``Manage my groups''
+     \tetxbf{And} I follow ``New Database''
+     \tetxbf{And} I should see ``3'' of this selector ``.database-table''
+     \tetxbf{And} I follow ``Delete''
+    \textbf{Then} I should see ``2'' of this selector ``.database-table''
+    #3 because one is always hidden
+
+  
+  \textbf{Scenario}: Delete software libraries
+    \textbf{Given} I go to admin_user's control panel
+    \textbf{And} I follow ``Manage my groups''
+    \textbf{And} I follow ``Create a new software''
+    \textbf{And} I follow ``New Library''
+    \textbf{And} I should see ``2'' of this selector ``.library-table''
+    \textbf{And} I follow ``Delete''
+   \textbf{Then} I should see ``1'' of this selector ``.library-table''
+
+
 \section{Análise e Interpretação dos Resultados}
 
 Esta seção apresenta a discussão e a interpretação dos resultados observados durante a execução do estudo de caso descrito.
