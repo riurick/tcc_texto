@@ -761,7 +761,26 @@ A partir do levantamento desses problemas foram propostas tarefas durante o plan
 \end{tabular}
 \end{table}
 
+No segundo ciclo de avaliações levantamos os seguintes problemas em relação as histórias de ``Cadastro de Usuário'' e ``Cadastro de Software'':
 
+\begin{table}[d]
+\begin{tabular}{|l|p{3cm}|p{6cm}|p{3cm}|l|}
+\hline
+\textbf{ID} & \textbf{Local} & \textbf{Descrição do Problema}                                                                                     & \textbf{Heurística Desobedecida} & \textbf{Criticidade} \\ \hline
+1           & Cadastro de Usuário                 & Rótulos dos campos de registro não contém um elemento de convite à entrada de dados ( “ : ”) & Dialogos simples e naturais     & Baixa                \\ \hline
+2           & Cadastro de Usuário                 & Usuário não encontra informações suficientes sobre grupos que pode participar  & Dialogos simples e naturais             & Média                \\ \hline
+3           & Cadastro de Usuário               & Ao se excluir um e-mail secundário, não existe solicitação de confirmação       & Feedback                & Alta                \\ \hline
+4           & Cadastro de Software      & Dificuldade para acessar o botão de criar software
+	        & Minimizar sobrecarga          & Baixa                \\ \hline
+5           & Cadastro de Software       & Funcionalidade de criar software também cria comunidade, porém o usuário não é informado disto  & Feedback    & Média                \\ \hline
+6           & Cadastro de Software    & Dificuldade para acessar o botão de editar software
+		    & Minimizar sobrecarga           & Baixa                \\ \hline
+7           & Cadastro de Software    & Fluxo de edição não está claro (etapas)
+			& Feedback                       & Média                \\ \hline
+8           & Cadastro de Software    & frase ``The highlighted fields are mandatory'' não especifica o char (*)
+		    &Dialogos simples e naturais     & Baixa                \\ \hline
+\end{tabular}
+\end{table}
 
  
 
@@ -771,7 +790,7 @@ A partir do levantamento desses problemas foram propostas tarefas durante o plan
 \subsection{Análise dos Resultados de Medição}
 
 
-Analisando os dados das primeiras releases, que comporam as primeiras rodadas de avalições pelas heurísticas temos em ``Cadastro de Usuário'':
+Analisando os dados das primeiras releases, que compoem a primeira rodada de avalições pelas heurísticas temos em ``Cadastro de Usuário'':
 \begin{itemize}
 	\item 2 problemas de criticidade baixa;
 	\item 4 problemas de criticidade média;
@@ -791,6 +810,22 @@ Quanto à história de ``Cadastro de  Software'', temos:
 	\item 3 problemas de criticidade média;
 	\item 0 problemas de criticidade alta;
 \end{itemize}
+
+No segundo ciclo de avaliações usamos os \textit{checklists} desenvolvidos para auxiliar as avaliações das heurísticas. Uma das histórias avaliadas foi a de ``Cadastro de Usuário'':
+
+\begin{itemize}
+	\item 1 problema de criticidade baixa;
+	\item 1 problema de criticidade média;
+	\item 1 problema de criticidade alta;
+\end{itemize} 
+
+Outra história avaliada nesta segunda rodada foi a de ``Cadastro de Software'':
+
+\begin{itemize}
+	\item 3 problemas de criticidade baixa;
+	\item 2 problemas de criticidade média;
+	\item 0 problemas de criticidade alta;
+\end{itemize} 
 
 \subsection{Verificação}
 
