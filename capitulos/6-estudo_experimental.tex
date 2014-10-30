@@ -1,6 +1,6 @@
 \chapter{Estudo de Caso}
 
-Neste capítulo será apresentado o estudo de caso sobre a utilização de práticas de usabilidade e testes automatizados no desenvolvimento do Portal do Software Público, baseado na plataforma Noosfero, onde será definido um guia de como essas práticas podem ser inseridas nesse contexto específico.
+Neste capítulo será apresentado o estudo de caso sobre a utilização de práticas de usabilidade e testes automatizados no desenvolvimento do Portal do Software Público, onde será definido um guia de como essas práticas podem ser inseridas nesse contexto.
 
 \section{Objeto de Estudo: Portal do Software Público Brasileiro - SPB}
 
@@ -9,8 +9,8 @@ O SPB será o objeto de estudo de caso, assim como o processo de colaboração c
 
 \subsection{Visão Geral do Projeto}
 
-O processo de colaboração com o SPB baseia-se no desenvolvimento empírico e nas metodologias ágeis scrum e XP. O desenvolvimento de testes automatizados é intrínseco ao processo de desenvolvimento. A partir destes pontos mencionados, buscamos evoluir a forma com que o processo de colaboraçao com o SPB lida com problemas de usabilidade.
-O processo de desenvolvimento é feito a partir de sprints de duas semanas, em que são realizadas reuniões com as equipes e reuniões de planejamento (Planning Poker) em cada equipe para definir as atividades de cada sprint.
+O processo de colaboração com o SPB baseia-se no desenvolvimento empírico. O desenvolvimento de testes automatizados é intrínseco ao processo de desenvolvimento. A partir destes pontos mencionados, buscamos evoluir a forma com que o processo de colaboraçao com o SPB lida com problemas de usabilidade.
+O desenvolvimento é feito a partir de sprints de duas semanas, em que são realizadas reuniões com as equipes e reuniões de planejamento (Planning Poker) em cada equipe para definir as atividades de cada sprint.
 
 %Explicar a dinâmica de trabalho, a equipe, reuniões
 %verificar aonde vai entrar essa seção. Talvex dentro do contexto?
@@ -21,7 +21,7 @@ O processo de desenvolvimento é feito a partir de sprints de duas semanas, em q
 
 
 
-%No acompanhamento do projeto podemos identificar inicialmente os seguintes problemas relacionados à usabilidade no desenvolvimento de software:
+Durante a execução do estudo de caso, foram adotadas algumas práticas que envolvem aplicação de testes e avaliação da usabilidade.
 
 \subsection{Práticas adotadas}
 
@@ -30,10 +30,9 @@ No acompanhamento do projeto podemos identificar várias práticas adotadas pela
 
 \textbf{Questionário Online}
 
-Inicialmente à equipe de design realizou um planejamento para definir o instrumento de pesquisa dos usuários. Foi definido que o principal objetivo do estudo seria medir a percepção dos usuários quanto a qualidade de uso do portal atual sob uma perspectiva global. Nesse sentido foi proposto uma abordagem de pesquisa de levantamento aplicada e quantitativa. A qualidade de uso foi compreendida a partir dos parâmetros propostos pela ISO 9241-10 a 17, como a qualidade da interface de proporcionar eficácia, eficiência e satisfação no uso do portal (APPOLINÁRIO, 2004). 
+Inicialmente à equipe de design realizou um planejamento para definir o instrumento de pesquisa dos usuários. Foi definido que o principal objetivo do estudo seria medir a percepção dos usuários quanto a qualidade de uso do portal atual sob uma perspectiva global. Nesse sentido foi proposto uma abordagem de pesquisa de levantamento aplicada e quantitativa. %A qualidade de uso foi compreendida a partir dos parâmetros propostos pela ISO 9241-10 a 17, como a qualidade da interface de proporcionar eficácia, eficiência e satisfação no uso do portal (APPOLINÁRIO, 2004). 
 
-Na definição do delineamento da pesquisa foi selecionada a técnica de aplicação de questionário on-line para se produzir os dados de opinião dos participantes. Entende-se que a dimensão atitudinal dos usuários do portal com relação a sua experiência de uso só podem ser obtidos por meio do registro de suas verbalizações (MARTINS E THEOPHILO, 2009). No mesmo sentido, a avaliação proposta não permite uma compreensão direta e completa a cerca da usabilidade do portal em si, compreendendo-se que a efetividade do portal só pode ser analisada 
-diretamente por meio do uso de outras técnicas de pesquisa, como as observações globais ou sistemáticas da interação entre os participantes e a sua interface % (MARTINS e THEÓPHILO, 2009; ABRAHÃO et al., 2009).
+Selecionamos a técnica de aplicação de questionário on-line para se produzir os dados de opinião dos participantes. A avaliação proposta não permite uma compreensão completa a cerca da usabilidade do portal em si, compreendendo-se que o portal só pode ser analisado diretamente por meio do uso de outras técnicas, como as observações globais ou sistemáticas entre os participantes e interface % (MARTINS e THEÓPHILO, 2009; ABRAHÃO et al., 2009).
 
 
 \textbf{Checklists}
@@ -208,6 +207,7 @@ diretamente por meio do uso de outras técnicas de pesquisa, como as observaçõ
 
 
 Outra funcionalidade desenvolvida foi a história chamada ``Manter Instituição'', que possui os seguintes cenários:
+
 \begin{itemize}
 \item\textbf{Cenário 01:} Cadastro de nova instituição com sucesso
 
@@ -402,9 +402,9 @@ Outros cenários de edição de software são: ``Informações de Comunidade'' e
 	
 \end{itemize}
 
-\textbf{Review}
+%\textbf{Review}
 
-Durante reunião de review identificamos que a equipe de desenvolvimento, junto com a equipe de design discutiam sobre a interface do sistema. %Todo Escrever melhor.
+%Durante reunião de review identificamos que a equipe de desenvolvimento, junto com a equipe de design discutiam sobre a interface do sistema. %Todo Escrever melhor.
 
 \textbf{Testes de Aceitação}
 
@@ -668,7 +668,7 @@ Feature: Institution Field
 	
 	\textbf{Objetivos}
 	
-		O objetivo do teste com os usuários neste primeiro momento é ter um feedback das funcionalidades já desenvolvidas até o momento a fim de capturar alguns problemas de usabilidade. Não iremos tratar neste teste com o usuário a satisfação ao usar a ferramenta e sim verificar os possiveis problemas encotrados no uso por um usuário em específico.
+		O objetivo do teste com os usuários é ter um feedback das funcionalidades a fim de capturar problemas de usabilidade. 
 	
 	\textbf{Tarefas}
 
@@ -686,9 +686,9 @@ Feature: Institution Field
 		
 	\end{itemize}
 	
-	Depois de especificado as tarefas que podem ser executados, foram escritos cenários que funciona como um script que o usuário possa seguir:
+	Depois de especificado as tarefas que podem ser executados, foram escritos script que o usuário possa seguir:
 	
-	\textbf{Cenários}
+	\textbf{Scripts}%alterei o nome pra nao confundir o leitor;
 
 	\begin{itemize}
 	
@@ -698,22 +698,22 @@ Feature: Institution Field
 			
 	\textbf{Teste Piloto:}
 	
-	Com teste piloto, escolhemos um membro da equipe que não tinha participado do desenvolvimento da funcionalidade para que podemos testar os cenários e tarefas. A pessoa a ser testada também faz parte do grupo de usuários do sistema.
+	Com teste piloto, escolhemos um membro da equipe que não tinha participado do desenvolvimento da funcionalidade para testar os scripts e tarefas. %A pessoa a ser testada também faz parte do grupo de usuários do sistema.
 	
 	\textbf{Observação}
 	
-		A observação de uso permite que o avaliador tenha uma visão dos problemas sendo vivenciados pelos usuários e também dos aspectos positivos experimentados durante o uso. É importante observar tudo o que o usuário está fazendo e realizar as anotações. Também pode ser gravado o aúdio ou a tela do usuário. Neste caso optamos por não gravar a tela do usuário.
+		A observação permite que o avaliador tenha uma visão dos problemas sendo vivenciados pelos usuários. É importante observar o que o usuário está fazendo e realizar as anotações. %Também pode ser gravado o aúdio ou a tela do usuário. Neste caso optamos por não gravar a tela do usuário.
 	
 
 \section{Análise e Interpretação dos Resultados}
 
 Esta seção apresenta a discussão e a interpretação dos resultados observados durante a execução do estudo de caso descrito.
 
-Analisando os protótipos e os cenários de uso desenvolvidos, de acordo com as heurísitcas de Nielsen, encontramos alguns problemas de usabilidade e propomos melhorias a serem feitas e possivelmente verificadas durante os testes de aceitação.
+Analisando os protótipos e os cenários desenvolvidos, de acordo com as heurísitcas de Nielsen, encontramos alguns problemas de usabilidade e propomos tarefas de melhorias a serem feitas e possivelmente verificadas durante os testes de aceitação.
 
 \subsection{Análise dos Dados}
 
-A partir dos protótipos e dos cenários de uso desenvolvidos durante as releases 0 e 1, realizamos análises dos cenários em busca de problemas de usabilidade, com base nas heurísticas de Nielsem. A tabela abaixo descreve os problemas encontrados nas primeiras análises.
+A partir dos protótipos e dos cenários desenvolvidos durante as releases 0 e 1, analisamos alguns problemas de usabilidade com base nas heurísticas de Nielsem. A tabela abaixo descreve os problemas encontrados nas primeiras análises.
 
 A partir do levantamento desses problemas foram propostas tarefas durante o planejamento de atividades da equipe de desenvolvimento, para que assim cada problema pudesse ser discutido e resolvido.
 
@@ -817,6 +817,22 @@ Outra história avaliada nesta segunda rodada foi a de ``Cadastro de Software'':
 	\item 3 problemas de criticidade baixa;
 	\item 2 problemas de criticidade média;
 	\item 0 problemas de criticidade alta;
+\end{itemize} 
+
+Quanto aos testes de aceitação dos cenários avaliados tivemos os seguintes resultados de medição:
+
+História: ``Cadastro de Usuário'':
+\begin{itemize}
+	\item Quantidade de cenários executados: 22 cenários;
+	\item Quantidade de passos executadas: 162 passos
+	\item Quantiadde de falhas obtidas: 0 falhas;
+\end{itemize} 
+
+História: ``Cadastro de Software'':
+\begin{itemize}
+	\item Quantidade de cenários executados: 6 cenários;
+	\item Quantidade de passos executadas: 68 passos
+	\item Quantiadde de falhas obtidas: 0 falhas;
 \end{itemize} 
 
 \subsection{Verificação}
