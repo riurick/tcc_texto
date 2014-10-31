@@ -1,6 +1,6 @@
 \chapter{Usabilidade}
 
-Neste capítulo abordaremos os conceitos e as áreas que estão por trás do termo usabilidade e as relações entre cada uma delas, entender a importância e os benefícios que a usabilidade trás para os sistemas de software, apresentar os modelos de ciclo de vida utilizados na interação humano computador e mostrar como podemos inserir a usabilidade no ciclo de desenvolvimento de software empírico.
+Neste capítulo abordaremos os conceitos por trás do termo usabilidade e suas  relações, entender a importância e da usabilidade em um software, apresentar os modelos de ciclo de vida utilizados na usabilidade e mostrar como podemos inserir a usabilidade no ciclo de desenvolvimento de software empírico.
 
 \section{Conceitos de Usabilidade}
 
@@ -9,11 +9,12 @@ A usabilidade é um termo que começou a ser utilizado pela Ciência Cognitiva e
 % 
 A usabilidade é um conjunto de propriedades de uma interface que reúne os seguintes componentes: fácil aprendizado, eficiência, capacidade de memorização, baixo índice de erros, satisfação e prazer ao uso~\cite{nielsen1994}.
 %
-A usabilidade também é um atributo de qualidade relacionado à facilidade de uso de algo. Refere-se a rapidez com que os usuários podem aprender a usar alguma coisa, a eficiência deles ao usá-la, o quanto lembram daquilo, seu grau de propensão a erros e o quanto gostam de utilizá-la ~\cite{nielsen2007}. 
+Ainda de acordo com \citeonline{nielsen2007} usabilidade é um atributo de qualidade relacionado à facilidade de uso de algo. Refere-se a rapidez com que os usuários podem aprender a usar alguma coisa, a eficiência deles ao usá-la, o quanto lembram daquilo, seu grau de propensão a erros e o quanto gostam de utilizá-la. 
 %
+\begin{comment}
 Ainda, usabilidade é definida como o fator que assegura que um produto ou serviço é fácil de usar, eficiente e agradável a partir do ponto de vista do usuário~\cite{preece2007}.
 %TODO: Um parágrafo apresenta uma ideia completa: com início, meio e fim.
-% eu juntei os trechos acima em um único parágrafo.
+% eu juntei os trechos acima em %um único parágrafo.
 
 
 A qualidade em uso engloba o contexto do ambiente de trabalho para caracterizar a satisfação de uso, focando não apenas no usuário, mas em seu comportamento ao interagir com um sistema computacional.
@@ -23,6 +24,9 @@ O conceito de qualidade em uso mais difundido é o de usabilidade que engloba a 
 Esse conceito de qualidade em uso é defendido pela norma ~\citeonline{ISO:9126}, que define usabilidade como  capacidade do produto de software ser compreendido, aprendido, operado e atraente ao usuário, quando usado sob condições específicas.
 %
 Já a norma ~\citeonline{iso:9241} define usabilidade como a capacidade de um produto ser usado por usuários específicos para alcançar objetivos específicos com eficácia, eficiência e satisfação em um contexto de uso específico. Essa norma define alguns termos que são amplamente utilizados quando trata-se de usabilidade.
+\end{comment}
+
+ A norma ~\citeonline{iso:9241} define alguns termos que são amplamente utilizados quando trata-se de usabilidade:
 
 \begin{itemize}
 \item \textbf{Eficácia} é a capacidade que os sistemas conferem a diferentes tipos de usuários para alcançar seus objetivos em número e com a qualidade necessária. 
@@ -38,7 +42,7 @@ Já a norma ~\citeonline{iso:9241} define usabilidade como a capacidade de um pr
 \item \textbf{Contexto:} Conjunto de elementos, onde se destacam: o ambiente físico, a tecnologia utilizada e a a motivação.
 \end{itemize}
 
-Adicionalmente, existem metas de usabilidade que servem para guiar o desenvolvimento de produtos fáceis de usar, eficientes e agradáveis~\cite{preece2007}. São elas:
+Adicionalmente, existem metas de usabilidade que servem para guiar o desenvolvimento de um software~\cite{preece2007}. São elas:
 
 \begin{enumerate}
 	\item \textbf{Utilidade:} é a medida na qual o sistema propicia o tipo certo de funcionalidade, de maneira que os usuários possam realizar aquilo de que precisam ou desejam.
@@ -48,56 +52,54 @@ Adicionalmente, existem metas de usabilidade que servem para guiar o desenvolvim
 	\item \textbf{Facilidade de aprendizado:} refere-se a qual fácil é aprender a usar o sistema.
 	\item \textbf{Facilidade de lembrar como se usa:} refere-se à facilidade de lembrar como utiliza um sistema, depois de já ter aprendido como usar.
 \end{enumerate}
-% escrever mais detalhes ou inserir em outro lugar.
-%Done: precisa explicar brevemente cada item
-%Done: Não precisa ser uma seção e nem de subseções aqui
 
-Para entender o que é usabilidade e como ela está inserida no ciclo de vida do desenvolvimento de software, precisamos compreender as relações que o termo tem com as diversas áreas que a envolve: 
+Para entender como usabilidade está inserida no ciclo de vida do desenvolvimento de software, precisamos compreender as relações que o termo tem com as diversas áreas que a envolve: 
 
 \begin{description}
 
 \item[Interação Humano Computador:]
 %
-O Termo \emph{Human Computer Interaction} (HCI) começou a ser adotado na década de 1980 para descrever uma nova área de estudo na qual se preocupavam em saber como o uso dos computadores poderia enriquecer a vida pessoal e profissional dos seus usuários~\cite{moraes2002}.
+%O Termo \emph{Human Computer Interaction} (HCI) começou a ser adotado na década de 1980 para descrever uma nova área de estudo na qual se preocupavam em saber como o uso dos computadores poderia enriquecer a vida pessoal e profissional dos seus usuários~\cite{moraes2002}.
 %
-A interação humano computador tem o principal objetivo de melhorar a eficácia e proporcionar satisfação do usuário. O objetivo do HCI são desenvolver e aprimorar sistemas computacionais nos quais os usuários possam executar tarefas com segurança, eficiência e satisfação ~\cite{preece2007}.
+A interação humano computador \emph{Human Computer Interaction} (HCI) tem o principal objetivo de melhorar a eficácia e proporcionar satisfação do usuário, desnvolvendo sistemas computacionais nos quais os usuários possam executar tarefas com segurança, eficiência e satisfação ~\cite{preece2007}.
 	
 \item[Arquitetura da Informação:]
 %
-A informação é algo que está presente no nosso dia-a-dia. Para ~\citeonline{wurman1991} a informação deve ser aquilo que leva à compreensão. A quantidade de conteúdo que é produzido na Internet extrapola a capacidade humana de retenção da informação. Esse excesso de informação contribui para o aumento dos problemas de usabilidade e da necessidade de pesquisa na área de interação humano-computador~\cite{agner2004}.
+%A informação é algo que está presente no nosso dia-a-dia. Para ~\citeonline{wurman1991} a informação deve ser aquilo que leva à compreensão. A quantidade de conteúdo que é produzido na Internet extrapola a capacidade humana de retenção da informação. Esse excesso de informação contribui para o aumento dos problemas de usabilidade e da necessidade de pesquisa na área de interação humano-computador~\cite{agner2004}.
 %
-A arquitetura da informação é a arte e a ciência de estruturar, bem como, de organizar os ambientes informacionais para ajudar as pessoas a encontrarem e administrarem informações~\cite{garret2003}.
+A arquitetura da informação é a ciência de estruturar, bem como, de organizar os ambientes informacionais para ajudar as pessoas a encontrarem e administrarem informações~\cite{garret2003}.
 %
-O arquiteto de informação deve ser um profissional multidisciplinar com conhecimentos em \emph{design} gráfico, ciência da informação, biblioteconomia, jornalismo, engenharia de usabilidade, \emph{marketing} e ciência da computação. Ele deve balancear as necessidades do usuário com os objetivos do negócio~\cite{rosenfeld1998}.
+O arquiteto de informação deve balancear as necessidades do usuário com os objetivos do negócio~\cite{rosenfeld1998}.
 
 \item[Ergonomia:]
 %
-A ergonomia está na origem da usabilidade, pois visa proporcionar eficácia e eficiência, além de bem-estar e saúde do usuário através da adaptação do trabalho ao homem.
+A ergonomia pois visa proporcionar eficácia e eficiência para o usuário através da adaptação do trabalho ao homem.
 %
 O seu objetivo é garantir que sistemas e dispositivos estejam adaptados às maneiras de pensar, agir e trabalhar do usuário~\cite{cybis2010} .
 
 \item[\emph{Design} Centrado no usuário:]
 %
-\emph{Design} centrado no usuário é um campo de estudo que reúne metodologias de \emph{design} nas quais o público alvo de um produto ou serviço influencia as diretrizes e requisitos do sistema~\cite{norman2006design}.
+%\emph{Design} centrado no usuário é um campo de estudo que reúne metodologias de \emph{design} nas quais o público alvo de um produto ou serviço influencia as diretrizes e requisitos do sistema~\cite{norman2006design}.
 %
-Para~\citeonline{norman2006design}, cunhador do termo, o \emph{design} centrado no usuário é uma filosofia baseada nas necessidades e interesses dos usuário, com ênfase em fazer produtos usáveis e inteligíveis. 
+Para~\citeonline{norman2006design} \emph{design} centrado no usuário é uma filosofia baseada nas necessidades e interesses dos usuário, com ênfase em fazer produtos usáveis e inteligíveis. 
 %
 As pessoas que utilizarão um produto ou serviço sabem de suas necessidades, metas e preferências, e é papel do \emph{design} descobrir isso para projetar para eles -- essa é a filosofia por trás do \emph{design} centrado no usuário~\cite{saffer2010designing}.
 
 \item[Design de Interação:]
 
-Uma grande parte dos produtos que necessitam da interação do usuário são feitos olhando apenas na perspectiva da engenharia e se esquecem de seus reais usuários. O \emph{design} de interação surge para redirecionar a preocupação que se tinha apenas em produzir algo que funcionasse para produzir algo que será fácil de utilizar, agradável e eficaz na perspectiva do usuário, trazendo a usabilidade para dentro do processo de \emph{design}~\cite{preece2007}.
+O \emph{design} de interação redireciona a preocupação que se tinha apenas em produzir algo que funcionasse para produzir algo que será fácil de utilizar, agradável e eficaz na perspectiva do usuário, trazendo a usabilidade para dentro do processo de \emph{design}~\cite{preece2007}.
 %
-O termo surgiu com Bill Verplank, que resume \emph{design} de interação a partir da resposta de três perguntas sobre: como você age? como você sente? como você compreende?\cite{moggridge2006}. 
+Bill Verplank resume \emph{design} de interação a partir da resposta de três perguntas sobre: como você age? como você sente? como você compreende?\cite{moggridge2006}. 
 %
-Uma outra definição de \emph{design} de interação é o \emph{design} de produtos interativos que fornecem suporte às atividades cotidianas das pessoas, seja no lar ou no trabalho, ou seja, criar experiências que melhorem, estendem a maneira como as pessoas trabalham, se comunicam e interagem~\cite{preece2007}.
+%Uma outra definição de \emph{design} de interação é o \emph{design} de produtos interativos que fornecem suporte às atividades cotidianas das pessoas, seja no lar ou no trabalho, ou seja, criar experiências que melhorem, estendem a maneira como as pessoas trabalham, se comunicam e interagem~\cite{preece2007}.
 
-
+%OBS: acho q nao é necessário tantas definições para todos os termos, já que estamos só relacionando-os com usabilidade, uma definição já eh mais que o suficiente.
 \item[Engenharia de Usabilidade:]
 
-Surgiu no final dos anos 80 com o esforço sistemático das empresas e organizações para desenvolver programas de software interativo com usabilidade. Sua origem parte de iniciativas de cientistas como Card, Moran e Newell (Modelo do processador Humano de 1983) e Norman (Teoria da Ação de 1989). O objetivo era produzir conhecimentos que favorecesse a concepção de interfaces humano-computador mais adaptadas.
-%
-Podemos fazer um paralelo da engenharia de usabilidade com a engenharia de software. A engenharia de software ocupa do desenvolvimento do núcleo funcional de um sistema interativo formado por estruturas de dados, algoritmos e recursos de processamento de dados. Esse núcleo é construído de forma que o sistema funcione bem, de forma correta, rápida e sem erros. Já a engenharia de usabilidade ocupa-se da interface com o usuário que interliga as funções do sistema com os usuários de forma que a interface do sistema seja agradável, intuitivo, eficiente e fácil de operar ~\cite{cybis2010}.
+%Surgiu no final dos anos 80 com o esforço sistemático das empresas e organizações para desenvolver programas de software interativo com usabilidade. Sua origem parte de iniciativas de cientistas como Card, Moran e Newell (Modelo do processador Humano de 1983) e Norman (Teoria da Ação de 1989). O objetivo era produzir conhecimentos que favorecesse a concepção de interfaces humano-computador mais adaptadas.
+
+%OBS: Também acho desnecessario colocar a origem historia de cada termo.
+A engenharia de software ocupa do desenvolvimento do núcleo funcional de um sistema interativo formado por estruturas de dados, algoritmos e recursos de processamento de dados. Esse núcleo é construído de forma que o sistema funcione bem, de forma correta, rápida e sem erros. Já a engenharia de usabilidade ocupa-se da interface com o usuário que interliga as funções do sistema com os usuários de forma que a interface do sistema seja agradável, intuitivo, eficiente e fácil de operar ~\cite{cybis2010}.
 %
 %TODO: não precisa criar uma seção para algo que será descrito em um parágrafo.
 %
@@ -106,17 +108,17 @@ Podemos fazer um paralelo da engenharia de usabilidade com a engenharia de softw
 
 Toda a interação com um produto, serviço ou marca. O termo é usado frequentemente para sintetizar toda a experiência com um produto de software. Não engloba  somente as funcionalidades e sim o quanto o aplicativo é agradável ao usuário~\cite{travis2013}.
 %	
-O termo User Experience (UX) foi cunhado por Donald Norman na década de 80 para cobrir todos os aspectos da experiência da pessoa com o sistema. Acreditava que as definições de interface do usuário e usabilidade limitava o entendimento sobre o que o trabalho dele representava. 
+%O termo User Experience (UX) foi cunhado por Donald Norman na década de 80 para cobrir todos os aspectos da experiência da pessoa com o sistema. Acreditava que as definições de interface do usuário e usabilidade limitava o entendimento sobre o que o trabalho dele representava. 
 %
 
 \end{description}
 %TODO: vamos deixar o parágrafo abaixo com um fechado desta seção
 
-A usabilidade está relacionada com os fatores humanos e corresponde como o estudo de como usuários se relacionam com qualquer produto. A interação humano computador está baseada na usabilidade e foca no modo como as pessoas se relacionam com os produtos ligados à computação.
+A usabilidade está relacionada com os fatores humanos e corresponde como o estudo de como usuários se relacionam com qualquer produto. A interação humano computador está baseada na usabilidade e foca no modo como as pessoas se relacionam com softwares.
 %
-As áreas que trabalham com usabilidade são disciplinas transversais que agregam diversas áreas do conhecimento tais como psicologia, sociologia, ciência da informação e da computação, fatores humanos, \emph{design} gráfico e industrial, ergonomia, comunicação e etc.
+%As áreas que trabalham com usabilidade são disciplinas transversais que agregam diversas áreas do conhecimento tais como psicologia, sociologia, ciência da informação e da computação, fatores humanos, \emph{design} gráfico e industrial, ergonomia, comunicação e etc.
 %
-%TODO: quais áreas da usabilidade vamos envolver neste trabalho?
+%TODO: quais áreas da usabilidade vamos envolver neste trabalho? Não precisamos entrar nesse nivel de detalhe
 
 %------------------------------------------------------------------------------%. 
 
@@ -126,9 +128,9 @@ As áreas que trabalham com usabilidade são disciplinas transversais que agrega
 
 Existem diversas técnicas e métodos que são utilizados pela interação humano computador para desenvolver um sistema com usabilidade.
 %
-De acordo com \\ ~\citeonline{bervian2002metodologia} as técnicas são procedimentos específicos utilizados por uma ciência determinada. O conjunto com várias técnicas constituem os métodos. Algumas técnicas são utilizadas em várias ciências e os métodos se adapta às diversas ciências a medida que há imposição de uso de técnicas especializadas.
-%
-~\citeonline{cybis2010} divide as técnicas e os métodos da engenharia de usabilidade em três tipos: Concepção, Análise e Avaliação.
+%De acordo com \\ ~\citeonline{bervian2002metodologia} as técnicas são procedimentos específicos utilizados por uma ciência determinada. O conjunto com várias técnicas constituem os métodos. Algumas técnicas são utilizadas em várias ciências e os métodos se adapta às diversas ciências a medida que há imposição de uso de técnicas especializadas.
+%Não precisamos definir as palavras "tecnicas" e "metodos"
+~\citeonline{cybis2010} divide as técnicas da engenharia de usabilidade em três tipos: Concepção, Análise e Avaliação.
 
 \subsection{Métodos e Técnicas de concepção}
 
@@ -150,13 +152,13 @@ Protótipos & São utilizados para esclarecer os requisitos específicos para o 
 \hline 
 \end{tabular} 
 
-No apêndice há uma definição melhor de como é aplicada cada técnica.
+No apêndice \ref{apendice} há uma definição melhor de como é aplicada cada técnica.
 
 \subsection{Métodos e Técnicas de análise}
 
-Os métodos e técnicas de análise são utilizados para buscar informações sobre o contexto de uso e sobre a usabilidade de um sistema. Podem ser feitas análises do perfil do usuário, o ambiente de uso, as tarefas, possibilidades e restrições do sistema.
+Os métodos e técnicas de análise são utilizados para buscar informações sobre a usabilidade de um sistema. Podem ser feitas análises do perfil do usuário, do ambiente de uso, das tarefas, possibilidades e restrições do sistema.
 
-As técnicas mencionadas à baixo visam apoiar os projetistas de interface na busca de informações sobre o contexto de uso e sobre a usabilidade de um sistema existente. Essas técnicas são empregadas de forma que se complementem-se umas as outras.
+As técnicas mencionadas a baixo visam apoiar a equipe na busca de informações sobre a usabilidade de um sistema. 
 
 \begin{tabular}{|p{4cm}|p{11cm}|}
 \hline 
@@ -184,13 +186,13 @@ Observação & Essa técnica caracteriza-se por um pesquisador observando o usu�
 \hline  
 \end{tabular} 
 
-No apêndice há uma definição melhor de como é aplicada cada técnica.
+No apêndice \ref{apendice} estão detalhadas as técnicas mencionadas nesta seção.
 
 \subsection{Métodos e técnicas de avaliação da usabilidade}
 
-Os métodos de avaliação são utilizados para avaliar a qualidade das interações entre o usuário e o sistema, e para verificar, inspecionar e diagnosticar os aspectos ergonômicos das interfaces. 
+Utilizados para avaliar a qualidade das interações entre o usuário e o sistema.
 %
-As avaliações de interface podem ser divididas de diversas maneiras como formas, tipo de dados e o local da avaliação. Quanto a forma, pode ser definida como objetiva, quando são baseadas em técnicas que utilizam medições quantitativas em vez de opiniões dos usuários/especialistas e subjetivas, quando são baseadas em opiniões e relatos de usuários e especialistas. Já quanto ao tipo de dados podem ser definidas como: quantitativa, quando envolvem medidas e tendem a ser vistas como objetivas e imparciais e qualitativas quando envolvem descrições e relatos e são vistas como subjetivas. Quanto ao local da avaliação podem ser feita em laboratório, onde o ambiente é controlado ou estudo de campo quando estão situadas no contexto do mundo real no qual o sistema é utilizado.
+As avaliações de interface podem ser divididas quanto a: formas, tipo de dados e o local da avaliação. Quanto a forma, temos objetiva, quando são baseadas em técnicas que utilizam medições quantitativas em vez de opiniões dos usuários/especialistas e subjetivas, quando são baseadas em opiniões e relatos de usuários e especialistas. Já quanto ao tipo de dados podem ser definidas como: quantitativa, quando envolvem medidas e tendem a ser vistas como objetivas e imparciais, e qualitativas quando envolvem descrições e relatos e são vistas como subjetivas. Quanto ao local da avaliação podem ser feita em laboratório, onde o ambiente é controlado ou estudo de campo quando estão situadas no contexto do mundo real no qual o sistema é utilizado.
 
 
 \begin{tabular}{|p{4cm}|p{8cm}|}
@@ -216,9 +218,9 @@ Eles diferem entre si em vários aspectos. É preciso entender as diferentes car
 %
 Cada método pode se diferenciar pela etapa do ciclo que pode ser aplicado, a técnica utilizada para coletar dados e os tipos de dados coletados (quantitativa ou qualitativa). 
 
-As técnicas descritas nesse capítulo podem ser associadas com várias outras técnicas e para a escolha de cada técnica é importante examinar as possibilidades dos recursos necessários e os disponíveis e as expectativas de resultados da avaliação da usabilidade. Cada técnica apresentam qualidades diferentes em relação à quantidade de problemas que as identificam, sistematização dos resultados, à facilidade da aplicação. 
+As técnicas descritas nesse capítulo podem ser associadas com várias outras técnicas e para a escolha de cada técnica é importante examinar as possibilidades dos recursos necessários e os disponíveis e as expectativas de resultados da avaliação da usabilidade. 
 %
-No estudo de caso detalhado e planejado no próximo capítulo, separamos algumas técnicas que podem ser utilizadas na avaliação da usabilidade e na identificação dos usuários. 
+No estudo de caso detalhado e planejado no próximo capítulo, separamos algumas técnicas que foram utilizadas na avaliação da usabilidade e na identificação dos usuários. 
 
 
 %TODO Aonde vai ser inserido as técnicas que estamos detalhando melhor
@@ -231,25 +233,25 @@ No estudo de caso detalhado e planejado no próximo capítulo, separamos algumas
 \section{Processos de Usabilidade}
 
 
-	O termo modelo de ciclo de vida é utilizado para representar um modelo que capta um conjunto de atividades e a maneira como elas se relacionam ~\cite{preece2007}. Alguns autores como ~\citeonline{mayhew1999} e ~\citeonline{hix1993} propuseram modelos de processo baseados em ciclo de vidas bem definidos para as atividades de usabilidade. O modelo estrela e o de Engenharia de Usabilidade propostos pelos autores estão definidos no apêndice 1. 
+	Alguns autores como ~\citeonline{mayhew1999} e ~\citeonline{hix1993} propuseram modelos de processo baseados em ciclo de vidas bem definidos para as atividades de usabilidade. O modelo estrela e o de Engenharia de Usabilidade propostos pelos autores estão definidos no apêndice 1. 
 	Outro modelo muito utilizado para descrever processos de usabilidade é o proposto pela norma ISO/IEC-13407 (1999), que define o Design Centrado no Usuário.
 
 %TODO Uma parte foi inserido no apêndice (Modelo Estrela e o de Mayhew)
 
-\subsection{Design Centrado no Usuário}
+\subsection{Design Centrado no Usuário - DCU}
 
-O DCU surgiu da IHC e consiste em uma metodologia de \emph{design} de software para desenvolvedores e \emph{designers}. Foi definida pela norma ISO 13407 (\textit{Human Centered Design Processes for Interactive Systems}) e tem como objetivo definir um processo necessário ao desenvolvimento de produtos fáceis de utilizar na qual deve envolver os usuários no processo de desenvolvimento e na avaliação dos produtos.
+O DCU consiste em uma metodologia de \emph{design} de software. Definida pela norma ISO 13407 (\textit{Human Centered Design Processes for Interactive Systems}) e tem como objetivo definir um processo necessário ao desenvolvimento de produtos fáceis de utilizar na qual deve envolver os usuários no processo de desenvolvimento.
 
-Sabemos que a ciência experimental que utiliza-se dos métodos empíricos tradicionais para coletar dados e testar hipóteses sobre o comportamento humano aplicam-se de várias técnicas em nome de pessoas. Essa abordagem é preocupada com os usuários quando as representa mas ela não leva em conta diversos aspectos do usuário real, por não envolvê-los no processo. Não basta fazer para o usuário, é preciso fazer com o usuário ~\cite{eason1995}. 
+Sabemos que a ciência experimental que utiliza-se dos métodos empíricos tradicionais para coletar dados e testar hipóteses. Essa abordagem preocupa-se com os usuários quando as representa mas ela não leva em conta diversos aspectos do usuário real, por não envolvê-los no processo. Não basta fazer para o usuário, é preciso fazer com o usuário ~\cite{eason1995}. 
 
-No \emph{Design} Centrado no usuário (DCU) diferente dos métodos empíricos tradicionais que tem o usuário apenas como  referência, no DCU o usuário tem que ser o elemento central e é necessário envolvê-lo do início ao fim do projeto. Baseia-se nas necessidades, desejos e limitações das pessoas. Deve-se iniciar com usuários e suas necessidades em vez de começar com a tecnologia. ~\citeonline{travis2013} afirma que ``para criar produtos que os usuário amem, é necessário incluir os usuários no processo de criação dos produtos". 
+No DCU o usuário tem que ser o elemento central e é necessário envolvê-lo do início ao fim do projeto. Baseia-se nas necessidades, desejos e limitações das pessoas. ~\citeonline{travis2013} afirma que ``para criar produtos que os usuário amem, é necessário incluir os usuários no processo de criação dos produtos". 
 
-~\citeonline{gould1985designing} estabeleceram alguns princípios para o desenvolvimento centrado no usuário na década 70 que são utilizados até hoje que são: Foco desde o inicio nos usuários e nas tarefas, medidas empíricas e \emph{design} interativo. O processo do \emph{design} centrado no usuário pode ser dividido em 3 fases: análise, desenvolvimento e pós-liberação. 
-	
-A ISO 13407 define um processo geral para incluir atividades centradas em humano através do ciclo de vida de desenvolvimento sem especificar métodos exatos ~\cite{santos2012}.
+%~\citeonline{gould1985designing} estabeleceram alguns princípios para o desenvolvimento centrado no usuário: Foco desde o início nos usuários e nas tarefas, medidas empíricas e \emph{design} interativo. O processo do DCU pode ser dividido em 3 fases: análise, desenvolvimento e pós-liberação. 
+%A ISO 13407 define um processo geral para incluir atividades centradas em humano através do ciclo de vida de desenvolvimento sem especificar métodos exatos ~\cite{santos2012}.
 %
-A norma é caracterizada por quatro princípios: Ativo envolvimento do usuário; alocação apropriada de funções entre usuários e tecnologia; Testes de solução de \emph{design}; \emph{design} multidisciplinar. Em 2010 essa ISO foi revista e renomeada para a ISO 9241-210.
+%A norma é caracterizada por quatro princípios: Ativo envolvimento do usuário; alocação apropriada de funções entre usuários e tecnologia; Testes de solução de \emph{design}; \emph{design} multidisciplinar. Em 2010 essa ISO foi revista e renomeada para a ISO 9241-210.
 %
+
 Existem quatro atividades de \emph{Design} Centrado no Usuário que devem estar presentes no inicío do projeto:
 
 \begin{itemize}
@@ -273,40 +275,29 @@ A ISO 13407 propõe que o envolvimento do usuário seja uma prática frequente e
 \section{Usabilidade em Software Livre}
 %TODO Verificar
 
-	Um dos grandes problemas encontrados em softwares livres é a pouca atenção dada aos aspectos referentes a usabilidade e acessibilidade das aplicações. Acredita-se que um dos principais problemas que contribui para a falta de usabilidade de software livre é sua própria comunidade que apenas enfatiza na criação, melhoria e teste do código fonte.  
+Um dos grandes problemas encontrados em softwares livres é a pouca atenção dada aos aspectos referentes a usabilidade e acessibilidade das aplicações. 
+%
+Segundo ~\citeonline{preece2007}, uma das causas da baixa adoção de softwares livres é a baixa qualidade dos estilos de interação implementados nas interfaces dos produtos. 
 
-Segundo ~\citeonline{preece2007}, uma das causas da baixa adoção de softwares livres em mercados de larga escala é a baixa qualidade dos estilos de interação implementados nas interfaces dos produtos. Uma grande maioria não se preocupa com bons elementos de interface com usuário (UI). 
-
-Atualmente, algumas comunidades de software livre vêm se atentando as questões de usabilidade como forma de se manter no mercado. Um dos casos que conhecemos foi do Joomla que é um sistema de gerenciamento de conteúdo  que nessas últimas versões investiram em questões de usabilidade, sendo o primeiro CMS a ser totalmente responsivo. Foi criada uma frente de desenvolvimento focado na experiência do usuário que trouxe melhorias significativas a partir da versão 3.0 do CMS. Logo em seguida o Wordpress, outro sistema de gerenciamento de conteúdo investiu em melhorias da interface se atentando aos novos padrões adotados na web.
-
-	Uma grande dificuldade encontrada por parte de usuários com pouca experiência se encontra na instalação de softwares livres o que acaba por desencorajar esses usuários na utilização desses softwares. Entender o perfil do usuário é um dos principais pontos que devem ser levados em consideração pelos desenvolvedores de software em geral. Cada perfil de usuário tem suas particularidades e suas expectativas quanto a utilização do sistema. Quando falamos de usuários com experiência de uso de softwares semelhantes é preciso ter uma maior atenção na usabilidade para que possa ter uma boa aceitação e menor impacto com as mudanças.
+Uma grande dificuldade encontrada por parte de usuários com pouca experiência se encontra na instalação de softwares livres o que acaba por desencorajar esses usuários na utilização desses softwares. Entender o perfil do usuário é um dos principais pontos que devem ser levados em consideração pelos desenvolvedores de software em geral. 
 
 No modo geral, os projetistas sabem da importância de desenvolver com enfoque no usuário e na usabilidade, mas normalmente os projetos são desenvolvidos sem que tenham sido realizadas pesquisas e aplicados métodos e técnicas de usabilidade.
 %	
 O tempo e os recursos limitados são as principais razões que impede a implantação dos testes de usabilidade nas equipes de software livre. Também há o desconhecimento por parte da equipe de desenvolvimento das técnicas a serem empregadas.
 %
+\section{Aplicação de usabilidade no desenvolvimento empírico}
 
-%---------------------------------------------------------%
+	Partindo do que foi conceituado sobre desenvolvimento empírico e IHC podemos ver semelhança entre seus valores, o que proporciona um quadro favorável à integração de práticas de IHC em ambientes ágeis. Podemos citar alguns desse valores: (i) ciclos curtos com entregas contínuas e incrementais, que favorecem a aplicação de técnicas de prototipagem; (ii) forte envolvimento do usuário que favorece a aplicação de princípios de projetos participativos e (iii) programação em pares onde em IHC geralmente a avaliação de usabilidade é feita em pares ~\cite{barbosa2008estrategia}. 
 
-
-%------------------------------------------------------------------------------%
-
-% Inicio da Seção sobre métodos ágeis e o \emph{design} centrado no usuário
-
-\section{Aplicação de usabilidade em métodos ágeis}
+	Segundo ~\citeonline{cybis2010} as características da abordagem ágil facilitam na utilização da ergonomia e da usabilidade durante o desenvolvimento de software.
 	
-	Os métodos ágeis são uma abordagem de desenvolvimento que têm como princípios um conjunto de valores com foco no cliente e nas pessoas envolvidas, na entrega constante de software funcional, no desenvolvimento iterativo baseado em ciclos curtos de entrega e na aceitação da constante mudança dos requisitos ao longo do desenvolvimento. 
-
-	Tanto os métodos ágeis e o IHC tem esses mesmos princípios, o que seria interessante a aplicação das técnicas utilizadas em IHC no contexto de uma abordagem ágil. Essa semelhança entre os valores proporciona um quadro favorável à integração minimalista de práticas de IHC em ambientes ágeis. Podemos citar alguns desse valores como por exemplo: (i) ciclos curtos com entregas contínuas e incrementais, que favorecem a aplicação de técnicas de prototipagem; (ii) forte envolvimento do usuário que favorece a aplicação de princípios de projetos participativos e (iii) programação em pares onde em IHC geralmente a avaliação de usabilidade é feita em pares ~\cite{barbosa2008estrategia}. 
-
-	Segundo ~\citeonline{cybis2010} as características da abordagem ágil facilitam na utilização da ergonomia e da usabilidade durante o desenvolvimento de software, mas afirma que os ergonomistas e engenheiros de usabilidade deverão adaptar suas técnicas de análise, modelagem, projeto e teste adotando-se os preceitos do manifesto ágil.
-	
-	As adaptações são realmente necessárias, principalmente na questão da granularidade da pesquisa, no tempo gasto com ela e na maneira de relatar as descobertas de usabilidade ~\cite{santos2012}.
+	Porém adaptações são necessárias, principalmente na questão da granularidade da pesquisa, no tempo gasto com ela e na maneira de relatar as descobertas de usabilidade ~\cite{santos2012}.
 
 	%Segundo ~\citeonline{barbosa2010} é preciso ter cuidado em relação à qualidade no uso, pois raramente a comunidade ágil cita usuários ou a distinção entre usuário e cliente.
 
-	~\citeonline{hodgetts2005experiences} afirma que os métodos ágeis são quase sempre apresentados sob a visão dos programadores, deixando de lado outras disciplinas como a UED (User Experience \emph{design}). Ele discute em seu artigo as experiências na integração de práticas do design da experiência do usuário em iniciativas de processos ágeis em organizações que utilizam XP e Scrum. %Ele registrou os esforços da equipe com abordagem centrada apenas em métodos ágeis e depois com a integração das melhores práticas de experiência do usuário.
+	~\citeonline{hodgetts2005experiences} afirma que os métodos ágeis são quase sempre apresentados sob a visão dos programadores, deixando de lado outras disciplinas como a UED (User Experience \emph{design}). 
 
+\begin{comment}
 Alguns estudos foram feitos tentando fazer essa integração da usabilidade em métodos ágeis.
 
 ~\citeonline{constantine2002process} foi um dos primeiros a iniciar a discussão sobre o tema. Sua proposta é mostrar que o DCU está prontamente integrado aos métodos ditos ``leves". Ele afirma que XP e os demais métodos ágeis compartilham das mesmas fraquezas apresentadas por processos tradicionais como o processo unificado quando se refere à usabilidade e ao desenho de interface do usuário.
@@ -325,6 +316,7 @@ Segundo ~\citeonline{mcinerney2005ucd} métodos ágeis e \emph{design} centrado 
 ~\citeonline{wolkerstorfer2008probing} em seu estudo mostra adaptações feitas ao processo do XP. Ele integrou cinco instrumentos de IHC com o processo do XP. Os instrumentos são: testes de unidade estendidos para avaliação de usabilidade automatizada; Extreme Personas (variação do método clássico de personas); estudos de usuários para tomar conhecimento sobre o usuário final; avaliações feitas por especialistas em usabilidade e testes de usabilidade com usuários.
  
 ~\citeonline{leiteinspeccao}, analisou a utilização de métodos de inspeção da usabilidade no contexto de uma \textit{startup}. Foram abordados duas modalidades de avaliação heurística nessa pequena empresa de desenvolvimento de software que utiliza o método ágil Scrum. Como conclusão do estudo, relataram que a avaliação tradicional encontrou mais problemas de usabilidade e maior número de heurísticas violadas. Já na avaliação heurística colaborativa as médias de severidades atribuídas pelos avaliadores eram maior, no qual encontravam mais problemas sérios do que na avaliação tradicional, além de o tempo gasto foi menor do que na tradicional. A avaliação colaborativa apresentou características que permitia a melhor integração com ambientes ágeis.
+\end{comment}
 
 %Outro estudo encontrado foi a proposta da metodologia AgilUS que é um método de desenvolvimento ágil que baseia-se no conceito de usabilidade e na necessidade de desenvolver software usável. Essa metodologia foi resultado de uma das linhas de investigação desenvolvida pelo Centro de Engenharia de Software da Universidade Central da Venezuela. O objetivo do método AgilUS é proporcionar um conjunto de atividades organizadas para construir a usabilidade de \emph{design} de interface do usuário durante o desenvolvimento do software ~\citeauthor{acostaagilus}.
 
@@ -334,16 +326,12 @@ Pode ser definido o DCU ágil como a prática de \emph{design} centrado no usuá
 %
 O ciclo de DCU ágil foi proposto por ~\citeonline{sy2007adapting} e integra tantos as atividades de DCU como as de desenvolvimento em um único ciclo, trabalhando nas mesmas características e garantindo que as investigações de usabilidade serão tratadas durante a interação.
 %
-Segundo \citeonline{najafi2008} o \emph{design} centrado no usuário pode ser incorporado no desenvolvimento ágil sem grandes impactos no processo. No método de desenvolvimento ágil scrum, uma funcionalidade é desenvolvida, testada e documentada em uma \textit{sprint} assim como no \emph{design} centrado no usuário. 
+Segundo \citeonline{najafi2008} o \emph{design} centrado no usuário pode ser incorporado no desenvolvimento empírico sem grandes impactos no processo. No método de desenvolvimento ágil scrum, uma funcionalidade é desenvolvida, testada e documentada em uma \textit{sprint} assim como no \emph{design} centrado no usuário. 
 %	
-Segundo ~\citeonline{santos2012} o grande desafio do DCU ágil é encontrar a melhor maneira de realizar as atividades de pesquisa do usuário, \emph{design} de versões que atendem as necessidades dos usuário, construção de versões interativas e realização de testes de usabilidade, dentro de um ambiente de desenvolvimento com métodos ágeis, tendo a participação dos usuários típicos em todas as atividades.
+Segundo ~\citeonline{santos2012} o grande desafio do DCU ágil é encontrar a melhor maneira de realizar as atividades de pesquisa do usuário, \emph{design} de versões que atendem às necessidades dos usuário, construção de versões interativas e realização de testes de usabilidade, dentro de um ambiente de desenvolvimento empírico, tendo a participação dos usuários típicos em todas as atividades.
 %A modelagem e projeto de interfaces devem ser orientados a padrões de projeto e as avaliações de ergonomia, testes de usabilidade e especificações de revisões de interface devem ser realizados rapidamente ~\cite{cybis2010}.
 
 %Pesquisas relatam que praticantes de UX que passaram a trabalhar em ambientes ágeis não querem mais retornar ao método antigo de desenvolvimento baseado no modelo cascata. Em média, essas equipes levam de 6 a 12 meses para se adaptar ao novo ambiente ~\cite{santos2012}.
-
-O termo experiência do usuário é utilizado na comunidade ágil para qualquer atividade relacionada com a pesquisa do usuário, DCU, usabilidade, \emph{design} de interfaces. A utilização do termo não indica que eles realizam todas as atividades de UX ~\cite{santos2012}.
-%
-Segundo ~\citeonline{dickinson2010} a chave para a integração de DCU com métodos ágeis é assegurar que os resultados da pesquisa de usuário são comunicados e entendidos de forma eficaz dentro de uma equipe ágil.
 
 
 \subsection{A integração de práticas do IHC com o XP}
@@ -352,7 +340,7 @@ Foram encontrados alguns estudos que descrevem a integração do IHC com as prá
 
 %~\citeonline{wolkerstorfer2008probing} usam o dcu ágil desde 2007 e que até hoje não houve nenhum problema entre as culturas e que tanto os especialistas de usabilidade quanto os desenvolvedores estão bem integrados.Pode-se encontrar vantagens na combinação das duas abordagens. 
 %
-Em 2008 foi proposto uma metodologia revisional intitulada XPlus que insere as técnicas de \emph{design} e de usabilidade em determinadas fases do ciclo de desenvolvimento de software. O XPlus agrega algumas práticas de User Experience às práticas tradicionais de XP. A figura mostra uma visão geral do processo de desenvolvimento de software de XPlus ~\cite{guimaraesxplus}.
+Em 2008 foi proposto uma metodologia revisional intitulada XPlus que insere as técnicas de \emph{design} e de usabilidade em determinadas fases do ciclo de desenvolvimento de software. O XPlus agrega algumas práticas de User Experience às práticas tradicionais de XP. A figura mostra o processo de desenvolvimento de software de XPlus ~\cite{guimaraesxplus}.
 
 \begin{figure}[h]
     \centering
@@ -362,18 +350,17 @@ Em 2008 foi proposto uma metodologia revisional intitulada XPlus que insere as t
     \label{ciclo_xplus}
 \end{figure}
 
-Essa metodologia considera a interface um dos aspectos mais importantes de um software. Ela envolve as novas praticas de UX no processo natural de XP.
 
-O papel de \emph{designer} de interação não é reconhecido no núcleo XP da equipe e o XP não tem nenhum processo explícito para lidar com o \emph{design} de interação.Em seu estudo ~\citeonline{ferreira2007interaction} relatam como as equipes combinaram as atividades de \emph{design} de interação com o XP. 
+O papel de \emph{designer} de interação não é reconhecido no núcleo XP da equipe e o XP não tem nenhum processo explícito para lidar com o \emph{design} de interação. 
 %
-A natureza iterativa de desenvolvimento XP necessário que os \emph{designers} de interação tem envolvimento contínuo com o desenvolvimento do produto influenciou a natureza da relação entre os \emph{designers} de interação e os desenvolvedores.
-%
+%A natureza iterativa de desenvolvimento XP necessário que os \emph{designers} de interação tem envolvimento contínuo com o desenvolvimento do produto influenciou a natureza da relação entre os \emph{designers} de interação e os desenvolvedores. 
+%Esse parágrafo tá mal escrito, nao entendi o que quis dizer
 
 ~\citeonline{vasconcelos2003integrando} descreveram um processo ágil centrado em usabilidade chamado XPU no qual tinha como objetivo prover à equipe de desenvolvimento um modelo para a construção de sistemas de software centrado no usuário que valorizasse a usabilidade como característica fundamental da qualidade. 
 
-O XPU serve para guiar o time de desenvolvimento, passo a passo em todo o projeto, seguindo técnicas e artefatos simplificados afim de não se ter apenas sistemas portáteis reutilizáveis ou acoplados, mas sim com uma interface que refletiam as características e as necessidades dos usuários. Um problema encontrado é na sustentação do processo de desenvolvimento baseado em técnicas bem definidas, o que contraria o manifesto ágil.
-
-O método XPU foi definido a partir do processo de usabilidade Praxis-u (Padua, 2006). As atividades no XPu estão divididas em atividades técnicas e gerenciais. As atividades técnicas estão relacionadas à execução correta do processo de usabilidade, já as atividades gerenciais garantem o controle do andamento e execução dessas práticas.
+O XPU serve para guiar o time de desenvolvimento seguindo técnicas e artefatos simplificados afim de não se ter apenas sistemas portáteis reutilizáveis ou acoplados, mas sim com uma interface que reflete as características e as necessidades dos usuários. 
+%
+%O método XPU foi definido a partir do processo de usabilidade Praxis-u (Padua, 2006). As atividades no XPu estão divididas em atividades técnicas e gerenciais. As atividades técnicas estão relacionadas à execução correta do processo de usabilidade, já as atividades gerenciais garantem o controle do andamento e execução dessas práticas.
 
 Na tabela abaixo é apresentado as atividades técnicas e gerenciais de cada visão (projeto, iteração e desenvolvimento) estabelecidas pelo XP e adaptadas pelo método XPu:
 
@@ -448,14 +435,11 @@ Desenho de Interação                                                         &
 \item Compreender e identificar as necessidades reais dos usuários
 
 O Objetivo dessa etapa é conhecer o usuário alvo. Deve-se projetar ferramentas que irão dar suporte aos objetivos e atividades das pessoas.
-%
-Algumas técnicas são utilizadas para identificar as necessidades dos usuários como a observação natural que serve para responder a questão do tipo: o que e como as pessoas fazem? E as entrevistas que responde o que as pessoas pensam e dizem. Os resultados da pesquisa devem ser comunicados para a equipe.
 
 \item Focar na essência
 
 O foco na essência ajuda a desenvolver soluções que atendem às reais necessidades dos usuários diminuindo os riscos de desenvolvimento de funcionalidades com pouco ou nenhum uso.
-%
-A ideia desse princípio é que deve-se começar a desenvolver apenas pelo que é essencial, começando pela menor unidade de um sistema sem perder a visão de um todo.
+
 
 \item Iterar mais rápido
 
@@ -470,8 +454,7 @@ A ideia desse princípio é que deve-se começar a desenvolver apenas pelo que �
 \item Prototipação em baixa resolução
 
 Os protótipos de baixa resolução permite visualizar uma solução de forma mais rápida e concreta economizando tempo de \emph{design} e desenvolvimento. Esses protótipos ajudam a comunicar e entender ideias e serve para validar uma solução. 
-%
-A prototipação aumenta a comunicação entre a equipe de desenvolvimento e os usuários finais, funcionando como uma alternativa ``barata" para explorar alternativas de desenho. Um exemplo de protótipo de baixa fidelidade seria os \emph{storyboards} que foi detalhado na seção de técnicas de usabilidade.
+
 	
 \item Menos documentação, mais comunicação
 
@@ -482,7 +465,7 @@ A prototipação aumenta a comunicação entre a equipe de desenvolvimento e os 
 
 \item Testes de usabilidades ágeis
 
-	Os testes de usabilidade devem ser feitos em todos os ciclos do projeto. Recomenda-se que os testes sejam feitos mais vezes e que seja menos formal como são feitos atualmente. Os resultados encontrados nos testes deve ser comunicado à equipe para que possa corrigir os erros  graves rapidamente.
+	Os testes de usabilidade devem ser feitos em todos os ciclos do projeto.  Os resultados encontrados nos testes devem ser comunicados à equipe para que possa corrigir possíveis erros.
 
 %	No próximo capítulo detalharemos como funciona um teste de usabilidade, os tipos existentes e as práticas identificadas pela comunidade de arquitetura da informação e áreas correlatas.
 
