@@ -85,6 +85,7 @@ confidenciabilidade, integridade, autenticação, autorização, privacidade~\ci
 
 \end{enumerate}
 \end{comment}
+
 Será abordado neste trabalho o desenvolvimento de testes de aceitação para verificar sua relação com a usabilidade. 
 
 \subsection{Testes de aceitação}
@@ -92,90 +93,19 @@ Será abordado neste trabalho o desenvolvimento de testes de aceitação para ve
 Os testes de aceitação, que possuem uma visão mais voltada para o usuário, fazem 
 parte de uma fase do processo em que um teste de caixa-preta é realizado 
 num sistema antes de sua disponibilização.
-Para isso utilizamos o cucumber, uma ferramenta que pode executar uma funcionalidades escrita em texto puro. Com base nas especificações da funcionalidade, o cucumber executa testes, proporcionando uma melhor comunicação entre equipe de desenvolvimento e cliente.
+Para isso utilizamos o cucumber\footnote{\url{http://cukes.info}}, uma ferramenta que pode executar uma funcionalidades escrita em texto puro. Com base nas especificações da funcionalidade, o cucumber executa testes, proporcionando uma melhor comunicação entre equipe de desenvolvimento e cliente.
 %
 No cucumber, uma \textit{feature} é um requisito de alto nível 
 expressado da perspectiva de uma pessoa e possui uma estrutura similar as histórias 
-de usuário do XP~\citeonline{chelimsky2010}. Essa estrutura é proposta da seguinte forma:
-
-\begin{enumerate}
-\item \textbf{Título:} Palavra-chave ‘\textit{feature}’ e um título curto que representa o 
-objetivo da \textit{feature}.
-\item \textbf{Narrativa:} um texto curto que demonstre os cenários de execução, 
-exatamente como a narrativa de uma história de usuário:
-
-\begin{figure}[!h]
-    \centering
-    \includegraphics[keepaspectratio=true,scale=0.50]
-      {figuras/noosfero_feature2.eps}
-    \caption{Descrição do título (\textit{feature}) de um teste}
-    \label{nosfero_feature}
-\end{figure}
-
-\item \textbf{Pré condições:} representado pela palavra-chave \textit{'background'}, define os passos 
-precedem cada cenário de teste.
-
-\begin{figure}[!h]
-    \centering
-    \includegraphics[keepaspectratio=true,scale=0.50]
-      {figuras/noosfero_back.eps}
-    \caption{Descrição de pré condições (\textit{background}) de um teste}
-    \label{nosfero_feature}
-\end{figure}
-
-\item \textbf{Cenários:} representam parte concreta de como o software deve se 
-comportar, e sendo a parte essencial do teste realizado no 
-cucumber. Após a palavra-chave \textit{‘scenario’} define-se o nome do cenário em questão:
-\item \textbf{Passos:} Cada cenário possui uma série de passos que demonstram o seu 
-comportamento, que são linhas simples iniciadas com as seguintes palavras-chaves: 
-\textit{Given, When, Then, And, But}.
-\item \textbf{Given:} Indica uma condição inicial para que o cenário seja executado, 
-trata-se das pré-condições do cenário.
-\item \textbf{When:} Indica o evento do cenário
-\item \textbf{Then:} Indica o que é esperado após o evento ocorrer.
-
-\begin{figure}[!h]
-    \centering
-    \includegraphics[keepaspectratio=true,scale=0.50]
-      {figuras/noosfero_scenario.eps}
-    \caption{Descrição do cenário (\textit{scenario}) de um teste}
-    \label{nosfero_scenario}
-\end{figure}
-
-\end{enumerate}
+de usuário do XP~\citeonline{chelimsky2010}. 
 
 
 
 \subsection{Testes Funcionais e Unitários}
 %
-Os testes funcionais tem como objetivo no desenvolvimento na plataforma noosfero, verificar a integração da aplicação desenvolvida. Os testes unitários são executados em conjunto com os testes funcionais, porém  com o objetivo de verificar trechos menores de códigos. Assim, os testes funcionais e unitários são escritos da seguinte forma:
+Os testes funcionais tem como objetivo no desenvolvimento na plataforma noosfero, verificar a integração da aplicação desenvolvida. Os testes unitários são executados em conjunto com os testes funcionais, porém  com o objetivo de verificar trechos menores de códigos. 
 
-\textbf{Setup:} indica as condições inciais dos testes, setando variáveis de ambiente e de configuração por exemplo.
-
-\begin{figure}[!h]
-    \centering
-    \includegraphics[keepaspectratio=true,scale=0.5]
-      {figuras/teste_setup.eps}
-    \caption{Descrição do setup de um teste}
-    \label{nosfero_setup}
-\end{figure}
-
-\textbf{Título:} título do teste iniciado com a palavra \textit{‘should’} e finalizado com \textit{‘do’}
-
-\textbf{Passos:} código que define o comportamento do teste
-
-\textbf{Verificação:} Assertiva que verifica se a ação foi realizada como esperada.
-
-\begin{figure}[!h]
-    \centering
-    \includegraphics[keepaspectratio=true,scale=0.55]
-      {figuras/teste_should.eps}
-    \caption{Código de teste}
-    \label{noosfero_should}
-\end{figure}
-
-
-%VERIFICAR  TESTES UNITARIOS E FUNCIONAIS
+A descrição detalhada de testes de aceitação e de testes funcionais e unitários encontra-se no apendice \ref{apendice2}.
 
 \section{Técnicas de desenvolvimento de testes automatizados}
 
@@ -217,7 +147,7 @@ de tal modo que não quebre os testes previamente escritos;
 A técnica de desenvolvimento dirigido por testes foi definida no 
 livro \textit{Test-Driven Development: By Example} por~\citeonline{beck2002}, como
 representados na Figura~\ref{tdd_ciclo}.
-
+%
 Uma boa prática do TDD é a bateria de testes, que ajuda o desenvolvedor a evitar 
 erros de regressão, quando o desenvolvimento de uma nova funcionalidade quebra uma 
 já existente.
@@ -252,7 +182,7 @@ mais comuns ao cliente, como \textit{should, context, specification}~\cite{berna
 Embora seja principalmente uma ideia de como um processo de desenvolvimento de 
 software deve ser gerenciado, a prática do BDD assume a utilização de ferramentas 
 como suporte para o desenvolvimento de software~\cite{haring2011}. 
-
+%
 O BDD coloca em foco o comportamento em vez da estrutura de uma funcionalidade e faz isso em todos os níveis de desenvolvimento. Uma vez reconhecido isso, muda-se a forma de pensar sobre desenvolvimento para fora do código. Assim o foco parte para as interações, as pessoas e o sistema, sobre a 
 estrutura do próprio sistema~\cite{chelimsky2010}.
 
@@ -285,6 +215,6 @@ escritas com a participação tanto de clientes como desenvolvedores do sistema.
 Testes automatizados devem ser desenvolvidos com prioridade, buscando um rápido 
 \textit{feedback}, contribuindo assim com a melhoria do sistema. Para isso é 
 necessário que os cenários de testes estejam bem definidos junto à equipe.
-
-No próximo capítulo abordaremos a usabilidade e como esta área é inserida no processo de desenvolvimento empírico.
+%
+No próximo capítulo abordaremos a usabilidade e como esta área é inserida no processo de desenvolvimento empírico, para na sequência mostrarmos o estudo de como relacionar as práticas de testes e as técnicas de usabilidade.
 
