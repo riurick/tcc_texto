@@ -27,64 +27,6 @@ automática e dinamicamente~\cite{meszaros2007}.
 Os testes automatizados afetam diretamente a qualidade dos sistemas de software,
 portanto, agregam valor  ao produto final, mesmo que os artefatos adicionais
 produzidos não sejam visíveis para os usuários finais dos sistemas~\cite{bernardo2011}.
-\begin{comment}
-Esses testes podem ser divididos em diversos tipos, o que facilita a manutenção 
-dos mesmos:
-
-%TO DO: RELACIONAR TESTES DE ACEITAÇÃO COM TESTES DE USABILDIADE
-
-\begin{enumerate}
-
-\item \textbf{Testes de unidade:} testes de correção responsável por testar os 
-menores trechos de código de um sistema que possui um comportamento definido e 
-nomeado~\cite{bernardo2011}.
-%
-Normalmente, esse teste é associado a funções para linguagens procedimentais e métodos em linguagens orientadas a objetos.
-
-\item \textbf{Testes funcionais:} testes que tem como objetivo verificar a eficiência
-dos componentes de um sistema~\cite{molinari2003}.
-
-\item \textbf{Testes de integração:} denominação ampla que representa a busca de 
-erros de relacionamento entre quaisquer módulos de um software, incluindo desde 
-a integração de pequenas unidades até a integração de bibliotecas das quais um 
-sistema depende, servidores e gerenciadores de banco de dados~\cite{bernardo2011}.
-
-\item \textbf{Testes de interface de usuário:} testes que verificam a correção 
-por meio da simulação de eventos de usuário. A partir desses eventos, são feitas 
-verificações na interface e em outras camadas~\cite{bernardo2011}.
-%TODO: explorar isso no TCC 2 para link com a parte de usabilidade
-
-\item \textbf{Testes de leiaute:} testes que buscam avaliar a interface 
-e verificar a presença de erros após a renderização, difíceis de identificar 
-com testes comuns de interface~\cite{bernardo2011}.
-%TODO: explorar isso no TCC 2 para link com a parte de usabilidade
-
-\item \textbf{Testes de aceitação:} são testes de correção e validação, idealmente 
-especificados por clientes ou usuários finais do sistema para verificar se um 
-módulo funciona como foi especificado~\cite{martin2005}.
-
-\item \textbf{Testes de desempenho:} testes que executam trechos do sistema e 
-armazenam os tempos de duração obtidos, que ajudam a identificar gargalos que 
-precisam de otimização para diminuir o tempo de resposta  para o usuário~\cite{liu2009}.
-
-\item \textbf{Testes de carga:}  testes que exercitam o sistema sobre condições de uso 
-intenso para avaliar se a infraestrutura é adequada para a expectativa de uso do 
-sistema\\~\cite{avritze1994}.
-
-\item \textbf{Testes de estresse:} teste que visa descobrir os limites do uso da 
-infraestrutura, isto é , qual a quantidade máxima de usuários e requisições que o 
-sistema consegue anteder corretamente e em um tempo aceitável.
-
-\item \textbf{Testes de longevidade:} testes que tem por objetivo encontrar erros 
-somente visíveis com um longo tempo de execução do sistema, erros que podem ser de cache, replicação, execução de serviços agendados ou vazamento de memória~\cite{bernardo2011}.
-
-\item \textbf{Testes de segurança:} os testes de segurança servem para verificar se 
-os dados ou funcionalidades confidenciais de um sistema  estão protegidos de fraude 
-ou de usuários não autorizados. A segurança de um software pode envolver aspectos de 
-confidenciabilidade, integridade, autenticação, autorização, privacidade~\cite{whittaker2006}.
-
-\end{enumerate}
-\end{comment}
 
 Será abordado neste trabalho o desenvolvimento de testes de aceitação para verificar sua relação com a usabilidade. 
 
@@ -93,11 +35,11 @@ Será abordado neste trabalho o desenvolvimento de testes de aceitação para ve
 Os testes de aceitação, que possuem uma visão mais voltada para o usuário, fazem 
 parte de uma fase do processo em que um teste de caixa-preta é realizado 
 num sistema antes de sua disponibilização.
-Para isso utilizamos o cucumber\footnote{\url{http://cukes.info}}, uma ferramenta que pode executar uma funcionalidades escrita em texto puro. Com base nas especificações da funcionalidade, o cucumber executa testes, proporcionando uma melhor comunicação entre equipe de desenvolvimento e cliente.
+Para isso utilizamos o cucumber\footnote{\url{cukes.info}}, uma ferramenta que pode executar uma funcionalidades escrita em texto puro. Com base nas especificações da funcionalidade, o cucumber executa testes, proporcionando uma melhor comunicação entre equipe de desenvolvimento e cliente.
 %
 No cucumber, uma \textit{feature} é um requisito de alto nível 
 expressado da perspectiva de uma pessoa e possui uma estrutura similar as histórias 
-de usuário do XP~\citeonline{chelimsky2010}. 
+de usuário do XP~\cite{chelimsky2010}. 
 
 
 
@@ -144,8 +86,7 @@ de tal modo que não quebre os testes previamente escritos;
     \label{tdd_ciclo}
 \end{figure}
 
-A técnica de desenvolvimento dirigido por testes foi definida no 
-livro \textit{Test-Driven Development: By Example} por~\citeonline{beck2002}, como
+A técnica de desenvolvimento dirigido por testes foi definida por~\citeonline{beck2002}, como
 representados na Figura~\ref{tdd_ciclo}.
 %
 Uma boa prática do TDD é a bateria de testes, que ajuda o desenvolvedor a evitar 
@@ -210,7 +151,7 @@ O comportamento do sistema é descrito em histórias de usuário, que são
 escritas com a participação tanto de clientes como desenvolvedores do sistema. 
 
 
-\subsection{Considerações Finais}
+\subsection{Considerações}
 
 Testes automatizados devem ser desenvolvidos com prioridade, buscando um rápido 
 \textit{feedback}, contribuindo assim com a melhoria do sistema. Para isso é 
