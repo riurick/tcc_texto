@@ -9,37 +9,26 @@ O SPB será o objeto de estudo de caso, assim como o processo de colaboração c
 
 \subsection{Visão Geral do Projeto}
 
-O processo de colaboração com o SPB baseia-se no desenvolvimento empírico. O desenvolvimento de testes automatizados é intrínseco ao processo de desenvolvimento. A partir destes pontos mencionados, buscamos evoluir a forma com que o processo de colaboração com o SPB lida com problemas de usabilidade.
+O processo de colaboração com o SPB baseia-se no desenvolvimento empírico. O desenvolvimento de testes automatizados é intrínseco ao processo de desenvolvimento, assim buscamos evoluir a forma com que o processo de colaboração com o SPB lida com problemas de usabilidade.
 O desenvolvimento é feito a partir de sprints de duas semanas, em que são realizadas reuniões com as equipes e reuniões de planejamento (Planning Poker) em cada equipe para definir as atividades de cada sprint.
 
-%Explicar a dinâmica de trabalho, a equipe, reuniões
-%verificar aonde vai entrar essa seção. Talvex dentro do contexto?
-
-
- 
 \section{Execução}
-
-
 
 Durante a execução do estudo de caso, foram adotadas algumas práticas que envolvem aplicação de testes e avaliação da usabilidade.
 
-\subsection{Práticas adotadas}
+\subsection{Práticas Adotadas}
 
 No acompanhamento do projeto podemos identificar várias práticas adotadas pela equipe relacionados à usabilidade de um sistema.
 
 
 \textbf{Questionário Online}
 
-Inicialmente à equipe de design realizou um planejamento para definir o instrumento de pesquisa dos usuários. Foi definido que o principal objetivo do estudo seria medir a percepção dos usuários quanto a qualidade de uso do portal atual sob uma perspectiva global. Nesse sentido foi proposto uma abordagem de pesquisa de levantamento aplicada e quantitativa. %A qualidade de uso foi compreendida a partir dos parâmetros propostos pela ISO 9241-10 a 17, como a qualidade da interface de proporcionar eficácia, eficiência e satisfação no uso do portal (APPOLINÁRIO, 2004). 
+Inicialmente à equipe de design realizou um planejamento para definir o instrumento de pesquisa dos usuários. Foi definido que o principal objetivo do estudo seria medir a percepção dos usuários quanto a qualidade de uso do portal atual sob uma perspectiva global. Nesse sentido foi proposto uma abordagem de pesquisa de levantamento aplicada e quantitativa.
 
-Selecionamos a técnica de aplicação de questionário on-line para se produzir os dados de opinião dos participantes. A avaliação proposta não permite uma compreensão completa a cerca da usabilidade do portal em si, compreendendo-se que o portal só pode ser analisado diretamente por meio do uso de outras técnicas, como as observações globais ou sistemáticas entre os participantes e interface % (MARTINS e THEÓPHILO, 2009; ABRAHÃO et al., 2009).
-
+Selecionamos a técnica de aplicação de questionário on-line para se produzir os dados de opinião dos participantes. A avaliação proposta não permite uma compreensão completa a cerca da usabilidade do portal em si, compreendendo-se que o portal só pode ser analisado diretamente por meio do uso de outras técnicas, como as observações globais ou sistemáticas entre os participantes e interface.
 
 \textbf{Checklists}
 	Foi desenvolvido um checklist para auxiliar nas avaliações de heurísticas (econtra-se na seção \ref{checklist} do apêndice \ref{apendice1}) seguindo as seguintes características:
-
-	
-
 
 	\begin{itemize}
 		\item \textbf{Prestreza:} Guia o usuário poupando-o do aprendizado de uma série de comandos;
@@ -67,9 +56,7 @@ Selecionamos a técnica de aplicação de questionário on-line para se produzir
 		
 	\end{itemize}
 
-	
-
-\textbf{Protótipos}
+\textbf{Protótipos: }
 	A equipe utiliza-se de protótipos para determinar os cenários de uso do software, baseando-se nos requisitos definidos pelos clientes. Abaixo estão os protótipos de cadastro de usuário e cadastro de software:
 
 	\begin{figure}[h!]
@@ -90,7 +77,7 @@ Selecionamos a técnica de aplicação de questionário on-line para se produzir
 
 \newpage
 
-\textbf{Cenários de Uso}
+\textbf{Cenários de Uso: }
 	Para cada funcionalidade desenvolvida é determinado um cenário de uso, base para a implementação dos testes de aceitação e consequentemente o desenvolvimento da funcionalidade propriamente dita.
 	Durante a primeira release (release 0) foram desenvolvidas algumas histórias, dentre estas, a história de ``Cadastro de Usuário'', que possui os seguintes cenários de sucesso:
 
@@ -402,10 +389,6 @@ Outros cenários de edição de software são: ``Informações de Comunidade'' e
 	
 \end{itemize}
 
-%\textbf{Review}
-
-%Durante reunião de review identificamos que a equipe de desenvolvimento, junto com a equipe de design discutiam sobre a interface do sistema. %Todo Escrever melhor.
-
 \textbf{Testes de Aceitação}
 
 Os testes de aceitação software público são responsáveis por verificar os seguintes fatores:
@@ -696,7 +679,7 @@ Feature: Institution Field
 
 	\end{itemize}
 			
-	\textbf{Teste Piloto:}
+	\textbf{Teste Piloto}
 	
 	Com teste piloto, escolhemos um membro da equipe que não tinha participado do desenvolvimento da funcionalidade para testar os scripts e tarefas. %A pessoa a ser testada também faz parte do grupo de usuários do sistema.
 	
@@ -809,7 +792,7 @@ Quanto à história de ``Cadastro de  Software'', temos:
     	\includegraphics[keepaspectratio=true,scale=0.62]
       		{figuras/graf03.eps}
     	\caption{Resultado das avaliações de ``Cadastro de Software''}
-    	\label{avaliacaoinstitucion}
+    	\label{avaliacaosoftware}
 \end{figure}
 
 \begin{comment}
@@ -873,11 +856,7 @@ História: ``Cadastro de Software'':
 
 \subsection{Verificação}
 
-Esta subseção analisa os verifica alcançados no estudo de caso, baseado nas hipóteses levantadas e apresentadas no início desta seção. Podemos ver que a partir das avaliações de heurísticas nos protótipos e cenários diminuiu o numero de casos com problemas de criticidade média e alta. A release 0 (com as histórias de ``Cadastro de Usuário'' e ``Cadastro de Instituição'') teve 2 problemas de criticidade alta e 4 de criticidade média, já a release 1 (com a história de ``Cadastro de Software'') teve 3 problemas de criticidade média e nenhum de criticidade alta, o número de problemas de criticidade baixa, se mantiveram em 4.
-
-No segundo ciclo de avaliações, utilizando o checklist \ref{checklists} para auxiliar as avaliações, observamos 3 problemas de criticidade baixa e 2 de criticidade média.
-
-
+Esta subseção analisa os verifica alcançados no estudo de caso, baseado na hipótese levantada e apresentada no início desta seção. Podemos ver nas figuras \ref{avaliacaouser}, \ref{avaliacaoinstitucion} e \ref{avaliacaosoftware} que a partir das avaliações de heurísticas nos protótipos e cenários diminuiu ou se manteve o numero de casos com problemas de criticidade alta, média ou baixa. 
 
 \section{Considerações finais do capítulo}
 
