@@ -1,14 +1,10 @@
 \chapter{Projeto de Estudo de Caso}
 
-
 Este capítulo apresenta a parte de projeto do estudo de caso desenvolvido no trabalho, compondo os objetivos, global e específicos, do estudo, além das questões de pesquisa, questões específicas e métricas que serão utilizadas.
-
-
 
 \section{Definição}
 
 Neste trabalho foi apresentado um estudo teórico relacionado à integração das técnicas de usabilidade ao longo do ciclo de vida ágil de desenvolvimento de software livre juntamente com um estudo dos testes de softwares existentes e como estes testes podem impactar a usabilidade de um sistema.
-
 
 \subsection{Objetivo Global}
 
@@ -33,12 +29,8 @@ A partir dos objetivos de medição estabelecidos, foram definidas questões de 
 \item Como o processo de desenvolvimento utilizando práticas do BDD podem se relacionar com testes de usabilidade?
 \end{enumerate}
 
-
 \begin{comment}
 A partir das questões de pesquisa, foram definidas questões especificas e para cada questão, foram definidas métricas:
-
-
-
 
 \begin{enumerate}
 \item \textbf{Questão 01: }Qual a estimativa de esforço gasto com testes?
@@ -64,8 +56,6 @@ A partir das questões de pesquisa, foram definidas questões especificas e para
 	\textbf{Métrica: }
 \end{enumerate}
 \end{comment}
-% Não fizemos nada disso.. 
-
 
 \section{Planejamento}
 
@@ -75,16 +65,9 @@ Nessa seção são apresentados a seleção dos contextos, a formulação das hi
 
 \textbf{Hipótese}  A integração de práticas de usabilidade a partir de práticas do BDD resulta em melhores avaliações de usabilidade durante desenvolvimento empírico de software.
 
-%A integração de práticas de BDD práticas de usabilidade no desenvolvimento empírico de software acrescenta melhorias na usabilidade de um software.
-
-%\textbf{Hipótese} A utilização de práticas de BDD/TDD influencia nos testes de usabilidade.
-
-%Obs: Falta definir as hipóteses de forma correta.
-
 \subsection{Contexto}
 
 O contexto selecionado para o estudo de caso é o desenvolvimento do novo Portal do Software Público, que vem sendo desenvolvido no LAPPIS a partir das métodos de desenvolvimento empírico.		
-
 
 \subsection{Indivíduos}
 
@@ -107,7 +90,6 @@ O projeto do portal do software público envolve a equipe de desenvolvimento do 
 
 \section{Metodologia}
 %TODO Verificar se é esse nome mesmo.
-	
 
 \subsection{Guia de usabilidade}
 %TODO não sei se aplica nesse item (seria o protocolo)
@@ -116,7 +98,6 @@ O projeto do portal do software público envolve a equipe de desenvolvimento do 
 	Propomos  para este estudo de caso o seguinte guia que deve ser executado nas sprints de desenvolvimento do Portal do Software Público:
 	
 \begin{enumerate}
-
 
 	\item \textbf{Análise de Usuários}
 	
@@ -137,51 +118,25 @@ O projeto do portal do software público envolve a equipe de desenvolvimento do 
 		\item \textbf{Dados Estatísticos} Através dos dados estatísticos com ferramentas de análise estatística (\textit{Google analytcs, Piwiki}, entre outros) é possível identificar algumas informações sobre o perfil dos usuários. Esses dados podem ser coletados de base de dados, redes sociais ou sistemas de análises de sites. 
 
 	\end{itemize}
-			
-		
-	%\item \textbf{Análise do contexto de uso}
-
-	%As Personas e os Roteiros geram as Histórias de usabilidade.
-
-	%\item Definição de Requisitos e Metas de usabilidade
-
-	%Criação de Benchmarks pelos projetistas de interação e usuários para servir como balizadores para avaliar a qualidade da usabilidade que está sendo entregue ao final de cada iteração.
-	%Baseado nos atributos de usabilidade são estabelecidos instrumentos de medida para se obter valores quantitativos 	para cada atributo.
-	%Esses benchmarks são utilizados para planejar a avaliação de usabilidade e para realizar os testes que irão compor cada avaliação. % esse paragrafo deve ir pro capitulo de usabilidade onde fala de benchmarks.
-	
 		
 	\item \textbf{Planejamento de Usabilidade}
 
 	Estimar os recursos relativos à usabilidade que serão utilizados ao longo do desenvolvimento. Previsões de tempo e custo no planejamento da release. No planejamento da Release do projeto deve-se pensar também em estimativas de tamanho para as histórias de usabilidade e para o planejamento das avaliações de usabilidade.
 
-
 	\item \textbf{Práticas utilizadas na avaliação da usabilidade}
 
 	Ao longo do ciclo de vida diversas práticas podem ser realizadas para Avaliar a usabilidade do SPB:
-	
 		
 	\begin{itemize}
-		\item \textbf{Avaliação Heurística}
-		
-		É importante fazer uma avaliação heurística para identificar possíveis problemas que possam ser encontrados pelos usuários. Através das Heurísticas de Usabilidade de Nielsen e das listas de verificação. 
-		
-%TODO Ver como sera feito no portal do software público.  %Levantamos algumas tarefas/cenários que devem ser executadas para a realização do teste de usabilidade com o objetivo de medir a satisfação relativa a cada tarefa. As tarefas foram pensadas levando em consideração as necessidades dos usuários do Participa.Br. Tarefas que os usuários-alvo executariam mais frequentemente e tarefas que poderiam apresentar problemas para a compreensão e execução do usuário. 
+		\item \textbf{Avaliação Heurística: }É importante fazer uma avaliação heurística para identificar possíveis problemas que possam ser encontrados pelos usuários. Através das Heurísticas de Usabilidade de Nielsen e das listas de verificação. 
 	
-		\item \textbf{Protótipos}
+		\item \textbf{Protótipos: }Prototipação é uma prática bastante usada no desenvolvimento de software, que também pode auxiliar na avaliação de usabilidade.
 
-		Prototipação é uma prática bastante usada no desenvolvimento de software, que também pode auxiliar na avaliação de usabilidade.
+		\item \textbf{Testes de aceitação - cenários de uso: }Os cenários de uso dos testes de aceitação descrevem os passos realizados pelos usuários em cada história de usuário, também podem ser utilizados como base para as avaliações de heurísticas e desenvolvimento dos protótipos.
 
-		\item \textbf{Testes de aceitação - cenários de uso}
+		\item \textbf{Checklists: }O Ministério do Planejamento possui uma cartilha de usabilidade \footnote{\url{http://epwg.governoeletronico.gov.br}} com checklists que podem ser aplicados em qualquer aplicação web, baseados nesses checklists, criamos um checklist que atende às heurísticas estudadas neste trabalho.
 
-		Os cenários de uso dos testes de aceitação descrevem os passos realizados pelos usuários em cada história de usuário, também podem ser utilizados como base para as avaliações de heurísticas e desenvolvimento dos protótipos.
-
-		\item \textbf{Checklists}
-
-		O Ministério do Planejamento possui uma cartilha de usabilidade \footnote{\url{http://epwg.governoeletronico.gov.br}} com checklists que podem ser aplicados em qualquer aplicação web, baseados nesses checklists, criamos um checklist que atende às heurísticas estudadas neste trabalho.
-
-	\item \textbf{Testes com usuários}
-		
-		No fim de cada sprint de desenvolvimento o usuário deve ser consultado através de um Teste de Usabilidade para coletar o feedback a cerca das funcionalidades desenvolvidas até o momento. E ao final de cada release deverá ser feito um teste de usabilidade com usuários, como é proposto por Nielsen de forma mais detalhada.
+	\item \textbf{Testes com usuários :} No fim de cada sprint de desenvolvimento o usuário deve ser consultado através de um Teste de Usabilidade para coletar o feedback a cerca das funcionalidades desenvolvidas até o momento. E ao final de cada release deverá ser feito um teste de usabilidade com usuários, como é proposto por Nielsen de forma mais detalhada.
 		
 		O protocolo para o teste com os usuários seguirá os seguintes passos:
 	
@@ -201,7 +156,6 @@ O projeto do portal do software público envolve a equipe de desenvolvimento do 
 	%
 	Adotamos como paradigma de avaliação o teste de usabilidade, que consiste em avaliar o desempenho dos usuários na execução de tarefas dentro do escopo do sistema. Esse desempenho pode ser avaliado pelos número de erros e tempo de execução da tarefa. Os dados serão coletados através de opiniões dos participantes, comentários em relação ao uso do portal do software público brasileiro.
 	
-
 	Elencamos algumas técnicas para avaliar a usabilidade do portal do Software Público:
 
 	\begin{table}[h]
@@ -221,23 +175,14 @@ O projeto do portal do software público envolve a equipe de desenvolvimento do 
 	\item \textbf{Controle de Usabilidade}
 	
 	Ao final de cada interação a velocidade do projeto é avaliada. Deve-se acompanhar as tarefas relativas à usabilidade comparando o esforço previsto com o realizado.
-	
 \end{enumerate}
 
 Esse protocolo foi extraído do estudo de várias metodologias criadas para a integração das técnicas de usabilidade no contexto de desenvolvimento ágil de software, são elas XPu e XPlus.
  
- 
- %TODO Obs: No TCC 1 tinhamos escrito um protocolo de como seria feito á avaliação de usabilidade, algumas coisas podem ser utilizadas e readaptadas para o nosso contexto atual e inserindo as melhorias encontradas por outros métodos.
-
-
-	
-
 \section{Coleta de Dados}
 %TODO Explicar como será coletado os dados
 
 Os dados referentes à avaliação das heurísticas de usabilidade foram coletados através de observações e reuniões entre a equipe de desenvolvimento. Quanto aos dados sobre usabilidade do sistema, aplicamos alguns questionários. Em relação aos dados dos testes de aceitação foram coletados pelas rotinas automáticas dos testes.
-
-%Explicar como será realizado os testes de usabilidade
 
 \section{Análise}
 
