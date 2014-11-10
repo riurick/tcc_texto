@@ -27,6 +27,13 @@ Inicialmente à equipe de design realizou um planejamento para definir o instrum
 
 Selecionamos a técnica de aplicação de questionário on-line para se produzir os dados de opinião dos participantes. A avaliação proposta não permite uma compreensão completa a cerca da usabilidade do portal em si, compreendendo-se que o portal só pode ser analisado diretamente por meio do uso de outras técnicas, como as observações globais ou sistemáticas entre os participantes e interface.
 
+\textbf{Definição de Usuários:}
+	A equipe identificou alguns tipos de usuários que utilizarão o Portal do Software Público: visitante, registrado, cliente, aluno, professor, desenvolvedor, coordenador técnico, analista SPB e etc. 
+	
+\textbf{Reuniões de Review:}
+	Em algumas reuniões de review a equipe de desenvolvimento junto com a equipe de design e mais gestores do projeto analisaram o passo a passo de como estava o funcionamento do sistema, levando em conta a usabilidade das funcionalidades desenvolvidas. 
+
+
 \textbf{Checklists}
 	Foi desenvolvido um checklist para auxiliar nas avaliações de heurísticas (econtra-se na seção \ref{checklist} do apêndice \ref{apendice1}) seguindo as seguintes características:
 
@@ -694,9 +701,10 @@ Esta seção apresenta a discussão e a interpretação dos resultados observado
 
 Analisando os protótipos e os cenários desenvolvidos, de acordo com as heurísticas de Nielsen, encontramos alguns problemas de usabilidade e propomos tarefas de melhorias a serem feitas e possivelmente verificadas durante os testes de aceitação.
 
+
 \subsection{Análise dos Dados}
 
-A partir dos protótipos e dos cenários desenvolvidos durante as releases 0 e 1, analisamos alguns problemas de usabilidade com base nas heurísticas de Nielsem. A tabela abaixo descreve os problemas encontrados nas primeiras análises.
+A partir dos protótipos e dos cenários desenvolvidos durante as releases 0 e 1, analisamos alguns problemas de usabilidade com base nas heurísticas de Nielsen. A tabela abaixo descreve os problemas encontrados nas primeiras análises.
 
 A partir do levantamento desses problemas foram propostas tarefas durante o planejamento de atividades da equipe de desenvolvimento, para que assim cada problema pudesse ser discutido e resolvido.
 
@@ -857,6 +865,39 @@ História: ``Cadastro de Software'':
 \subsection{Verificação}
 
 Esta subseção analisa os verifica alcançados no estudo de caso, baseado na hipótese levantada e apresentada no início desta seção. Podemos ver nas figuras \ref{avaliacaouser}, \ref{avaliacaoinstitucion} e \ref{avaliacaosoftware} que a partir das avaliações de heurísticas nos protótipos e cenários diminuiu ou se manteve o numero de casos com problemas de criticidade alta, média ou baixa. 
+
+\subsection{Observações acerca das técnicas utilizadas e planejadas}
+
+	Nessa subseção relatamos alguns pontos que identificamos ao adotar algumas técnicas e métodos de usabilidade no ciclo de desenvolvimento do projeto.
+
+	\textbf{Questionários de Perfil de Uso:}
+
+	A aplicação de questionários de perfil de usuário antes e durante a produção do sistema é importante para entender as principais necessidades do público alvo. Se um questionário for aplicado e não for utilizado como insumo para o desenvolvimento do sistema, ele perde o sentido de ser realizado, pois não trará nenhum beneficío ao desenvolvimento/design do sistema, apenas servirá como arcabouço teórico para futuras avaliações, deixando de lado a questão do design centrado no usuário.
+
+	\textbf{Histórias de Usabilidade}
+
+	No contexto do desenvolvimento ágil, as histórias de usabilidade apoiadas pela criação de Persona e Roteiros podem ser uma das melhores técnicas para inserir práticas de usabilidade no inicio do ciclo de desenvolvimento ágil de software pois são comparadas com as histórias de usuário utilizadas pela propria metodologia de desenvolvimento ágil XP e SCRUM. Essas histórias de usabilidade dependendo da forma que for utilizada pode ser centrada no usuário ou não. Para que seja centrada no usuário, deve-se consultar usuários reais para a criação da Persona e roteiros.
+
+	\textbf{Perfil do Usuário}
+
+	A determinação do perfil do usuário é extremamente importante para o sucesso do projeto e do teste, pois um mesmo sistema pode ser excelente para algumas pessoas e 
+inadequado ou inaceitável para outras. Para se criar um cenário de teste é importante ter em mente quem são os possíveis usuários.
+
+	\textbf{Avaliação Heurística}
+	
+	Um dos problemas encontrados na utilização da técnica de avaliação heurística dentro de uma equipe de desenvolvimento de software livre e ágil, muitas vezes é devido que nem sempre há especialistas em usabilidade integrantes na equipe para realizar uma avaliação sistemática do sistema à ser desenvolvido.
+	
+	\textbf{Checklist}
+	
+	A utilização de inspeções de ergonomia por meio de listas de verificação no contexto de uma equipe de desenvolvimento de software é mais fácil a aplicação nesse contexto, pois não exige necessariamente de especialistas em ergonomia pois identificam problemas menores e repetitivos das interfaces.
+	Nessa técnica, ao contrário das avaliações heurísticas que exigem um conhecimento maior dos avaliadores sobre a técnica e sobre as heurísticas. O checklist permite uma maior facilidade na aplicação pois existem ferramentas que auxiliam na condução de um checklist de usabilidade, como por exemplo o Ergolist.
+
+	\textbf{Design Centrado no usuário}
+	
+	Para que um projeto seja centrado no usuário, é importante que o usuário seja inserido do início ao fim do processo, caso contrário a produção do sistema deixa de se apoiar na metodologia do design centrado no usuário e passa a ser “centrado no desenvolvedor”. O desenvolvedor ao comportar-se como usuário não quer dizer que a metodologia utilizada é centrada no usuário e nem mesmo a participação de um Product Owner deixa a produção centrada no usuário. De acordo com o relato de (EASON, 2005) não basta fazer para o usuário, é preciso fazer com o usuário. 
+
+No Projeto do Portal do Software Público, a equipe começou com a tecnologia e não com o usuário. A utilização dos métodos empíricos tradicionais tem o usuário apenas como referência, já no DCU o usuário é elemento central de todo projeto e deve envolvê-lo do inicio ao fim. A ciência experimental é preocupada com os usuários quando as representa mas ela não leva em conta os diversos aspectos do usuário real.
+	
 
 \section{Considerações finais do capítulo}
 
