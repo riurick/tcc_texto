@@ -1,27 +1,18 @@
-\chapter{Projeto de Estudo de Caso}
+\chapter{Estudo de Caso}
 
-Este capítulo apresenta a parte de projeto do estudo de caso desenvolvido no trabalho, compondo os objetivos, global e específicos, do estudo, além das questões de pesquisa, questões específicas e métricas que serão utilizadas.
+Neste capítulo será apresentado o estudo de caso sobre a utilização de práticas de usabilidade e testes automatizados no desenvolvimento do Portal do Software Público, onde será definido um guia de como essas práticas podem ser inseridas nesse contexto.
 
-\section{Definição}
-
-Neste trabalho foi apresentado um estudo teórico relacionado à integração das técnicas de usabilidade ao longo do ciclo de vida ágil de desenvolvimento de software livre juntamente com um estudo dos testes de softwares existentes e como estes testes podem impactar a usabilidade de um sistema.
-
-\subsection{Objetivo Global}
-
-O objetivo global desse estudo é analisar possíveis efeitos da adoção de práticas e técnicas de testes automatizados na usabilidade de um sistema, durante o processo de desenvolvimento empírico de software.
-
-\subsection{Objetivos específicos}
-
-Tendo em vista a utilização de várias técnicas de usabilidade e de testes de software em um projeto de desenvolvimento empírico, os objetivos de medição foram definidos à fim de:
+O objetivo global desse estudo é introduzir técnicas de usabilidade no desenvolvimento empírico a partir das práticas de BDD.
+%
+Tendo em vista a utilização de várias técnicas de usabilidade e de testes de software em um projeto de desenvolvimento empírico, os objetivos específicos foram definidos à fim de:
 
 \begin{enumerate}
 \item Avaliar relação entre práticas de BDD e práticas de usabilidade de um software. 
 
-\item Avaliar o impacto da adoção de técnicas de usabilidade em um contexto específico de desenvolvimento empírico de software.
+\item Integrar técnicas de usabilidade em um contexto específico de desenvolvimento empírico de software.
 \end{enumerate}
 
-\subsection{Questões de Pesquisa}
-A partir dos objetivos de medição estabelecidos, foram definidas questões de pesquisa:
+Para nos guiarmos  em ralação aos objetivos estabelecidos, definimos as seguintes questões-problemas:
 
 \begin{enumerate}
 \item Como os testes automatizados são definidos e implementados em um ambiente de desenvolvimento de software empírico?
@@ -29,152 +20,265 @@ A partir dos objetivos de medição estabelecidos, foram definidas questões de 
 \item Como o processo de desenvolvimento utilizando práticas do BDD podem se relacionar com testes de usabilidade?
 \end{enumerate}
 
-\begin{comment}
-A partir das questões de pesquisa, foram definidas questões especificas e para cada questão, foram definidas métricas:
+Para respondermos as questões-problemas, definimos a seguinte hipótese:
 
-\begin{enumerate}
-\item \textbf{Questão 01: }Qual a estimativa de esforço gasto com testes?
-
-	\textbf{Métrica: } Pontos de história / horas gastas com testes por sprint.
-
-\item \textbf{Questão 02: }Qual a cobertura de testes de aceitação apresentada?
-
-	\textbf{Métrica: } Porcentagem de cobertura de testes.
-
-\item \textbf{Questão 03: }Qual a viabilidade da adoção de práticas de usabilidade em conjunto com as metodologias ágeis utilizadas no projeto?
-
-	Observar a integração das atividades ao longo do ciclo de vida do projeto e realizar entrevista com os participantes sobre as principais dificuldades encontradas na integração das duas metodologias.
-	%isso da questão 3 é uma estrategia de medição e não métrica em si.
-\item \textbf{Questão 04: }Qual a conformidade do sistema com as heurísticas de usabilidade?
-
-	\textbf{Métrica: }
-\item \textbf{Questão 05: }Qual a capacidade do sistema de atrair o usuário?
+\textbf{Hipótese H1: } A integração de práticas de usabilidade a partir do desenvolvimento por comportamento (BDD) melhor itroduz as técnicas de usabilidade no ciclo de desenvolvimento.
 	
-	\textbf{Métrica: }
-\item \textbf{Questão 06:} Qual a capacidade do sistema de possibilitar ao usuário aprender a manuseá-lo?
+%ToDo: Explicar a hipotese DONE
+Esta hipótese foi definida levando em consideração que o desenvolvimento empírico tem como prática básica os testes automatizados, e em contrapartida se dá pouca atenção à usabilidade. Assim pensamos em utilizar as práticas de testes que já são constantes para introduzir no ciclo as práticas de usabilidade.
 
-	\textbf{Métrica: }
-\end{enumerate}
-\end{comment}
+\section{Objeto de Estudo}
 
-\section{Planejamento}
-%TO DO: Melhorar a hipotese
-Nessa seção são apresentados a seleção dos contextos, a formulação da hipótese, a seleção dos participantes.
+O Portal do Software Público Brasileiro consiste em um sistema que permite o compartilhamento de softwares e faz parte da política de software livre no setor público.
+O SPB será o objeto de estudo de caso, assim como o processo de colaboração com o SPB, que é realizado no LAPPIS da UnB.
 
-\subsection{Definição de Hipóteses}
+O processo de colaboração com o SPB baseia-se no desenvolvimento empírico. O desenvolvimento de testes automatizados é intrínseco ao processo de desenvolvimento, assim buscamos evoluir a forma com que o processo de colaboração com o SPB lida com problemas de usabilidade.
+O desenvolvimento é feito a partir de sprints de duas semanas, em que são realizadas reuniões com as equipes e reuniões de planejamento (Planning Poker) em cada equipe para definir as atividades de cada sprint.
 
-\textbf{Hipótese}  A integração de práticas de usabilidade a partir de práticas do BDD resulta em melhores avaliações de usabilidade durante desenvolvimento empírico de software.
+O estudo de caso abrange algumas funcionalidades, que foram desenvolvidas durante o projeto, sendo as seugintes histórias: (1) Cadastro de Usuário, (2) Cadastro de Instituição e (3) Cadastro de Software.
+%
+Para cada funcionalidade desenvolvida foi determinado um cenário de uso, base para a implementação dos testes de aceitação e consequentemente o seu desenvolvimento.
+%
+Durante a primeira release (release 0) foi desenvolvida a história de ``Cadastro de Usuário'', que possui o seguintes cenário de sucesso:
 
-\subsection{Contexto}
+	\begin{itemize}
+	\item\textbf{Cenário 01:} Cadastro com sucesso de apenas campos obrigatórios
 
-O contexto selecionado para o estudo de caso é o desenvolvimento do novo Portal do Software Público, que vem sendo desenvolvido no LAPPIS a partir das métodos de desenvolvimento empírico.		
+	\textbf{[Dado]} que não existe nenhum usuário com o nome de usuário ``josesilva''
 
-\subsection{Indivíduos}
+	\textbf{[Quando]} eu clicar em cadastrar novo usuário
 
-%TODO Organizar melhor esse tópico
-O projeto do portal do software público envolve a equipe de desenvolvimento do LAPPIS, coordenados pelos professores responsáveis, envolve também a SLTI (Secretaria de Logística e Tecnologia da Informação) e sua direção.
+	\textbf{[E]} eu preencho os seguintes campos: 
+
+  		\subitem nome de usuário: ``josesilva''
+
+  		\subitem e-mail: ``jose@gmail.com''
+
+  		\subitem senha: ``123456''
+
+  		\subitem confirmação da senha: ``123456''
+
+  		\subitem nome completo: ``José da Silva''
+
+  		\subitem país: ``Brasil''
+
+  		\subitem estado: ``Distrito Federal''
+
+  		\subitem cidade: ``Brasília''
+
+	\textbf{[E]} eu clico em cadastrar
+
+	\textbf{[Então]} eu recebo uma confirmação de cadastro realizado com sucesso
+	\end{itemize}
+Outra funcionalidade desenvolvida foi a história chamada ``Manter Instituição'', que possui o seguinte cenário de sucesso:
 
 \begin{itemize}
+\item\textbf{Cenário 01:} Cadastro de nova instituição com sucesso
 
-\item Secretária Executiva: responsável pelo financiamento dos projetos do ministério.
+\textbf{[Dado]} que eu estou na página de cadastro de usuário
 
-\item Diretor: responsável estratégico pelos projetos do ministério, seria o ``Product Owner'' do projeto.
+\textbf{[Quando]} eu clicar em ``Cadastrar nova instituição''
 
-\item Equipe SLTI: responsável pelo levantamento e validação dos requisitos do projeto.
+\textbf{[E]} eu preencher os seguintes campos:
 
-\item Coordenadores: responsáveis estratégicos pela equipe de desenvolvimento do projeto (LAPPIS).
+  	\subitem sigla: ``MP''
 
-\item Equipe de desenvolvimento: responsável pelo desenvolvimento do portal do software público, que é dividida em duas equipes, uma responsável pelo Colab e outra pelo Noosfero, cada equipe com seu \textit{coach}.
+  	\subitem poder: ``executivo''
 
+  	\subitem esfera: ``federal''
+
+  	\subitem tipo: ``pública''
+
+  	\subitem cnpj: ``00.489.828/0002-36''
+
+\textbf{[Então]} eu devo visualizar a mensagem ``Instituição cadastrada com sucesso!''
+\end{itemize}
+Os demais cenários encontram-se na seção \ref{cenario_uso}. 
+
+Estes cenários apresentaram alguns problemas de usabilidade analisando-os de acordo com as heurísticas de Nielsen, e após o processo de desenvolvimento ter uma melhoria na visão de usabilidade, verificamos que os cenários apresentaram melhoras em relação às heurísticas de Nielsen. 
+
+Durante a segunda release (release 1) a história de ``Cadastro de Usuário'', foi desenvolvida novamente com novo cenário \ref{cenario_r1}. Para este cenário foi desenvolvido o seguinte protótipo, baseando-se nos requisitos definidos pelos clientes. 
+
+	\begin{figure}[h!]
+    	\centering
+    	\includegraphics[keepaspectratio=true,scale=0.3]
+      		{figuras/CadastroEdicaoUser.eps}
+    	\caption{Protótipos de cadastro de usuário}
+    	\label{cadastro user}
+	\end{figure}
+
+A partir dos protótipos e dos cenários desenvolvidos durante as releases 0 e 1, analisamos alguns problemas de usabilidade com base nas heurísticas de Nielsen. A tabela abaixo descreve os problemas encontrados nas primeiras análises.
+
+%INSERIR TABELA DE PROBLEMAS
+\begin{table}[h!]
+\scalefont{.65}
+\begin{tabular}{|l|p{3cm}|p{6cm}|p{3cm}|l|}
+\hline
+\textbf{ID} & \textbf{Local} & \textbf{Descrição do Problema}                                                                                     & \textbf{Heurística Desobedecida} & \textbf{Criticidade} \\ \hline
+1           & Cadastro de Usuário                 & Linguagens estrangeiras e avisos em outros idiomas & Diálogos simples  & Média                \\ \hline
+2           & Cadastro de Usuário      & Botão de adicionar nova instituição não é claro para o usuário.  & Minimizar a sobrecarga de memória do usuário;           & Alta                \\ \hline
+3           & Cadastro de Usuário               & Diferença entre botão adicionar nova instituição e criar nova instituição para o usuário  & Minimizar a sobrecarga de memória do usuário & Media                \\ \hline
+4           & Cadastro de Instituição             & Seleção de País deve ter Brasil como default  & Diálogos simples e naturais    & Baixa                \\ \hline
+5           & Cadastro de Instituição      & Opção de escolha do estado: Random button não posicionado e não funciona no primeiro clique. & Diálogos simples e naturais  & Baixa                \\ \hline
+6           & Cadastro de Usuário  & Caso você não preencha o email secundário ele informa a seguinte mensagem: E-mail or secondary e-mail already taken & Boas mensagens de erros                & Média                \\ \hline
+7           & Cadastro de Usuário  & Opção recaptcha só aparece na segunda vez & Consistência                     & Alta                \\ \hline
+8           & Perfil de Usuário  & Ao clicar em hide no bloco de progresso de perfil ele some e não foi encontrada uma opção fácil para reverter a situação.
+ & Prevenção de erros                     & Baixa                \\ \hline
+9           & Cadastro de Usuário  & Caso se tenha uma infinidade de grupos, fica inviável a opção de checkbox. Ou será utilizada apenas para grupos mais ``conhecidos''? & Atalhos & Média                \\ \hline
+10           & Cadastro de Usuário  & Mensagem de erro um pouco confusa: Usuário com este Usuário já existe.  & Consistência                     & Baixa                \\ \hline
+\end{tabular}
+\scalefont{1}
+\end{table}
+
+Durante a terceira release (release 2) a história de ``Novo Software'' foi desenvolvida com o seguinte cenário de sucesso:
+
+\begin{itemize}
+\item\textbf{Cenário 01:} Novo Software
+
+	\textbf{[Dado]} que não existe nenhum software com o localhost ``software''
+
+	\textbf{[Quando]} eu clicar em ``Novo Software''
+
+	\textbf{[E]} eu preencho os seguintes campos: 
+
+  		\subitem localhost: ``software''
+
+  		\subitem finalidade: ``Finalidade do software''
+
+  		\subitem licenca: ``licença''
+  		
+  		
+	\textbf{[E]} eu clico em ``Salvar''
+
+	\textbf{[Então]} eu recebo uma confirmação de cadastro realizado com sucesso, e encontro a pagina de edição de software
+\end{itemize}
+Assim como os cenários anteriores, os demais cenários da história de ``Novo Software'' encontra-se em \ref{cenario_r2}. Para esta história também foi desenvolvido um protótipo:
+
+	\begin{figure}[h!]
+    	\centering
+    	\includegraphics[keepaspectratio=true,scale=0.23]
+      		{figuras/CadastroEdicaoSoftware.eps}
+    	\caption{Protótipos de cadastro de software}
+    	\label{cadastro software}
+	\end{figure}
+
+
+Para dar continuidade a ao processo avaliamos os cenários da história de ``Novo Software'': 
+
+\begin{table}[h!]
+\scalefont{.7}
+\begin{tabular}{|l|p{3cm}|p{6cm}|p{3cm}|l|}
+\hline
+\textbf{ID} & \textbf{Local} & \textbf{Descrição do Problema}                                                                                     & \textbf{Heurística Desobedecida} & \textbf{Criticidade} \\ \hline
+1           & Protótipo - Novo Software                 & Ao escolher um nome para o software, não há evidência do que aconteceria caso o nome fosse igual a outro existente & Prevenção de erros               & Média                \\ \hline
+2           & Protótipo - Novo Software                 & Não há informação para o usuário do que seria o ``Link''                                                             & Ajuda e documentação             & Média                \\ \hline
+3           & Protótipo - Nova Comunidade               & Palavras em inglês e português                                                                                     & Linguagem Clara                   & Baixa                \\ \hline
+4           & Protótipo - Nova Comunidade               & Falta de informação sobre as tags e as categorias do noosfero                                                      & Ajuda e documentação             & Baixa                \\ \hline
+5           & Protótipo - Novo Software                 & Campos obrigatórios não são definidos                                                                              & Prevenção de erros               & Média                \\ \hline
+6           & Protótipo - Novo Software    & Mensagens de ajuda ao preenchimentos dos campos                                                                    & Prevenção de erros               & Baixa                \\ \hline
+7           & Protótipo - Nova Comunidade               & Botão de Save e Continue altera estrutura da pagina de software                                                    & Consistência                     & Baixa                \\ \hline
+\end{tabular}
+\scalefont{1}
+\end{table}
+
+No ciclo seguinte de avaliações, após passarmos os problemas das avaliações anteriores para a equipe de desenvolvimento, levantamos os seguintes problemas em relação as histórias de ``Cadastro de Usuário'' e ``Cadastro de Software'':
+
+\begin{table}[h!]
+\scalefont{.75}
+\begin{tabular}{|l|p{3cm}|p{6cm}|p{3cm}|l|}
+\hline
+\textbf{ID} & \textbf{Local} & \textbf{Descrição do Problema}                                                                                     & \textbf{Heurística Desobedecida} & \textbf{Criticidade} \\ \hline
+1           & Cadastro de Usuário                 & Rótulos dos campos de registro não contém um elemento de convite à entrada de dados ( “ : ”) & Diálogos simples e naturais     & Baixa                \\ \hline
+2           & Cadastro de Usuário                 & Usuário não encontra informações suficientes sobre grupos que pode participar  & Diálogos simples e naturais             & Média                \\ \hline
+3           & Cadastro de Usuário               & Ao se excluir um e-mail secundário, não existe solicitação de confirmação       & Feedback                & Alta                \\ \hline
+4           & Cadastro de Software     & Dificuldade para acessar o botão de criar software
+	        & Minimizar sobrecarga          & Baixa                \\ \hline
+5           & Cadastro de Software       & Funcionalidade de criar software também cria comunidade, porém o usuário não é informado disto  & Feedback    & Média                \\ \hline
+6           & Cadastro de Software    & Dificuldade para acessar o botão de editar software
+		    & Minimizar sobrecarga           & Baixa                \\ \hline
+7           & Cadastro de Software    & Fluxo de edição não está claro (etapas)
+			& Feedback                       & Média                \\ \hline
+8           & Cadastro de Software    & frase ``The highlighted fields are mandatory'' não especifica o char (*)
+		    &Diálogos simples e naturais     & Baixa                \\ \hline
+\end{tabular}
+\scalefont{1}
+\end{table}
+
+Após as melhorias propostas serem desenvolvidas e longo do processo de evolução das histórias mencionadas, os testes de aceitação foram utlizados para verificar os seguintes fatores:
+
+\begin{itemize}
+	\item Capacidade de registrar e editar informações de usuário e instituição;
+	\item Capacidade de registrar e editar informações de software;
+	\item Capacidade de desativar usuário;
+	\item Capacidade de desativar software;
 \end{itemize}
 
-\section{Metodologia}
-%TODO Verificar se é esse nome mesmo.
 
-\subsection{Guia de usabilidade}
-%TODO não sei se aplica nesse item (seria o protocolo)
-%Melhorar a escrita
+\section{Análise e Interpretação dos Resultados}
 
-	Propomos  para este estudo de caso o seguinte guia que deve ser executado nas sprints de desenvolvimento do Portal do Software Público:
+Analisando os protótipos e os cenários desenvolvidos, de acordo com as heurísticas de Nielsen, encontramos alguns problemas de usabilidade e propomos tarefas de melhorias a serem feitas e verificadas durante os testes de aceitação.
+%
+A partir do levantamento desses problemas foram propostas tarefas durante o planejamento de atividades da equipe de desenvolvimento, para que assim cada problema pudesse ser discutido e resolvido.
+
+Analisando os dados das primeiras releases, que compõem o primeiro ciclo de avaliações pelas heurísticas. No segundo ciclo de avaliações usamos os \textit{checklists} em \ref{checklist} desenvolvidos para auxiliar as avaliações das heurísticas, também utilizados no terceiro ciclo de avaliações. Uma das histórias avaliadas foi a de ``Cadastro de Usuário'':
+
+\begin{figure}[h!]
+    	\centering
+    	\includegraphics[keepaspectratio=true,scale=0.62]
+      		{figuras/graf01.eps}
+    	\caption{Resultado das avaliações de ``Cadastro de Usuário''}
+    	\label{avaliacaouser}
+\end{figure}
+
+Já em ``Cadastro de Instituição'', temos:
+
+\begin{figure}[h!]
+    	\centering
+    	\includegraphics[keepaspectratio=true,scale=0.62]
+      		{figuras/graf02.eps}
+    	\caption{Resultado das avaliações de ``Cadastro de Instituição''}
+    	\label{avaliacaoinstitucion}
+\end{figure}
+
+Quanto à história de ``Cadastro de  Software'', temos:
+
+\begin{figure}[h!]
+    	\centering
+    	\includegraphics[keepaspectratio=true,scale=0.62]
+      		{figuras/graf03.eps}
+    	\caption{Resultado das avaliações de ``Cadastro de Software''}
+    	\label{avaliacaosoftware}
+\end{figure}
+
+\newpage
+Quanto aos testes de aceitação dos cenários avaliados tivemos os seguintes resultados de medição:
+%Falta a historia cadastro de instituiçao
+História: ``Cadastro de Usuário'':
+\begin{itemize}
+	\item Quantidade de cenários executados: 22 cenários;
+	\item Quantidade de passos executadas: 162 passos
+	\item Quantidade de falhas obtidas: 0 falhas;
+\end{itemize} 
+
+História: ``Cadastro de Instuição'':
+\begin{itemize}
+	\item Quantidade de cenários executados: 2 cenários;
+	\item Quantidade de passos executadas: 23 passos
+	\item Quantidade de falhas obtidas: 0 falhas;
+\end{itemize} 
+
+História: ``Cadastro de Software'':
+\begin{itemize}
+	\item Quantidade de cenários executados: 6 cenários;
+	\item Quantidade de passos executadas: 68 passos
+	\item Quantidade de falhas obtidas: 0 falhas;
+\end{itemize} 
+
+\subsection{Verificação}
+
+Esta subseção analisa os verifica alcançados no estudo de caso, baseado na hipótese levantada e apresentada no início desta seção. Podemos ver nas figuras \ref{avaliacaouser}, \ref{avaliacaoinstitucion} e \ref{avaliacaosoftware} que a partir das avaliações de heurísticas nos protótipos e cenários diminuiu ou se manteve o numero de casos com problemas de criticidade alta, média ou baixa. 
 	
-\begin{enumerate}
-
-	\item \textbf{Análise de Usuários}
-	
-	No início de qualquer projeto é importante conhecer quem são os usuários que irão utilizar o sistema. Para isso existem algumas técnicas que são utilizadas para conhecer os usuários.
-	%
-	A metodologia XPU propõe a criação de Personas e Roteiros para a análise dos usuários, outras técnicas também podem ser utilizadas como a aplicação de questionário de perfil dos usuários e a análise estatísticas de dados.
-	
-	\begin{itemize}
-		\item \textbf{Personas:} Personagens fictícios criados com base em dados reais. As Personas atuam como representantes dos usuários reais e representam as necessidades de um grupo maior. 
-		%
-		A utilização de Personas permite ter um maior foco no usuário, deixando o projeto centrado no usuário. É utilizado para a identificação de requisitos, criação de cenários e \textit{user stories}. 
-		%\item \textbf{Roteiros:}		
-		
-		\item \textbf{Questionários de perfil do usuário:} Para identificar o perfil dos usuários do Portal do Software Público é necessário realizar uma pesquisa qualitativa para levantamento das características  dos usuários, de modo a compreender quem são, qual o conhecimento e experiência e como utilizam para realizar seu trabalho acadêmico ou profissional. 
-		%
-		A análise do questionário servirá para entender o perfil dos usuários do Portal do Software Público, através da investigação de seus interesses. 
-
-		\item \textbf{Dados Estatísticos:} Através dos dados estatísticos com ferramentas de análise estatística (\textit{Google analytcs, Piwiki}, entre outros) é possível identificar algumas informações sobre o perfil dos usuários. Esses dados podem ser coletados de base de dados, redes sociais ou sistemas de análises de sites. 
-
-	\end{itemize}
-		
-	\item \textbf{Planejamento de Usabilidade}
-
-	Estimar os recursos relativos à usabilidade que serão utilizados ao longo do desenvolvimento. Previsões de tempo e custo no planejamento da release. No planejamento da Release do projeto deve-se pensar também em estimativas de tamanho para as histórias de usabilidade e para o planejamento das avaliações de usabilidade.
-
-	\item \textbf{Práticas utilizadas na avaliação da usabilidade}
-
-	Ao longo do ciclo de vida diversas práticas podem ser realizadas para Avaliar a usabilidade do SPB:
-		
-	\begin{itemize}
-		\item \textbf{Avaliação Heurística: }É importante fazer uma avaliação heurística para identificar possíveis problemas que possam ser encontrados pelos usuários. Através das Heurísticas de Usabilidade de Nielsen e das listas de verificação. 
-	
-		\item \textbf{Protótipos: }Prototipação é uma prática bastante usada no desenvolvimento de software, que também pode auxiliar na avaliação de usabilidade.
-
-		\item \textbf{Testes de aceitação - cenários de uso: }Os cenários de uso dos testes de aceitação descrevem os passos realizados pelos usuários em cada história de usuário, também podem ser utilizados como base para as avaliações de heurísticas e desenvolvimento dos protótipos.
-
-		\item \textbf{Checklists: }O Ministério do Planejamento possui uma cartilha de usabilidade \footnote{\url{http://epwg.governoeletronico.gov.br}} com checklists que podem ser aplicados em qualquer aplicação web, baseados nesses checklists, criamos um checklist que atende às heurísticas estudadas neste trabalho.
-
-	\item \textbf{Testes com usuários :} No fim de cada sprint de desenvolvimento o usuário deve ser consultado através de um Teste de Usabilidade para coletar o feedback a cerca das funcionalidades desenvolvidas até o momento. E ao final de cada release deverá ser feito um teste de usabilidade com usuários, como é proposto por Nielsen de forma mais detalhada.
-		
-		O protocolo para o teste com os usuários seguirá os seguintes passos:
-	
-		\begin{itemize}
-
-		\item Elabore um cenário de uso com tarefas à serem executadas.
-		\item O usuário irá testar o sistema de acordo com o cenário especificado.
-		\item Uma pessoa deve observar o que o usuário está fazendo e anotando a sua reação ao utilizar a ferramenta.
-		\item Um observador irá registrar o tempo gasto por cada participante para concluir o estudo de caso, avaliar a ferramenta e se necessitou de alguma ajuda.
-		\item O participante deve verbalizar tudo o que está passando em sua mente ao realizar a atividade: o que estão tentando fazer, o que estão olhando, o que estão lendo ou procurando e que perguntas eles tem em mente.		
-		\item Ao final o usuário deve responder algumas perguntas referente as tarefas executadas.
-		\item Podem ser utilizados questionários de satisfação dos usuários para coletar as opiniões dos participantes.
-
-		\end{itemize}
-				
-	\end{itemize} 
-	
-	As medidas de usabilidade neste estudo foram obtidas considerando-se três fatores: eficácia, eficiência e satisfação de uso. 
-	%
-	Adotamos como paradigma de avaliação o teste de usabilidade, que consiste em avaliar o desempenho dos usuários na execução de tarefas dentro do escopo do sistema. Esse desempenho pode ser avaliado pelos número de erros e tempo de execução da tarefa. Os dados serão coletados através de opiniões dos participantes, comentários em relação ao uso do portal do software público brasileiro.
-	
-	
-	\item \textbf{Controle de Usabilidade}
-	
-	Ao final de cada interação a velocidade do projeto é avaliada. Deve-se acompanhar as tarefas relativas à usabilidade comparando o esforço previsto com o realizado.
-\end{enumerate}
-
-Esse protocolo foi extraído do estudo de várias metodologias criadas para a integração das técnicas de usabilidade no contexto de desenvolvimento ágil de software, são elas XPu e XPlus.
- 
-\section{Coleta de Dados}
-%TODO Explicar como será coletado os dados
-
-Os dados referentes à avaliação das heurísticas de usabilidade foram coletados através de observações e reuniões entre a equipe de desenvolvimento. Quanto aos dados sobre usabilidade do sistema, aplicamos alguns questionários. Em relação aos dados dos testes de aceitação foram coletados pelas rotinas automáticas dos testes.
-
-\section{Análise}
-
-Os dados referentes aos questionários e aos testes automáticos serão analisados através de gráficos, a fim de servirem de base para a analise dos resultados sobre a usabilidade do sistema.
 
 \section{Considerações}
 
-Este capítulo apresentou o planejamento do estudo de caso, estudo que será apresentado no próximo capítulo.
+Este capítulo apresentou o estudo de caso sobre o desenvolvimento do Portal do Software Público a partir de métodos empíricos, utilizando práticas de BDD e usabilidade.
