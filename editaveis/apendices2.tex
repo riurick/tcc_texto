@@ -80,3 +80,317 @@ Os testes funcionais e unitários são escritos da seguinte forma:
     \caption{Código de teste}
     \label{noosfero_should}
 \end{figure}
+
+\section{Cenários de Uso da release 0}
+\label{cenario_uso}
+    Os cenários de uso foram a base de criação dos testes de aceitação.
+    Durante a primeira release (release 0) foram desenvolvidas algumas histórias, dentre estas, a história de ``Cadastro de Usuário'', que possui os seguintes cenários de sucesso:
+
+    \begin{itemize}
+    \item\textbf{Cenário 01:} Cadastro com sucesso de apenas campos obrigatórios
+
+    \textbf{[Dado]} que não existe nenhum usuário com o nome de usuário ``josesilva''
+
+    \textbf{[Quando]} eu clicar em cadastrar novo usuário
+
+    \textbf{[E]} eu preencho os seguintes campos: 
+
+        \subitem nome de usuário: ``josesilva''
+
+        \subitem e-mail: ``jose@gmail.com''
+
+        \subitem senha: ``123456''
+
+        \subitem confirmação da senha: ``123456''
+
+        \subitem nome completo: ``José da Silva''
+
+        \subitem país: ``Brasil''
+
+        \subitem estado: ``Distrito Federal''
+
+        \subitem cidade: ``Brasília''
+
+    \textbf{[E]} eu clico em cadastrar
+
+    \textbf{[Então]} eu recebo uma confirmação de cadastro realizado com sucesso
+
+
+    \item\textbf{Cenário 02:} Cadastro com sucesso de apenas campos obrigatórios de usuário governamental
+    
+    \textbf{[Dado]} que não existe nenhum usuário com o nome de usuário ``josesilva''
+    
+    \textbf{[Quando]} eu clicar em cadastrar novo usuário
+    
+    \textbf{[E]} eu preencho os seguintes campos: 
+        \subitem nome de usuário: ``josesilva''
+
+        \subitem e-mail: ``jose@serpro.gov.br''
+
+        \subitem e-mail secundário: ``jose@gmail.com''
+
+        \subitem senha: ``123456''
+
+        \subitem confirmação da senha: ``123456''
+
+        \subitem nome completo: ``José da Silva''
+
+        \subitem cargo: ``analista de TI''
+
+        \subitem país: ``Brasil''
+
+         \subitem estado: ``Distrito Federal''
+
+        \subitem cidade: ``Brasília''
+
+    \textbf{[E]} eu seleciono ``SERPRO'' como instituição
+
+    \textbf{[E]} eu seleciono ``????'' como unidade  
+
+    \textbf{[E]} eu clico em cadastrar
+
+    \textbf{[Então]}eu recebo uma confirmação de cadastro realizado com sucesso
+
+\item\textbf{Cenário 3:} Cadastro com sucesso com todos os campos preenchidos, mesmo não obrigatórios
+
+    \textbf{[Dado]} que não existe um usuário cujo email primário ou email secundário é ``maria@gmail.com''
+
+    \textbf{[Quando]} eu clicar em cadastrar novo usuário
+
+    \textbf{[E]} eu preencho os seguintes campos: 
+
+        \subitem nome de usuário: ``mariasilva''
+
+          \subitem e-mail: ``maria@gmail.com''
+
+          \subitem e-mail secundário: ``maria@yahoo.com''
+
+          \subitem senha: ``123456''
+
+          \subitem confirmação da senha: ``123456''
+
+          \subitem nome completo: ``Maria da Silva''
+
+          \subitem cargo: ``analista de TI''
+
+          \subitem áreas de interesse: ``Engenharia de Software''
+
+          \subitem país: ``Brasil''
+
+          \subitem estado: ``Distrito Federal''
+
+          \subitem cidade: ``Brasília''
+
+    \textbf{[E]} eu seleciono ``Outro'' como instituição 
+
+    \textbf{[E]} eu clico em cadastrar
+
+    \textbf{[Então]} eu recebo uma notificação de cadastro realizado com sucesso.
+    \end{itemize}
+
+    Os cenários de falha ocorrem nas seguintes situações:
+    \begin{itemize}
+    \item Email proposto existir como email de outro usuário;
+    \item Email secundário proposto existir como email de outro usuário;
+    \item Email secundário ser um email governamental e ao email primário não ser um email governamental;
+    \item Não preenchimento de campos obrigatórios para usuário governamental 
+    \end{itemize}
+
+     Quanto a história chamada ``Manter Instituição''  possui os seguintes cenários:
+
+\begin{itemize}
+\item\textbf{Cenário 01:} Cadastro de nova instituição com sucesso
+
+\textbf{[Dado]} que eu estou na página de cadastro de usuário
+
+\textbf{[E]} que a seguinte instituição não existe:
+
+    \subitem nome: ``Ministério do Planejamento, Orçamento e Gestão''
+
+    \subitem sigla: ``MP''
+
+    \subitem poder: ``executivo''
+
+    \subitem esfera: ``federal''
+
+    \subitem tipo: ``pública''
+
+    \subitem cnpj: ``00.489.828/0002-36''
+
+\textbf{[Quando]} eu clicar em ``Cadastrar nova instituição''
+
+\textbf{[E]} eu preencher os seguintes campos:
+
+    \subitem sigla: ``MP''
+
+    \subitem poder: ``executivo''
+
+    \subitem esfera: ``federal''
+
+    \subitem tipo: ``pública''
+
+    \subitem cnpj: ``00.489.828/0002-36''
+
+\textbf{[Então]} eu devo visualizar a mensagem ``Instituição cadastrada com sucesso!''
+
+\item\textbf{Cenário 02:} Busca de instituição inexistente
+
+\textbf{[Dado]} que eu estou na página de cadastro de usuário
+
+\textbf{[E]} que a seguinte instituição não existe:
+
+ \subitem nome: ``Ministério do Planejamento, Orçamento e Gestão''
+
+  \subitem sigla: ``MP''
+
+  \subitem poder: ``executivo''
+
+  \subitem esfera: ``federal''
+
+  \subitem tipo: ``pública''
+  
+  \subitem cnpj: ``00.489.828/0002-36''
+
+\textbf{[Quando]} eu buscar MP
+
+\textbf{[Então]} eu devo visualizar a mensagem ``Instituição não cadastrada''
+
+\textbf{[E]}eu devo visualizar a opção de cadastrar nova instituição
+\end{itemize}
+
+\section{Cenários de Uso da release 1}
+\label{cenario_r1}
+
+
+Durante a segunda release (release 1) a história de ``Cadastro de Usuário'' foi desenvolvida novamente com o seguinte cenário:
+
+\begin{itemize}
+\item\textbf{Cenário 01:} Cadastro com sucesso de apenas campos obrigatórios
+
+    \textbf{[Dado]} que não existe nenhum usuário com o nome de usuário ``josesilva''
+
+    \textbf{[Quando]} eu clicar em ``Cadastre-se''
+
+    \textbf{[E]} eu preencho os seguintes campos: 
+
+        \subitem primeiro nome: ``José''
+
+        \subitem ultimo nome: ``Silva''
+
+        \subitem endereço de e-mail: ``jose@gmail.com''
+
+        \subitem usuário: ``josesilva''
+        
+    \textbf{[E]} eu clico em ``Cadastre-se''
+
+    \textbf{[Então]} eu recebo uma confirmação de cadastro realizado com sucesso, com a seguinte mensagem: 
+    ``Você deve se logar para seu perfil. Perfis não validados serão deletados em 24h.''
+\end{itemize}
+
+\section{Cenários de uso da release 2}
+\label{cenario_r2}
+
+Durante a segunda release (release 2) a história de ``Novo Software'' foi desenvolvida com os seguintes cenários:
+
+\begin{itemize}
+\item\textbf{Cenário 01:} Novo Software
+
+    \textbf{[Dado]} que não existe nenhum software com o localhost ``software''
+
+    \textbf{[Quando]} eu clicar em ``Novo Software''
+
+    \textbf{[E]} eu preencho os seguintes campos: 
+
+        \subitem localhost: ``software''
+
+        \subitem finalidade: ``Finalidade do software''
+
+        \subitem licenca: ``licença''
+        
+        
+    \textbf{[E]} eu clico em ``Salvar''
+
+    \textbf{[Então]} eu recebo uma confirmação de cadastro realizado com sucesso, e encontro a pagina de edição de software
+
+
+Outros cenários de edição de software são: ``Informações de Comunidade'' e ``Informações de Software''.
+
+\item\textbf{Cenário 02:} Informações de Comunidade
+
+    \textbf{[Dado]} que ``software'' está cadastrado
+
+    \textbf{[Quando]} eu clicar em ``Cadastre-se''
+
+    \textbf{[E]} eu preencho os seguintes campos: 
+
+        \subitem descricao: ``Descrição do software''
+
+        \subitem tags: ``software''
+
+        \subitem categorias: ``categoria1''
+ 
+    \textbf{[E]} eu clico em ``Salvar''
+
+    \textbf{[Então]} eu recebo uma confirmação de cadastro salvo com sucesso
+
+
+\item\textbf{Cenário 03:} Informações de Software
+
+    \textbf{[Dado]} que ``software'' está cadastrado e estou em Edição de software
+
+    \textbf{[Quando]} eu clicar em ``Especifico''
+
+    \textbf{[E]} eu preencho os seguintes campos: 
+
+        \subitem Sigla: ``teste''
+
+        \subitem sistema operacional: ``teste os''
+
+        \subitem funcionalidades: ``testes''
+
+        \subitem categorias: ``categoria1''
+    
+    \textbf{[E]} eu clico em ``Nova Biblioteca''
+
+    \textbf{[E]} eu preencho os seguintes campos: 
+
+        \subitem nome: ``teste''
+
+        \subitem versão: ``teste''
+
+        \subitem licença: ``teste''
+
+    \textbf{[E]} eu clico em ``Novo Sistema Operacional''
+
+    \textbf{[E]} eu preencho os seguintes campos: 
+
+        \subitem nome: ``Debian''
+
+        \subitem versão: ``teste''
+
+    \textbf{[E]} eu clico em ``Nova linguagem''
+
+    \textbf{[E]} eu preencho os seguintes campos: 
+
+        \subitem nome: ``C++''
+
+        \subitem versão: ``teste''
+
+        \subitem sistema operacional: ``Debian''
+
+    \textbf{[E]} eu clico em ``Novo Banco de Dados''
+
+    \textbf{[E]} eu preencho os seguintes campos: 
+
+        \subitem nome: ``apache''
+
+        \subitem versão: ``teste''
+
+        \subitem sistema operacional: ``Debian''
+
+    \textbf{[E]} eu clico em ``Salvar''
+
+    \textbf{[Então]} eu recebo uma confirmação de cadastro salvo com sucesso
+    
+    
+\end{itemize}
