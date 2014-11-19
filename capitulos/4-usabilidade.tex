@@ -256,7 +256,7 @@ Os checklists utilizados encontra-se na seção apêncie \ref{checklist}.
     	\caption{Planilha de Avaliação}
 	\end{figure}
 
-	A avaliação heurística requer pouco planejamento e pode fazer parte de um processo interativo de um projeto e aplicado em todas as fases de desenvolvimento da interface, mas é preciso que seja avaliado por especialistas de usabilidade com pleno conhecimento nas heurísticas.
+	A avaliação heurística requer pouco planejamento e pode fazer parte de um processo interativo de um projeto e aplicado em todas as fases de desenvolvimento da interface, mas é preciso conhecer as heurísticas para serem aplicadas.
 \end{description}
 
 %
@@ -303,35 +303,22 @@ A ~\citeonline{iso:13407} propõe que o envolvimento do usuário seja uma práti
     \label{ciclo_iso13407}
 \end{figure}
 
-\newpage
+\section{Aplicação de Usabilidade nos Métodos Empíricos}
 
-\section{Usabilidade em Software Livre}
-%TODO Verificar
-
-Um dos grandes problemas encontrados em softwares livres é a pouca atenção dada aos aspectos referentes a usabilidade e acessibilidade das aplicações. 
-%
-Segundo ~\citeonline{preece2007}, uma das causas da baixa adoção de softwares livres é a baixa qualidade dos estilos de interação implementados nas interfaces dos produtos. 
-
-Uma grande dificuldade encontrada por parte de usuários com pouca experiência se encontra na instalação de softwares livres o que acaba por desencorajar esses usuários na utilização desses softwares. Entender o perfil do usuário é um dos principais pontos que devem ser levados em consideração pelos desenvolvedores de software em geral. 
-
-No modo geral, os projetistas sabem da importância de desenvolver com enfoque no usuário e na usabilidade, mas normalmente os projetos são desenvolvidos sem que tenham sido realizadas pesquisas e aplicados métodos e técnicas de usabilidade.
-%	
-O tempo e os recursos limitados são as principais razões que impede a implantação dos testes de usabilidade nas equipes de software livre. Também há o desconhecimento por parte da equipe de desenvolvimento das técnicas a serem empregadas.
-%
-\section{Aplicação de Usabilidade no Desenvolvimento Empírico}
-
-	Partindo do que foi conceituado sobre desenvolvimento empírico e IHC, podemos ver semelhança entre seus valores, o que proporciona um quadro favorável à integração de práticas de IHC em desenvolvimento empírico. Podemos citar alguns desse valores: (i) ciclos curtos com entregas contínuas e incrementais, que favorecem a aplicação de técnicas de prototipagem; (ii) forte envolvimento do usuário que favorece a aplicação de princípios de projetos participativos e (iii) programação em pares onde em IHC geralmente a avaliação de usabilidade é feita em pares ~\cite{barbosa2008estrategia}. 
+	Partindo do que foi conceituado sobre desenvolvimento empírico e IHC, podemos ver semelhança entre seus valores, o que proporciona um quadro favorável à integração de práticas de usabilidade em desenvolvimento empírico. Podemos citar alguns desse valores: (i) ciclos curtos com entregas contínuas e incrementais, que favorecem a aplicação de técnicas de prototipagem; (ii) forte envolvimento do usuário que favorece a aplicação de princípios de projetos participativos e (iii) programação em pares onde em IHC geralmente a avaliação de usabilidade é feita em pares ~\cite{barbosa2008estrategia}. 
 	%
 	Segundo ~\citeonline{cybis2010} as características da abordagem ágil facilitam na utilização da ergonomia e da usabilidade durante o desenvolvimento de software.
 		
 	Porém adaptações são necessárias, principalmente na questão da granularidade da pesquisa, no tempo gasto com ela e na maneira de relatar as descobertas de usabilidade ~\cite{santos2012}.
 	%
-	~\citeonline{hodgetts2005experiences} afirma que os métodos de desenvolvimento empírico são quase sempre apresentados sob a visão dos programadores, deixando de lado outras disciplinas como a UED (User Experience \emph{design}). 
-
+	~\citeonline{hodgetts2005experiences} afirma que os métodos de desenvolvimento empírico são quase sempre apresentados sob a visão dos programadores, deixando de lado outras disciplinas como Design de Experiência do Usuário. 
+	
+	No modo geral, os projetistas sabem da importância de desenvolver com enfoque no usuário e na usabilidade, mas normalmente os projetos são desenvolvidos sem que tenham sido realizadas pesquisas e aplicados métodos e técnicas de usabilidade.
+%	
+O tempo e os recursos limitados são as principais razões que impede a implantação dos testes de usabilidade nas equipes de desenvolvimento de software. Também há o desconhecimento por parte da equipe de desenvolvimento das técnicas a serem empregadas.
+	
 \begin{comment}
 Alguns estudos foram feitos tentando fazer essa integração da usabilidade em desenvolvimento empírico.
-
-~\citeonline{constantine2002process} foi um dos primeiros a iniciar a discussão sobre o tema. Sua proposta é mostrar que o DCU está prontamente integrado aos métodos ditos ``leves". Ele afirma que XP e os demais métodos ágeis compartilham das mesmas fraquezas apresentadas por processos tradicionais como o processo unificado quando se refere à usabilidade e ao desenho de interface do usuário.
 
 ~\citeonline{memmel2007} mostram que é possível unir IHC e engenharia de software sob a perspectiva ágil com a utilização de um ciclo de vida de interface de usuário multidisciplinar e de Engenharia de software chamado CRUISER.
 
@@ -344,38 +331,25 @@ Segundo ~\citeonline{mcinerney2005ucd} métodos ágeis e \emph{design} centrado 
 ~\citeonline{leiteinspeccao}, analisou a utilização de métodos de inspeção da usabilidade no contexto de uma \textit{startup}. Foram abordados duas modalidades de avaliação heurística nessa pequena empresa de desenvolvimento de software que utiliza o método ágil Scrum. Como conclusão do estudo, relataram que a avaliação tradicional encontrou mais problemas de usabilidade e maior número de heurísticas violadas. Já na avaliação heurística colaborativa as médias de severidades atribuídas pelos avaliadores eram maior, no qual encontravam mais problemas sérios do que na avaliação tradicional, além de o tempo gasto foi menor do que na tradicional. A avaliação colaborativa apresentou características que permitia a melhor integração com ambientes ágeis.
 \end{comment}
 
-\subsection{DCU Ágil}
+\subsection{Integração de práticas}
+%\subsection{Integração de Práticas do IHC com o XP}
 
-Pode ser definido o DCU ágil como a prática de \emph{design} centrado no usuário quando conduzida dentro de uma metodologia ou filosofia de desenvolvimento ágil de software ~\cite{santos2012}. 
+Alguns estudos foram encontrados tentando integrar práticas de usabilidade com os métodos empíricos. ~\citeonline{constantine2002process} foi um dos primeiros a iniciar a discussão sobre o tema. Sua proposta é mostrar que o DCU está prontamente integrado aos métodos ditos ``leves''. Ele afirma que XP e os demais métodos empíricos compartilham das mesmas fraquezas apresentadas por processos tradicionais como o processo unificado quando se refere à usabilidade e ao desenho de interface do usuário.
+
+Em 2008 foi proposto uma metodologia revisional intitulada XPlus que insere as técnicas de \emph{design} e de usabilidade em determinadas fases do ciclo de desenvolvimento de software. O XPlus agrega algumas práticas de \textit{User Experience} às práticas tradicionais de XP. A figura \ref{ciclo_xplus} mostra o processo de desenvolvimento de software de XPlus ~\cite{guimaraesxplus}. 
+
+O papel de \emph{designer} de interação não é reconhecido no núcleo XP da equipe e o XP não tem nenhum processo explícito para lidar com o \emph{design} de interação. 
 %
-O ciclo de DCU ágil foi proposto por ~\citeonline{sy2007adapting} e integra tantos as atividades de DCU como as de desenvolvimento em um único ciclo, trabalhando nas mesmas características e garantindo que as investigações de usabilidade serão tratadas durante a interação.
-%
-Segundo \citeonline{najafi2008} o \emph{design} centrado no usuário pode ser incorporado no desenvolvimento empírico sem grandes impactos no processo. No método de desenvolvimento ágil scrum, uma funcionalidade é desenvolvida, testada e documentada em uma \textit{sprint} assim como no \emph{design} centrado no usuário. 
-%	
-Segundo ~\citeonline{santos2012} o grande desafio do DCU ágil é encontrar a melhor maneira de realizar as atividades de pesquisa do usuário, \emph{design} de versões que atendem às necessidades dos usuário, construção de versões interativas e realização de testes de usabilidade, dentro de um ambiente de desenvolvimento empírico, tendo a participação dos usuários típicos em todas as atividades.
-
-\subsection{Integração de Práticas do IHC com o XP}
-
-Foram encontrados alguns estudos que descrevem a integração do IHC com as práticas de Programação Extrema (XP). O processo de usabilidade ágil é integrar os instrumentos de IHC dentro dos processos clássico de XP. 
-
-%
-Em 2008 foi proposto uma metodologia revisional intitulada XPlus que insere as técnicas de \emph{design} e de usabilidade em determinadas fases do ciclo de desenvolvimento de software. O XPlus agrega algumas práticas de \textit{User Experience} às práticas tradicionais de XP. A figura \ref{ciclo_xplus} mostra o processo de desenvolvimento de software de XPlus ~\cite{guimaraesxplus}.
 
 \begin{figure}[h]
     \centering
-    \includegraphics[keepaspectratio=true,scale=0.60]
+    \includegraphics[keepaspectratio=true,scale=0.55]
       {figuras/xplus.eps}
     \caption{Visão geral do processo de desenvolvimento de software de XPlus ~\cite{guimaraesxplus}}
     \label{ciclo_xplus}
 \end{figure}
 
-
-O papel de \emph{designer} de interação não é reconhecido no núcleo XP da equipe e o XP não tem nenhum processo explícito para lidar com o \emph{design} de interação. 
-%
-%A natureza iterativa de desenvolvimento XP necessário que os \emph{designers} de interação tem envolvimento contínuo com o desenvolvimento do produto influenciou a natureza da relação entre os \emph{designers} de interação e os desenvolvedores. 
-%Esse parágrafo tá mal escrito, nao entendi o que quis dizer
-
-~\citeonline{vasconcelos2003integrando} descreveram um processo ágil centrado em usabilidade chamado XPU no qual tinha como objetivo prover à equipe de desenvolvimento um modelo para a construção de sistemas de software centrado no usuário que valorizasse a usabilidade como característica fundamental da qualidade. 
+O XPU, processo ágil centrado em usabilidade descrito por ~\citeonline{vasconcelos2003integrando} tinha como objetivo prover à equipe de desenvolvimento um modelo para a construção de sistemas de software centrado no usuário que valorizasse a usabilidade como característica fundamental da qualidade. 
 
 O XPU serve para guiar o time de desenvolvimento seguindo técnicas e artefatos simplificados afim de não se ter apenas sistemas portáteis reutilizáveis ou acoplados, mas sim com uma interface que reflete as características e as necessidades dos usuários. 
 %
@@ -385,11 +359,8 @@ As atividades no XPu estão divididas em atividades técnicas e gerenciais. As a
 Nas próximas tabelas são apresentadas as atividades técnicas e gerenciais de cada visão (projeto, iteração e desenvolvimento) estabelecidas pelo XP e adaptadas pelo método XPu:
 
 \begin{itemize}
-
 \item {Visão de Projeto}
-
 \begin{itemize}
-
 \item {Atividades Técnicas}
 
 \begin{table}[h]
@@ -397,12 +368,12 @@ Nas próximas tabelas são apresentadas as atividades técnicas e gerenciais de 
 \begin{tabular}{|p{4cm}|l|p{8cm}|}
 \hline
 \textbf{Atividade}                                                                       & \textbf{Técnica}                                                    & \textbf{Descrição}                                                                                                                                                                                  \\ \hline
-Análise de Usuários                                                                      & Personas                                                            & \begin{tabular}[c]{@{}l@{}}Caracterizar grupos de usuários finais. \\Descrever expectativas de um usuário em \\relação ao desenvolvido.\end{tabular}    \\ \hline
-Análise de Tarefas                                                                       & Roteiros                                                            & \begin{tabular}[c]{@{}l@{}}Propõe uma narrativa textual para descrever \\a execução de uma tarefa pelo usuário.\end{tabular}            \\ \hline
-\begin{tabular}[c]{@{}l@{}}Análise de Contexto \\ de uso\end{tabular}                    & \begin{tabular}[c]{@{}l@{}}Histórias de \\usabilidade\end{tabular} & \begin{tabular}[c]{@{}l@{}}São formadas pelo Roteiro sendo realizada \\pela Persona.\end{tabular}                                          \\ \hline
-\begin{tabular}[c]{@{}l@{}}Definição de requisitos \\e metas de usabilidade\end{tabular} & Benchmarks                                                          & \begin{tabular}[c]{@{}l@{}}Servem de balizadores para avaliar a \\ usabilidade. São gerados a \\partir dos atributos de usabilidade\end{tabular} \\ \hline
-\begin{tabular}[c]{@{}l@{}}Avaliação da \\Usabilidade\end{tabular}                      & \begin{tabular}[c]{@{}l@{}}Cenários de Testes\end{tabular}        & São utilizados como insumos \\de avaliações de usabilidade. \\ \hline
-\begin{tabular}[c]{@{}l@{}}Avaliação da \\Usabilidade\end{tabular}                      & \begin{tabular}[c]{@{}l@{}}Testes de Usabilidade\end{tabular}    & \begin{tabular}[c]{@{}l@{}}Estes testes podem ser feitos através de \\avaliações preditivas, experimentais\end{tabular}                                                                            \\ \hline
+Análise de Usuários                                                                      & Personas                                                            & Caracterizar grupos de usuários finais. Descrever expectativas de um usuário em relação ao desenvolvido.   \\ \hline
+Análise de Tarefas                                                                       & Roteiros                                                            & Propõe uma narrativa textual para descrever a execução de uma tarefa pelo usuário.            \\ \hline
+\begin{tabular}[c]{@{}l@{}}Análise de Contexto \\ de uso\end{tabular}                    & \begin{tabular}[c]{@{}l@{}}Histórias de \\usabilidade\end{tabular} & São formadas pelo Roteiro sendo realizada pela Persona.                                          \\ \hline
+Definição de requisitos e metas de usabilidade & Benchmarks & Servem de balizadores para avaliar a usabilidade. São gerados a partir dos atributos de usabilidade \\ \hline
+\begin{tabular}[c]{@{}l@{}}Avaliação da Usabilidade\end{tabular}                      & \begin{tabular}[c]{@{}l@{}}Cenários de Testes\end{tabular}        & São utilizados como insumos de avaliações de usabilidade. \\ \hline
+\begin{tabular}[c]{@{}l@{}}Avaliação da Usabilidade\end{tabular}                      & \begin{tabular}[c]{@{}l@{}}Testes de Usabilidade\end{tabular}    & Estes testes podem ser feitos através de avaliações preditivas, experimentais.                                                                            \\ \hline
 \end{tabular}
 \caption{Atividades Técnicas de Visão de Projeto}
 \label{visao_projeto}
@@ -459,6 +430,16 @@ Desenho de Interação                                                         &
 \end{itemize}
 
 \newpage
+
+\subsection{DCU Ágil}
+
+Pode ser definido o DCU ágil como a prática de \emph{design} centrado no usuário quando conduzida dentro de uma metodologia ou filosofia de desenvolvimento ágil de software ~\cite{santos2012}. 
+%
+O ciclo de DCU ágil foi proposto por ~\citeonline{sy2007adapting} e integra tantos as atividades de DCU como as de desenvolvimento em um único ciclo, trabalhando nas mesmas características e garantindo que as investigações de usabilidade serão tratadas durante a interação.
+%
+Segundo \citeonline{najafi2008} o \emph{design} centrado no usuário pode ser incorporado no desenvolvimento empírico sem grandes impactos no processo. No método de desenvolvimento ágil scrum, uma funcionalidade é desenvolvida, testada e documentada em uma \textit{sprint} assim como no \emph{design} centrado no usuário. 
+%	
+Segundo ~\citeonline{santos2012} o grande desafio do DCU ágil é encontrar a melhor maneira de realizar as atividades de pesquisa do usuário, \emph{design} de versões que atendem às necessidades dos usuário, construção de versões interativas e realização de testes de usabilidade, dentro de um ambiente de desenvolvimento empírico, tendo a participação dos usuários típicos em todas as atividades.
 
 \subsection{Princípios de Desenvolvimento Empírico Aplicados ao DCU}
 
