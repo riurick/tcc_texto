@@ -183,7 +183,7 @@ Observação & Essa técnica caracteriza-se por um pesquisador observando o usu�
 No apêndice \ref{apendice1} estão detalhadas as técnicas mencionadas nesta seção.
 
 \subsection{Métodos e Técnicas de Avaliação da Usabilidade}
-
+\label{metodos_avaliacoes}
 Utilizados para avaliar a qualidade das interações entre o usuário e o sistema.
 %
 As avaliações de interface podem ser divididas quanto a: formas, tipo de dados e o local da avaliação. Quanto a forma, temos objetiva, quando são baseadas em técnicas que utilizam medições quantitativas em vez de opiniões dos usuários/especialistas e subjetivas, quando são baseadas em opiniões e relatos de usuários e especialistas. Já quanto ao tipo de dados podem ser definidas como: quantitativa, quando envolvem medidas e tendem a ser vistas como objetivas e imparciais, e qualitativas quando envolvem descrições e relatos e são vistas como subjetivas. Quanto ao local da avaliação podem ser feita em laboratório, onde o ambiente é controlado ou estudo de campo quando estão situadas no contexto do mundo real no qual o sistema é utilizado.
@@ -211,13 +211,56 @@ De acordo com ~\citeonline{preece2007} cada método de avaliação possui caract
 %
 Eles diferem entre si em vários aspectos. É preciso entender as diferentes características de cada método para se definir qual deles é o mais apropriado para avaliar a interface de um software em um determinado contexto.
 %
-Cada método pode se diferenciar pela etapa do ciclo que pode ser aplicado, a técnica utilizada para coletar dados e os tipos de dados coletados (quantitativa ou qualitativa). 
+No estudo de caso aplicamos as seguintes técnicas:
 
-As técnicas descritas nesse capítulo podem ser associadas com várias outras técnicas e para a escolha de cada técnica é importante examinar as possibilidades dos recursos necessários e os disponíveis e as expectativas de resultados da avaliação da usabilidade. 
+\begin{description}
+
+\item[Checklists:]
+
+	É uma técnica de inspeção que oferece uma maneira de abordagem rápida, fácil e de baixo custo para a avaliação de uma interface. Permite com que usuários que não são especialistas em ergonomia identificarem problemas menores e repetitivos ~\cite{cybis2010}.
+%
+Várias vantagens são encontradas na utilização dessa técnica como: redução de custos de avaliação por não precisar de especialistas; sistematização das avaliações; reduz a subjetividade dos processos de avaliação e fornece um conhecimento ergonômico sobre o que avaliar.
+%
+Os checklists utilizados encontra-se na seção apêncie \ref{checklist}.
+
+\item[Avaliação heurística:]
+
+
+	Representa um julgamento de valor sobre as qualidades ergonômicas das interfaces Humano-Computador. Essa avaliação é realizada por especialistas em ergonomia e usabilidade. Eles examinam o sistema interativo e diagnosticam os problemas ou as barreiras que os usuários provavelmente encontrarão durante a interação ~\cite{cybis2010}.
+
+	O principal objetivo desse tipo de avaliação é avaliar a interface em fases iniciais do sistema, sem o envolvimento do usuário. Os graves problemas de interface devem ser localizados antes que realizem os testes de usabilidade com usuários reais ~\cite{santos2012}.
+
+	As avaliações mais utilizadas são as 10 heurísticas de ~\citeonline{nielsen1994}. São elas:
+
+	\begin{itemize}
+		\item{\textbf{Diálogos simples e naturais:} Deve-se apresentar exatamente a informação que o usuário precisa no momento, nem mais nem menos. A seqüência da interação e o acesso aos objetos e operações devem ser compatíveis com o modo pelo qual o usuário realiza suas tarefas.}
+		\item{\textbf{Falar a linguagem do usuário:} A terminologia deve ser baseada na linguagem do usuário e não orientada ao sistema. As informações devem ser organizadas conforme o modelo mental do usuário.}
+		\item{\textbf{Minimizar a sobrecarga de memória do usuário:} O sistema deve mostrar os elementos de diálogo e permitir que o usuário faça suas escolhas, sem a necessidade de lembrar um comando específico.}
+		\item{\textbf{Consistência e Padrões:} Um mesmo comando ou ação deve ter sempre o mesmo efeito. A mesma operação deve ser apresentada na mesma localização e deve ser formatada/apresentada da mesma maneira para facilitar o reconhecimento.}
+		\item{\textbf{Feedback:} O sistema deve informar continuamente ao usuário sobre o que ele está fazendo. 10 segundos é o limite para manter a atenção do usuário focalizada no diálogo.}
+		\item{\textbf{Saídas claramente marcadas:} O usuário controla o sistema. Ele pode, a qualquer momento, abortar uma tarefa, ou desfazer uma operação e retornar ao estado anterior.}
+		\item{\textbf{Atalhos:} Para usuários experientes executarem as operações mais rapidamente. Abreviações, teclas de função, duplo clique no mouse, função de volta em sistemas hipertexto. Atalhos também servem para recuperar informações que estão numa profundidade na árvore navegacional a partir da interface principal.}
+		\item{\textbf{Boas mensagens de erro:} Linguagem clara e sem códigos. Devem ajudar o usuário a entender e resolver o problema. Não devem culpar ou intimidar o usuário.}
+		\item{\textbf{Prevenir erros:} Evitar situações de erro. Conhecer as situações que mais provocam erros e modificar a interface para que estes erros não ocorram.}
+		\item{\textbf{Ajuda e documentação:} O ideal é que um software seja tão fácil de usar (intuitivo) que não necessite de ajuda ou documentação. Se for necessária a ajuda deve estar facilmente acessível e on-line.}
+	\end{itemize}
+
+
+	As avaliações podem ser feitas em planilhas (como a figura \ref{planilha}), onde são descritos o local do problema de usabilidade, sua descrição, a heurística que foi desobedecida e a criticidade do problema (alta, média ou baixa).
+
+	\begin{figure}[h]
+    	\centering
+    	\includegraphics[keepaspectratio=true,scale=0.48]
+      	{figuras/planilha.eps}
+      	\label{planilha}
+    	\caption{Planilha de Avaliação}
+	\end{figure}
+
+	A avaliação heurística requer pouco planejamento e pode fazer parte de um processo interativo de um projeto e aplicado em todas as fases de desenvolvimento da interface, mas é preciso que seja avaliado por especialistas de usabilidade com pleno conhecimento nas heurísticas.
+\end{description}
+
 %
 No apêndice \ref{apendice1} estão detalhadas as técnicas mencionadas nesta seção.
-
-No estudo de caso detalhado e planejado no próximo capítulo, separamos algumas técnicas que foram utilizadas na avaliação da usabilidade.
 
 %TODO isso foi inserido na introdução. Mas acho que talvez poderia criar uma seção, subseção sobre a usabilidade em software livre.
 %TODO escrever outras coisas referente sobre software livre e usabilidade
