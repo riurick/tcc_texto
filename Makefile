@@ -1,4 +1,4 @@
-TARGET = TCC2_Jonatas_Rodrigo.pdf
+TARGET = TCC2_Rodrigo_Jonatas.pdf
 
 BIBTEX = bibtex
 LATEX = latex
