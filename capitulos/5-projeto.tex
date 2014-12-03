@@ -2,6 +2,10 @@
 
 Neste capítulo apresentamos o estudo de caso sobre a utilização de práticas de usabilidade e testes automatizados no desenvolvimento do Portal do Software Público, onde será definido um guia de como essas práticas podem ser inseridas nesse contexto.
 
+\section{Definição}
+
+Neste trabalho foi apresentado um estudo teórico relacionado à integração das técnicas de usabilidade ao longo do ciclo de vida ágil de desenvolvimento de testes de softwares existentes.
+
 O objetivo global desse estudo é introduzir técnicas de usabilidade no desenvolvimento empírico a partir das práticas de BDD.
 %
 Tendo em vista a utilização de várias técnicas de usabilidade e de testes de software em um projeto de desenvolvimento empírico, definimos os objetivos específicos à fim de:
@@ -12,19 +16,30 @@ Tendo em vista a utilização de várias técnicas de usabilidade e de testes de
 \item Integrar técnicas de usabilidade em um contexto específico de desenvolvimento empírico de software.
 \end{enumerate}
 
-Para nos guiarmos  em ralação aos objetivos estabelecidos, definimos as seguintes questões-problemas:
+Estes objetivos foram definidos levando em consideração que o desenvolvimento empírico tem como prática básica os testes automatizados, e em contrapartida se dá pouca atenção à usabilidade. Assim pensamos em utilizar as práticas de testes que já são constantes para introduzir no ciclo as práticas de usabilidade.
+Para nos guiarmos  em ralação aos objetivos estabelecidos, definimos as seguintes questões:
 
 \begin{enumerate}
 \item Como inserir os princípios e técnicas de usabilidade dentro do desenvolvimento empírico de software?
 \item Como o processo de desenvolvimento utilizando práticas do BDD podem se relacionar com testes de usabilidade?
 \end{enumerate}
 
-%Para respondermos as questões-problemas, definimos a seguinte hipótese:
+Para alcançar os objetivos definidos e responder as questões levantadas, definimos algumas questões específicas:
 
-%\textbf{Hipótese H1: } A integração de práticas de usabilidade a partir do desenvolvimento por comportamento (BDD) melhor introduz as técnicas de usabilidade no ciclo de desenvolvimento.
-	
-%ToDo: Explicar a hipotese DONE
-Estes objetivos foram definidos levando em consideração que o desenvolvimento empírico tem como prática básica os testes automatizados, e em contrapartida se dá pouca atenção à usabilidade. Assim pensamos em utilizar as práticas de testes que já são constantes para introduzir no ciclo as práticas de usabilidade.
+\begin{enumerate}
+  \item Qual a quantidade de testes de aceitação executados por ciclo?
+    \subitem{\textbf{Fonte:} suíte de testes do Cucumber.}
+    \subitem{\textbf{Métrica:} Quantidade de testes de aceitação executados por ciclo.}
+  \item Quantos problemas de usabilidade de criticidade baixa são encontrados por ciclo?
+    \subitem{\textbf{Fonte:} Planilha de avaliação.}
+    \subitem{\textbf{Métrica:} Quantidade de problemas de usabilidade de criticidade baixa por ciclo.}
+  \item Quantos problemas de usabilidade de criticidade média são encontrados por ciclo?
+    \subitem{\textbf{Fonte:} Planilha de avaliação.}
+    \subitem{\textbf{Métrica:} Quantidade de problemas de usabilidade de criticidade média por ciclo.}
+  \item Quantos problemas de usabilidade de criticidade alta são encontrados por ciclo?
+    \subitem{\textbf{Fonte:} Planilha de avaliação.}
+    \subitem{\textbf{Métrica:} Quantidade de problemas de usabilidade de criticidade alta por ciclo.}
+\end{enumerate}
 
 \section{Objeto de Estudo}
 
